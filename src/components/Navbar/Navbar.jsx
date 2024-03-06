@@ -1,6 +1,6 @@
 import { Menuicon } from '../menuicon/Menuicon';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/KENYAN-white.png';
+import logo from '../../assets/kenyanauto-black-transparent-logo.png';
 import './Navbar.css'
 
 export const Navbar = () => {
@@ -12,16 +12,16 @@ export const Navbar = () => {
             <div className="navbar-menu">
                 <ul className="navbar-menu-list">
                     <li className="navbar-menu-item">
-                        <a href="/buying" className="navbar-menu-link">Buying</a>
+                        <a href="/Buying" className="navbar-menu-link">Buying</a>
                     </li>
                     <li className="navbar-menu-item">
-                        <a href="/selling" className="navbar-menu-link">Selling</a>
+                        <a href="/Selling" className="navbar-menu-link">Selling</a>
                     </li>
                     <li className="navbar-menu-item">
-                        <a href="/maintenance" className="navbar-menu-link">Maintenance</a>
+                        <a href="/Maintenance" className="navbar-menu-link">Maintenance</a>
                     </li>
                     <li className="navbar-menu-item">
-                        <a href="/guides" className="navbar-menu-link">Guides</a>
+                        <a href="/Guide" className="navbar-menu-link">Guides</a>
                     </li>
                 </ul>
             </div>

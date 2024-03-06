@@ -12,11 +12,7 @@
     height: 60px;
     border-bottom: 1px solid #e5e5e5;
 }
-/* .navbar-logo{
-    width: 100px;
-    height: 40px;
-    object-fit: contain;
-} */
+
 .navbar .navbar-logo a img{
     left: 0;
     width: 150px;
@@ -41,8 +37,12 @@
     font-weight: 500;
     transition: all .3s ease;
 }
+.navbar .navbar-menu ul li a:hover{
+    color: #ff0000;
+}
 .navbar .menu-icon{
     display: none;
+    cursor: pointer;
 }
 
 
