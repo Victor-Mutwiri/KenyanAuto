@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import './MenuPage.css'
+import logo from '../../assets/kenyanauto-transparent-logo.png';
 
 export const MenuPage = ({ isOpen, onClose }) => {
     const handleButtonClick = () => {
@@ -9,11 +10,17 @@ export const MenuPage = ({ isOpen, onClose }) => {
   return (
     <div className={`menu-page ${isOpen ? 'open' : ''}`}>
         <i className='bx bx-x close-button' onClick={handleButtonClick}></i>
+        <div className="logo">
+            <Link to={'/'}>
+                <img src={logo} alt="KenyanAuto" className="side-logo" width={120}/>
+            </Link>
+        </div>
         <div className="navigation">
-            <Link to={'/buying'}>Buying</Link>
-            <Link to={'/selling'}>Selling</Link>
-            <Link to={'/maintenance'}>Maintenance</Link>
-            <Link to={'/guides'}>Guides</Link>
+            <Link to={'/Buying'}>Buying</Link>
+            <Link to={'/Selling'}>Selling</Link>
+            <Link to={'/Maintenance'}>Maintenance</Link>
+            <Link to={'/Guide'}>Guides</Link>
+            <Link to={'/Safety'}>Safety</Link>
         </div>
         <div className="socials">
             <a href="#"><i className='bx bxl-facebook'/></a>

@@ -9,6 +9,7 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .menu-page.open {
     right: 0; /* Slide into view */
@@ -33,6 +34,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-bottom: 2rem;
 }
 .menu-page .navigation a{
     text-decoration: none;
@@ -44,28 +46,10 @@
 .menu-page .navigation .socials{
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    margin-top: 2rem;
-}
-/* .menu-page .navbar-menu ul{
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    gap: 3rem;
 }
-.menu-page .navbar-menu ul li{
-    margin: 10px 0;
-    text-align: center;
-    list-style: none;
-}
-.menu-page .navbar-menu ul li a{
-    text-decoration: none;
+.menu-page .socials a i{
+    font-size: 1.5rem;
     color: #fff;
-    font-size: 1.0rem;
-    font-weight: 500;
     transition: all .3s ease;
-} */
+}
