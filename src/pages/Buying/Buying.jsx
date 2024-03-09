@@ -2,6 +2,6 @@ import './Buying.css';
 
 export const Buying = () => {
   return (
-    <div>Buying</div>
+    <div>Welcome to the buying page</div>
   )
 }
