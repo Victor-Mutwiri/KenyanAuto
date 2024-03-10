@@ -6,14 +6,14 @@
     /* background-color: #f5f5f5; */
     background: #fff;
     width: 100%;
-    height: 100vh;
+    height: 120vh;
 }
 .background{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 .background h1{
     font-size: 1.8rem;
@@ -106,4 +106,31 @@
     font-weight: 500;
     margin-bottom: 1rem;
     text-align: center;
+}
+
+/* car review section */
+
+.car{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    padding: 20px;
+    width: 600px;
+    margin-top: 2rem;
+}
+.car .carimage img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+.car .desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
 }
