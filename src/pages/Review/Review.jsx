@@ -47,9 +47,9 @@ export const Review = () => {
     setSelectedModel(event.target.value);
   };
 
-  const fetchReviewsForModel = (model) => {
+  /* const fetchReviewsForModel = (model) => {
     axios
-      .get(`http://localhost:1337/api/models?populate=*reviews&Model=${encodeURIComponent(model)}`)
+      .get(`http://localhost:1337/api/models?populate=reviews&Model=${encodeURIComponent(model)}`)
       .then((response) => {
         if (response.data && Array.isArray(response.data.data)) {
           const selectedModelData = response.data.data.find((item) => item.attributes.Model === model);
@@ -66,7 +66,25 @@ export const Review = () => {
       .catch((error) => {
         console.error('Error fetching reviews:', error);
       });
+  }; */
+
+  
+  const fetchReviewsForModel = (model) => {
+    axios
+      .get(`http://localhost:1337/api/reviews?Model=${encodeURIComponent(model)}`)
+      .then((response) => {
+        if (response.data && Array.isArray(response.data.data)) {
+          setReviews(response.data.data);
+        } else {
+          console.error('Error: Response data is not in the expected format');
+          setReviews([]);
+        }
+      })
+      .catch((error) => {
+        console.error('Error fetching reviews:', error);
+      });
   };
+  
 
   const handleSearch = () => {
     if (!selectedModel) {
