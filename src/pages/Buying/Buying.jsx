@@ -37,43 +37,83 @@ export const Buying = () => {
       setModels([]);
     }
   };
+  
+  /* const fetchReviewsForModel = async (selectedModel) => {
+    try {
+      let allReviews = [];
+  
+      // Fetch all models
+      const response = await axios.get(`http://localhost:1337/api/models?populate=*`);
+  
+      if (response.data && Array.isArray(response.data.data)) {
+        // Filter models to get the selected model
+        const selectedModelObject = response.data.data.find(model => model.attributes.Model === selectedModel);
+  
+        // Check if the selected model exists
+        if (selectedModelObject && selectedModelObject.attributes.reviews &&
+            selectedModelObject.attributes.reviews.data &&
+            selectedModelObject.attributes.reviews.data.length > 0) {
+          // If reviews exist for the selected model, set them to allReviews
+          allReviews = selectedModelObject.attributes.reviews.data;
+        }
+      } else {
+        console.error('Error: Response data is not in the expected format');
+      }
+  
+      // Update the state with reviews for the selected model
+      setReviews(allReviews);
+    } catch (error) {
+      console.error('Error fetching reviews:', error);
+    }
+  }; */
 
-  /* const fetchReviewsForModel = (make, model) => {
-    axios
-      .get(`http://localhost:1337/api/models?populate=*&Make=${encodeURIComponent(make)}&Model=${encodeURIComponent(model)}`)
-      .then((response) => {
+
+  const fetchReviewsForModel = async (selectedModel) => {
+    try {
+      let allReviews = [];
+  
+      // Function to fetch models recursively for all pages
+      const fetchModelsRecursive = async (currentPage) => {
+        const response = await axios.get(`http://localhost:1337/api/models?populate=*`, {
+          params: {
+            page: currentPage,
+            pageSize: 10 // Adjust the pageSize as needed
+          }
+        });
+  
         if (response.data && Array.isArray(response.data.data)) {
-          const selectedModelObject = response.data.data.find((m) => m.attributes.Model === model);
-          if (selectedModelObject && selectedModelObject.attributes.reviews && selectedModelObject.attributes.reviews.data) {
-            setReviews(selectedModelObject.attributes.reviews.data);
-          } else {
-            console.error('No reviews found for selected model');
-            setReviews([]);
+          // Extract reviews from models on the current page for the selected model
+          response.data.data.forEach((model) => {
+            if (
+              model.attributes.Model === selectedModel &&
+              model.attributes.reviews &&
+              model.attributes.reviews.data &&
+              model.attributes.reviews.data.length > 0
+            ) {
+              allReviews = allReviews.concat(model.attributes.reviews.data);
+            }
+          });
+  
+          // If there are more pages, recursively fetch models for the next page
+          if (currentPage < response.data.meta.pagination.pageCount) {
+            await fetchModelsRecursive(currentPage + 1);
           }
         } else {
           console.error('Error: Response data is not in the expected format');
-          setReviews([]);
         }
-      })
-      .catch((error) => {
-        console.error('Error fetching reviews:', error);
-      });
-  }; */
-  const fetchReviewsForModel = (model) => {
-    axios
-      .get(`http://localhost:1337/api/reviews?populate=*&model.attributes.Model=${encodeURIComponent(model)}`)
-      .then((response) => {
-        if (response.data && Array.isArray(response.data.data)) {
-          setReviews(response.data.data);
-        } else {
-          console.error('Error: Response data is not in the expected format');
-          setReviews([]);
-        }
-      })
-      .catch((error) => {
-        console.error('Error fetching reviews:', error);
-      });
+      };
+  
+      // Start fetching models recursively from the first page
+      await fetchModelsRecursive(1);
+  
+      // Update the state with all reviews for the selected model
+      setReviews(allReviews);
+    } catch (error) {
+      console.error('Error fetching reviews:', error);
+    }
   };
+  
+  
   
 
   const handleMakeChange = (event) => {
@@ -87,6 +127,7 @@ export const Buying = () => {
     setSelectedModel(selectedModel);
     fetchReviewsForModel(selectedModel);
   };
+
 
   const handleSearch = () => {
     if (!selectedModel) {

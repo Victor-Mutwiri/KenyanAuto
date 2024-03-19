@@ -47,27 +47,6 @@ export const Review = () => {
     setSelectedModel(event.target.value);
   };
 
-  /* const fetchReviewsForModel = (model) => {
-    axios
-      .get(`http://localhost:1337/api/models?populate=reviews&Model=${encodeURIComponent(model)}`)
-      .then((response) => {
-        if (response.data && Array.isArray(response.data.data)) {
-          const selectedModelData = response.data.data.find((item) => item.attributes.Model === model);
-          if (selectedModelData && selectedModelData.attributes.reviews && selectedModelData.attributes.reviews.data) {
-            setReviews(selectedModelData.attributes.reviews.data);
-          } else {
-            console.error('No reviews found for selected model');
-            setReviews([]);
-          }
-        } else {
-          console.error('Error: Response data is not in the expected format');
-        }
-      })
-      .catch((error) => {
-        console.error('Error fetching reviews:', error);
-      });
-  }; */
-
   
   const fetchReviewsForModel = (model) => {
     axios
