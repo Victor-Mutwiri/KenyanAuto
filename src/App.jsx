@@ -8,6 +8,7 @@ import { Guide } from './pages/Guide/Guide';
 import { Maintenance } from './pages/Maintenance/Maintenance';
 import { Safety } from './pages/Safety/Safety';
 import { Selling } from './pages/Selling/Selling';
+import ModelReview from './components/ReviewDetails';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/Maintenance" element={<Maintenance/>} />
         <Route path="/Safety" element={<Safety/>} />
         <Route path="/Selling" element={<Selling/>} />
+        <Route path="/review-details/:id" element={<ModelReview/>} />
       </Routes>
     </BrowserRouter>
   )
