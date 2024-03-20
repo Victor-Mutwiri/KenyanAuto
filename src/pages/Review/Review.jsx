@@ -5,6 +5,8 @@ import safety from '../../assets/safety.jpg';
 import service from '../../assets/service.jpg';
 import firstcar from '../../assets/firstcar.jpg';
 import buying from '../../assets/buying.jpg';
+import Selectmakeandmodel from '../../components/make&model/Selectmakeandmodel';
+import ReviewList from '../../components/Reviewslist/Reviewslist';
 
 export const Review = () => {
   const [makes, setMakes] = useState([]);
@@ -36,6 +38,67 @@ export const Review = () => {
       setModels([]);
     }
   };
+  
+  /* const fetchReviewsForModel = async (selectedModel) => {
+    try {
+      let allReviews = [];
+  
+      // Fetch all models
+      const response = await axios.get(`http://localhost:1337/api/models?populate=*`);
+  
+      if (response.data && Array.isArray(response.data.data)) {
+        // Filter models to get the selected model
+        const selectedModelObject = response.data.data.find(model => model.attributes.Model === selectedModel);
+  
+        // Check if the selected model exists
+        if (selectedModelObject && selectedModelObject.attributes.reviews &&
+            selectedModelObject.attributes.reviews.data &&
+            selectedModelObject.attributes.reviews.data.length > 0) {
+          // If reviews exist for the selected model, set them to allReviews
+          allReviews = selectedModelObject.attributes.reviews.data;
+        }
+      } else {
+        console.error('Error: Response data is not in the expected format');
+      }
+  
+      // Update the state with reviews for the selected model
+      setReviews(allReviews);
+    } catch (error) {
+      console.error('Error fetching reviews:', error);
+    }
+  }; */
+
+
+  const fetchReviewsForModel = async (selectedModel) => {
+    try {
+      let reviewsForModel = [];
+  
+      // Fetch all models
+      const response = await axios.get(`http://localhost:1337/api/models?populate=*`);
+  
+      if (response.data && Array.isArray(response.data.data)) {
+        // Filter models to get the selected model
+        const selectedModelObject = response.data.data.find(model => model.attributes.Model === selectedModel);
+  
+        if (selectedModelObject) {
+          // Check if reviews exist for the selected model
+          if (selectedModelObject.attributes.reviews && selectedModelObject.attributes.reviews.data) {
+            // Set reviews for the selected model
+            reviewsForModel = selectedModelObject.attributes.reviews.data;
+          }
+        } else {
+          console.error(`Model '${selectedModel}' not found`);
+        }
+      } else {
+        console.error('Error: Response data is not in the expected format');
+      }
+  
+      // Update the state with reviews for the selected model
+      setReviews(reviewsForModel);
+    } catch (error) {
+      console.error('Error fetching reviews:', error);
+    }
+  };    
 
   const handleMakeChange = (event) => {
     const selectedMake = event.target.value;
@@ -44,32 +107,18 @@ export const Review = () => {
   };
 
   const handleModelChange = (event) => {
-    setSelectedModel(event.target.value);
+    const selectedModel = event.target.value;
+    setSelectedModel(selectedModel);
+    //fetchReviewsForModel(selectedModel);
   };
 
-  
-  const fetchReviewsForModel = (model) => {
-    axios
-      .get(`http://localhost:1337/api/reviews?Model=${encodeURIComponent(model)}`)
-      .then((response) => {
-        if (response.data && Array.isArray(response.data.data)) {
-          setReviews(response.data.data);
-        } else {
-          console.error('Error: Response data is not in the expected format');
-          setReviews([]);
-        }
-      })
-      .catch((error) => {
-        console.error('Error fetching reviews:', error);
-      });
-  };
-  
 
   const handleSearch = () => {
     if (!selectedModel) {
       console.error('No model selected');
       return;
     }
+    // Fetch reviews for the selected model
     fetchReviewsForModel(selectedModel);
   };
 
@@ -77,36 +126,15 @@ export const Review = () => {
     <div className='review'>
       <section className='background'>
         <h1>Navigate your Car Journey <br /> with Confidence</h1>
-        <div className='search'>
-          <h3>Discover</h3>
-          <div className='search-field'>
-            <div className='make'>
-              <h4>Make</h4>
-              <select name='make' value={selectedMake} onChange={handleMakeChange}>
-                <option value=''>Select Make</option>
-                {makes.map((make) => (
-                  <option key={make.id} value={make.attributes.Make}>
-                    {make.attributes.Make}
-                  </option>
-                ))}
-              </select>
-            </div>
-            <div className='model'>
-              <h4>Model</h4>
-              <select name='model' value={selectedModel} onChange={handleModelChange} disabled={!selectedMake}>
-                <option value=''>Select Model</option>
-                {models.map((model) => (
-                  <option key={model.id} value={model.attributes.Model}>
-                    {model.attributes.Model}
-                  </option>
-                ))}
-              </select>
-            </div>
-            <button onClick={handleSearch} disabled={!selectedMake || !selectedModel}>
-              <i className='bx bx-search-alt'> Search</i>
-            </button>
-          </div>
-        </div>
+        <Selectmakeandmodel
+          makes={makes}
+          models={models}
+          selectedMake={selectedMake}
+          selectedModel={selectedModel}
+          onMakeChange={handleMakeChange}
+          onModelChange={handleModelChange}
+          onSearch={handleSearch}
+        />
       </section>
       <h3>Guiding Your Choice</h3>
       <div className='images'>
@@ -115,26 +143,8 @@ export const Review = () => {
         <img src={firstcar} alt='firstcar' />
         <img src={safety} alt='safety' />
       </div>
-      {/* Display all reviews */}
-      {reviews.length > 0 && (
-        <section className='car'>
-          {reviews.map((review) => (
-            <div key={review.id} className='car-review'>
-              <div className="car-image">
-                {review.attributes.ExteriorShot && review.attributes.ExteriorShot.data && (
-                  <img src={`http://localhost:1337${review.attributes.ExteriorShot.data.formats.thumbnail.url}`} alt={`Exterior of ${review.attributes.Vehicle}`} />
-                )}
-              </div>
-              <div className='desc'>
-                <h3>{review.attributes.Vehicle}</h3>
-                <h4>{review.attributes.Generation}</h4>
-                <p>{review.attributes.Overview}</p>
-                {/* Add more review attributes here */}
-              </div>
-            </div>
-          ))}
-        </section>
-      )}
+      {/* Display reviews for the selected model */}
+      {reviews.length > 0 && <ReviewList reviews={reviews}/>}
     </div>
   );
 };
