@@ -1,31 +1,43 @@
 [
     {
       "id": 1,
+      "img": "image goes here",
       "title": "Make and Common Maintenance Issues",
       "content": "Placeholder content for researching new car models and features."
     },
     {
       "id": 2,
+      "img": "image goes here",
+      "title": "Engine Transmissions",
+      "content": "Placeholder content for researching new car models and features."
+    },
+    {
+      "id": 3,
+      "img": "image goes here",
       "title": "Servicing the Vehicle",
       "content": "Placeholder content for visiting dealerships and test driving new cars."
     },
     {
-      "id": 3,
+      "id": 4,
+      "img": "image goes here",
       "title": "Vehicle Use and Care",
       "content": "Placeholder content for understanding MSRP, invoice pricing, and dealer incentives."
     },
     {
-      "id": 4,
+      "id": 5,
+      "img": "image goes here",
       "title": "Preventative Maintenance",
       "content": "Placeholder content for negotiating with dealers for the best price and financing options."
     },
     {
-      "id": 5,
+      "id": 6,
+      "img": "image goes here",
       "title": "Long Trip Maintenance",
       "content": "Placeholder content for exploring additional features and packages available for new cars."
     },
     {
-      "id": 6,
+      "id": 7,
+      "img": "image goes here",
       "title": "Specialized Vehicle Maintenance Services",
       "content": "Placeholder content for locally new vs. importing new."
     }

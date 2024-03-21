@@ -1,31 +1,37 @@
 [
     {
       "id": 1,
+      "img": "image goes here",
       "title": "Selling Personal Car",
       "content": "Placeholder content for researching new car models and features."
     },
     {
       "id": 2,
+      "img": "image goes here",
       "title": "Preparing Your Car for Sale",
       "content": "Placeholder content for visiting dealerships and test driving new cars."
     },
     {
       "id": 3,
+      "img": "image goes here",
       "title": "Legal and Documentation Requirements",
       "content": "Placeholder content for understanding MSRP, invoice pricing, and dealer incentives."
     },
     {
       "id": 4,
+      "img": "image goes here",
       "title": "Safety and Security Measures",
       "content": "Placeholder content for negotiating with dealers for the best price and financing options."
     },
     {
       "id": 5,
+      "img": "image goes here",
       "title": "Maximizing the Value of Your Vehicle",
       "content": "Placeholder content for exploring additional features and packages available for new cars."
     },
     {
       "id": 6,
+      "img": "image goes here",
       "title": "Sales Process",
       "content": "Placeholder content for locally new vs. importing new."
     }

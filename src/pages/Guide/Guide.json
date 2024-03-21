@@ -6,11 +6,13 @@
     },
     {
       "id": 2,
+      "img": "image goes here",
       "title": "Driving Techniques and Safety Tips",
       "content": "Placeholder content for visiting dealerships and test driving new cars."
     },
     {
       "id": 3,
+      "img": "image goes here",
       "title": "Community and Engagement",
       "content": "Placeholder content for understanding MSRP, invoice pricing, and dealer incentives."
     },
@@ -21,7 +23,20 @@
     },
     {
       "id": 5,
+      "img": "image goes here",
       "title": "Vehicle Upgrades",
+      "content": "Placeholder content for exploring additional features and packages available for new cars."
+    },
+    {
+      "id": 6,
+      "img": "image goes here",
+      "title": "LPG Conversion",
+      "content": "Placeholder content for exploring additional features and packages available for new cars."
+    },
+    {
+      "id": 7,
+      "img": "image goes here",
+      "title": "Electric Mobility",
       "content": "Placeholder content for exploring additional features and packages available for new cars."
     }
 ]
