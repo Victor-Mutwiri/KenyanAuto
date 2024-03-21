@@ -1,45 +1,72 @@
 [
-    {
-      "id": 1,
-      "img": "image goes here",
-      "title": "Researching New Car Models and Features",
-      "content": "Placeholder content for researching new car models and features."
-    },
-    {
-      "id": 2,
-      "img": "image goes here",
-      "title": "Visiting Dealerships and Test Driving New Cars",
-      "content": "This belongs to visiting delearships."
-    },
-    {
-      "id": 3,
-      "img": "image goes here",
-      "title": "Understanding MSRP, Invoice Pricing, and Dealer Incentives",
-      "content": "Placeholder content for understanding MSRP, invoice pricing, and dealer incentives."
-    },
-    {
-      "id": 4,
-      "img": "image goes here",
-      "title": "Negotiating with Dealers for the Best Price and Financing Options",
-      "content": "Placeholder content for negotiating with dealers for the best price and financing options."
-    },
-    {
-      "id": 5,
-      "img": "image goes here",
-      "title": "Exploring Additional Features and Packages Available for New Cars",
-      "content": "Placeholder content for exploring additional features and packages available for new cars."
-    },
-    {
-      "id": 6,
-      "img": "image goes here",
-      "title": "Locally New vs. Importing New",
-      "content": "Placeholder content for locally new vs. importing new."
-    },
-    {
-      "id": 7,
-      "img": "image goes here",
-      "title": "Delivery and Post-Purchase Support from Dealerships",
-      "content": "Placeholder content for delivery and post-purchase support from dealerships."
+  {
+    "id": 1,
+    "img": "image goes here",
+    "title": "Locally New (Mtumba)",
+    "content": {
+      "researching":"",
+      "dealerships":"",
+      "inspection":"",
+      "documents":"",
+      "payment":""
     }
+  },
+  {
+    "id": 2,
+    "img": "image goes here",
+    "title": "Import New(Mtumba)",
+    "content": {
+      "overview":"",
+      "process":"",
+      "agents":"",
+      "regulations":"",
+      "clearing":"",
+      "registration":""
+    }
+  },
+  {
+    "id": 3,
+    "img": "image goes here",
+    "title": "Locally Used",
+    "content": {
+      "research":"",
+      "inspecting":"",
+      "redflags":"",
+      "safety":"",
+      "financing":"",
+      "transferprocess":""
+    }
+  },
+  {
+    "id": 4,
+    "img": "image goes here",
+    "title": "Financing",
+    "content": {
+      "overview":"",
+      "pros":"",
+      "cons":"",
+      "approval":""
+    }
+  },
+  {
+    "id": 5,
+    "img": "image goes here",
+    "title": "After Purchase",
+    "content": {
+      "insurance":"",
+      "claims":""
+    }
+  },
+  {
+    "id": 6,
+    "img": "image goes here",
+    "title": "Reputable Dealers",
+    "content": {
+      "dealerships":"",
+      "testimonials":"",
+      "recommendations":"",
+      "redflags":""
+    }
+  }
 ]
   
