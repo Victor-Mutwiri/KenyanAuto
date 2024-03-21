@@ -10,6 +10,9 @@ import { Safety } from './pages/Safety/Safety';
 import { Selling } from './pages/Selling/Selling';
 import ModelReview from './components/ReviewDetails';
 import BuyingContent from './pages/Buying/BuyingContent';
+import GuideContent from './pages/Guide/GuideContent';
+import SellingContent from './pages/Selling/SellingContent';
+import MaintenanceContent from './pages/Maintenance/MaintenanceContent';
 
 function App() {
 
@@ -26,6 +29,9 @@ function App() {
         <Route path="/Selling" element={<Selling/>} />
         <Route path="/review-details/:id" element={<ModelReview/>} />
         <Route path="/buying-guide/:id" element={<BuyingContent/>}/>
+        <Route path="/guides/:id" element={<GuideContent/>}/>
+        <Route path="/selling-guide/:id" element={<SellingContent/>}/>
+        <Route path="/maintenance-guide/:id" element={<MaintenanceContent/>}/>
       </Routes>
     </BrowserRouter>
   )
