@@ -1,171 +1,214 @@
 [
   {
     "id": 1,
+    "route":"make-issues",
     "img": "image goes here",
-    "title": "Make and Common Maintenance Issues",
-    "content": {
-      "Toyota":{
+    "title": "Common Maintenance Issues by Make",
+    "content": [
+      {
+        "id": 1,
+        "make":"Toyota",
         "image":"",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""
       },
-      "Nissan":{
+      {
+        "id": 2,
+        "make":"Nissan",
         "image":"",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""
       },
-      "Mercedes": {
+      {
+        "id": 3,
+        "make":"Mercedes",
         "image":"",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""
       },
-      "BMW": {
+      {
+        "id": 4,
+        "make":"BMW",
         "image":"",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""
       },
-      "Audi": {
+      {
+        "id": 5,
+        "make":"Audi",
         "image":"",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""
       },
-      "Landrover": {
+      {
+        "id": 6,
+        "make":"Landrover",
         "image":"",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""
       },
-      "Mazda": {
+      {
+        "id": 7,
+        "make":"Mazda",
         "image":"",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""
       },
-      "Volswagen": {
+      {
+        "id": 8,
+        "make":"Volswagen",
         "image":"",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""
       },
-      "Mitsubishi": {
+      {
+        "id": 9,
+        "make":"Mitsubishi",
         "image":"",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""
       },
-      "Suzuki": {
+      {
+        "id": 10,
+        "make":"Suzuki",
         "image":"",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""
       },
-      "Peugeot": {
+      {
+        "id": 11,
+        "make":"Peugeot",
         "image":"",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""
       },
-      "Lexus": {
+      {
+        "id": 12,
+        "make":"Lexus",
         "image":"",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""
       },
-      "Hyundai": {
+      {
+        "id": 13,
+        "make":"Hyundai",
         "image":"",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""
       },
-      "Volvo": {
+      {
+        "id": 14,
+        "make":"Volvo",
         "image":"",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""
       },
-      "Subaru": {
+      {
+        "id": 15,
+        "make":"Subaru",
         "image":"",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""
       },
-      "Honda": {
+      {
+        "id": 16,
+        "make":"Honda",
         "image":"",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""
       },
-      "Isuzu": {
+      {
+        "id": 17,
+        "make":"Isuzu",
         "image":"",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""
       },
-      "Renault": {
+      {
+        "id": 18,
+        "make":"Renault",
         "image":"",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""
       },
-      "Kia": {
+      {
+        "id": 19,
+        "make":"Kia",
         "image":"",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""
       },
-      "Jaguar": {
+      {
+        "id": 20,
+        "make":"Jaguar",
         "image":"",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""
       },
-      "Citroen": {
+      {
+        "id": 21,
+        "make":"Citroen",
         "image":"",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""
-      }
-    }
+      }]
   },
   {
     "id": 2,
+    "route":"transmissions",
     "img": "image goes here",
     "title": "Engine Transmissions",
     "content": {
       "manual":"",
-      "automatic":{
-        "torqueConverter":"",
-        "CVT":"",
-        "semiAutomatic":"",
-        "DualClutch":""
-      },
+      "torqueConverter":"",
+      "CVT":"",
+      "semiAutomatic":"",
+      "DualClutch":"",
       "Tiptonic":"",
       "FAQs":""
     }
   },
   {
     "id": 3,
+    "route":"servicing",
     "img": "image goes here",
     "title": "Servicing the Vehicle",
     "content": {
-      "reputableCenters":"",
-      "servicingTypes":"",
+      "reputableCenters":"engine issues",
+      "servicingTypes":"service",
       "serviceRecords":""
     }
   },
   {
     "id": 4,
+    "route":"vehicle-care",
     "img": "image goes here",
     "title": "Vehicle Use and Care",
     "content": {
-      "drivingHabits":"",
+      "drivingHabits":"noice",
       "engineXdrivetrain":"",
-      "monitoring":"",
+      "monitoring":"everywhere",
       "tire":"",
       "vehicleStorage":"",
       "antitheftMeasures":""
@@ -173,6 +216,7 @@
   },
   {
     "id": 5,
+    "route":"preventative-maintenance",
     "img": "image goes here",
     "title": "Preventative Maintenance",
     "content": {
@@ -185,6 +229,7 @@
   },
   {
     "id": 6,
+    "route":"trip-maintenance",
     "img": "image goes here",
     "title": "Long Trip Maintenance",
     "content": {
@@ -198,6 +243,7 @@
   },
   {
     "id": 7,
+    "route":"specialized-maintenance",
     "img": "image goes here",
     "title": "Specialized Vehicle Maintenance Services",
     "content": {

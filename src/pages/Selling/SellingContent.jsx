@@ -2,8 +2,8 @@ import { useParams } from 'react-router-dom';
 import sellingGuide from './Selling.json';
 
 const SellingContent = () => {
-    const { id } = useParams(); // Get the ID parameter from the URL
-    const article = sellingGuide.find((article) => article.id === parseInt(id));
+    const { route } = useParams(); // Get the ID parameter from the URL
+    const article = sellingGuide.find((article) => article.route === route);
   return (
     <div>
       <h2>{article.title}</h2>

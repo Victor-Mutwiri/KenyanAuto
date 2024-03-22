@@ -1,36 +1,40 @@
 [
     {
       "id": 1,
+      "route":"gov-regulations",
       "title": "Government Policies/Road Regulations",
       "content": {
-        "trafficLaws":"",
-        "regulations":"",
-        "inspection":"",
-        "registration":"",
-        "licensing":""
+        "trafficLaws":"Hello",
+        "regulations":"yes",
+        "inspection":"Hello",
+        "registration":"yes",
+        "licensing":"Hello"
       }
     },
     {
       "id": 2,
+      "route":"driving-techniques",
       "img": "image goes here",
       "title": "Driving Techniques and Safety Tips",
       "content": {
-        "drivingTechniques":"",
-        "drivingRisks":"",
-        "adverseConditions":""
+        "drivingTechniques":"True",
+        "drivingRisks":"False",
+        "adverseConditions":"True"
       }
     },
     {
       "id": 3,
+      "route":"community-engagements",
       "img": "image goes here",
       "title": "Community and Engagement",
       "content": {
-        "carCommunities":"",
-        "carShows":""
+        "carCommunities":"We",
+        "carShows":"You"
       }
     },
     {
       "id": 3,
+      "route":"jumping-battery",
       "img": "image goes here",
       "title": "Jumping a Dead Car Battery",
       "content": {
@@ -41,6 +45,7 @@
     },
     {
       "id": 4,
+      "route":"vehicle-technologies",
       "title": "Vehicle Technology and Innovations",
       "content": {
         "latestAdvancements":"",
@@ -49,6 +54,7 @@
     },
     {
       "id": 5,
+      "route":"upgrades",
       "img": "image goes here",
       "title": "Vehicle Upgrades",
       "content": {
@@ -59,6 +65,7 @@
     },
     {
       "id": 6,
+      "route":"lpg-conversion",
       "img": "image goes here",
       "title": "LPG Conversion",
       "content": {
@@ -73,6 +80,7 @@
     },
     {
       "id": 7,
+      "route":"electric-mobility",
       "img": "image goes here",
       "title": "Electric Mobility",
       "content": {
