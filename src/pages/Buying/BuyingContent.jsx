@@ -110,6 +110,66 @@ const BuyingContent = () => {
             <p>{article.content.transferprocess}</p>
         </div>
       )}
+      {article.content.Overview && (
+        <div>
+            <h3>Overview</h3>
+            <p>{article.content.Overview}</p>
+        </div>
+      )}
+      {article.content.pros && (
+        <div>
+            <h3>pros</h3>
+            <p>{article.content.pros}</p>
+        </div>
+      )}
+      {article.content.cons && (
+        <div>
+            <h3>cons</h3>
+            <p>{article.content.cons}</p>
+        </div>
+      )}
+      {article.content.approval && (
+        <div>
+            <h3>approval</h3>
+            <p>{article.content.approval}</p>
+        </div>
+      )}
+      {article.content.insurance && (
+        <div>
+            <h3>insurance</h3>
+            <p>{article.content.insurance}</p>
+        </div>
+      )}
+      {article.content.claims && (
+        <div>
+            <h3>claims</h3>
+            <p>{article.content.claims}</p>
+        </div>
+      )}
+      {article.content.Dealerships && (
+        <div>
+            <h3>Dealerships</h3>
+            <p>{article.content.Dealerships}</p>
+        </div>
+      )}
+      {article.content.testimonials && (
+        <div>
+            <h3>testimonials</h3>
+            <p>{article.content.testimonials}</p>
+        </div>
+      )}
+      {article.content.recommendations && (
+        <div>
+            <h3>recommendations</h3>
+            <p>{article.content.recommendations}</p>
+        </div>
+      )}
+      {article.content.Redflags && (
+        <div>
+            <h3>Redflags</h3>
+            <p>{article.content.Redflags}</p>
+        </div>
+      )}
     </div>
   )
 }

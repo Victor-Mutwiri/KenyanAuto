@@ -42,7 +42,7 @@
     "img": "image goes here",
     "title": "Financing",
     "content": {
-      "overview":"",
+      "Overview":"",
       "pros":"",
       "cons":"",
       "approval":""
@@ -62,10 +62,10 @@
     "img": "image goes here",
     "title": "Reputable Dealers",
     "content": {
-      "dealerships":"",
+      "Dealerships":"",
       "testimonials":"",
       "recommendations":"",
-      "redflags":""
+      "Redflags":""
     }
   }
 ]
