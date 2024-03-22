@@ -1,9 +1,9 @@
-.buyingCard {
+.maintenanceContentCard{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 0 3rem; /* Adjust padding as needed */
+    padding: 0 5rem; /* Adjust padding as needed */
 }
 
 .card {
@@ -13,4 +13,9 @@
     margin-bottom: 20px;
     flex-grow: 1;
     /* Add other card styles here */
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
 }

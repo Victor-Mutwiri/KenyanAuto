@@ -1,0 +1,21 @@
+.sellingCard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 3rem; /* Adjust padding as needed */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: calc(33.33% - 20px); /* Adjust width and padding as needed */
+    margin-bottom: 20px;
+    flex-grow: 1;
+    /* Add other card styles here */
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}

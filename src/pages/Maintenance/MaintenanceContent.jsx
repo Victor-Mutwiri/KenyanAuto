@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import maintenanceGuide from './Maintenance.json';
 import { Link } from 'react-router-dom';
+import './MaintenanceContent.css';
 
 const MaintenanceContent = () => {
     const { route } = useParams(); // Get the ID parameter from the URL
@@ -15,12 +16,12 @@ const MaintenanceContent = () => {
       <h2>{article.title}</h2>
       {/* <img src={article.img} alt={article.title} /> */}
       {article.content && Array.isArray(article.content) && article.content.length > 0 && (
-           <div>
+           <div className='maintenanceContentCard'>
               {article.content.map((contentItem) => (
                   <div key={contentItem.id}>
                       {contentItem.make && (
                           <Link to={`/maintenance-guide/${contentItem.make}`}>
-                              <div className="card" style={{ width: '18rem', margin: '10px' }}>
+                              <div className="card" style={{ width: '20rem', margin: '10px' }}>
                                   <img src={contentItem.image} className="card-img-top" alt={contentItem.make} />
                                   <div className="card-body">
                                       <h4 className="card-title">{contentItem.make}</h4>
