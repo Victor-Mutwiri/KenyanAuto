@@ -14,6 +14,7 @@ import GuideContent from './pages/Guide/GuideContent';
 import SellingContent from './pages/Selling/SellingContent';
 import MaintenanceContent from './pages/Maintenance/MaintenanceContent';
 import MakeMaintenance from './pages/Maintenance/MakeMaintenance';
+import NotFound from './pages/404Page/NotFound';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
     <Navbar/>
       <Routes>
         <Route path="/" element={<Review/>} />
+        <Route path="*" element={<NotFound/>} />
         <Route path="/Buying" element={<Buying/>} />
         <Route path="/Contact" element={<Contact/>} />
         <Route path="/Guide" element={<Guide/>} />
