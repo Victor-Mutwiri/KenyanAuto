@@ -12,16 +12,20 @@ export const Navbar = () => {
             <div className="navbar-menu">
                 <ul className="navbar-menu-list">
                     <li className="navbar-menu-item">
-                        <a href="/Buying" className="navbar-menu-link">Buying</a>
+                        <Link to={'/Buying'} className="navbar-menu-link">Buying</Link>
+                        {/* <a href="/Buying" className="navbar-menu-link">Buying</a> */}
                     </li>
                     <li className="navbar-menu-item">
-                        <a href="/Selling" className="navbar-menu-link">Selling</a>
+                        <Link to={'/Selling'} className="navbar-menu-link">Selling</Link>
+                        {/* <a href="/Selling" className="navbar-menu-link">Selling</a> */}
                     </li>
                     <li className="navbar-menu-item">
-                        <a href="/Maintenance" className="navbar-menu-link">Maintenance</a>
+                        <Link to={'/Maintenance'} className="navbar-menu-link">Maintenance</Link>
+                        {/* <a href="/Maintenance" className="navbar-menu-link">Maintenance</a> */}
                     </li>
                     <li className="navbar-menu-item">
-                        <a href="/Guide" className="navbar-menu-link">Guides</a>
+                        <Link to={'/Guide'} className="navbar-menu-link">Guides</Link>
+                        {/* <a href="/Guide" className="navbar-menu-link">Guides</a> */}
                     </li>
                 </ul>
             </div>
