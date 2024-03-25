@@ -2,20 +2,63 @@
   {
     "id": 1,
     "route":"local-new",
-    "img": "image goes here",
+    "img": "/Car-dealership.jpg",
     "title": "Locally New (Mtumba)",
     "content": {
-      "researching":"locally new",
-      "dealerships":"kai and karo",
-      "inspection":"kra",
-      "documents":"2020",
-      "payment":"hello maina"
+      "researching":[
+        "Define Your Needs - Identify specific requirements like budget, desired features, fuel efficiency, space needs, and intended use.",
+        "Research Available Models - Explore car models from various sources like Kenyan Auto bazaar, and owner forums such as Facebook car groups.",
+        "Compare Prices - Compare prices from different dealerships and don't just look online as some of the listed online prices may not be a true representation on the vehicle prices in the market (kwa ground vitu ni different).",
+        "Visit Dealerships - Interact with sales guys, test drive the car if possible, inquire about financing options, and create a friendly atmosphere where they can get you better deals.",
+        "Check Dealer Reputation - Research dealerships' reputations and customer reviews to avoid what we saw a while back on KOX(Kenyans on X, who had been corned by a ruthless dealer",
+        "Inspect Vehicle History - Obtain a history report for any accidents, repairs, or other issues. You can check this from the inspection sheet often provided during importation of the vehicle",
+        "Seek Recommendations - Ask friends, family, or colleagues who have recently purchased a car for valuable insights",
+        "Trust Your Instincts -  When something feels off about a particular deal, remember better safe than sorry."
+      ],
+      "dealerships":[
+        "KAI & KARO LIMITED",
+        "Maridady Motors Ltd",
+        "MOTORHUB",
+        "Gigi Motors LTD",
+        "Ace Prestige Autos",
+        "Clyde Motors Co. Ltd.",
+        "CarMax East Africa Ltd",
+        "Motorshop Dealers LTD",
+        "ESR Executive | Executive Car Dealers",
+        "Riri Cars"
+      ],
+      "inspection":[
+        "Inspect exterior for signs of damage, scratches, or dents",
+        "Check paint job and paint color mismatches.",
+        "Test all buttons, switches, and knobs",
+        "Look under the hood for leaks, corrosion, or damage in the engine bay.",
+        "Check oil and fluid levels",
+        "Inspect tires for wear and tear and tread depth.",
+        "Take a test drive to gauge road handling",
+        "Test brakes by applying firm pressure to the pedal.",
+        "Test all electronic features and systems.",
+        "Ask the dealer for additional information or documentation about the vehicle's history"
+      ],
+      "documents":[
+        "When buying a car in cash, it is crucial to follow certain steps. First, buyers should transact through a bank to maintain a transaction history and establish a relationship with the seller. Dealers may require cash, but the buyer should prioritize making a bank transfer and obtaining a receipt for future reference. ",
+        "Second, an active TIMS account created by NTSA is essential for accepting ownership of the car upon transfer. However, if the car is registered and has a logbook, the transfer may not be immediate.",
+        "Transfer the logbook at the point of sale to avoid issues with dealers. Don't wait to transfer the ownership the following day after making the payment, otherwise 'Utakaribishwa Nairobi'.",
+        "A sales agreement from the dealer or seller, signed by a witness, is essential.",
+        "The export certificate and IDF import declaration form from the KRA are essential documents.",
+        "Finally, comprehensive insurance is a legal requirement and can be obtained through a deal with the insurer. It is better to have comprehensive insurance at the car's value than paying in full.",
+        "Finally, undergo fundamental processes, such as receiving an inspection sticker, to ensure proper vehicle inspection."
+      ],
+      "payment":[
+        "Cash - Quick, painless payment method, but can leave you exposed. The car is yours from the start.",
+        "Hire Purchase - Rents the car until full payment. Ideal for those not ready for a lump sum.",
+        "Financing - Spreads the cost over time, similar to paying off a bill in installments."
+      ]
     }
   },
   {
     "id": 2,
     "route":"import-new",
-    "img": "image goes here",
+    "img": "/Car-exports.jpg",
     "title": "Import New(Mtumba)",
     "content": {
       "overview":"",
@@ -29,13 +72,25 @@
   {
     "id": 3,
     "route":"used",
-    "img": "image goes here",
+    "img": "/Car-bazaar.jpg",
     "title": "Locally Used",
     "content": {
-      "research":"",
-      "inspecting":"",
-      "redflags":"",
-      "safety":"",
+      "redflags":[
+        "Document Verification - Ensures the car is from its original owner and not a stolen one. A car's service history is crucial for maintaining its top condition.",
+        "Tampering - The Vehicle Identification Number (VIN) can reveal a lot about the car. If it appears tampered, double-check it by matching it with other locations on the car.",
+        "Salvage Title - A salvage title is issued after a major accident where the repairing costs were too high. It's not always worthless after the accident, but there are risks involved",
+        "Numbers Matter - Cars with more than 3 or 4 owners should be considered due to potential risks in maintaining the car",
+        "Wear and Tear - The car's condition should align with its mileage, and if low mileage is present but the driver's seat, wheel, and pedals show significant wear and tear, it's likely not well cared for.",
+        "Tire Wear - Close inspection of tires can save money in the long run. Uneven tire wear indicates mechanical issues or poor maintenance",
+        "Mismatched Tires & Hubcaps - Mismatched tires and hubcaps might not be a deal breaker but they can affect handling and braking performance of the vehicle. So don’t forget to check if all the tires and hubcaps are of the same size and type. If you notice that they’re different, do ask extra questions",
+        "Test Driving - Listen closely to the car's sounds during the test drive. Knocking sounds during acceleration suggest worn-out engine, while rattling sounds indicate loose suspension or body components",
+        "Misalignment - Misaligned panels indicate past damage or bodywork. Ensure all car parts are evenly aligned",
+        "Rust and Leakage - Observe the engine for rust or leakage, as they indicate problems under the hood and can require costly repairs",
+        "Paint Job - Check for body repairs by looking for a paint job. Original paint is preferable as it indicates hidden issues",
+        "Funky Smells - Avoid cars with moldy or musty smells, especially those damaged by water or floods. Insurance companies consider these cars a total loss",
+        "Sudden Price Changes - If the seller increases the price, walk away as it may be dishonest and emotionally exhausting to negotiate from a high price point.",
+        "Too Good to Be True - Don't rush into an offer that seems too good to be true. Research the market price beforehand to avoid financial burden."
+      ],
       "financing":"",
       "transferprocess":""
     }
@@ -43,7 +98,7 @@
   {
     "id": 4,
     "route":"financing",
-    "img": "image goes here",
+    "img": "/Car-financing.jpg",
     "title": "Financing",
     "content": {
       "Overview":"",
@@ -55,7 +110,7 @@
   {
     "id": 5,
     "route":"post-purchase",
-    "img": "image goes here",
+    "img": "After-purchase.png",
     "title": "After Purchase",
     "content": {
       "insurance":"",
@@ -65,13 +120,62 @@
   {
     "id": 6,
     "route":"dealers",
-    "img": "image goes here",
-    "title": "Reputable Dealers",
+    "img": "/Redflags.jpg",
+    "title": "Key Pointers",
     "content": {
-      "Dealerships":"",
-      "testimonials":"",
-      "recommendations":"",
-      "Redflags":""
+      "pointers":[
+        "In Nairobi, most cars are registered in car showrooms or yards, owned by suppliers rather than dealers. Banks now require account details of the real owner due to recent financing controversy. When buying a car from a dealer, ask for a copy of the logbook and an authority to sell document. Most cars in Nairobi showrooms belong to third parties, and the business is more of a brokerage. To avoid problems during the transfer process, ask for an authority to sell document and verify the car's registration in the showroom's name.",
+        "When buying a foreign used car, ask for the authority to sell the car, even if it's not registered in the showroom's name. Quality Service Inspection (QSIJ) can confirm mileage, but not all cars are inspected. The Kenya Bureau of Standards issued a certificate off-road worthiness, ensuring the car's correct mileage and allowing American inspection on Kenyan roads.",
+        "Dealers often struggle to obtain the auction sheet, a crucial document for cars imported from Japan, which indicates the car's grade and repair history. However, dealers may not keep the sheet due to their business and may import the lowest grade car, which is cheaper in Japan. When buying a car, ask for the auction sheet and two documents: a certificate of roadworthiness from KEBs and an auction sheet. Dealers may try to persuade customers to not sell or reserve the car for someone else, but this is a red flag. Dealers may also offer a receipt as evidence of the transaction, but not many people read the fine print. When buying a car without registration in Tafa Valley, obtain an authority to sell document, a certificate of roadworthiness from cabs, and an auction sheet to verify the vehicle's origin and registration."
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "route":"pre-purchase",
+    "img": "/Redflags.jpg",
+    "title": "General Buying Guide",
+    "content": {
+      "Advice":[
+        "Seek a Trusted Mechanic’s Advice.",
+        " Take a trusted mechanic with experience in that particular vehicle model to view, check and road-test the vehicle to confirm that it is mechanically sound, to help pinpoint any issues such as mechanical faults and to help you in the negotiation process."
+      ],
+      "Searches":[
+        "NTSA Search (TIMS Portal) - The National Vehicle Safety Authority (NTSA) in Kenya recommends conducting a search on a vehicle's registration number to determine its owner, VIN number, engine number, vehicle type, and any co-owners, such as banks or micro-finance institutions. If a vehicle has a loan or debt, the owner must discharge the charge on the logbook and pay discharge fees. If the vehicle is a deceased person, the seller must present a copy of confirmed letters of administration or grant of probate to the NTSA office. NTSA will then advise on the next steps and facilitate the transfer of the vehicle to the administrator or executor of the deceased's estate.",
+        "Collateral Registry Search (eCitizen Portal) - The Collateral Registry (MPSR) is a crucial tool for securing loans from individuals, banks, financial institutions, and motor dealers. To search, use the eCitizen Portal's 'Search Request' and select 'Search Criteria' and enter the grantor's identification or vehicle chassis number.",
+        "KEBS Search - Conduct a KEBS search using the vehicle's Chassis Number (VIN Number) to determine if there's odometer tampering reducing actual mileage. Send a text message to 20023 or obtain the Chassis Number from the NTSA Search document.",
+        "To ensure a smooth transaction, ask the seller if they have all necessary documents, such as QISJ, IDF Forms, F147, and payment slips, especially if they are the first owner or a dealership. If the engine has been replaced, inquire about importation documents like IDF Forms or sale receipts if the engine was imported or bought locally."
+      ],
+      "Meeting":[
+        "Obtain a Motor Vehicle Sale Agreement from a lawyer or online",
+        "Open an account with the NTSA TIMS portal and confirm the owner's account",
+        "Gather the owner's bank details",
+        "Carry the Motor Vehicle Sale Agreement, NTSA TIMS Vehicle Search, and a Bankers Cheque",
+        "Avoid cash transactions and use Bankers’ Cheques",
+        "Request the owner to bring the vehicle to the meeting place",
+        "Avoid paying and collecting the vehicle later, as it may get involved in an accident, be stolen, or damaged",
+        "Ask the owner to bring their original National ID, Passport, PIN Certificate, and original logbook",
+        "Carry the QISJ, IDF, F147 and Payment Slip, Export Certificate, Duty Entry Form and Payment Slip, CFS invoice, Receipt and Release order, and Bill of Lading"
+      ],
+      "Transaction":[
+        "Hold the meeting in a public place with public and security personnel present",
+        "Ensure the vehicle is in the same condition as when checked and road-tested",
+        "Pay the motor vehicle transfer charges in your MPESA account, check applicable charges",
+        "Access the NTSA TIMS portal for transferring the vehicle",
+        "Double-check the vehicle's engine number, logbook, owner's names, ID Number, and PIN Number",
+        "If there is another listed owner, abort the transaction until the other owner consents",
+        "Fill in the relevant details on the TIMS accounts where the seller transfers and the buyer accepts",
+        "Sign the Motor Vehicle Sale Agreement, hand over the original logbook, keys, and Bankers Cheque",
+        "Take your vehicle and legal documentation with you"
+      ],
+      "Post-purchase":[
+        "Arrange for seller to accompany you to Nairobi Traffic Headquarters, or nearest traffic base or police station for the police to sign the replaced engine IDF document or purchase receipt for engine replacement",
+        "Book vehicle inspection online via NTSA TIMS portal for the vehicle’s inspection by NTSA Motor Vehicle Inspection Unit at Industrial Area, Nairobi or the nearest regional Inspection Unit",
+        "Follow up with NTSA two weeks after transfer to collect new logbook",
+        "Carry original ID/Passport and logbook in previous owner/seller's name",
+        "Avoid paying 'Commitment Fee' or 'Advance Payment' for viewing or fuel",
+        "Be smart and take your time and due diligence. Be cautious and a bit paranoid!"
+      ]
     }
   }
 ]
