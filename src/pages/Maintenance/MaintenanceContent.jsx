@@ -18,10 +18,10 @@ const MaintenanceContent = () => {
       {article.content && Array.isArray(article.content) && article.content.length > 0 && (
            <div className='maintenanceContentCard'>
               {article.content.map((contentItem) => (
-                  <div key={contentItem.id}>
+                  <div key={contentItem.id} className='maintenanceMakeCard'>
                       {contentItem.make && (
                           <Link to={`/maintenance-guide/${contentItem.make}`}>
-                              <div className="card" style={{ width: '20rem', margin: '10px' }}>
+                              <div className="card make" style={{ width: '15rem' }}>
                                   <img src={contentItem.image} className="card-img-top" alt={contentItem.make} />
                                   <div className="card-body">
                                       <h4 className="card-title">{contentItem.make}</h4>

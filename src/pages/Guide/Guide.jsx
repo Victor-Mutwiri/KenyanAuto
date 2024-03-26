@@ -4,17 +4,19 @@ import './Guide.css'
 
 export const Guide = () => {
   return (
-    <div className='guideCard'>
-      {guide.map((article) => (
-        <Link to={`/guides/${article.route}`} key={article.id} className="card-link">
-          <div className="card" style={{ width: '25rem' }}>
-            <img src={article.img} className="card-img-top" alt={article.title}/>
-            <div className="card-body">
-              <h4 className="card-title">{article.title}</h4>
+    <div className='content-container'>
+      <div className='guideCard'>
+        {guide.map((article) => (
+          <Link to={`/guides/${article.route}`} key={article.id} className="card-link">
+            <div className="card" style={{ width: '25rem' }}>
+              <img src={article.img} className="card-img-top" alt={article.title}/>
+              <div className="card-body">
+                <h4 className="card-title">{article.title}</h4>
+              </div>
             </div>
-          </div>
-        </Link>
-      ))}
+          </Link>
+        ))}
+      </div>
     </div>
   )
 }

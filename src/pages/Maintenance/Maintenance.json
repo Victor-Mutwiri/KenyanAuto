@@ -8,7 +8,7 @@
       {
         "id": 1,
         "make":"Toyota",
-        "image":"",
+        "image":"/Toyota.jpg",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""
@@ -16,7 +16,7 @@
       {
         "id": 2,
         "make":"Nissan",
-        "image":"",
+        "image":"/Nissan.jpg",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""
@@ -24,7 +24,7 @@
       {
         "id": 3,
         "make":"Mercedes",
-        "image":"",
+        "image":"/Mercedes.jpg",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""
@@ -32,7 +32,7 @@
       {
         "id": 4,
         "make":"BMW",
-        "image":"",
+        "image":"/BMW.jpg",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""
@@ -40,7 +40,7 @@
       {
         "id": 5,
         "make":"Audi",
-        "image":"",
+        "image":"/Audi.jpg",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""
@@ -48,7 +48,7 @@
       {
         "id": 6,
         "make":"Landrover",
-        "image":"",
+        "image":"/LandRover.jpg",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""
@@ -56,7 +56,7 @@
       {
         "id": 7,
         "make":"Mazda",
-        "image":"",
+        "image":"/Mazda.jpg",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""
@@ -64,7 +64,7 @@
       {
         "id": 8,
         "make":"Volswagen",
-        "image":"",
+        "image":"/Volkswagen.jpg",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""
@@ -72,7 +72,7 @@
       {
         "id": 9,
         "make":"Mitsubishi",
-        "image":"",
+        "image":"/Mitsubishi.jpg",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""
@@ -80,7 +80,7 @@
       {
         "id": 10,
         "make":"Suzuki",
-        "image":"",
+        "image":"/Suzuki.jpg",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""
@@ -88,7 +88,7 @@
       {
         "id": 11,
         "make":"Peugeot",
-        "image":"",
+        "image":"/Peugeot.jpg",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""
@@ -96,7 +96,7 @@
       {
         "id": 12,
         "make":"Lexus",
-        "image":"",
+        "image":"/Lexus.jpg",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""
@@ -104,7 +104,7 @@
       {
         "id": 13,
         "make":"Hyundai",
-        "image":"",
+        "image":"/Hyundai.jpg",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""
@@ -112,7 +112,7 @@
       {
         "id": 14,
         "make":"Volvo",
-        "image":"",
+        "image":"/Volvo.jpg",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""
@@ -120,7 +120,7 @@
       {
         "id": 15,
         "make":"Subaru",
-        "image":"",
+        "image":"/Subaru.jpg",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""
@@ -128,7 +128,7 @@
       {
         "id": 16,
         "make":"Honda",
-        "image":"",
+        "image":"/Honda.jpg",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""
@@ -136,7 +136,7 @@
       {
         "id": 17,
         "make":"Isuzu",
-        "image":"",
+        "image":"/Isuzu.jpg",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""
@@ -144,7 +144,7 @@
       {
         "id": 18,
         "make":"Renault",
-        "image":"",
+        "image":"/Renault.jpg",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""
@@ -152,7 +152,7 @@
       {
         "id": 19,
         "make":"Kia",
-        "image":"",
+        "image":"/KIA.jpg",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""
@@ -160,7 +160,7 @@
       {
         "id": 20,
         "make":"Jaguar",
-        "image":"",
+        "image":"/Jaguar.jpg",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""
@@ -168,7 +168,7 @@
       {
         "id": 21,
         "make":"Citroen",
-        "image":"",
+        "image":"/Citroen.jpg",
         "reliability":"",
         "commonIssues":"",
         "maintaining":""

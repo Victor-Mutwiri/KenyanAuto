@@ -3,7 +3,14 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 0 5rem; /* Adjust padding as needed */
+    padding: 0 2rem;
+}
+
+.maintenanceMakeCard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0.5rem 0.5rem; /* Adjust padding as needed */
 }
 
 .card {
@@ -12,10 +19,19 @@
     width: calc(33.33% - 20px); /* Adjust width and padding as needed */
     margin-bottom: 20px;
     flex-grow: 1;
-    /* Add other card styles here */
+    height: 200px;
+    border: none;
+}
+.make .card-body{
+    display: none;
+}
+.card:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
 }
 
-.card-img-top {
+.card img {
     width: 100%;
-    height: auto;
+    height: 200px;
+    object-fit:contain;
 }

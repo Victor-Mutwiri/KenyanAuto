@@ -1,11 +1,12 @@
 import { useParams } from 'react-router-dom';
 import buyingGuide from './Buying.json';
+import './BuyingContent.css'
 
 const BuyingContent = () => {
     const { route } = useParams(); // Get the ID parameter from the URL
     const article = buyingGuide.find((article) => article.route === route);
   return (
-    <div>
+    <div className='buyingContent'>
       <h2>{article.title}</h2>
       <img src={article.img} alt={article.title} />
       {article.content.researching && (

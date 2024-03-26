@@ -1,9 +1,13 @@
+.content-container {
+    padding: 1rem;
+}
+
 .buyingCard {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 0 3rem; /* Adjust padding as needed */
+    padding: 1.5rem 3rem; /* Adjust padding as needed */
 }
 
 .card {
@@ -12,5 +16,11 @@
     width: calc(33.33% - 20px); /* Adjust width and padding as needed */
     margin-bottom: 20px;
     flex-grow: 1;
-    /* Add other card styles here */
+    height: 250px;
+}
+
+.card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
 }
