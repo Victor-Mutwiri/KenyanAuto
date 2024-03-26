@@ -3,7 +3,7 @@
     "id": 1,
     "route":"local-new",
     "img": "/Car-dealership.jpg",
-    "title": "Locally New (Mtumba)",
+    "title": "Locally New",
     "content": {
       "researching":[
         "Define Your Needs - Identify specific requirements like budget, desired features, fuel efficiency, space needs, and intended use.",
@@ -58,8 +58,8 @@
   {
     "id": 2,
     "route":"import-new",
-    "img": "/Car-exports.jpg",
-    "title": "Import New(Mtumba)",
+    "img": "/auction.jpg",
+    "title": "Import New",
     "content": {
       "overview":"",
       "process":"big bob",
@@ -120,7 +120,7 @@
   {
     "id": 6,
     "route":"dealers",
-    "img": "/Redflags.jpg",
+    "img": "/Checklist.png",
     "title": "Key Pointers",
     "content": {
       "pointers":[
@@ -133,7 +133,7 @@
   {
     "id": 7,
     "route":"pre-purchase",
-    "img": "/Redflags.jpg",
+    "img": "/Car-buying-guide.jpg",
     "title": "General Buying Guide",
     "content": {
       "Advice":[

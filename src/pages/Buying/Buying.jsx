@@ -8,11 +8,9 @@ export const Buying = () => {
       <div className='buyingCard'>
         {buyingGuide.map((article) => (
           <Link to={`/buying-guide/${article.route}`} key={article.id} className="card-link">
-            <div className="card" style={{ width: '25rem' }}>
-              <img src={article.img} className="card-img-top" alt={article.title}/>
-              <div className="card-body">
-                <h4 className="card-title">{article.title}</h4>
-              </div>
+            <div className="card buying" style={{ width: '20rem' }}>
+              <img src={article.img} alt={article.title}/>
+              <h5 className="card-title"><strong>{article.title}</strong></h5>
             </div>
           </Link>
         ))}
