@@ -7,12 +7,12 @@ const BuyingContent = () => {
     const article = buyingGuide.find((article) => article.route === route);
   return (
     <div className='buyingContent'>
-      <h2>{article.title}</h2>
+      {/* <h2>{article.title}</h2> */}
       <img src={article.img} alt={article.title} />
       {article.content.researching && (
         <div>
           <div>
-            <h3>Why Choose to Buy a New Car Locally from a Dealer in Kenya?</h3>
+            <h3>Why Buy a New Car Locally from a Dealer in Kenya?</h3>
             <p>So, you've decided it's time to upgrade your wheels, or probably get your first car huh? 
               Exciting times ahead! Now, let's talk about why picking up that shiny new ride from a local 
               dealer here in Kenya could be your best move.
@@ -39,7 +39,7 @@ const BuyingContent = () => {
               </div>
             </ul>
           </div>
-            <h3>Researching</h3>
+            <h3>How do I find the right car for me?</h3>
             <ul>
               {article.content.researching.map((step, index) => {
                 const [action, description] = step.split(' - ');
@@ -71,7 +71,7 @@ const BuyingContent = () => {
       )}
       {article.content.inspection && (
         <div>
-            <h3>Necessary Checks & Inspections</h3>
+            <h3>What are the Necessary Checks & Inspections before buying a car in Kenya?</h3>
             <p>Bringing your own mechanic or car expert to the dealership is like having a trusty sidekick on your car-buying adventure.
               The mech will be your secret weapon against any shady deals or hidden surprises lurking under the hood
               <br />
@@ -90,7 +90,7 @@ const BuyingContent = () => {
       )}
       {article.content.documents && (
         <div>
-            <h3>Documents and Overall Process</h3>
+            <h3>Which documents are necessary and what is the Overall Process?</h3>
             <ul>
               {article.content.documents.map((step, index) => (
                 <li key={index}>{step}</li>
@@ -153,10 +153,11 @@ const BuyingContent = () => {
       )}
       {article.content.redflags && (
         <div>
-            <h3>Crucial Pointers</h3>
+            <h3>What should I look for when buying a used Car?</h3>
             <p>Buying a used car was once a stressful and risky process, requiring advice from friends or family. 
-              However, with the availability of resources, consumers are now more informed about the process. Before 
-              finalizing a deal, it's crucial to do your homework and consider the following  redflags:
+              However, with the availability of resources such as us here at KenyanAuto, consumers are now more informed about the process.
+              <br/>
+              Before finalizing a deal, it's crucial to do your homework and consider the following  redflags:
             </p>
             <ol>
               {article.content.redflags.map((step, index) => {
@@ -250,8 +251,12 @@ const BuyingContent = () => {
       )}
       {article.content.Advice && (
         <div>
-            <h3>testimonials</h3>
+            <h3>Are you interested in buying a car locally?</h3>
             <p>{article.content.Advice}</p>
+            <p>Before any purchase, especially a vehicle, it is of utmost importance to carry out extreme due deligence 
+              before engaging in any transactions. Always remember to wear your <strong>Paranoid</strong> court as it might
+              save you from a costly mistake. Many have been victims of <i>"Ruthless"</i> turn of events in vehicle dealings.
+            </p>
         </div>
       )}
       {article.content.Searches && (
@@ -271,7 +276,7 @@ const BuyingContent = () => {
       )}
       {article.content.Meeting && (
         <div>
-            <h4>Motor Vehicle Sale Agreement Preparation:</h4>
+            <h4>How to go about Motor Vehicle Sale Agreement:</h4>
             <ul>
               {article.content.Meeting.map((step, index) => {
                   const [action, description] = step.split(' - ');
@@ -302,7 +307,7 @@ const BuyingContent = () => {
       {article.content['Post-purchase'] && (
         <div>
             <h4>Post-Purchase Procedures:</h4>
-            <h5><i>If the engine had been changed</i></h5>
+            <h5><i>What do I do If the engine had been changed?</i></h5>
             <ul>
               {article.content['Post-purchase'].map((step, index) => {
                   const [action, description] = step.split(' - ');

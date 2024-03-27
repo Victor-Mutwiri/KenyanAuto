@@ -2,7 +2,7 @@
   {
     "id": 1,
     "route":"self-seller",
-    "img": "image goes here",
+    "img": "/Selling.jpg",
     "title": "Selling Personal Car",
     "content": {
       "plaforms":"",
@@ -14,7 +14,7 @@
   {
     "id": 2,
     "route":"car-prep",
-    "img": "image goes here",
+    "img": "/Preparing.jpg",
     "title": "Preparing Your Car for Sale",
     "content": {
       "presentation":"",
@@ -26,7 +26,7 @@
   {
     "id": 3,
     "route":"legal-requirements",
-    "img": "image goes here",
+    "img": "/documents.jpg",
     "title": "Legal and Documentation Requirements",
     "content": {
       "legalObligations":"",
@@ -39,7 +39,7 @@
   {
     "id": 4,
     "route":"safety-measures",
-    "img": "image goes here",
+    "img": "/safety.png",
     "title": "Safety and Security Measures",
     "content": {
       "selfProtection":"",
@@ -53,8 +53,8 @@
   {
     "id": 5,
     "route":"maximizing-value",
-    "img": "image goes here",
-    "title": "Maximizing the Value of Your Vehicle",
+    "img": "/Maximizing.jpg",
+    "title": "Maximizing Car Value",
     "content": {
       "uniqueFeatures":"",
       "marketResearch":"",

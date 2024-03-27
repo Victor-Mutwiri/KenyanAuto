@@ -2,7 +2,8 @@
     {
       "id": 1,
       "route":"gov-regulations",
-      "title": "Government Policies/Road Regulations",
+      "img": "/RoadRegulations.jpg",
+      "title": "KENHA Road Regulations",
       "content": {
         "trafficLaws":"Hello",
         "regulations":"yes",
@@ -14,8 +15,8 @@
     {
       "id": 2,
       "route":"driving-techniques",
-      "img": "image goes here",
-      "title": "Driving Techniques and Safety Tips",
+      "img": "/Highway.jpg",
+      "title": "Driving Techniques",
       "content": {
         "drivingTechniques":"True",
         "drivingRisks":"False",
@@ -25,8 +26,8 @@
     {
       "id": 3,
       "route":"community-engagements",
-      "img": "image goes here",
-      "title": "Community and Engagement",
+      "img": "/Community.jpg",
+      "title": "Communities",
       "content": {
         "carCommunities":"We",
         "carShows":"You"
@@ -35,8 +36,8 @@
     {
       "id": 3,
       "route":"jumping-battery",
-      "img": "image goes here",
-      "title": "Jumping a Dead Car Battery",
+      "img": "/Battery.jpg",
+      "title": "Jumping a Car Battery",
       "content": {
         "causes":"",
         "procedure":"",
@@ -46,7 +47,8 @@
     {
       "id": 4,
       "route":"vehicle-technologies",
-      "title": "Vehicle Technology and Innovations",
+      "img": "/Technology.jpg",
+      "title": "Technology and Innovations",
       "content": {
         "latestAdvancements":"",
         "ADAS":""
@@ -55,8 +57,8 @@
     {
       "id": 5,
       "route":"upgrades",
-      "img": "image goes here",
-      "title": "Vehicle Upgrades",
+      "img": "/Upgrades.jpg",
+      "title": "Upgrades",
       "content": {
         "popularUpgrades":"",
         "reputableBrands":"",
@@ -66,7 +68,7 @@
     {
       "id": 6,
       "route":"lpg-conversion",
-      "img": "image goes here",
+      "img": "/lpg.jpg",
       "title": "LPG Conversion",
       "content": {
         "what":"",
@@ -81,7 +83,7 @@
     {
       "id": 7,
       "route":"electric-mobility",
-      "img": "image goes here",
+      "img": "/Electric.jpg",
       "title": "Electric Mobility",
       "content": {
         "advancements":"",

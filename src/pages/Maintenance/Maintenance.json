@@ -2,7 +2,7 @@
   {
     "id": 1,
     "route":"make-issues",
-    "img": "image goes here",
+    "img": "/Makes.jpg",
     "title": "Common Maintenance Issues by Make",
     "content": [
       {
@@ -177,7 +177,7 @@
   {
     "id": 2,
     "route":"transmissions",
-    "img": "image goes here",
+    "img": "/Transmissions.jpg",
     "title": "Engine Transmissions",
     "content": {
       "manual":"",
@@ -192,7 +192,7 @@
   {
     "id": 3,
     "route":"servicing",
-    "img": "image goes here",
+    "img": "/Servicing.jpg",
     "title": "Servicing the Vehicle",
     "content": {
       "reputableCenters":"engine issues",
@@ -203,7 +203,7 @@
   {
     "id": 4,
     "route":"vehicle-care",
-    "img": "image goes here",
+    "img": "/VehicleCare.jpg",
     "title": "Vehicle Use and Care",
     "content": {
       "drivingHabits":"noice",
@@ -217,7 +217,7 @@
   {
     "id": 5,
     "route":"preventative-maintenance",
-    "img": "image goes here",
+    "img": "/PreventativeMaintenance.jpg",
     "title": "Preventative Maintenance",
     "content": {
       "inspection":"",
@@ -230,7 +230,7 @@
   {
     "id": 6,
     "route":"trip-maintenance",
-    "img": "image goes here",
+    "img": "/Longtrip.jpg",
     "title": "Long Trip Maintenance",
     "content": {
       "vehicleInspection":"",
@@ -244,7 +244,7 @@
   {
     "id": 7,
     "route":"specialized-maintenance",
-    "img": "image goes here",
+    "img": "/SpecializedService.jpg",
     "title": "Specialized Vehicle Maintenance Services",
     "content": {
       "genuineParts":"",
