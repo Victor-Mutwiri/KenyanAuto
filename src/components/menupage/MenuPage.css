@@ -7,7 +7,8 @@
     background-color: #3E82B3;
     transition: right 0.3s ease-in-out;
     padding: 20px;
-    display: flex;
+    /* display: flex; */
+    display: none;
     flex-direction: column;
     align-items: center;
 }
@@ -52,4 +53,19 @@
     font-size: 1.5rem;
     color: #fff;
     transition: all .3s ease;
+}
+
+@media (max-width:450px){
+    .menu-page{
+        display: flex;
+    }
+    .menu-page .navigation{
+        gap: 30px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .menu-page .navigation .socials a{
+        justify-content: space-between;
+        font-size: 2rem;
+    }
 }

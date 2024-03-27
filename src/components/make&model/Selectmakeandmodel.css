@@ -1,0 +1,26 @@
+
+@media (max-width: 450px){
+.search .search-field{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.search .search-field .make{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.search .search-field .make select{
+    border: none;
+}
+.search .search-field .model{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+}

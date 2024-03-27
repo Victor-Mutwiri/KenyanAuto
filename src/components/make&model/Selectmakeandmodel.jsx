@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import './Selectmakeandmodel.css'
 
 const Selectmakeandmodel = ({ makes, models, selectedMake, selectedModel, onMakeChange, onModelChange, onSearch }) => {
   return (

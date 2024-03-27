@@ -6,7 +6,7 @@ import logo from '../../assets/kenyanauto-transparent-logo.png';
 export const MenuPage = ({ isOpen, onClose }) => {
     const handleButtonClick = () => {
         onClose(); // Call onClose when the close button is clicked
-      };
+    };
   return (
     <div className={`menu-page ${isOpen ? 'open' : ''}`}>
         <i className='bx bx-x close-button' onClick={handleButtonClick}></i>
