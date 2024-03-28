@@ -28,7 +28,7 @@ const Selectmakeandmodel = ({ makes, models, selectedMake, selectedModel, onMake
             ))}
           </select>
         </div>
-        <button onClick={onSearch} disabled={!selectedModel}>
+        <button onClick={onSearch} disabled={!selectedModel} className='btnSearch'>
           <i className='bx bx-search-alt'> Search</i>
         </button>
       </div>

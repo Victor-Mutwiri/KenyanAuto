@@ -1,9 +1,19 @@
 
 @media (max-width: 450px){
+    .search{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        background: green;
+    }
 .search .search-field{
     display: flex;
     flex-direction: column;
+    width: 380px;
     gap: 10px;
+    background: #1F1F38;
 }
 .search .search-field .make{
     display: flex;
@@ -21,6 +31,10 @@
     justify-content: center;
     align-items: center;
     gap: 15px;
+}
+.search-field .btnSearch{
+    width: 200px;
+    align-self: center;
 }
 
 }
