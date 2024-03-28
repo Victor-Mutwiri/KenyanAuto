@@ -1,0 +1,7 @@
+{
+    "name": "Mahindra",
+    "models": [
+      { "id": 1, "name": "Commander"},
+      { "id": 2, "name": "Scorpio"}
+    ]
+  }

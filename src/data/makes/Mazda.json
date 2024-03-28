@@ -1,0 +1,23 @@
+{
+    "name": "Mazda",
+    "models": [
+      { "id": 1, "name": "Axela"},
+      { "id": 2, "name": "Atenza"},
+      { "id": 3, "name": "CX-3"},
+      { "id": 4, "name": "CX-5"},
+      { "id": 5, "name": "CX-7"},
+      { "id": 6, "name": "CX-8"},
+      { "id": 7, "name": "CX-9"},
+      { "id": 8, "name": "CX-30"},
+      { "id": 9, "name": "Biante"},
+      { "id": 10, "name": "Bongo"},
+      { "id": 11, "name": "BT-50"},
+      { "id": 12, "name": "Carol"},
+      { "id": 13, "name": "Demio"},
+      { "id": 14, "name": "Familia"},
+      { "id": 15, "name": "Flair"},
+      { "id": 16, "name": "MPV"},
+      { "id": 17, "name": "Premacy"},
+      { "id": 18, "name": ""}
+    ]
+  }

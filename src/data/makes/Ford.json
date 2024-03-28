@@ -1,21 +1,14 @@
 {
-    "id": 1,
-    "name": "Audi",
+    "name": "Ford",
     "models": [
-      { "id": 1, "name": "A1"},
-      { "id": 2, "name": "A3"},
-      { "id": 3, "name": "A4"},
-      { "id": 4, "name": "A5"},
-      { "id": 5, "name": "A6"},
-      { "id": 6, "name": "A7"},
-      { "id": 7, "name": "Allroad"},
-      { "id": 8, "name": "Q2"},
-      { "id": 9, "name": "Q3"},
-      { "id": 10, "name": "Q5"},
-      { "id": 11, "name": "Q7"},
-      { "id": 12, "name": "S3"},
-      { "id": 13, "name": "S5"},
-      { "id": 14, "name": "SQ5"},
-      { "id": 15, "name": "TT"}
+      { "id": 1, "name": "Ecosport"},
+      { "id": 2, "name": "Escape"},
+      { "id": 3, "name": "Everest"},
+      { "id": 4, "name": "Kuga"},
+      { "id": 5, "name": "Ranger"},
+      { "id": 6, "name": "Escort"},
+      { "id": 7, "name": "Fiesta"},
+      { "id": 8, "name": "Focus"},
+      { "id": 9, "name": "Mustang"}
     ]
   }
