@@ -75,7 +75,9 @@ export const Review = () => {
       let reviewsForModel = [];
   
       // Fetch all models
-      const response = await axios.get(`http://localhost:1337/api/models?populate=*`);
+      /* const response = await axios.get(`http://localhost:1337/api/models?populate=*`); */
+      
+      const response = await axios.get(`${import.meta.env.DEV ? import.meta.env.VITE_DEV_API_BASE_URL : import.meta.env.VITE_PROD_API_BASE_URL}/models?populate=*`);
   
       if (response.data && Array.isArray(response.data.data)) {
         // Filter models to get the selected model
