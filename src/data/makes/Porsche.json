@@ -1,9 +1,0 @@
-{
-    "name": "Porsche",
-    "models": [
-      { "id": 1, "name": "911"},
-      { "id": 2, "name": "Cayenne"},
-      { "id": 3, "name": "Macan"},
-      { "id": 4, "name": "Panamera"}
-    ]
-  }

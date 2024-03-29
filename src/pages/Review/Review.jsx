@@ -17,7 +17,8 @@ export const Review = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:1337/api/makes?populate=*')
+      /* .get('http://localhost:1337/api/makes?populate=*') */
+      .get(`${import.meta.env.DEV ? import.meta.env.VITE_DEV_API_BASE_URL : import.meta.env.VITE_PROD_API_BASE_URL}/makes?populate=*`)
       .then((response) => {
         if (response.data && Array.isArray(response.data.data)) {
           setMakes(response.data.data);
