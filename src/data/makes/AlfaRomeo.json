@@ -2,6 +2,6 @@
     "id": 1,
     "name": "Alfa Romeo",
     "models": [
-      { "id": 1, "name": "Giulia", "file": "Giulia.json" }
+      { "id": 1, "name": "Giulia"}
     ]
   }

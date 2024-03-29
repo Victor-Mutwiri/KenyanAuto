@@ -1,15 +1,12 @@
 {
-    "name": "",
+    "name": "Renault",
     "models": [
-      { "id": 1, "name": ""},
-      { "id": 2, "name": ""},
-      { "id": 3, "name": ""},
-      { "id": 4, "name": ""},
-      { "id": 5, "name": ""},
-      { "id": 6, "name": ""},
-      { "id": 7, "name": ""},
-      { "id": 8, "name": ""},
-      { "id": 9, "name": ""},
-      { "id": 10, "name": ""}
+      { "id": 1, "name": "Duster"},
+      { "id": 2, "name": "Fluence"},
+      { "id": 3, "name": "Kadjar"},
+      { "id": 4, "name": "Koleos"},
+      { "id": 5, "name": "Kwid"},
+      { "id": 6, "name": "Megane"},
+      { "id": 7, "name": "Lutecia"}
     ]
   }

@@ -1,15 +1,18 @@
 {
-    "name": "",
+    "name": "Subaru",
     "models": [
-      { "id": 1, "name": ""},
-      { "id": 2, "name": ""},
-      { "id": 3, "name": ""},
-      { "id": 4, "name": ""},
-      { "id": 5, "name": ""},
-      { "id": 6, "name": ""},
-      { "id": 7, "name": ""},
-      { "id": 8, "name": ""},
-      { "id": 9, "name": ""},
-      { "id": 10, "name": ""}
+      { "id": 1, "name": "Forester"},
+      { "id": 2, "name": "Imprezza"},
+      { "id": 3, "name": "Legacy"},
+      { "id": 4, "name": "Outback"},
+      { "id": 5, "name": "XV"},
+      { "id": 6, "name": "Exiga"},
+      { "id": 7, "name": "Levorg"},
+      { "id": 8, "name": "Liberty"},
+      { "id": 9, "name": "Pleo"},
+      { "id": 10, "name": "Stella"},
+      { "id": 11, "name": "SVX"},
+      { "id": 12, "name": "Trezia"},
+      { "id": 13, "name": "Tribeca"}
     ]
   }
