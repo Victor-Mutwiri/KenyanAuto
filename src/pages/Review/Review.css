@@ -3,23 +3,28 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #fff;
+    background: #E8F1EA;
     width: 100%;
-    height: 100vh;
 }
 .background{
+    width: 100%;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
-    background: red;
+    background-image: url('/dealership.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .background h1{
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     font-weight: 500;
     text-align: center;
     margin-bottom: 2rem;
+    color: orange;
 }
 .background .search{
     margin-top: 2rem;
@@ -137,11 +142,16 @@
 @media(max-width:450px){
     .review{
         margin-top: 2rem;
-        height: auto;
+        /* height: auto; */
         width: 400px;
     }
     .background{
+        height: 65vh;
         width: 430px;
+        background-image: url('/coverimage.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     .background h1{
         font-size: 1.5rem;

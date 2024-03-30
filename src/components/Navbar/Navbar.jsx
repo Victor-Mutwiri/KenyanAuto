@@ -29,7 +29,10 @@ export const Navbar = () => {
                     </li>
                 </ul>
             </div>
-            <Menuicon className="menu-icon"/>
+            <div className="menu-icon">
+                <Menuicon />
+            </div>
+            
     </nav>
   )
 }

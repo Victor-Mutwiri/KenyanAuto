@@ -3,7 +3,7 @@ import './Selectmakeandmodel.css'
 
 const Selectmakeandmodel = ({ makes, models, selectedMake, selectedModel, onMakeChange, onModelChange, onSearch }) => {
   return (
-    <div className='search'>
+    <div className='search-section'>
       <h3>Discover</h3>
       <div className='search-field'>
         <div className='make'>
