@@ -140,14 +140,16 @@ export const Review = () => {
         />
       </section>
       <h3>Guiding Your Choice</h3>
+      <div className="reviewlist">
+        {reviews.length > 0 && <ReviewList reviews={reviews}/>}
+      </div>
       <div className='images'>
         <img src={buying} alt='buying' />
         <img src={service} alt='service' />
         <img src={firstcar} alt='firstcar' />
         <img src={safety} alt='safety' />
       </div>
-      {/* Display reviews for the selected model */}
-      {reviews.length > 0 && <ReviewList reviews={reviews}/>}
+      
     </div>
   );
 };

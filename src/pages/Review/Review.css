@@ -146,7 +146,7 @@
         width: 400px;
     }
     .background{
-        height: 65vh;
+        height: 60vh;
         width: 430px;
         background-image: url('/coverimage.jpg');
         background-size: cover;
@@ -158,5 +158,8 @@
         font-weight: 500;
         text-align: center;
         margin-bottom: 1rem;
+    }
+    .review .reviewlist{
+        width: 100%;
     }
 }
