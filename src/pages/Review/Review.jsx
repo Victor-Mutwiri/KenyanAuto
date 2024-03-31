@@ -7,6 +7,8 @@ import firstcar from '../../assets/firstcar.jpg';
 import buying from '../../assets/buying.jpg';
 import Selectmakeandmodel from '../../components/make&model/Selectmakeandmodel';
 import ReviewList from '../../components/Reviewslist/Reviewslist';
+/* import { Link } from 'react-router-dom'; */
+import { useNavigate } from 'react-router-dom';
 
 export const Review = () => {
   const [makes, setMakes] = useState([]);
@@ -14,6 +16,7 @@ export const Review = () => {
   const [selectedModel, setSelectedModel] = useState('');
   const [models, setModels] = useState([]);
   const [reviews, setReviews] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     axios
@@ -40,34 +43,6 @@ export const Review = () => {
     }
   };
   
-  /* const fetchReviewsForModel = async (selectedModel) => {
-    try {
-      let allReviews = [];
-  
-      // Fetch all models
-      const response = await axios.get(`http://localhost:1337/api/models?populate=*`);
-  
-      if (response.data && Array.isArray(response.data.data)) {
-        // Filter models to get the selected model
-        const selectedModelObject = response.data.data.find(model => model.attributes.Model === selectedModel);
-  
-        // Check if the selected model exists
-        if (selectedModelObject && selectedModelObject.attributes.reviews &&
-            selectedModelObject.attributes.reviews.data &&
-            selectedModelObject.attributes.reviews.data.length > 0) {
-          // If reviews exist for the selected model, set them to allReviews
-          allReviews = selectedModelObject.attributes.reviews.data;
-        }
-      } else {
-        console.error('Error: Response data is not in the expected format');
-      }
-  
-      // Update the state with reviews for the selected model
-      setReviews(allReviews);
-    } catch (error) {
-      console.error('Error fetching reviews:', error);
-    }
-  }; */
 
 
   const fetchReviewsForModel = async (selectedModel) => {
@@ -125,6 +100,11 @@ export const Review = () => {
     fetchReviewsForModel(selectedModel);
   };
 
+  const handleModelClick = (reviewId) => {
+    // Redirect to the full review page when a model is clicked
+    navigate(`/model/${reviewId}`);
+  };
+
   return (
     <div className='review'>
       <section className='background'>
@@ -140,16 +120,24 @@ export const Review = () => {
         />
       </section>
       <h3>Guiding Your Choice</h3>
-      <div className="reviewlist">
-        {reviews.length > 0 && <ReviewList reviews={reviews}/>}
-      </div>
+      {reviews.length > 0 && <ReviewList reviews={reviews} handleModelClick={handleModelClick}/>}
+
+      {/* <div className="reviewlist">
+        {reviews.length > 0 && reviews.map((review) => (
+            <Link to={`/model/${review.id}`} key={review.id}>
+              <div onClick={() => handleModelClick(review.id)}>
+                <h4>{review.attributes.generation}</h4>
+                <img src={review.attributes.image} alt='Review Image' />
+              </div>
+            </Link>
+          ))}
+      </div> */}
       <div className='images'>
         <img src={buying} alt='buying' />
         <img src={service} alt='service' />
         <img src={firstcar} alt='firstcar' />
         <img src={safety} alt='safety' />
       </div>
-      
     </div>
   );
 };

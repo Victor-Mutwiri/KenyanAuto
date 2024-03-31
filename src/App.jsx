@@ -15,6 +15,8 @@ import SellingContent from './pages/Selling/SellingContent';
 import MaintenanceContent from './pages/Maintenance/MaintenanceContent';
 import MakeMaintenance from './pages/Maintenance/MakeMaintenance';
 import NotFound from './pages/404Page/NotFound';
+import Model from './pages/Review/Model';
+/* import ReviewList from './components/Reviewslist/Reviewslist'; */
 
 function App() {
 
@@ -36,6 +38,8 @@ function App() {
         <Route path="/selling-guide/:route" element={<SellingContent/>}/>
         <Route path="/maintenance-guide/:route" element={<MaintenanceContent/>}/>
         <Route path="/make-maintenance" element={<MakeMaintenance/>}/>
+        <Route path="/model/:Generation" element={<Model/>}/>
+        {/* <Route path="/review-details/:id" element={<ReviewList/>}/> */}
       </Routes>
     </BrowserRouter>
   )
