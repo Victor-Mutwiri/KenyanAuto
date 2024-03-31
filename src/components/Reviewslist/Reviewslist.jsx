@@ -1,13 +1,18 @@
+// Reviewslist.jsx
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
-import './Reviewslist.css'
+import './Reviewslist.css';
 
-const ReviewList = ({ reviews }) => {
+const ReviewList = ({ reviews, onSelectReview }) => {
   return (
     <section className='car'>
       {reviews.map((review) => (
-        <Link key={review.id} to={`/model/${review.attributes.Generation}`} className='car-review-link'>
-          <div key={review.id} className='car-review'>
+        <div key={review.id} className='car-review'>
+          <div
+            key={review.id}
+            className='car-review-link'
+            onClick={() => onSelectReview(review)}
+            style={{ cursor: 'pointer' }} // Add cursor style to indicate clickable
+          >
             <div className="car-image">
               {review.attributes.ExteriorShot && review.attributes.ExteriorShot.data && review.attributes.ExteriorShot.data.attributes.formats && review.attributes.ExteriorShot.data.attributes.formats.thumbnail && (
                 <img src={review.attributes.ExteriorShot.data.attributes.formats.thumbnail.url} alt={review.attributes.Vehicle} />
@@ -18,15 +23,15 @@ const ReviewList = ({ reviews }) => {
               <h4>{review.attributes.Generation}</h4>
             </div>
           </div>
-        </Link>
+        </div>
       ))}
     </section>
-  )
-}
+  );
+};
 
-// Prop types validation
 ReviewList.propTypes = {
   reviews: PropTypes.array.isRequired,
+  onSelectReview: PropTypes.func.isRequired,
 };
 
 export default ReviewList;
