@@ -30,17 +30,19 @@ const Model = ({ selectedReview, onClose }) => {
           </div>
         )}
         {attributes.Interior && <h4>Interior</h4>}
-        {attributes.Interior && <p>{attributes.Interior}</p>}
+        {attributes.Interior && <p className='bg'>{attributes.Interior}</p>}
         {attributes.Performance && <h4>Performance</h4>}
         {attributes.Performance && <p>{attributes.Performance}</p>}
-        {attributes.Reliability && <h4>Reliability</h4>}
-        {attributes.Reliability && <p>{attributes.Reliability}</p>}
+        {attributes.Reliability && <h4>Reliability and Common Issues</h4>}
+        {attributes.Reliability && <p className='bg'>{attributes.Reliability}</p>}
+        {/* {attributes.Issues && <h4>Issues</h4>}
+        {attributes.Issues && <p>{attributes.Issues}</p>} */}
         {attributes.Technology !== null && <h4>Technology</h4>}
-        {attributes.Technology !== null && <p>{attributes.Technology}</p>}
+        {attributes.Technology !== null && <p className='bg'>{attributes.Technology}</p>}
         {attributes.Value !== null && <h4>Value</h4>}
         {attributes.Value !== null && <p>{attributes.Value}</p>}
         {attributes.Comparison !== null && <h4>Comparison</h4>}
-        {attributes.Comparison !== null && <p>{attributes.Comparison}</p>}
+        {attributes.Comparison !== null && <p className='bg'>{attributes.Comparison}</p>}
         {attributes.Recommendation !== null && <h4>Recommendation</h4>}
         {attributes.Recommendation !== null && <p>{attributes.Recommendation}</p>}
       </div>
@@ -58,6 +60,7 @@ Model.propTypes = {
       Overview: PropTypes.string,
       Performance: PropTypes.string,
       Reliability: PropTypes.string,
+      Issues:PropTypes.string,
       Technology: PropTypes.string, // New prop type for Technology field
       Value: PropTypes.string, // New prop type for Value field
       Comparison: PropTypes.string, // New prop type for Comparison field

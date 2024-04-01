@@ -2,11 +2,13 @@
     max-width: 1000px;
     margin: 0 auto;
     padding-top: 1rem;
+    background-color: #f9f9f9;
   }
   
   .buyingContent h2 {
-    text-align: center; /* Center the title */
-    margin-bottom: 20px; /* Add space below the title */
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
   }
   
   .buyingContent img {
@@ -14,11 +16,12 @@
     margin: 0 auto; /* Center the image */
     max-width: 100%; /* Ensure the image doesn't overflow its container */
     height: 350px;
+    /* height: auto; */
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.5);
   }
   
   .buyingContent > div {
-    margin-top: 30px; /* Add space between sections */
+    margin-top: 30px;
   }
   
   .buyingContent h3 {
@@ -26,7 +29,8 @@
   }
   
   .buyingContent p {
-    margin-bottom: 15px; /* Add space below paragraphs */
+    margin-bottom: 15px;
+    color: #666;
   }
   
   .buyingContent ul,
@@ -38,3 +42,30 @@
     margin-bottom: 5px; /* Add space between list items */
   }
   
+
+@media (max-width:450px){
+  .buyingContent{
+    margin-top: 3.5rem;
+    width: 100%;
+    padding: 10px;
+  }
+  .buyingContent img{
+    max-width: 100%;
+    height: auto;
+  }
+  .buyingContent h3 {
+    font-size: 1.2rem;
+  }
+  .buyingContent p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  .buyingContent ul,
+  .buyingContent ol {
+    margin-left: 10px;
+  }
+  
+  .buyingContent li {
+    margin-bottom: 3px;
+  }
+}

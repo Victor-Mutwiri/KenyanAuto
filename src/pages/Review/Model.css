@@ -8,9 +8,10 @@
     margin: 0 auto;
   }
   
-  .model h2 {
+  .models h2 {
     font-size: 1.5rem;
     margin-bottom: 20px;
+    color: rgb(255, 165, 0);
   }
   
   .selected-review {
@@ -34,6 +35,10 @@
   .selected-review p {
     margin-bottom: 5px;
   }
+  .selected-review .bg{
+    background: rgba(13, 117, 170, 0.3);
+    padding: 5px;
+  }
   
   button {
     background-color: #007bff;
@@ -51,14 +56,16 @@
 
 @media (max-width:450px){
     .models {
-        padding: 10px;
-        width: 80%;
+        padding: 15px;
+        width: 90%;
         border-radius: 12px;
         border: none;
       }
     
       .models h2 {
         font-size: 1.3rem;
+        text-align: center;
+        margin: 10px 0;
       }
     
       .selected-review {
@@ -71,7 +78,7 @@
     
       .selected-review h4 {
         text-align: center;
-        margin-bottom: 3px;
+        margin: 10px 0;
         font-size: 1.3rem;
         font-weight: 500;
       }
