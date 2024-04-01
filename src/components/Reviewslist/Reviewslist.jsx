@@ -13,13 +13,13 @@ const ReviewList = ({ reviews, onSelectReview }) => {
             onClick={() => onSelectReview(review)}
             style={{ cursor: 'pointer' }} // Add cursor style to indicate clickable
           >
-            <div className="car-image">
+            {/* <div className="car-image">
               {review.attributes.ExteriorShot && review.attributes.ExteriorShot.data && review.attributes.ExteriorShot.data.attributes.formats && review.attributes.ExteriorShot.data.attributes.formats.thumbnail && (
                 <img src={review.attributes.ExteriorShot.data.attributes.formats.thumbnail.url} alt={review.attributes.Vehicle} />
               )}
-            </div>
+            </div> */}
             <div className='desc'>
-              <h3>{review.attributes.Vehicle}</h3>
+              <h4>{review.attributes.Vehicle}</h4>
               <h4>{review.attributes.Generation}</h4>
             </div>
           </div>

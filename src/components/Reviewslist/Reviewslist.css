@@ -1,3 +1,62 @@
-.car a{
-    text-decoration: none;
+.car {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px 0;
+    width: 100%;
+  }
+  
+  .car-review {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    background: rgba(255, 165, 0, 0.8);
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .car-review:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+  }
+  
+  .car-review-link {
+    display: flex;
+    flex-direction: row; /* Change flex direction to column */
+    align-items: center; /* Align items horizontally */
+    cursor: pointer;
+  }
+  
+  .car-review-link .car-image {
+    display: none;
+    max-width: 100%; /* Ensure the image fits within its container */
+    border-radius: 5px; /* Add border-radius for a nicer look */
+  }
+  
+  /* .car-review-link .desc {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  } */
+.car-review-link .desc {
+    display: grid;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
+
+@media (max-width: 450px){
+    .car{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .car-review{
+        width: 150px;
+    }
+}
+  
