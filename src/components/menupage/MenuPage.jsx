@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 import './MenuPage.css'
 import logo from '../../assets/kenyanauto-transparent-logo.png';
 
@@ -7,6 +8,20 @@ export const MenuPage = ({ isOpen, onClose }) => {
     const handleButtonClick = () => {
         onClose(); // Call onClose when the close button is clicked
     };
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (isOpen && !event.target.closest('.menu-page')) {
+                onClose(); // Close the menu if clicked outside of it
+            }
+        };
+        window.addEventListener('click', handleClickOutside);
+        
+        return () => {
+            window.removeEventListener('click', handleClickOutside);
+        };
+    }, [isOpen, onClose]);
+
   return (
     <div className={`menu-page ${isOpen ? 'open' : ''}`}>
         <i className='bx bx-x close-button' onClick={handleButtonClick}></i>
