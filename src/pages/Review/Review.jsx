@@ -1,5 +1,6 @@
 // Review.jsx
 import { useState, useEffect } from 'react';
+import { useRef } from 'react';
 import axios from 'axios';
 import './Review.css';
 import Selectmakeandmodel from '../../components/make&model/Selectmakeandmodel';
@@ -13,6 +14,9 @@ export const Review = () => {
   const [models, setModels] = useState([]);
   const [reviews, setReviews] = useState([]);
   const [selectedReview, setSelectedReview] = useState(null);
+
+  const modelsRef = useRef(null);
+  const reviewListRef = useRef(null);
 
   useEffect(() => {
     axios
@@ -79,10 +83,19 @@ export const Review = () => {
       return;
     }
     fetchReviewsForModel(selectedModel);
+
+    if (reviewListRef.current) {
+      reviewListRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
   };
 
   const handleModelClick = (review) => {
     setSelectedReview(review);
+
+    if (modelsRef.current) {
+      modelsRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   };
 
   return (
@@ -100,9 +113,15 @@ export const Review = () => {
         />
       </section>
       <h3>Guiding Your Choice</h3>
-      {reviews.length > 0 && <ReviewList reviews={reviews} onSelectReview={handleModelClick} />}
+      <div ref={reviewListRef}>
+        {reviews.length > 0 && <ReviewList reviews={reviews} onSelectReview={handleModelClick} />}
+      </div>
+      
       {/* Render the Model component with the selected review */}
-      {selectedReview && <Model selectedReview={selectedReview} onClose={() => setSelectedReview(null)} />}
+      <div ref={modelsRef}>
+        {selectedReview && <Model selectedReview={selectedReview} onClose={() => setSelectedReview(null)} />}
+      </div>
+      
     </div>
   );
 };

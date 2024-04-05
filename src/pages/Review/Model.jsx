@@ -19,22 +19,20 @@ const Model = ({ selectedReview, onClose }) => {
     <div className="models">
       
       <h2>{attributes.Vehicle} {attributes.Generation} Review</h2>
+      <br />
       <div className='selected-review'>
         {/* Exterior shot should go here */}
         {ExteriorShot && (
-          <div>
-            <h4>Exterior Shot</h4>
             <img src={ExteriorShot} alt="Exterior Shot" />
-          </div>
         )}
-        {attributes.Overview && <h4>Overview</h4>}
+        <br />
+        <br />
+        {/* {attributes.Overview && <h4>Overview</h4>} */}
         {attributes.Overview && <p>{attributes.Overview}</p>}
+        <br />
         {/* Interior shot goes here */}
         {InteriorShot && (
-          <div>
-            <h4>Interior Shot</h4>
             <img src={InteriorShot} alt="Interior Shot" />
-          </div>
         )}
         {attributes.Interior && <h4>Interior</h4>}
         {attributes.Interior && <p className='bg'>{attributes.Interior}</p>}

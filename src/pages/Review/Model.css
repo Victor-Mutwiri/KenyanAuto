@@ -77,10 +77,10 @@
       }
     
       .selected-review h4 {
-        text-align: center;
+        text-align: left;
         margin: 10px 0;
         font-size: 1.3rem;
-        font-weight: 500;
+        font-weight: 600;
       }
     
       .selected-review img {
