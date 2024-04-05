@@ -1,6 +1,7 @@
 // Model.jsx
 import PropTypes from 'prop-types';
 import './Model.css';
+import carData from '../../data/Generations.json'
 
 const Model = ({ selectedReview, onClose }) => {
   if (!selectedReview) {
@@ -8,25 +9,31 @@ const Model = ({ selectedReview, onClose }) => {
   }
 
   const { attributes } = selectedReview;
-  const { ExteriorShot, InteriorShot } = attributes;
+  const { Generation } = attributes;
+
+  const selectedCar = carData.find(car => car.Generation === Generation);
+
+  const { ExteriorShot, InteriorShot } = selectedCar;
 
   return (
     <div className="models">
       
       <h2>{attributes.Vehicle} {attributes.Generation} Review</h2>
       <div className='selected-review'>
+        {/* Exterior shot should go here */}
         {ExteriorShot && (
           <div>
             <h4>Exterior Shot</h4>
-            <img src={ExteriorShot.data.formats.small.url} alt={ExteriorShot.data.alternativeText} />
+            <img src={ExteriorShot} alt="Exterior Shot" />
           </div>
         )}
         {attributes.Overview && <h4>Overview</h4>}
         {attributes.Overview && <p>{attributes.Overview}</p>}
+        {/* Interior shot goes here */}
         {InteriorShot && (
           <div>
             <h4>Interior Shot</h4>
-            <img src={InteriorShot.data.formats.small.url} alt={InteriorShot.data.alternativeText} />
+            <img src={InteriorShot} alt="Interior Shot" />
           </div>
         )}
         {attributes.Interior && <h4>Interior</h4>}
@@ -65,7 +72,7 @@ Model.propTypes = {
       Value: PropTypes.string, // New prop type for Value field
       Comparison: PropTypes.string, // New prop type for Comparison field
       Recommendation: PropTypes.string, // New prop type for Recommendation field
-      ExteriorShot: PropTypes.shape({
+      /* ExteriorShot: PropTypes.shape({
         data: PropTypes.shape({
           formats: PropTypes.shape({
             small: PropTypes.shape({
@@ -74,8 +81,8 @@ Model.propTypes = {
           }).isRequired,
           alternativeText: PropTypes.string,
         }).isRequired,
-      }),
-      InteriorShot: PropTypes.shape({
+      }), */
+      /* InteriorShot: PropTypes.shape({
         data: PropTypes.shape({
           formats: PropTypes.shape({
             small: PropTypes.shape({
@@ -84,7 +91,7 @@ Model.propTypes = {
           }).isRequired,
           alternativeText: PropTypes.string,
         }).isRequired,
-      }),
+      }), */
     }).isRequired,
   }),
   onClose: PropTypes.func.isRequired,

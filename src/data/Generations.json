@@ -1,58 +1,58 @@
 [
     {
         "Generation":"Generation: 2000 – 2006",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Toyota/Corolla fielder 2000-2006.jpg",
-        "InteriorShot":"/KenyanAuto/public/Interior/Toyota/Corolla fielder 2000-2006.jpg"
+        "ExteriorShot":"/Exterior/Toyota/Corolla fielder 2000-2006.jpg",
+        "InteriorShot":"/Interior/Toyota/Corolla fielder 2000-2006.jpg"
     },
     {
         "Generation":"Generation: 2006 – 2012",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Toyota/Corolla fielder 2006-2012.jpg",
-        "InteriorShot":"/KenyanAuto/public/Interior/Toyota/Corolla fielder 2006-2012.jpg"
+        "ExteriorShot":"/Exterior/Toyota/Corolla fielder 2006-2012.jpg",
+        "InteriorShot":"/Interior/Toyota/Corolla fielder 2006-2012.jpg"
     },
     {
         "Generation":"Generation:  2012-2018",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Toyota/Corolla fielder  2012-2018.jpg",
-        "InteriorShot":"/KenyanAuto/public/Interior/Toyota/Corolla fielder 2012-2018.jpg"
+        "ExteriorShot":"/Exterior/Toyota/Corolla fielder  2012-2018.jpg",
+        "InteriorShot":"/Interior/Toyota/Corolla fielder 2012-2018.jpg"
     },
     {
         "Generation":"1997-2003",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Toyota/1997 Harrier.jpg",
-        "InteriorShot":"/KenyanAuto/public/Interior/Toyota/1997 Harrier.jpg"
+        "ExteriorShot":"/Exterior/Toyota/1997 Harrier.jpg",
+        "InteriorShot":"/Interior/Toyota/1997 Harrier.jpg"
     },
     {
         "Generation":"2003-2013",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Toyota/2003 Harrier.jpg",
-        "InteriorShot":"/KenyanAuto/public/Interior/Toyota/2003 Harrier.jpg"
+        "ExteriorShot":"/Exterior/Toyota/2003 Harrier.jpg",
+        "InteriorShot":"/Interior/Toyota/2003 Harrier.jpg"
     },
     {
         "Generation":"2013 - 2020",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Toyota/2013 Harrier.jpg",
-        "InteriorShot":"/KenyanAuto/public/Interior/Toyota/2013 Harrier.jpg"
+        "ExteriorShot":"/Exterior/Toyota/2013 Harrier.jpg",
+        "InteriorShot":"/Interior/Toyota/2013 Harrier.jpg"
     },
     {
         "Generation":"2020 - Present",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Toyota/2020 Harrier.jpeg",
-        "InteriorShot":"/KenyanAuto/public/Interior/Toyota/2020 Harrier.jpeg"
+        "ExteriorShot":"/Exterior/Toyota/2020 Harrier.jpeg",
+        "InteriorShot":"/Interior/Toyota/2020 Harrier.jpeg"
     },
     {
         "Generation":"2009 - 2012 1st Gen (8R)",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Audi/Q5 2009-2012.jpg",
-        "InteriorShot":"/KenyanAuto/public/Interior/Audi/Q5 2009-2012.jpg"
+        "ExteriorShot":"/Exterior/Audi/Q5 2009-2012.jpg",
+        "InteriorShot":"/Interior/Audi/Q5 2009-2012.jpg"
     },
     {
         "Generation":"2013-2017",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Audi/Q5 2013-2017.jpg",
-        "InteriorShot":"/KenyanAuto/public/Interior/Audi/Q5 2013-2017.jpg"
+        "ExteriorShot":"/Exterior/Audi/Q5 2013-2017.jpg",
+        "InteriorShot":"/Interior/Audi/Q5 2013-2017.jpg"
     },
     {
         "Generation":"2nd Gen (80A) 2018 - 2020",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Audi/Q5 2018-2020.jpg",
-        "InteriorShot":"/KenyanAuto/public/Interior/Audi/Q5 2018-2020.jpg"
+        "ExteriorShot":"/Exterior/Audi/Q5 2018-2020.jpg",
+        "InteriorShot":"/Interior/Audi/Q5 2018-2020.jpg"
     },
     {
         "Generation":"2nd Gen (80A) Facelift 2021 - Present",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Audi/Q5 2021.jpg",
-        "InteriorShot":"/KenyanAuto/public/Interior/Audi/Q5 2021.jpg"
+        "ExteriorShot":"/Exterior/Audi/Q5 2021.jpg",
+        "InteriorShot":"/Interior/Audi/Q5 2021.jpg"
     },
     {
         "Generation":"",
