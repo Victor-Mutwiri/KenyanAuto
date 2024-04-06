@@ -143,11 +143,12 @@
     .review{
         margin-top: 2rem;
         /* height: auto; */
-        width: 400px;
+        width: 100%;
     }
     .background{
         height: 60vh;
-        width: 430px;
+        /* width: 430px; */
+        width: 100%;
         background-image: url('/coverimage.jpg');
         background-size: cover;
         background-position: center;
