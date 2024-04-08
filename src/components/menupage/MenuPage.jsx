@@ -1,13 +1,23 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import { useEffect } from 'react';
-import './MenuPage.css'
+import { useEffect, useState } from 'react'; // Import useState hook
+import './MenuPage.css';
 import logo from '../../assets/kenyanauto-transparent-logo.png';
 
-export const MenuPage = ({ isOpen, onClose }) => {
+export const MenuPage = ({ onClose }) => { // Remove isOpen from props
+    const [isOpen, setIsOpen] = useState(false); // Manage isOpen state internally
+
     const handleButtonClick = () => {
-        onClose(); // Call onClose when the close button is clicked
+        setIsOpen(!isOpen); // Toggle isOpen state
+        console.log('MenuPage opened');
     };
+    useEffect(() => {
+        if (isOpen) {
+            console.log('Menu page is opened');
+        } else {
+            console.log('Menu page is closed');
+        }
+    }, [isOpen]);
 
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -15,38 +25,38 @@ export const MenuPage = ({ isOpen, onClose }) => {
                 onClose(); // Close the menu if clicked outside of it
             }
         };
+
         window.addEventListener('click', handleClickOutside);
-        
+
         return () => {
             window.removeEventListener('click', handleClickOutside);
         };
-    }, [isOpen, onClose]);
+    }, [isOpen, onClose]); // Include isOpen and onClose in the dependency array
 
-  return (
-    <div className={`menu-page ${isOpen ? 'open' : ''}`}>
-        <i className='bx bx-x close-button' onClick={handleButtonClick}></i>
-        <div className="logo">
-            <Link to={'/'}>
-                <img src={logo} alt="KenyanAuto" className="side-logo" width={120}/>
-            </Link>
+    return (
+        <div className={`menu-page ${isOpen ? 'open' : ''}`}>
+            <i className='bx bx-x close-button' onClick={handleButtonClick}></i>
+            <div className="logo">
+                <Link to={'/'}>
+                    <img src={logo} alt="KenyanAuto" className="side-logo" width={120}/>
+                </Link>
+            </div>
+            <div className="navigation">
+                <Link to={'/Buying'}>Buying</Link>
+                <Link to={'/Selling'}>Selling</Link>
+                <Link to={'/Maintenance'}>Maintenance</Link>
+                <Link to={'/Guide'}>Guides</Link>
+                <Link to={'/Safety'}>Safety</Link>
+            </div>
+            <div className="socials">
+                <a href="#"><i className='bx bxl-facebook'/></a>
+                <a href="#"><i className='bx bxl-instagram'/></a>
+                <a href="#"><i className='bx bxl-twitter'/></a>
+            </div>
         </div>
-        <div className="navigation">
-            <Link to={'/Buying'}>Buying</Link>
-            <Link to={'/Selling'}>Selling</Link>
-            <Link to={'/Maintenance'}>Maintenance</Link>
-            <Link to={'/Guide'}>Guides</Link>
-            <Link to={'/Safety'}>Safety</Link>
-        </div>
-        <div className="socials">
-            <a href="#"><i className='bx bxl-facebook'/></a>
-            <a href="#"><i className='bx bxl-instagram'/></a>
-            <a href="#"><i className='bx bxl-twitter'/></a>
-        </div>
-    </div>
-  )
+    );
 }
 
 MenuPage.propTypes = {
-    isOpen: PropTypes.bool.isRequired,
     onClose: PropTypes.func.isRequired,
 };

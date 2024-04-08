@@ -51,12 +51,11 @@
 }
 .navbar .menu-icon{
     display: none;
-    cursor: pointer;
 }
 
 /* Mobile display  layout */
 
-@media (max-width:640px){
+@media (max-width:450px){
     .navbar{
         display: flex;
         flex-direction: row;
@@ -68,5 +67,6 @@
     }
     .navbar .menu-icon{
         display: block;
+        cursor: pointer;
     }
 }

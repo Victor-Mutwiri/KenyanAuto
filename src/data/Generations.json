@@ -55,6 +55,266 @@
         "InteriorShot":"/Interior/Audi/Q5 2021.jpg"
     },
     {
+        "Generation":"6th Gen(1997―2004)",
+        "ExteriorShot":"/Exterior/Toyota/Hilux 1997-2004.jpg",
+        "InteriorShot":"/Interior/Toyota/Hilux 1997-2004.jpg"
+    },
+    {
+        "Generation":"7th Gen(2004―2015)",
+        "ExteriorShot":"/Exterior/Toyota/Hilux 2004-2015.jpg",
+        "InteriorShot":"/Interior/Toyota/Hilux 2004-2015.jpg"
+    },
+    {
+        "Generation":"8th Gen(2015-Present)",
+        "ExteriorShot":"/Exterior/Toyota/Hilux 2015-present.jpg",
+        "InteriorShot":"/Interior/Toyota/Hilux 2015-Present.jpg"
+    },
+    {
+        "Generation":"2006 - 2013 Audi A3",
+        "ExteriorShot":"/Exterior/Audi/A3 2006-2013.jpg",
+        "InteriorShot":"/Interior/Audi/A3 2006-2013.jpg"
+    },
+    {
+        "Generation":"2015 - 2019 Audi A3",
+        "ExteriorShot":"/Exterior/Audi/A3 2015-2019.jpg",
+        "InteriorShot":"/Interior/Audi/A3 2015-2019.jpg"
+    },
+    {
+        "Generation":"Generation: 2011-2015",
+        "ExteriorShot":"/Exterior/Audi/Q3 2011.jpg",
+        "InteriorShot":"/Interior/Audi/Q3 2011.jpg"
+    },
+    {
+        "Generation":"Generation: 2015-2018",
+        "ExteriorShot":"/Exterior/Audi/Q3 2015.jpg",
+        "InteriorShot":"/Interior/Audi/Q3 2015.jpg"
+    },
+    {
+        "Generation":"Generation:  2019-Present",
+        "ExteriorShot":"/Exterior/Audi/Q3 2019.jpg",
+        "InteriorShot":"/Interior/Audi/Q3 2019.jpg"
+    },
+    {
+        "Generation":"2013 - 2016 CX-5",
+        "ExteriorShot":"/Exterior/Mazda/CX5 2016.jpg",
+        "InteriorShot":"/Interior/Mazda/CX5 2016.jpg"
+    },
+    {
+        "Generation":"2017 - Present CX-5",
+        "ExteriorShot":"/Exterior/Mazda/CX5 2017.jpg",
+        "InteriorShot":"/Interior/Mazda/CX5 2017.jpg"
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"",
+        "InteriorShot":""
+    },
+    {
         "Generation":"",
         "ExteriorShot":"",
         "InteriorShot":""
