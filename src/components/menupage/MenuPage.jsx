@@ -32,12 +32,12 @@ export const MenuPage = ({ isOpen, onClose }) => { // Remove isOpen from props
                 </Link>
             </div>
             <div className="navigation">
-                <Link to={'/Buying'}>Buying</Link>
-                <Link to={'/Selling'}>Selling</Link>
-                <Link to={'/Maintenance'}>Maintenance</Link>
-                <Link to={'/Guide'}>Guides</Link>
-                <Link to={'/Safety'}>Safety</Link>
-                <Link to={'/About'}>About</Link>
+                <Link to={'/Buying'} onClick={handleButtonClick}>Buying</Link>
+                <Link to={'/Selling'} onClick={handleButtonClick}>Selling</Link>
+                <Link to={'/Maintenance'} onClick={handleButtonClick}>Maintenance</Link>
+                <Link to={'/Guide'} onClick={handleButtonClick}>Guides</Link>
+                {/* <Link to={'/Safety'} onClick={handleButtonClick}>Safety</Link> */}
+                <Link to={'/About'} onClick={handleButtonClick}>About</Link>
             </div>
             <div className="socials">
                 <a href="#"><i className='bx bxl-facebook'/></a>

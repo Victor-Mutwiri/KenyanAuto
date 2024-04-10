@@ -12,7 +12,7 @@ const Footer = () => {
                     <h4>Navigation</h4>
                     <ul>
                         <li><Link to={'/'}>Home</Link></li>
-                        <li><Link to={'/'}>About US</Link></li>
+                        <li><Link to={'/About'}>About US</Link></li>
                         <li><Link to={'/Buying'}>Buying</Link></li>
                         <li><Link to={'/Selling'}>Selling</Link></li>
                     </ul>
@@ -22,7 +22,7 @@ const Footer = () => {
                     <ul>
                         <li>+254746583509</li>
                         <li>mutwirilincoln19@gmail.com</li>
-                        <li>NextGen Mall, Mombasa Rd</li>
+                        <li>Freedom Heights Mall, Langata Rd</li>
                     </ul>
                 </div>
                 <div className='opening'>
