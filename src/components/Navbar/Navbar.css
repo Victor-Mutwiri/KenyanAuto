@@ -50,7 +50,8 @@
     color: #ff0000;
 }
 .navbar .menu-icon{
-    display: none;
+    /* display: none; */
+    display: block;
 }
 
 /* Mobile display  layout */

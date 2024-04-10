@@ -6,11 +6,14 @@ import './Menuicon.css';
 export const Menuicon = () => {
     const [isOpen, setIsOpen] = useState(false);
 
-    const toggleMenu = () => {
+    const toggleMenu = (event) => {
+        event.stopPropagation();
         setIsOpen(!isOpen);
+        console.log("Menu opened")
     };
       const closeMenu = () => {
         setIsOpen(false);
+        console.log("menu closed")
     };
 
     return (
