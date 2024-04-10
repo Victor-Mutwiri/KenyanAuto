@@ -40,12 +40,16 @@ const Model = ({ selectedReview, onClose }) => {
         {attributes.Performance && <p>{attributes.Performance}</p>}
         {attributes.Reliability && <h4>Reliability and Common Issues</h4>}
         {attributes.Reliability && <p className='bg'>{attributes.Reliability}</p>}
+        {attributes.Safety && <h4>Safety Features</h4>}
+        {attributes.Safety && <p>{attributes.Safety}</p>}
         {/* {attributes.Issues && <h4>Issues</h4>}
         {attributes.Issues && <p>{attributes.Issues}</p>} */}
         {attributes.Technology !== null && <h4>Technology</h4>}
         {attributes.Technology !== null && <p className='bg'>{attributes.Technology}</p>}
         {attributes.Value !== null && <h4>Value</h4>}
         {attributes.Value !== null && <p>{attributes.Value}</p>}
+        {attributes.Ownership !== null && <h4>Ownership</h4>}
+        {attributes.Ownership !== null && <p>{attributes.Ownership}</p>}
         {attributes.Comparison !== null && <h4>Comparison</h4>}
         {attributes.Comparison !== null && <p className='bg'>{attributes.Comparison}</p>}
         {attributes.Recommendation !== null && <h4>Recommendation</h4>}
@@ -65,9 +69,11 @@ Model.propTypes = {
       Overview: PropTypes.string,
       Performance: PropTypes.string,
       Reliability: PropTypes.string,
+      Safety: PropTypes.string,
       Issues:PropTypes.string,
       Technology: PropTypes.string, // New prop type for Technology field
       Value: PropTypes.string, // New prop type for Value field
+      Ownership: PropTypes.string, // New prop type for Value field
       Comparison: PropTypes.string, // New prop type for Comparison field
       Recommendation: PropTypes.string, // New prop type for Recommendation field
       /* ExteriorShot: PropTypes.shape({

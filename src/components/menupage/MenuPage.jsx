@@ -1,27 +1,17 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import { useEffect, useState } from 'react'; // Import useState hook
+import { useEffect } from 'react'; // Import useState hook
 import './MenuPage.css';
 import logo from '../../assets/kenyanauto-transparent-logo.png';
 
-export const MenuPage = ({ onClose }) => { // Remove isOpen from props
-    const [isOpen, setIsOpen] = useState(false); // Manage isOpen state internally
-
+export const MenuPage = ({ isOpen, onClose }) => { // Remove isOpen from props
     const handleButtonClick = () => {
-        setIsOpen(!isOpen); // Toggle isOpen state
-        console.log('MenuPage opened');
-    };
-    useEffect(() => {
-        if (isOpen) {
-            console.log('Menu page is opened');
-        } else {
-            console.log('Menu page is closed');
-        }
-    }, [isOpen]);
+        onClose();
+      };
 
     useEffect(() => {
         const handleClickOutside = (event) => {
-            if (isOpen && !event.target.closest('.menu-page')) {
+            if (!event.target.closest('.menu-page')) {
                 onClose(); // Close the menu if clicked outside of it
             }
         };
@@ -31,11 +21,11 @@ export const MenuPage = ({ onClose }) => { // Remove isOpen from props
         return () => {
             window.removeEventListener('click', handleClickOutside);
         };
-    }, [isOpen, onClose]); // Include isOpen and onClose in the dependency array
+    }, [onClose]);
 
     return (
         <div className={`menu-page ${isOpen ? 'open' : ''}`}>
-            <i className='bx bx-x close-button' onClick={handleButtonClick}></i>
+            <i className='bx bx-x close-button' onClick={handleButtonClick}/>
             <div className="logo">
                 <Link to={'/'}>
                     <img src={logo} alt="KenyanAuto" className="side-logo" width={120}/>
@@ -59,4 +49,5 @@ export const MenuPage = ({ onClose }) => { // Remove isOpen from props
 
 MenuPage.propTypes = {
     onClose: PropTypes.func.isRequired,
+    isOpen: PropTypes.bool.isRequired
 };

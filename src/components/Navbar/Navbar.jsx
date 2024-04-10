@@ -4,6 +4,7 @@ import logo from '../../assets/kenyanauto-black-transparent-logo.png';
 import './Navbar.css'
 
 export const Navbar = () => {
+
   return (
     <nav className="navbar">
             <div className="navbar-logo">
@@ -30,9 +31,10 @@ export const Navbar = () => {
                 </ul>
             </div>
             <div className="menu-icon">
-                <Menuicon />
+                <Menuicon/>
             </div>
             
     </nav>
   )
 }
+

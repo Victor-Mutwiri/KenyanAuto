@@ -20,9 +20,11 @@ import Model from './pages/Review/Model';
 
 function App() {
   const [selectedReview, setSelectedReview] = useState(null);
+
+
   return (
     <BrowserRouter>
-      <Navbar />
+      <Navbar/>
       <Routes>
         <Route path="/" element={<Review />} />
         <Route path="/Buying" element={<Buying />} />
