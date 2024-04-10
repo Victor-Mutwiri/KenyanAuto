@@ -48,3 +48,28 @@
     padding: 7px;
     border-radius: 18px;
 }
+
+
+@media (max-width:450px){
+    .aboutPage{
+        display: flex;
+        flex-direction: column;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+    .about img{
+        display: none;
+    }
+    .service{
+        display: flex;
+        flex-direction: column;
+    }
+    .offer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
