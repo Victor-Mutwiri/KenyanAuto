@@ -3,7 +3,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #E8F1EA;
+    /* background: #E8F1EA */;
+    background: #F3F2F4;
     width: 100%;
 }
 .background{

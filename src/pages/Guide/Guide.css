@@ -19,6 +19,7 @@
     margin: 1rem 2rem;
     justify-content: center;
     text-align: center;
+    background: transparent;
 }
 
 .guideCard a{

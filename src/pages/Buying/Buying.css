@@ -1,5 +1,6 @@
 .content-container {
     padding: 1rem;
+    background: #F3F2F4;
 }
 
 .buyingCard {
@@ -7,6 +8,7 @@
     flex-wrap: wrap;
     justify-content: center;
     padding: 1.5rem 3rem;
+    
 }
 
 .buyingCard .buying{
@@ -19,6 +21,7 @@
     margin: 1rem 2rem;
     justify-content: center;
     text-align: center;
+    background: transparent;
 }
 
 .buyingCard a{
