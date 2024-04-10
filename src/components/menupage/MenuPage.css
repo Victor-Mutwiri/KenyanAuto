@@ -1,4 +1,4 @@
-@media (max-width: 550px) {
+@media (max-width: 450px) {
     .menu-page {
         position: fixed;
         top: 0;
@@ -8,7 +8,7 @@
         background-color: #3E82B3;
         transition: right 0.3s ease-in-out;
         padding: 20px;
-        display: block;
+        display: flex;
         flex-direction: column;
         align-items: center;
         opacity: 0;

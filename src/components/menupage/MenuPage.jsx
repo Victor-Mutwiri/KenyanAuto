@@ -37,6 +37,7 @@ export const MenuPage = ({ isOpen, onClose }) => { // Remove isOpen from props
                 <Link to={'/Maintenance'}>Maintenance</Link>
                 <Link to={'/Guide'}>Guides</Link>
                 <Link to={'/Safety'}>Safety</Link>
+                <Link to={'/About'}>About</Link>
             </div>
             <div className="socials">
                 <a href="#"><i className='bx bxl-facebook'/></a>

@@ -17,6 +17,8 @@ import MaintenanceContent from './pages/Maintenance/MaintenanceContent';
 import MakeMaintenance from './pages/Maintenance/MakeMaintenance';
 import NotFound from './pages/404Page/NotFound';
 import Model from './pages/Review/Model';
+import Footer from './components/Footer/Footer';
+import About from './pages/About/About';
 
 function App() {
   const [selectedReview, setSelectedReview] = useState(null);
@@ -27,6 +29,7 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path="/" element={<Review />} />
+        <Route path='/About' element={<About/>}/>
         <Route path="/Buying" element={<Buying />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Guide" element={<Guide />} />
@@ -41,6 +44,7 @@ function App() {
         <Route path="/model/:id" element={<Model selectedReview={selectedReview} onClose={() => setSelectedReview(null)}/>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }

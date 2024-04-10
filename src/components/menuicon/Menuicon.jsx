@@ -9,11 +9,11 @@ export const Menuicon = () => {
     const toggleMenu = (event) => {
         event.stopPropagation();
         setIsOpen(!isOpen);
-        console.log("Menu opened")
+        /* console.log("Menu opened") */
     };
       const closeMenu = () => {
         setIsOpen(false);
-        console.log("menu closed")
+        /* console.log("menu closed") */
     };
 
     return (
