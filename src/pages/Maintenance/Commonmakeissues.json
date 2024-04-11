@@ -1,0 +1,177 @@
+[
+    {
+        "id": 1,
+        "route":"make-issues",
+        "img": "/Makes.jpg",
+        "title": "Common Maintenance Issues by Make",
+        "content": [
+          {
+            "id": 1,
+            "make":"Toyota",
+            "image":"/Toyota.jpg",
+            "reliability":"",
+            "commonIssues":"",
+            "maintaining":""
+          },
+          {
+            "id": 2,
+            "make":"Nissan",
+            "image":"/Nissan.jpg",
+            "reliability":"",
+            "commonIssues":"",
+            "maintaining":""
+          },
+          {
+            "id": 3,
+            "make":"Mercedes",
+            "image":"/Mercedes.jpg",
+            "reliability":"",
+            "commonIssues":"",
+            "maintaining":""
+          },
+          {
+            "id": 4,
+            "make":"BMW",
+            "image":"/BMW.jpg",
+            "reliability":"",
+            "commonIssues":"",
+            "maintaining":""
+          },
+          {
+            "id": 5,
+            "make":"Audi",
+            "image":"/Audi.jpg",
+            "reliability":"",
+            "commonIssues":"",
+            "maintaining":""
+          },
+          {
+            "id": 6,
+            "make":"Landrover",
+            "image":"/LandRover.jpg",
+            "reliability":"",
+            "commonIssues":"",
+            "maintaining":""
+          },
+          {
+            "id": 7,
+            "make":"Mazda",
+            "image":"/Mazda.jpg",
+            "reliability":"",
+            "commonIssues":"",
+            "maintaining":""
+          },
+          {
+            "id": 8,
+            "make":"Volswagen",
+            "image":"/Volkswagen.jpg",
+            "reliability":"",
+            "commonIssues":"",
+            "maintaining":""
+          },
+          {
+            "id": 9,
+            "make":"Mitsubishi",
+            "image":"/Mitsubishi.jpg",
+            "reliability":"",
+            "commonIssues":"",
+            "maintaining":""
+          },
+          {
+            "id": 10,
+            "make":"Suzuki",
+            "image":"/Suzuki.jpg",
+            "reliability":"",
+            "commonIssues":"",
+            "maintaining":""
+          },
+          {
+            "id": 11,
+            "make":"Peugeot",
+            "image":"/Peugeot.jpg",
+            "reliability":"",
+            "commonIssues":"",
+            "maintaining":""
+          },
+          {
+            "id": 12,
+            "make":"Lexus",
+            "image":"/Lexus.jpg",
+            "reliability":"",
+            "commonIssues":"",
+            "maintaining":""
+          },
+          {
+            "id": 13,
+            "make":"Hyundai",
+            "image":"/Hyundai.jpg",
+            "reliability":"",
+            "commonIssues":"",
+            "maintaining":""
+          },
+          {
+            "id": 14,
+            "make":"Volvo",
+            "image":"/Volvo.jpg",
+            "reliability":"",
+            "commonIssues":"",
+            "maintaining":""
+          },
+          {
+            "id": 15,
+            "make":"Subaru",
+            "image":"/Subaru.jpg",
+            "reliability":"",
+            "commonIssues":"",
+            "maintaining":""
+          },
+          {
+            "id": 16,
+            "make":"Honda",
+            "image":"/Honda.jpg",
+            "reliability":"",
+            "commonIssues":"",
+            "maintaining":""
+          },
+          {
+            "id": 17,
+            "make":"Isuzu",
+            "image":"/Isuzu.jpg",
+            "reliability":"",
+            "commonIssues":"",
+            "maintaining":""
+          },
+          {
+            "id": 18,
+            "make":"Renault",
+            "image":"/Renault.jpg",
+            "reliability":"",
+            "commonIssues":"",
+            "maintaining":""
+          },
+          {
+            "id": 19,
+            "make":"Kia",
+            "image":"/KIA.jpg",
+            "reliability":"",
+            "commonIssues":"",
+            "maintaining":""
+          },
+          {
+            "id": 20,
+            "make":"Jaguar",
+            "image":"/Jaguar.jpg",
+            "reliability":"",
+            "commonIssues":"",
+            "maintaining":""
+          },
+          {
+            "id": 21,
+            "make":"Citroen",
+            "image":"/Citroen.jpg",
+            "reliability":"",
+            "commonIssues":"",
+            "maintaining":""
+          }]
+      }
+]

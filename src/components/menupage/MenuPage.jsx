@@ -27,7 +27,7 @@ export const MenuPage = ({ isOpen, onClose }) => { // Remove isOpen from props
         <div className={`menu-page ${isOpen ? 'open' : ''}`}>
             <i className='bx bx-x close-button' onClick={handleButtonClick}/>
             <div className="logo">
-                <Link to={'/'}>
+                <Link to={'/'} onClick={handleButtonClick}>
                     <img src={logo} alt="KenyanAuto" className="side-logo" width={120}/>
                 </Link>
             </div>

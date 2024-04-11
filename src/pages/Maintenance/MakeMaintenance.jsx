@@ -1,8 +1,8 @@
-
+import './MakeMaintenance.css'
 
 const MakeMaintenance = () => {
   return (
-    <div>Welcome to maintenance</div>
+    <div className='makemaintenance'>Welcome to maintenance for each make page</div>
   )
 }
 

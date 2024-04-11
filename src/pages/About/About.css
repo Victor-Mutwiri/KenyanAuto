@@ -58,6 +58,11 @@
     .about{
         display: flex;
         flex-direction: column;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 30vh;
+        width: 90%;
     }
     .about img{
         display: none;

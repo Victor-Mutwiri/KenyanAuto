@@ -17,11 +17,11 @@ const About = () => {
       </section>
       <section className='service'>
         <p>
-          KenyanAuto offers customized vehicle sourcing and sales solutions, 
-          backed by over 6 years of automotive industry experience, 
-          <br /> renowned for exceptional service.
-          Whether you are looking for a locally used vehicle or considering importing
-          <br /> one from abroad, our team has the knowledge and resources to find the perfect match 
+          We deliver customized vehicle sourcing, Backed by 
+          <br />over 6 years of successful automotive industry experience, 
+           renowned for exceptional service.
+          <br />Whether locally used vehicle or considering importing,
+          <br /> our team takes pride in finding the perfect match 
           <br />for your needs and budget.
         </p>
       </section>
