@@ -100,7 +100,7 @@ const BuyingContent = () => {
       )}
       {article.content.payment && (
         <div>
-            <h3>payment</h3>
+            <h3>Payment</h3>
             <p>Here's a casual rundown of three common payment methods for buying a car:</p>
             <ul>
               {article.content.payment.map((step, index) => {
@@ -117,40 +117,86 @@ const BuyingContent = () => {
       )}
       {article.content.overview && (
         <div>
-            <h3>overview</h3>
+            <h3> What is the process of Importing Cars from Japan to Kenya?</h3>
             <p>{article.content.overview}</p>
         </div>
       )}
       {article.content.process && (
         <div>
-            <h3>process</h3>
-            <p>{article.content.process}</p>
+            <h4>Here is a comprehensive rundown of the process:</h4>
+            {/* <p>{article.content.process}</p> */}
+            <ul>
+              {article.content.process.map((step, index) => {
+                  const [action, description] = step.split(' - ');
+                  return (
+                    <li key={index}>
+                      <strong>{action}</strong> - {description}
+                    </li>
+                  );
+                })}
+            </ul>
         </div>
       )}
       {article.content.agents && (
         <div>
-            <h3>agents</h3>
-            <p>{article.content.agents}</p>
+            <h3>Here are some of the trusted agents from Japan</h3>
+            {/* <p>{article.content.agents}</p> */}
+            <ul>
+              {article.content.agents.map((step, index) => {
+                  const [action] = step.split(' - ');
+                  return (
+                    <li key={index}>
+                      <strong>{action}</strong>
+                    </li>
+                  );
+                })}
+            </ul>
         </div>
       )}
       {article.content.regulations && (
         <div>
-            <h3>regulations</h3>
-            <p>{article.content.regulations}</p>
+            <h4>Here are some of the governments regulations for car importation in Kenya</h4>
+            {/* <p>{article.content.regulations}</p> */}
+            <ul>
+              {article.content.regulations.map((step, index) => {
+                  const [action, description] = step.split(' - ');
+                  return (
+                    <li key={index}>
+                      <strong>{action}</strong> - {description}
+                    </li>
+                  );
+                })}
+            </ul>
         </div>
       )}
       {article.content.clearing && (
         <div>
-            <h3>clearing</h3>
-            <p>{article.content.clearing}</p>
+            <h3>
+              Which duties are payable during the customs clearance process?
+            </h3>
+            <p>The Kenya Revenue Authority (KRA) charges duties during customs clearance for 
+              vehicle imports into Kenya. Understanding these duties is crucial for importing motor 
+              vehicles and understanding the applicable taxes for customs clearance.
+            </p>
+            {/* <p>{article.content.clearing}</p> */}
+            <ul>
+              {article.content.clearing.map((step, index) => {
+                  const [action, description] = step.split(' - ');
+                  return (
+                    <li key={index}>
+                      <strong>{action}</strong> - {description}
+                    </li>
+                  );
+                })}
+            </ul>
         </div>
       )}
-      {article.content.registration && (
+      {/* {article.content.registration && (
         <div>
             <h3>registration</h3>
             <p>{article.content.registration}</p>
         </div>
-      )}
+      )} */}
       {article.content.redflags && (
         <div>
             <h3>What should I look for when buying a used Car?</h3>

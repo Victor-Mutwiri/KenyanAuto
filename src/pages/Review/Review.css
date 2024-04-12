@@ -43,7 +43,7 @@
     width: 550px;
 }
 .search h3{
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     font-weight: 500;
     font-size: 1.5rem;
 }
@@ -142,17 +142,102 @@
 }
 .review .call2action{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 .call2action p{
     text-align: center;
     font-size: 20px;
+    margin-bottom: 0.8rem;
 }
+
+.sparkle {
+    max-width: 15em;
+    color: #441151;
+    margin: auto auto;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .u-hover--sparkle {
+ 
+    box-sizing: border-box;
+    position: relative;
+    padding: 0.4em;
+    &::before,
+    &::after {
+      content: '';
+      box-sizing: border-box;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      transform-origin: center;
+    }
+  
+    &::before {
+      border-top: 0.2em solid orange;
+      border-bottom: 0.2em solid orange;
+      transform: scale3d(0,1,1);
+    }
+  
+    &::after {
+      border-left: 0.2em solid #002233;
+      border-right: 0.2em solid #002233;
+      transform: scale3d(1,0,1);
+    }
+  
+    &:hover::before,
+    &:hover::after {
+      transform: scale3d(1,1,1);
+      transition: transform 900ms;
+    }
+  }
+
 #contact{
-    background: orange;
-    padding: 8px;
+    cursor:pointer;
+    position:relative;
+    padding:10px 20px;
+    background:orange;
+    font-size:20px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    transition:all 1s;
+    &:after,&:before{
+        content:" ";
+        width:10px;
+        height:10px;
+        position:absolute;
+        border :0px solid #fff;
+        transition:all 1s;
+    }
+    &:after{
+        top:-1px;
+        left:-1px;
+        border-top:5px solid #002233;
+        border-left:5px solid #002233;
+    }
+    &:before{
+        bottom:-1px;
+        right:-1px;
+        border-bottom:5px solid black;
+        border-right:5px solid black;
+    }
+    &:hover{
+        border-top-right-radius:0px;
+        border-bottom-left-radius:0px;
+        /* background:rgba(0,0,0,.5); */
+        /* color:white; */
+    &:before,&:after{
+        width:100%;
+        height:100%;
+        /*border-color:white; */
+    }
+  }
 }
 
 @media(max-width:450px){

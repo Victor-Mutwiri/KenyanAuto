@@ -114,9 +114,9 @@ export const Review = () => {
       </section>
       <h3>Guiding Your Choice</h3>
       <div className='call2action'>
-        <p>
+        <p className="sparkle u-hover--sparkle">
           <i className='bx bxs-quote-alt-left'/>
-          Looking to buy a car locally or Importing <br />
+          Looking to buy or sell a car locally <br />
           Contact us at...
           <i className='bx bxs-quote-alt-right'/>
         </p>

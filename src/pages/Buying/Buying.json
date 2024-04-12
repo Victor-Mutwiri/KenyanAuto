@@ -61,12 +61,36 @@
     "img": "/auction.jpg",
     "title": "Import New",
     "content": {
-      "overview":"",
-      "process":"big bob",
-      "agents":"yes",
-      "regulations":"jiweke",
-      "clearing":"hdgskhhdsn",
-      "registration":"big yellow toy"
+      "overview":[
+        "Are you eager to cruise the streets of Kenya in a sleek Japanese ride? At KenyanAuto we provide a comprehensive guide to import cars from Japan to Kenya, offering essential steps and insights to make the process smoother and more convenient."
+      ],
+      "process":[
+        "Research and Selection - Research Kenyan and Japanese car markets using websites like CarSensor, Goo-net, Jiji, and Cheki.",
+        "Verification and Negotiation - Verify the credentials of the chosen exporter and negotiate the CIF (Cost, Insurance, and Freight) price",
+        "Documentation and Payment - Make payment through a Kenyan bank and provide essential documents like the Bill of Landing, Export Certificate, and Inspection Certificate.",
+        "Shipping and Inspection - The car undergoes inspection by organizations like QISJ to ensure roadworthiness and compliance with Kenyan standards.",
+        "Customs Clearance and Duty Payment - Engage a licensed clearing agent at the port of Mombasa, pay taxes and duty fees, and ensure timely clearance to minimize CFS (Container Freight Station) charges",
+        "Registration and Insurance - Obtain car registration and number plates from the National Transport and Safety Authority (NTSA), submit required documents, and secure insurance from licensed insurers.",
+        "Collection and Enjoyment - Ensure proper insurance coverage and consider installing a car tracker for added security."
+      ],
+      "agents":[
+        "SBT Japan",
+        "AA Japan",
+        "MHH Japanese Cars"
+      ],
+      "regulations":[
+        "Vehicle Compliance - Cars must meet KEBS requirements, including being less than 8 years old from first registration, undergoing a roadworthiness inspection, and having right-hand drive configuration.",
+        "Taxes and Duties - Import Duty, Excise Duty, Value Added Tax (VAT), Import Declaration Fees, and Railway Development Levy are applicable based on the customs value.",
+        "Required Documents - Original Commercial Invoice, cancelled Logbook, Original Bill of Lading, Pre-shipment inspection certificate, and PIN certificate or Certificate of Incorporation."
+      ],
+      "clearing":[
+        "Import Duty- 25% of the customs value of the vehicle, applicable to all vehicles.",
+        "Excise Duty - Excise duty for vehicles with spark-ignition internal combustion engines(petrol) varies by type and engine capacity. Spark-ignition engines(petrol) have a 20% excise duty for engines exceeding 1,000 cc, 25% for engines exceeding 1,500 cc, and 35% for engines exceeding 3,000 cc. Compression-ignition engines (diesel) have a 25% excise duty for engines not exceeding 1,500 cc, 25% for engines exceeding 1,500 cc, and 35% for engines exceeding 2,500 cc. Additional duties apply to vehicles with hybrid or electric propulsion systems.",
+        "Value Added Tax (VAT) - 16% on the customs value of the vehicle, contributing to government revenue.",
+        "Import Declaration Fees - 3.5% of the customs value, covering administrative costs during customs clearance.",
+        "Railway Development Levy - 2% on the customs value of imported vehicles, contributing to Kenya's railway infrastructure development."
+      ],
+      "registration":[]
     }
   },
   {
