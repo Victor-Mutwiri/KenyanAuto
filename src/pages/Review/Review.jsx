@@ -113,6 +113,15 @@ export const Review = () => {
         />
       </section>
       <h3>Guiding Your Choice</h3>
+      <div className='call2action'>
+        <p>
+          <i className='bx bxs-quote-alt-left'/>
+          Looking to buy a car locally or Importing <br />
+          Contact us at...
+          <i className='bx bxs-quote-alt-right'/>
+        </p>
+        <label htmlFor="#" id='contact'>O746583509</label>
+      </div>
       <div ref={reviewListRef}>
         {reviews.length > 0 && <ReviewList reviews={reviews} onSelectReview={handleModelClick} />}
       </div>

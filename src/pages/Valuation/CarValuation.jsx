@@ -6,29 +6,61 @@ const CarValuation = () => {
   const [priceBought, setPriceBought] = useState('');
   const [mileageBought, setMileageBought] = useState('');
   const [currentMileage, setCurrentMileage] = useState('');
-  const [marketPrices, setMarketPrices] = useState([]);
+  const [marketPrice1, setMarketPrice1] = useState('');
+  const [marketPrice2, setMarketPrice2] = useState('');
+  const [marketPrice3, setMarketPrice3] = useState('');
   const [accident, setAccident] = useState('');
-  const [features, setFeatures] = useState('');
+  const [valuation, setValuation] = useState(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Calculate average market price
-    const averageMarketPrice = marketPrices.reduce((total, price) => total + price, 0) / marketPrices.length;
+    // Ensure all input values are valid numbers
+    if (!year || !priceBought || !mileageBought || !currentMileage || !marketPrice1 || !marketPrice2 || !marketPrice3) {
+      alert('Please fill in all fields');
+      return;
+    }
 
-    // Depreciation rate calculation based on car's age
-    const currentYear = new Date().getFullYear();
-    const age = currentYear - parseInt(year);
-    const depreciationRate = 0.05 * age; // Example depreciation rate, you can adjust this based on your needs
+    // Convert input values to numbers
+    const yearNum = parseInt(year);
+    const priceBoughtNum = parseFloat(priceBought.replace(/,/g, ''));
+    const mileageBoughtNum = parseFloat(mileageBought.replace(/,/g, ''));
+    const currentMileageNum = parseFloat(currentMileage.replace(/,/g, ''));
+    const marketPrice1Num = parseFloat(marketPrice1.replace(/,/g, ''));
+    const marketPrice2Num = parseFloat(marketPrice2.replace(/,/g, ''));
+    const marketPrice3Num = parseFloat(marketPrice3.replace(/,/g, ''));
+
+    // Validate market prices
+    if (isNaN(marketPrice1Num) || isNaN(marketPrice2Num) || isNaN(marketPrice3Num)) {
+      alert('Please enter valid market prices');
+      return;
+    }
+
+    // Calculate average market price
+    const averageMarketPrice = (marketPrice1Num + marketPrice2Num + marketPrice3Num) / 3;
+
+    // Calculate depreciation rate
+    const depreciationRate = calculateDepreciationRate(yearNum);
 
     // Calculate valuation
-    const valuation = (priceBought / (1 + depreciationRate)) *
-                      ((mileageBought - currentMileage) / 10000) * // Assuming total mileage allowed is 100,000
-                      (averageMarketPrice / marketPrices.length) *
-                      getAccidentFactor(accident) *
-                      /* getFeaturesFactor(features); */
+    const depreciationMileageFactor = 1 - ((currentMileageNum - mileageBoughtNum) / 1000000); // Assuming total mileage allowed is 100,000
+    const valuation = (priceBoughtNum / (1 + depreciationRate)) *
+                      depreciationMileageFactor *
+                      (averageMarketPrice / 3) *
+                      getAccidentFactor(accident);
 
-    alert(`Valuation of the car: $${valuation.toFixed(2)}`);
+    setValuation(valuation.toFixed(2));
+  };
+
+  const calculateDepreciationRate = (year) => {
+    // Example: 15% depreciation rate per year for cars older than 5 years
+    const currentYear = new Date().getFullYear();
+    const age = currentYear - year;
+    if (age <= 5) {
+      return age * 0.03; // Example: 3% depreciation rate per year for cars less than or equal to 5 years old
+    } else {
+      return 0.15; // Example: 15% depreciation rate per year for cars older than 5 years
+    }
   };
 
   const getAccidentFactor = (accident) => {
@@ -42,34 +74,37 @@ const CarValuation = () => {
     }
   };
 
-  /* const getFeaturesFactor = (features) => {
-    // You can implement logic to calculate features factor based on the additional features
-    return 1; // For simplicity, assuming no additional value from features
-  }; */
-
   return (
     <div className='valuation'>
       <h2>Car Valuation</h2>
       <form onSubmit={handleSubmit}>
-        <label>
+      <label>
           Year of the car:
           <input type="number" value={year} onChange={(e) => setYear(e.target.value)} required />
         </label><br />
         <label>
           Price bought:
-          <input type="number" value={priceBought} onChange={(e) => setPriceBought(e.target.value)} required />
+          <input type="text" value={priceBought} onChange={(e) => setPriceBought(e.target.value.replace(/\D/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ','))} required />
         </label><br />
         <label>
           Mileage bought:
-          <input type="number" value={mileageBought} onChange={(e) => setMileageBought(e.target.value)} required />
+          <input type="text" value={mileageBought} onChange={(e) => setMileageBought(e.target.value.replace(/\D/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ','))} required />
         </label><br />
         <label>
           Current Mileage:
-          <input type="number" value={currentMileage} onChange={(e) => setCurrentMileage(e.target.value)} required />
+          <input type="text" value={currentMileage} onChange={(e) => setCurrentMileage(e.target.value.replace(/\D/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ','))} required />
         </label><br />
         <label>
-          Current Market Price (Enter at least 4 prices separated by commas):
-          <input type="text" value={marketPrices.join(',')} onChange={(e) => setMarketPrices(e.target.value.split(',').map(price => parseFloat(price)))} required />
+          Current Market Price 1:
+          <input type="text" value={marketPrice1} onChange={(e) => setMarketPrice1(e.target.value.replace(/\D/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ','))} required />
+        </label><br />
+        <label>
+          Current Market Price 2:
+          <input type="text" value={marketPrice2} onChange={(e) => setMarketPrice2(e.target.value.replace(/\D/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ','))} required />
+        </label><br />
+        <label>
+          Current Market Price 3:
+          <input type="text" value={marketPrice3} onChange={(e) => setMarketPrice3(e.target.value.replace(/\D/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ','))} required />
         </label><br />
         <label>
           Accident History:
@@ -80,12 +115,9 @@ const CarValuation = () => {
             <option value="Accident Free">Accident Free</option>
           </select>
         </label><br />
-        <label>
-          Features or Additions:
-          <input type="text" value={features} onChange={(e) => setFeatures(e.target.value)} />
-        </label><br />
         <button type="submit">Calculate Valuation</button>
       </form>
+      {valuation !== null && <p>Valuation of the car: ${valuation}</p>}
     </div>
   );
 };
