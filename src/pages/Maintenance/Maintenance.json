@@ -5,13 +5,25 @@
     "img": "/Transmissions.jpg",
     "title": "Engine Transmissions",
     "content": {
-      "manual":"",
-      "torqueConverter":"",
-      "CVT":"",
-      "semiAutomatic":"",
-      "DualClutch":"",
-      "Tiptonic":"",
-      "FAQs":""
+      "Manual":[
+        "Manual transmissions are a type of car that requires a clutch pedal and a gear stick to change gears. They are the most fuel-efficient, but aggressive gear usage can lead to lower mileage.",
+        " There are various types of manual transmissions, including dual-clutch, unsynchronized, synchronized/constant mesh, automated, single-clutch, and preselector.",
+        " Dual-clutch transmissions use two clutches, while unsynchronized transmissions grind gears together to mesh.",
+        " Single-clutch transmissions can be electric, hydraulic, or electrohydraulic, but their popularity declined as dual-clutches can handle increased torque."
+      ],
+      "torqueConverter":[],
+      "CVT":[
+        "overheating",
+        "loud whining",
+        "delayed acceleration",
+        "vehicle jerking",
+        "burning smell",
+        "transmission leaks",
+        "premature failure"
+      ],
+      "semiAutomatic":[],
+      "DualClutch":[],
+      "Tiptonic":[]
     }
   },
   {

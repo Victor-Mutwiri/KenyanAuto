@@ -1,10 +1,11 @@
 .navbar{
     width: 100%;
     background-color: #fff;
+    /* background-color: #002233;
+    color: antiquewhite; */
     padding: 0;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
     top: 0;
-    /* position: relative; */
     position: fixed;
     z-index: 1000;
     display: flex;
@@ -42,6 +43,7 @@
 .navbar .navbar-menu ul li a{
     text-decoration: none;
     color: #000;
+    /* color: antiquewhite; */
     font-size: 1.0rem;
     font-weight: 500;
     transition: all .3s ease;

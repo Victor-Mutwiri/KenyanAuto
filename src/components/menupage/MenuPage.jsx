@@ -35,7 +35,7 @@ export const MenuPage = ({ isOpen, onClose }) => { // Remove isOpen from props
                 <Link to={'/Buying'} onClick={handleButtonClick}>Buying</Link>
                 <Link to={'/Selling'} onClick={handleButtonClick}>Selling</Link>
                 <Link to={'/Maintenance'} onClick={handleButtonClick}>Maintenance</Link>
-                <Link to={'/Guide'} onClick={handleButtonClick}>Guides</Link>
+                {/* <Link to={'/Guide'} onClick={handleButtonClick}>Guides</Link> */}
                 {/* <Link to={'/Safety'} onClick={handleButtonClick}>Safety</Link> */}
                 <Link to={'/About'} onClick={handleButtonClick}>About</Link>
             </div>

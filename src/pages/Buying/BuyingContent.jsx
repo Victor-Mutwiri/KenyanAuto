@@ -253,18 +253,6 @@ const BuyingContent = () => {
             <p>{article.content.approval}</p>
         </div>
       )}
-      {article.content.insurance && (
-        <div>
-            <h3>insurance</h3>
-            <p>{article.content.insurance}</p>
-        </div>
-      )}
-      {article.content.claims && (
-        <div>
-            <h3>claims</h3>
-            <p>{article.content.claims}</p>
-        </div>
-      )}
       {article.content.testimonials && (
         <div>
             <h3>testimonials</h3>

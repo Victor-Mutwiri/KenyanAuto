@@ -112,7 +112,7 @@ export const Review = () => {
           onSearch={handleSearch}
         />
       </section>
-      <h3>Guiding Your Choice</h3>
+      <h4>Guiding Your Choice</h4>
       <div className='call2action'>
         <p className="sparkle u-hover--sparkle">
           <i className='bx bxs-quote-alt-left'/>

@@ -24,10 +24,9 @@ export const Navbar = () => {
                         <Link to={'/Maintenance'} className="navbar-menu-link">Maintenance</Link>
                         {/* <a href="/Maintenance" className="navbar-menu-link">Maintenance</a> */}
                     </li>
-                    <li className="navbar-menu-item">
+                    {/* <li className="navbar-menu-item">
                         <Link to={'/Guide'} className="navbar-menu-link">Guides</Link>
-                        {/* <a href="/Guide" className="navbar-menu-link">Guides</a> */}
-                    </li>
+                    </li> */}
                 </ul>
             </div>
             <div className="menu-icon">

@@ -133,16 +133,6 @@
   },
   {
     "id": 5,
-    "route":"post-purchase",
-    "img": "After-purchase.png",
-    "title": "After Purchase",
-    "content": {
-      "insurance":"",
-      "claims":""
-    }
-  },
-  {
-    "id": 6,
     "route":"dealers",
     "img": "/Checklist.png",
     "title": "Key Pointers",
@@ -155,7 +145,7 @@
     }
   },
   {
-    "id": 7,
+    "id": 6,
     "route":"pre-purchase",
     "img": "/Car-buying-guide.jpg",
     "title": "General Buying Guide",
