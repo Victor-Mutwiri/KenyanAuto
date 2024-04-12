@@ -113,6 +113,13 @@ export const Review = () => {
         />
       </section>
       <h4>Guiding Your Choice</h4>
+      <div ref={reviewListRef}>
+        {reviews.length > 0 && <ReviewList reviews={reviews} onSelectReview={handleModelClick} />}
+      </div>
+      {/* Render the Model component with the selected review */}
+      <div ref={modelsRef}>
+        {selectedReview && <Model selectedReview={selectedReview} onClose={() => setSelectedReview(null)} />}
+      </div>
       <div className='call2action'>
         <p className="sparkle u-hover--sparkle">
           <i className='bx bxs-quote-alt-left'/>
@@ -122,15 +129,6 @@ export const Review = () => {
         </p>
         <label htmlFor="#" id='contact'>O746583509</label>
       </div>
-      <div ref={reviewListRef}>
-        {reviews.length > 0 && <ReviewList reviews={reviews} onSelectReview={handleModelClick} />}
-      </div>
-      
-      {/* Render the Model component with the selected review */}
-      <div ref={modelsRef}>
-        {selectedReview && <Model selectedReview={selectedReview} onClose={() => setSelectedReview(null)} />}
-      </div>
-      
     </div>
   );
 };
