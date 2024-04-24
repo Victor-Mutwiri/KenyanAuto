@@ -185,12 +185,17 @@
         "InteriorShot":"/Interior/Audi/Q3 2019.jpg"
     },
     {
-        "Generation":"2013 - 2016 CX-5",
+        "Generation":"CX-5 (2012 - 2015)",
+        "ExteriorShot":"/Exterior/Mazda/CX-5 (2012 - 2015).jpg",
+        "InteriorShot":"/Interior/Mazda/CX-5 (2012 - 2015).jpg"
+    },
+    {
+        "Generation":"CX-5 (2015 - 2017)",
         "ExteriorShot":"/Exterior/Mazda/CX5 2016.jpg",
         "InteriorShot":"/Interior/Mazda/CX5 2016.jpg"
     },
     {
-        "Generation":"2017 - Present CX-5",
+        "Generation":"CX-5 (2016 - Present)",
         "ExteriorShot":"/Exterior/Mazda/CX5 2017.jpg",
         "InteriorShot":"/Interior/Mazda/CX5 2017.jpg"
     },
@@ -205,9 +210,159 @@
         "InteriorShot":"/Interior/Mazda/Axela 2010.jpg"
     },
     {
-        "Generation":"Axela 2013 - 2018",
-        "ExteriorShot":"/Exterior/Mazda/Axela 2014.jpg",
-        "InteriorShot":"/Interior/Mazda/Axela 2014.jpg"
+        "Generation":"Axela 2013 - 2016",
+        "ExteriorShot":"/Exterior/Mazda/Axela 2013 - 2016.jpeg",
+        "InteriorShot":"/Interior/Mazda/Axela 2013 - 2016.jpeg"
+    },
+    {
+        "Generation":"Axela 2016 - 2018",
+        "ExteriorShot":"/Exterior/Mazda/Axela 2016 - 2018.jpg",
+        "InteriorShot":"/Interior/Mazda/Axela 2016 - 2018.jpg"
+    },
+    {
+        "Generation":"Axela 2018 - Present",
+        "ExteriorShot":"/Exterior/Mazda/Axela 2018 - Present.jpg",
+        "InteriorShot":"/Interior/Mazda/Axela 2018 - Present.jpg"
+    },
+    {
+        "Generation":"Axela (2004 - 2009)",
+        "ExteriorShot":"/Exterior/Mazda/Axela (2004 - 2009).jpeg",
+        "InteriorShot":"/Interior/Mazda/Axela (2004 - 2009).jpg"
+    },
+    {
+        "Generation":"Axela (2009 - 2013)",
+        "ExteriorShot":"/Exterior/Mazda/Axela (2009 - 2013).jpg",
+        "InteriorShot":"/Interior/Mazda/Axela (2009 - 2013).jpg"
+    },
+    {
+        "Generation":"Axela (2013 - 2016)",
+        "ExteriorShot":"/Exterior/Mazda/Axela (2013 - 2016).jpg",
+        "InteriorShot":"/Interior/Mazda/Axela (2013 - 2016).jpg"
+    },
+    {
+        "Generation":"Axela (2016 - 2018)",
+        "ExteriorShot":"/Exterior/Mazda/Axela (2016 - 2018).jpg",
+        "InteriorShot":"/Interior/Mazda/Axela (2016 - 2018).jpg"
+    },
+    {
+        "Generation":"Axela (2018 - Present)",
+        "ExteriorShot":"/Exterior/Mazda/Axela (2018 - Present).jpg",
+        "InteriorShot":"/Interior/Mazda/Axela (2018 - Present).jpg"
+    },
+    {
+        "Generation":"Atenza 2007 - 2013",
+        "ExteriorShot":"/Exterior/Mazda/Atenza 2007 - 2013.jpg",
+        "InteriorShot":"/Interior/Mazda/Atenza 2007 - 2013.jpg"
+    },
+    {
+        "Generation":"Atenza 2013 - 2015",
+        "ExteriorShot":"/Exterior/Mazda/Atenza 2013 - 2015.jpg",
+        "InteriorShot":"/Interior/Mazda/Atenza 2013 - 2015.jpg"
+    },
+    {
+        "Generation":"Atenza 2015 - 2018",
+        "ExteriorShot":"/Exterior/Mazda/Atenza 2015 - 2018.jpg",
+        "InteriorShot":"/Interior/Mazda/Atenza 2015 - 2018.jpg"
+    },
+    {
+        "Generation":"Atenza 2018 - Present",
+        "ExteriorShot":"/Exterior/Mazda/Atenza 2018 - Present.jpg",
+        "InteriorShot":"/Interior/Mazda/Atenza 2018 - Present.jpg"
+    },
+    {
+        "Generation":"Atenza (2007 - 2012)",
+        "ExteriorShot":"/Exterior/Mazda/Atenza (2007 - 2012).jpg",
+        "InteriorShot":"/Interior/Mazda/Atenza (2007 - 2012).jpg"
+    },
+    {
+        "Generation":"Atenza (2013 - 2015)",
+        "ExteriorShot":"/Exterior/Mazda/Atenza (2013 - 2015).jpg",
+        "InteriorShot":"/Interior/Mazda/Atenza (2013 - 2015).jpg"
+    },
+    {
+        "Generation":"Atenza (2015 - Present)",
+        "ExteriorShot":"/Exterior/Mazda/Atenza (2015 - Present).jpg",
+        "InteriorShot":"/Interior/Mazda/Atenza (2015 - Present).jpg"
+    },
+    {
+        "Generation":"Demio (2002 - 2007)",
+        "ExteriorShot":"/Exterior/Mazda/Demio (2002 - 2007).jpg",
+        "InteriorShot":"/Interior/Mazda/Demio (2002 - 2007).jpg"
+    },
+    {
+        "Generation":"Demio (2007 - 2014)",
+        "ExteriorShot":"/Exterior/Mazda/Demio (2007 - 2014).jpg",
+        "InteriorShot":"/Interior/Mazda/Demio (2007 - 2014).jpg"
+    },
+    {
+        "Generation":"Demio (2014 - 2019)",
+        "ExteriorShot":"/Exterior/Mazda/Demio (2014 - 2019).jpg",
+        "InteriorShot":"/Interior/Mazda/Demio (2014 - 2019).jpg"
+    },
+    {
+        "Generation":"Demio (2019 - 2023)",
+        "ExteriorShot":"/Exterior/Mazda/Demio (2019 - 2023).jpg",
+        "InteriorShot":"/Interior/Mazda/Demio (2019 - 2023).jpg"
+    },
+    {
+        "Generation":"CX-3 (2015 - 2018)",
+        "ExteriorShot":"/Exterior/Mazda/CX-3 (2015 - 2018).jpg",
+        "InteriorShot":"/Interior/Mazda/CX-3 (2015 - 2018).jpg"
+    },
+    {
+        "Generation":"CX-3 (2018 - Present)",
+        "ExteriorShot":"/Exterior/Mazda/CX-3 (2018 - Present).jpg",
+        "InteriorShot":"/Interior/Mazda/CX-3 (2018 - Present).jpg"
+    },
+    {
+        "Generation":"Biante (2008 - Present)",
+        "ExteriorShot":"/Exterior/Mazda/Biante (2008 - Present).jpg",
+        "InteriorShot":"/Interior/Mazda/Biante (2008 - Present).jpg"
+    },
+    {
+        "Generation":"CX-9 (2007 - 2009)",
+        "ExteriorShot":"/Exterior/Mazda/CX-9 (2007 - 2009).jpg",
+        "InteriorShot":"/Interior/Mazda/CX-9 (2007 - 2009).jpg"
+    },
+    {
+        "Generation":"CX-9 (2009 - 2012)",
+        "ExteriorShot":"/Exterior/Mazda/CX-9 (2009 - 2012).jpg",
+        "InteriorShot":"/Interior/Mazda/CX-9 (2009 - 2012).jpg"
+    },
+    {
+        "Generation":"CX-9 (2013 - 2016)",
+        "ExteriorShot":"/Exterior/Mazda/CX-9 (2013 - 2016).jpg",
+        "InteriorShot":"/Interior/Mazda/CX-9 (2013 - 2016).jpg"
+    },
+    {
+        "Generation":"CX-9 (2016 - Present)",
+        "ExteriorShot":"/Exterior/Mazda/CX-9 (2016 - Present).jpg",
+        "InteriorShot":"/Interior/Mazda/CX-9 (2016 - Present).jpg"
+    },
+    {
+        "Generation":"Premacy 2010 - Present",
+        "ExteriorShot":"/Exterior/Mazda/Premacy 2010 - Present.jpg",
+        "InteriorShot":"/Interior/Mazda/Premacy 2010 - Present.jpg"
+    },
+    {
+        "Generation":"BT-50 2006 - 2011",
+        "ExteriorShot":"/Exterior/Mazda/BT-50 2006 - 2011.jpg",
+        "InteriorShot":"/Interior/Mazda/BT-50 2006 - 2011.jpg"
+    },
+    {
+        "Generation":"BT-50 2011 - 2015",
+        "ExteriorShot":"/Exterior/Mazda/BT-50 2011 - 2015.jpg",
+        "InteriorShot":"/Interior/Mazda/BT-50 2011 - 2015.jpg"
+    },
+    {
+        "Generation":"BT-50 2015 - 2018",
+        "ExteriorShot":"/Exterior/Mazda/BT-50 2015 - 2018.jpg",
+        "InteriorShot":"/Interior/Mazda/BT-50 2015 - 2018.jpg"
+    },
+    {
+        "Generation":"BT-50 2018 - 2020",
+        "ExteriorShot":"/Exterior/Mazda/BT-50 2018 - 2020.jpg",
+        "InteriorShot":"/Interior/Mazda/BT-50 2018 - 2020.jpg"
     },
     {
         "Generation":"(J90)1996-2002",
