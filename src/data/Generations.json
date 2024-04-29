@@ -435,17 +435,17 @@
         "InteriorShot":"/Interior/Nissan/(T32) 2017 - 2022.jpg"
     },
     {
-        "Generation":"Note I (2008-2012)",
+        "Generation":"Note (2008-2012)",
         "ExteriorShot":"/Exterior/Nissan/Note I (2008-2012).jpg",
         "InteriorShot":"/Interior/Nissan/Note I (2008-2012).jpg"
     },
     {
-        "Generation":"Note II (2013-2017)",
+        "Generation":"Note (2013-2017)",
         "ExteriorShot":"/Exterior/Nissan/Note II (2013-2017).jpg",
         "InteriorShot":"/Interior/Nissan/Note II (2013-2017).jpg"
     },
     {
-        "Generation":"Note II (facelift 2017)",
+        "Generation":"Note (facelift 2017)",
         "ExteriorShot":"/Exterior/Nissan/Note II (facelift 2017).jpg",
         "InteriorShot":"/Interior/Nissan/Note II (facelift 2017).jpg"
     },
@@ -556,21 +556,106 @@
     },
     {
         "Generation":"Pathfinder (2005 - 2007)",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Nissan",
-        "InteriorShot":"/KenyanAuto/public/Interior/Nissan"
+        "ExteriorShot":"/Exterior/Nissan/Pathfinder (2005 - 2007).jpg",
+        "InteriorShot":"/Interior/Nissan/Pathfinder (2005 - 2007).jpg"
     },
     {
         "Generation":"Pathfinder (2007 - 2012)",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Nissan",
-        "InteriorShot":"/KenyanAuto/public/Interior/Nissan"
+        "ExteriorShot":"/Exterior/Nissan/Pathfinder (2007 - 2012).jpg",
+        "InteriorShot":"/Interior/Nissan/Pathfinder (2007 - 2012).jpg"
     },
     {
         "Generation":"Pathfinder (2012 - 2016)",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Nissan",
-        "InteriorShot":"/KenyanAuto/public/Interior/Nissan"
+        "ExteriorShot":"/Exterior/Nissan/Pathfinder (2012 - 2016).jpg",
+        "InteriorShot":"/Interior/Nissan/Pathfinder (2012 - 2016).jpg"
     },
     {
         "Generation":"Pathfinder (2016 - 2021)",
+        "ExteriorShot":"/Exterior/Nissan/Pathfinder (2016 - 2021).jpg",
+        "InteriorShot":"/Interior/Nissan/Pathfinder (2016 - 2021).jpg"
+    },
+    {
+        "Generation":"Murano (2003 - 2007)",
+        "ExteriorShot":"/Exterior/Nissan/Murano (2003 - 2007).jpg",
+        "InteriorShot":"/Interior/Nissan/Murano (2003 - 2007).jpg"
+    },
+    {
+        "Generation":"Murano (2008 - 2015)",
+        "ExteriorShot":"/Exterior/Nissan/Murano (2008 - 2015).jpg",
+        "InteriorShot":"/Interior/Nissan/Murano (2008 - 2015).jpg"
+    },
+    {
+        "Generation":"Murano (2015 - 2018)",
+        "ExteriorShot":"/Exterior/Nissan/Murano (2015 - 2018).jpg",
+        "InteriorShot":"/Interior/Nissan/Murano (2015 - 2018).jpg"
+    },
+    {
+        "Generation":"Murano (2018 - Present)",
+        "ExteriorShot":"/Exterior/Nissan/Murano (2015 - 2018).jpg",
+        "InteriorShot":"/Interior/Nissan/Murano (2018 - Present).jpg"
+    },
+    {
+        "Generation":"Patrol (1998 - 2004)",
+        "ExteriorShot":"/Exterior/Nissan/Patrol (1998 - 2004).jpg",
+        "InteriorShot":"/Interior/Nissan/Patrol (1998 - 2004).jpg"
+    },
+    {
+        "Generation":"Patrol (2004 - 2010)",
+        "ExteriorShot":"/Exterior/Nissan/Patrol (2004 - 2010).jpg",
+        "InteriorShot":"/Interior/Nissan/Patrol (2004 - 2010).jpg"
+    },
+    {
+        "Generation":"Patrol (2010 - 2014)",
+        "ExteriorShot":"/Exterior/Nissan/Patrol (2010 - 2014).jpg",
+        "InteriorShot":"/Interior/Nissan/Patrol (2004 - 2010).jpg"
+    },
+    {
+        "Generation":"Patrol (2014 - Present)",
+        "ExteriorShot":"/Exterior/Nissan/Patrol (2014 - Present).jpeg",
+        "InteriorShot":"/Interior/Nissan/Patrol (2014 - Present).jpg"
+    },
+    {
+        "Generation":"Armada (2016 - 2020)",
+        "ExteriorShot":"/Exterior/Nissan/Armada (2016 - 2020).jpg",
+        "InteriorShot":"/Interior/Nissan/Armada (2016 - 2020).jpg"
+    },
+    {
+        "Generation":"Armada (2020 - Present)",
+        "ExteriorShot":"/Exterior/Nissan/Armada (2020 - Present).jpg",
+        "InteriorShot":"/Interior/Nissan/Armada (2020 - Present).jpg"
+    },
+    {
+        "Generation":"March (2010 - 2013",
+        "ExteriorShot":"/Exterior/Nissan/March (2010 - 2013.jpg",
+        "InteriorShot":"/Interior/Nissan/March (2010 - 2013.jpg"
+    },
+    {
+        "Generation":"March (2013 - 2017)",
+        "ExteriorShot":"/Exterior/Nissan/March (2013 - 2017).jpg",
+        "InteriorShot":"/Interior/Nissan/March (2013 - 2017).jpg"
+    },
+    {
+        "Generation":"March (2017 - 2020)",
+        "ExteriorShot":"/Exterior/Nissan/March (2017 - 2020).jpg",
+        "InteriorShot":"/Interior/Nissan/March (2017 - 2020).jpg"
+    },
+    {
+        "Generation":"Almera (2000 - 2007)",
+        "ExteriorShot":"/Exterior/Nissan/Almera (2000 - 2007).jpg",
+        "InteriorShot":"/Interior/Nissan/Almera (2000 - 2007).jpg"
+    },
+    {
+        "Generation":"Almera (2011 - Present)",
+        "ExteriorShot":"/Exterior/Nissan/Almera (2011 - Present).jpg",
+        "InteriorShot":"/Interior/Nissan/Almera (2011 - Present).jpg"
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"/KenyanAuto/public/Exterior/Nissan",
+        "InteriorShot":"/KenyanAuto/public/Interior/Nissan"
+    },
+    {
+        "Generation":"",
         "ExteriorShot":"/KenyanAuto/public/Exterior/Nissan",
         "InteriorShot":"/KenyanAuto/public/Interior/Nissan"
     },
@@ -581,68 +666,98 @@
     },
     {
         "Generation":"",
-        "ExteriorShot":"",
-        "InteriorShot":""
+        "ExteriorShot":"/KenyanAuto/public/Exterior/Nissan",
+        "InteriorShot":"/KenyanAuto/public/Interior/Nissan"
     },
     {
         "Generation":"",
-        "ExteriorShot":"",
-        "InteriorShot":""
+        "ExteriorShot":"/KenyanAuto/public/Exterior/Nissan",
+        "InteriorShot":"/KenyanAuto/public/Interior/Nissan"
     },
     {
         "Generation":"",
-        "ExteriorShot":"",
-        "InteriorShot":""
+        "ExteriorShot":"/KenyanAuto/public/Exterior/Nissan",
+        "InteriorShot":"/KenyanAuto/public/Interior/Nissan"
     },
     {
         "Generation":"",
-        "ExteriorShot":"",
-        "InteriorShot":""
+        "ExteriorShot":"/KenyanAuto/public/Exterior/Nissan",
+        "InteriorShot":"/KenyanAuto/public/Interior/Nissan"
     },
     {
         "Generation":"",
-        "ExteriorShot":"",
-        "InteriorShot":""
+        "ExteriorShot":"/KenyanAuto/public/Exterior/Nissan",
+        "InteriorShot":"/KenyanAuto/public/Interior/Nissan"
     },
     {
         "Generation":"",
-        "ExteriorShot":"",
-        "InteriorShot":""
+        "ExteriorShot":"/KenyanAuto/public/Exterior/Nissan",
+        "InteriorShot":"/KenyanAuto/public/Interior/Nissan"
     },
     {
         "Generation":"",
-        "ExteriorShot":"",
-        "InteriorShot":""
+        "ExteriorShot":"/KenyanAuto/public/Exterior/Nissan",
+        "InteriorShot":"/KenyanAuto/public/Interior/Nissan"
     },
     {
         "Generation":"",
-        "ExteriorShot":"",
-        "InteriorShot":""
+        "ExteriorShot":"/KenyanAuto/public/Exterior/Nissan",
+        "InteriorShot":"/KenyanAuto/public/Interior/Nissan"
     },
     {
         "Generation":"",
-        "ExteriorShot":"",
-        "InteriorShot":""
+        "ExteriorShot":"/KenyanAuto/public/Exterior/Nissan",
+        "InteriorShot":"/KenyanAuto/public/Interior/Nissan"
     },
     {
         "Generation":"",
-        "ExteriorShot":"",
-        "InteriorShot":""
+        "ExteriorShot":"/KenyanAuto/public/Exterior/Nissan",
+        "InteriorShot":"/KenyanAuto/public/Interior/Nissan"
     },
     {
         "Generation":"",
-        "ExteriorShot":"",
-        "InteriorShot":""
+        "ExteriorShot":"/KenyanAuto/public/Exterior/Nissan",
+        "InteriorShot":"/KenyanAuto/public/Interior/Nissan"
     },
     {
         "Generation":"",
-        "ExteriorShot":"",
-        "InteriorShot":""
+        "ExteriorShot":"/KenyanAuto/public/Exterior/Nissan",
+        "InteriorShot":"/KenyanAuto/public/Interior/Nissan"
     },
     {
         "Generation":"",
-        "ExteriorShot":"",
-        "InteriorShot":""
+        "ExteriorShot":"/KenyanAuto/public/Exterior/Nissan",
+        "InteriorShot":"/KenyanAuto/public/Interior/Nissan"
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"/KenyanAuto/public/Exterior/Nissan",
+        "InteriorShot":"/KenyanAuto/public/Interior/Nissan"
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"/KenyanAuto/public/Exterior/Nissan",
+        "InteriorShot":"/KenyanAuto/public/Interior/Nissan"
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"/KenyanAuto/public/Exterior/Nissan",
+        "InteriorShot":"/KenyanAuto/public/Interior/Nissan"
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"/KenyanAuto/public/Exterior/Nissan",
+        "InteriorShot":"/KenyanAuto/public/Interior/Nissan"
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"/KenyanAuto/public/Exterior/Nissan",
+        "InteriorShot":"/KenyanAuto/public/Interior/Nissan"
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"/KenyanAuto/public/Exterior/Nissan",
+        "InteriorShot":"/KenyanAuto/public/Interior/Nissan"
     },
     {
         "Generation":"",
