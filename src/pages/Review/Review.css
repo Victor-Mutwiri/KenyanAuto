@@ -115,7 +115,7 @@
     width: 60px;
     margin-top: 2rem;
 }
-.car-review{
+/* .car-review{
     display: grid;
     grid-template-columns: 1fr 2fr;
     justify-content: center;
@@ -125,24 +125,21 @@
     padding: 20px;
     width: 500px;
     margin-bottom: 1rem;
-}
-.car .car-review .car-image img{
-    /* width: 50px;
-    height: 50px; */
+} */
+/* .car .car-review .car-image img{
     border: 1px solid #ccc;
     border-radius: 50%;
     margin-right: 1rem;
-}
-.car .desc{
+} */
+/* .car .desc{
     display: flex;
     flex-direction: column;
     justify-content:left;
     align-items: left;
     text-align: left;
-}
+} */
 .review .call2action{
     display: flex;
-    /* flex-direction: column; */
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -241,7 +238,7 @@
   }
 }
 
-@media(max-width:450px){
+@media(max-width:414px){
     .review{
         margin-top: 2rem;
         /* height: auto; */

@@ -6,6 +6,7 @@ import './Review.css';
 import Selectmakeandmodel from '../../components/make&model/Selectmakeandmodel';
 import ReviewList from '../../components/Reviewslist/Reviewslist';
 import Model from './Model';
+import { Loading } from '../../components/loading/loading';
 
 export const Review = () => {
   const [makes, setMakes] = useState([]);
@@ -14,6 +15,7 @@ export const Review = () => {
   const [models, setModels] = useState([]);
   const [reviews, setReviews] = useState([]);
   const [selectedReview, setSelectedReview] = useState(null);
+  const [loading, setLoading] = useState(false);
 
   const modelsRef = useRef(null);
   const reviewListRef = useRef(null);
@@ -44,6 +46,9 @@ export const Review = () => {
 
   const fetchReviewsForModel = async (selectedModel) => {
     try {
+
+      setLoading(true);
+
       let reviewsForModel = [];
       const response = await axios.get(`${import.meta.env.DEV ? import.meta.env.VITE_DEV_API_BASE_URL : import.meta.env.VITE_PROD_API_BASE_URL}/models?populate=*`);
   
@@ -61,8 +66,10 @@ export const Review = () => {
       }
   
       setReviews(reviewsForModel);
+      setLoading(false);
     } catch (error) {
       console.error('Error fetching reviews:', error);
+      setLoading(false);
     }
   };    
 
@@ -113,6 +120,7 @@ export const Review = () => {
         />
       </section>
       <h4>Guiding Your Choice</h4>
+      {loading && <Loading />}
       <div ref={reviewListRef}>
         {reviews.length > 0 && <ReviewList reviews={reviews} onSelectReview={handleModelClick} />}
       </div>
