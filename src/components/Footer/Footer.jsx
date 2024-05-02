@@ -22,7 +22,6 @@ const Footer = () => {
                     <h4>Contact</h4>
                     <ul>
                         <li>+254746583509</li>
-                        <li>mutwirilincoln19@gmail.com</li>
                         <li>Freedom Heights Mall, Langata Rd</li>
                     </ul>
                 </div>

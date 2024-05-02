@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     /* background: #E8F1EA */;
+    /* background-color: red; */
     background: #F3F2F4;
     width: 100%;
     padding-bottom: 2rem;
@@ -115,30 +116,7 @@
     width: 60px;
     margin-top: 2rem;
 }
-/* .car-review{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-    padding: 20px;
-    width: 500px;
-    margin-bottom: 1rem;
-} */
-/* .car .car-review .car-image img{
-    border: 1px solid #ccc;
-    border-radius: 50%;
-    margin-right: 1rem;
-} */
-/* .car .desc{
-    display: flex;
-    flex-direction: column;
-    justify-content:left;
-    align-items: left;
-    text-align: left;
-} */
-.review .call2action{
+.call2action{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -161,7 +139,6 @@
   }
 
   .u-hover--sparkle {
- 
     box-sizing: border-box;
     position: relative;
     padding: 0.4em;
@@ -238,20 +215,264 @@
   }
 }
 
-@media(max-width:414px){
+/* For devices up to 320px width */
+@media (max-width: 320px) {
+    .review{
+        margin-top: 3.9rem;
+        width: 100%;
+    }
+    .background{
+        height: 65vh;
+        width: 100%;
+        background-image: url('/coverimage.jpg');
+    }
+    .background h1{
+        display: none;
+    }
+    .call2action{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .call2action p{
+        font-size: 17px;
+        margin-bottom: 0.4rem;
+    }
+}
+
+/* For devices between 321px and 359px width */
+@media (min-width: 321px) and (max-width: 359px) {
     .review{
         margin-top: 2rem;
-        /* height: auto; */
+        width: 100%;
+    }
+    .background{
+        height: 57vh;
+        width: 100%;
+        background-image: url('/coverimage.jpg');
+    }
+    .background h1{
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+}
+
+/* For devices between 360px and 374px width */
+@media (min-width: 360px) and (max-width: 374px) {
+    .review{
+        margin-top: 3.2rem;
         width: 100%;
     }
     .background{
         height: 60vh;
-        /* width: 430px; */
         width: 100%;
         background-image: url('/coverimage.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+    }
+    .background h1{
+        font-size: 1.3rem;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .call2action{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .call2action p{
+        font-size: 18px;
+        margin-bottom: 0.2rem;
+    }
+}
+
+/* For devices between 375px and 389px width */
+@media (min-width: 375px) and (max-width: 389px) {
+    .review{
+        margin-top: 3rem;
+        width: 100%;
+    }
+    .background{
+        height: 60vh;
+        width: 100%;
+        background-image: url('/coverimage.jpg');
+    }
+    .background h1{
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .call2action{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .call2action p{
+        font-size: 17px;
+        margin-bottom: 0.4rem;
+    }
+}
+
+/* For devices between 390px and 392px width */
+@media (min-width: 390px) and (max-width: 392px) {
+    .review{
+        margin-top: 3.4rem;
+        width: 100%;
+    }
+    .background{
+        height: 57vh;
+        width: 100%;
+        background-image: url('/coverimage.jpg');
+    }
+    .background h1{
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .call2action{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .call2action p{
+        font-size: 20px;
+        margin-bottom: 0.7rem;
+    }
+}
+
+/* For devices between 393px and 411px width */
+@media (min-width: 393px) and (max-width: 411px) {
+    .review{
+        margin-top: 2rem;
+        width: 100%;
+    }
+    .background{
+        height: 57vh;
+        width: 100%;
+        background-image: url('/coverimage.jpg');
+    }
+    .background h1{
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .call2action{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .call2action p{
+        font-size: 17px;
+        margin-bottom: 0.4rem;
+    }
+}
+
+/* For devices between 412px and 413px width */
+@media (min-width: 412px) and (max-width: 413px) {
+    .review{
+        margin-top: 2rem;
+        width: 100%;
+    }
+    .background{
+        height: 57vh;
+        width: 100%;
+        background-image: url('/coverimage.jpg');
+    }
+    .background h1{
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .call2action{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .call2action p{
+        font-size: 20px;
+        margin-bottom: 0.7rem;
+    }
+}
+
+/* For devices between 414px and 427px width */
+@media (min-width: 414px) and (max-width: 427px) {
+    .review{
+        margin-top: 2.8rem;
+        width: 100%;
+    }
+    .background{
+        height: 60vh;
+        width: 100%;
+        background-image: url('/coverimage.jpg');
+    }
+    .background h1{
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .call2action{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .call2action p{
+        font-size: 20px;
+        margin-bottom: 0.4rem;
+    }
+}
+
+/* For devices between 428px and 429px width */
+@media (min-width: 428px) and (max-width: 429px) {
+    .review{
+        margin-top: 2rem;
+        width: 100%;
+    }
+    .background{
+        height: 57vh;
+        width: 100%;
+        background-image: url('/coverimage.jpg');
+    }
+    .background h1{
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .call2action{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .call2action p{
+        font-size: 20px;
+        margin-bottom: 0.8rem;
+    }
+}
+
+
+/* @media (min-width: 430px) {
+    .review{
+        margin-top: 2rem;
+        width: 100%;
+    }
+    .background{
+        height: 60vh;
+        width: 100%;
+        background-image: url('/coverimage.jpg');
     }
     .background h1{
         font-size: 1.5rem;
@@ -270,4 +491,4 @@
         flex-direction: column;
         gap: 1rem;
     }
-}
+} */
