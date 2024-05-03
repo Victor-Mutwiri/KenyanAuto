@@ -8,7 +8,7 @@ const Footer = () => {
         <section className='footer'>
             <Link to={'/'}><img src={logo} alt="KenyanAuto" className="navbar-logo-img" width={200}/></Link>
             <div className='footer-links'>
-                <div>
+                <div className='nav-titles'>
                     <h4>Navigation</h4>
                     <ul>
                         <li><Link to={'/'}>Home</Link></li>
@@ -18,7 +18,7 @@ const Footer = () => {
                         <li><Link to={'/Valuation'}>Valuation</Link></li>
                     </ul>
                 </div>
-                <div>
+                <div className='nav-titles'>
                     <h4>Contact</h4>
                     <ul>
                         <li>+254746583509</li>
