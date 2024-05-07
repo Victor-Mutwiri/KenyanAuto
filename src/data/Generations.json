@@ -2050,173 +2050,273 @@
         "InteriorShot":"/Interior/Mercedes/(C118) 2019 - 2023.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Mercedes",
-        "InteriorShot":"/KenyanAuto/public/Interior/Mercedes"
+        "Generation":"(C292) 2015 - 2019",
+        "ExteriorShot":"/Exterior/Mercedes/(C292) 2015 - 2019.jpg",
+        "InteriorShot":"/Interior/Mercedes/(C292) 2015 - 2019.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Mercedes",
-        "InteriorShot":"/KenyanAuto/public/Interior/Mercedes"
+        "Generation":"(C292) 2019 - 2023",
+        "ExteriorShot":"/Exterior/Mercedes/(C292) 2019 - 2023.jpg",
+        "InteriorShot":"/Interior/Mercedes/(C292) 2019 - 2023.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Mercedes",
-        "InteriorShot":"/KenyanAuto/public/Interior/Mercedes"
+        "Generation":"(C292) 2023 - Present",
+        "ExteriorShot":"/Exterior/Mercedes/(C292) 2023 - Present.jpg",
+        "InteriorShot":"/Interior/Mercedes/(C292) 2023 - Present.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Mercedes",
-        "InteriorShot":"/KenyanAuto/public/Interior/Mercedes"
+        "Generation":"(W169) 2004 - 2007",
+        "ExteriorShot":"/Exterior/Mercedes/(W169) 2004 - 2007.jpg",
+        "InteriorShot":"/Interior/Mercedes/(W169) 2004 - 2007.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Mercedes",
-        "InteriorShot":"/KenyanAuto/public/Interior/Mercedes"
+        "Generation":"(W169) 2008 - 2012",
+        "ExteriorShot":"/Exterior/Mercedes/(W169) 2008 - 2012.jpg",
+        "InteriorShot":"/Interior/Mercedes/(W169) 2008 - 2012.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Mercedes",
-        "InteriorShot":"/KenyanAuto/public/Interior/Mercedes"
+        "Generation":"(W176) 2012 - 2015",
+        "ExteriorShot":"/Exterior/Mercedes/(W176) 2012 - 2015.jpg",
+        "InteriorShot":"/Interior/Mercedes/(W176) 2012 - 2015.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Mercedes",
-        "InteriorShot":"/KenyanAuto/public/Interior/Mercedes"
+        "Generation":"(W176) 2015 - 2018",
+        "ExteriorShot":"/Exterior/Mercedes/(W176) 2015 - 2018.jpeg",
+        "InteriorShot":"/Interior/Mercedes/(W176) 2015 - 2018.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Mercedes",
-        "InteriorShot":"/KenyanAuto/public/Interior/Mercedes"
+        "Generation":"(W177) 2018 - 2022",
+        "ExteriorShot":"/Exterior/Mercedes/(W177) 2018 - 2022.jpg",
+        "InteriorShot":"/Interior/Mercedes/(W177) 2018 - 2022.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Mercedes",
-        "InteriorShot":"/KenyanAuto/public/Interior/Mercedes"
+        "Generation":"(W201) 1982 - 1993",
+        "ExteriorShot":"/Exterior/Mercedes/(W201) 1982 - 1993.jpg",
+        "InteriorShot":"/Interior/Mercedes/(W201) 1982 - 1993.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Mercedes",
-        "InteriorShot":"/KenyanAuto/public/Interior/Mercedes"
+        "Generation":"(W202) 1993 - 1997",
+        "ExteriorShot":"/Exterior/Mercedes/(W202) 1993 - 1997.jpg",
+        "InteriorShot":"/Interior/Mercedes/(W202) 1993 - 1997.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Mercedes",
-        "InteriorShot":"/KenyanAuto/public/Interior/Mercedes"
+        "Generation":"(W202) 1997 - 2000",
+        "ExteriorShot":"/Exterior/Mercedes/(W202) 1997 - 2000.jpg",
+        "InteriorShot":"/Interior/Mercedes/(W202) 1997 - 2000.png"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Mercedes",
-        "InteriorShot":"/KenyanAuto/public/Interior/Mercedes"
+        "Generation":"(W203) 2000 - 2004",
+        "ExteriorShot":"/Exterior/Mercedes/(W203) 2000 - 2004.jpg",
+        "InteriorShot":"/Interior/Mercedes/(W203) 2000 - 2004.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Mercedes",
-        "InteriorShot":"/KenyanAuto/public/Interior/Mercedes"
+        "Generation":"(W203) 2004 - 2007",
+        "ExteriorShot":"/Exterior/Mercedes/(W203) 2004 - 2007.jpg",
+        "InteriorShot":"/Interior/Mercedes/(W203) 2004 - 2007.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Mercedes",
-        "InteriorShot":"/KenyanAuto/public/Interior/Mercedes"
+        "Generation":"(W204) 2007 - 2011",
+        "ExteriorShot":"/Exterior/Mercedes/(W204) 2007 - 2011.jpg",
+        "InteriorShot":"/Interior/Mercedes/(W204) 2007 - 2011.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Mercedes",
-        "InteriorShot":"/KenyanAuto/public/Interior/Mercedes"
+        "Generation":"(W204) 2011 - 2013",
+        "ExteriorShot":"/Exterior/Mercedes/(W204) 2011 - 2013.jpg",
+        "InteriorShot":"/Interior/Mercedes/(W204) 2011 - 2013.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Mercedes",
-        "InteriorShot":"/KenyanAuto/public/Interior/Mercedes"
+        "Generation":"(W205) 2014 - 2018",
+        "ExteriorShot":"/Exterior/Mercedes/(W205) 2014 - 2018.jpg",
+        "InteriorShot":"/Interior/Mercedes/(W205) 2014 - 2018.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Mercedes",
-        "InteriorShot":"/KenyanAuto/public/Interior/Mercedes"
+        "Generation":"(W205) 2018 - 2021",
+        "ExteriorShot":"/Exterior/Mercedes/(W205) 2018 - 2021.jpg",
+        "InteriorShot":"/Interior/Mercedes/(W205) 2018 - 2021.png"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Mercedes",
-        "InteriorShot":"/KenyanAuto/public/Interior/Mercedes"
+        "Generation":"(W206) 2021 - Present",
+        "ExteriorShot":"/Exterior/Mercedes/(W206) 2021 - Present.jpg",
+        "InteriorShot":"/Interior/Mercedes/(W206) 2021 - Present.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Mercedes",
-        "InteriorShot":"/KenyanAuto/public/Interior/Mercedes"
+        "Generation":"(X166) 2016 - 2019",
+        "ExteriorShot":"/Exterior/Mercedes/(X166) 2016 - 2019.jpg",
+        "InteriorShot":"/Interior/Mercedes/(X166) 2016 - 2019.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Mercedes",
-        "InteriorShot":"/KenyanAuto/public/Interior/Mercedes"
+        "Generation":"(X167) 2019 - 2023",
+        "ExteriorShot":"/Exterior/Mercedes/(X167) 2019 - 2023.jpg",
+        "InteriorShot":"/Interior/Mercedes/(X167) 2019 - 2023.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Mercedes",
-        "InteriorShot":"/KenyanAuto/public/Interior/Mercedes"
+        "Generation":"(X164) 2006 - 2009",
+        "ExteriorShot":"/Exterior/Mercedes/(X164) 2006 - 2009.jpg",
+        "InteriorShot":"/Interior/Mercedes/(X164) 2006 - 2009.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Mercedes",
-        "InteriorShot":"/KenyanAuto/public/Interior/Mercedes"
+        "Generation":"(X164) 2009 - 2012",
+        "ExteriorShot":"/Exterior/Mercedes/(X164) 2009 - 2012.jpg",
+        "InteriorShot":"/Interior/Mercedes/(X164) 2009 - 2012.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Mercedes",
-        "InteriorShot":"/KenyanAuto/public/Interior/Mercedes"
+        "Generation":"(X165) 2012 - 2016",
+        "ExteriorShot":"/Exterior/Mercedes/(X165) 2012 - 2016.jpg",
+        "InteriorShot":"/Interior/Mercedes/(X165) 2012 - 2016.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Mercedes",
-        "InteriorShot":"/KenyanAuto/public/Interior/Mercedes"
+        "Generation":"(X156) 2013 - 2017",
+        "ExteriorShot":"/Exterior/Mercedes/(X156) 2013 - 2017.jpg",
+        "InteriorShot":"/Interior/Mercedes/(X156) 2013 - 2017.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Mercedes",
-        "InteriorShot":"/KenyanAuto/public/Interior/Mercedes"
+        "Generation":"(X156) 2017 - 2020",
+        "ExteriorShot":"/Exterior/Mercedes/(X156) 2017 - 2020.jpg",
+        "InteriorShot":"/Interior/Mercedes/(X156) 2017 - 2020.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Mercedes",
-        "InteriorShot":"/KenyanAuto/public/Interior/Mercedes"
+        "Generation":"(X253) 2015 - 2019",
+        "ExteriorShot":"/Exterior/Mercedes/(X253) 2015 - 2019.jpg",
+        "InteriorShot":"/Interior/Mercedes/(X253) 2015 - 2019.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Mercedes",
-        "InteriorShot":"/KenyanAuto/public/Interior/Mercedes"
+        "Generation":"(X253) 2019 - 2022",
+        "ExteriorShot":"/Exterior/Mercedes/(X253) 2019 - 2022.jpg",
+        "InteriorShot":"/Interior/Mercedes/(X253) 2019 - 2022.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Mercedes",
-        "InteriorShot":"/KenyanAuto/public/Interior/Mercedes"
+        "Generation":"(C253) 2016 - 2019",
+        "ExteriorShot":"/Exterior/Mercedes/(C253) 2016 - 2019.jpg",
+        "InteriorShot":"/Interior/Mercedes/(C253) 2016 - 2019.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Mercedes",
-        "InteriorShot":"/KenyanAuto/public/Interior/Mercedes"
+        "Generation":"(C253) 2019 - 2023",
+        "ExteriorShot":"/Exterior/Mercedes/(C253) 2019 - 2023.jpg",
+        "InteriorShot":"/Interior/Mercedes/(C253) 2019 - 2023.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Mercedes",
-        "InteriorShot":"/KenyanAuto/public/Interior/Mercedes"
+        "Generation":"(W124) 1985 - 1993",
+        "ExteriorShot":"/Exterior/Mercedes/(W124) 1985 - 1993.jpg",
+        "InteriorShot":"/Interior/Mercedes/(W124) 1985 - 1993.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Mercedes",
-        "InteriorShot":"/KenyanAuto/public/Interior/Mercedes"
+        "Generation":"(W124) 1991 - 1993",
+        "ExteriorShot":"/Exterior/Mercedes/(W124) 1991 - 1993.png",
+        "InteriorShot":"/Interior/Mercedes/(W124) 1991 - 1993.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Mercedes",
-        "InteriorShot":"/KenyanAuto/public/Interior/Mercedes"
+        "Generation":"(W124) 1993 - 1995",
+        "ExteriorShot":"/Exterior/Mercedes/(W124) 1993 - 1995.png",
+        "InteriorShot":"/Interior/Mercedes/(W124) 1993 - 1995.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Mercedes",
-        "InteriorShot":"/KenyanAuto/public/Interior/Mercedes"
+        "Generation":"W124 1993 - 1995",
+        "ExteriorShot":"/Exterior/Mercedes/W124 1993 - 1995.jpg",
+        "InteriorShot":"/Interior/Mercedes/W124 1993 - 1995.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"",
-        "InteriorShot":""
+        "Generation":"(W210) 1995 - 1999",
+        "ExteriorShot":"/Exterior/Mercedes/(W210) 1995 - 1999.jpg",
+        "InteriorShot":"/Interior/Mercedes/(W210) 1995 - 1999.jpg"
+    },
+    {
+        "Generation":"(W210) 1999 - 2002",
+        "ExteriorShot":"/Exterior/Mercedes/(W210) 1999 - 2002.jpg",
+        "InteriorShot":"/Interior/Mercedes/(W210) 1999 - 2002.jpg"
+    },
+    {
+        "Generation":"(W211) 2002 - 2006",
+        "ExteriorShot":"/Exterior/Mercedes/(W211) 2002 - 2006.jpg",
+        "InteriorShot":"/Interior/Mercedes/(W211) 2002 - 2006.jpg"
+    },
+    {
+        "Generation":"(W211) 2006 - 2009",
+        "ExteriorShot":"/Exterior/Mercedes/(W211) 2006 - 2009.jpg",
+        "InteriorShot":"/Interior/Mercedes/(W211) 2006 - 2009.jpg"
+    },
+    {
+        "Generation":"(W212) 2009 - 2012",
+        "ExteriorShot":"/Exterior/Mercedes/(W212) 2009 - 2012.jpg",
+        "InteriorShot":"/Interior/Mercedes/(W212) 2009 - 2012.jpg"
+    },
+    {
+        "Generation":"(W212) 2013 - 2016",
+        "ExteriorShot":"/Exterior/Mercedes/(W212) 2013 - 2016.jpg",
+        "InteriorShot":"/Interior/Mercedes/(W212) 2013 - 2016.jpg"
+    },
+    {
+        "Generation":"(W213) 2016 - 2020",
+        "ExteriorShot":"/Exterior/Mercedes/(W213) 2016 - 2020.jpg",
+        "InteriorShot":"/Interior/Mercedes/(W213) 2016 - 2020.jpg"
+    },
+    {
+        "Generation":"(W213) 2020 - 2023",
+        "ExteriorShot":"/Exterior/Mercedes/(W213) 2020 - 2023.jpg",
+        "InteriorShot":"/Interior/Mercedes/(W213) 2020 - 2023.jpg"
+    },
+    {
+        "Generation":"(W116) 1972 - 1980",
+        "ExteriorShot":"/Exterior/Mercedes/(W116) 1972 - 1980.jpg",
+        "InteriorShot":"/Interior/Mercedes/(W116) 1972 - 1980.jpg"
+    },
+    {
+        "Generation":"(W126) 1979 - 1991",
+        "ExteriorShot":"/Exterior/Mercedes/(W126) 1979 - 1991.jpg",
+        "InteriorShot":"/Interior/Mercedes/(W126) 1979 - 1991.jpg"
+    },
+    {
+        "Generation":"(W140) 1991 - 1994",
+        "ExteriorShot":"/Exterior/Mercedes/(W140) 1991 - 1994.jpg",
+        "InteriorShot":"/Interior/Mercedes/(W140) 1991 - 1994.jpg"
+    },
+    {
+        "Generation":"(W140) 1994 - 1998",
+        "ExteriorShot":"/Exterior/Mercedes/(W140) 1994 - 1998.jpg",
+        "InteriorShot":"/Interior/Mercedes/(W140) 1994 - 1998.png"
+    },
+    {
+        "Generation":"(W220) 1998 - 2002",
+        "ExteriorShot":"/Exterior/Mercedes/(W220) 1998 - 2002.jpg",
+        "InteriorShot":"/Interior/Mercedes/(W220) 1998 - 2002.jpg"
+    },
+    {
+        "Generation":"(W220) 2002 - 2005",
+        "ExteriorShot":"/Exterior/Mercedes/(W220) 2002 - 2005.jpg",
+        "InteriorShot":"/Interior/Mercedes/(W220) 2002 - 2005.jpg"
+    },
+    {
+        "Generation":"(W221) 2005 - 2009",
+        "ExteriorShot":"/Exterior/Mercedes/(W221) 2005 - 2009.jpg",
+        "InteriorShot":"/Interior/Mercedes/(W221) 2005 - 2009.jpg"
+    },
+    {
+        "Generation":"(W221) 2009 - 2013",
+        "ExteriorShot":"/Exterior/Mercedes/(W221) 2009 - 2013.jpg",
+        "InteriorShot":"/Interior/Mercedes/(W221) 2009 - 2013.jpg"
+    },
+    {
+        "Generation":"(W222) 2013 - 2017",
+        "ExteriorShot":"/Exterior/Mercedes/(W222) 2013 - 2017.jpg",
+        "InteriorShot":"/Interior/Mercedes/(W222) 2013 - 2017.jpg"
+    },
+    {
+        "Generation":"(W222) 2017 - 2020",
+        "ExteriorShot":"/Exterior/Mercedes/(W222) 2017 - 2020.jpg",
+        "InteriorShot":"/Interior/Mercedes/(W222) 2017 - 2020.jpg"
+    },
+    {
+        "Generation":"(W223) 2020 - Present",
+        "ExteriorShot":"/Exterior/Mercedes/(W223) 2020 - Present.jpg",
+        "InteriorShot":"/Interior/Mercedes/(W223) 2020 - Present.jpeg"
+    },
+    {
+        "Generation":"(W205) 2015 - 2018",
+        "ExteriorShot":"/Exterior/Mercedes/(W205) 2015 - 2018.jpg",
+        "InteriorShot":"/Interior/Mercedes/(W205) 2015 - 2018.jpg"
+    },
+    {
+        "Generation":"W205 2015 - 2018",
+        "ExteriorShot":"/Exterior/Mercedes/W205 2015 - 2018.jpg",
+        "InteriorShot":"/Interior/Mercedes/W205 2015 - 2018.jpg"
     }
 ]
