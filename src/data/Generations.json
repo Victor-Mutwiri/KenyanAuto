@@ -2441,48 +2441,98 @@
     },
     {
         "Generation":"Ranger 2011 - 2015",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Ford",
-        "InteriorShot":"/KenyanAuto/public/Interior/Ford"
+        "ExteriorShot":"/Exterior/Ford/Ranger 2011 - 2015.jpg",
+        "InteriorShot":"/Interior/Ford/Ranger 2011 - 2015.png"
     },
     {
         "Generation":"Ranger 2015 - 2018",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Ford",
-        "InteriorShot":"/KenyanAuto/public/Interior/Ford"
+        "ExteriorShot":"/Exterior/Ford/Ranger 2015 - 2018.jpg",
+        "InteriorShot":"/Interior/Ford/Ranger 2015 - 2018.jpg"
     },
     {
         "Generation":"Ranger 2018 - 2021",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Ford",
-        "InteriorShot":"/KenyanAuto/public/Interior/Ford"
+        "ExteriorShot":"/Exterior/Ford/Ranger 2018 - 2021.jpg",
+        "InteriorShot":"/Interior/Ford/Ranger 2018 - 2021.jpg"
     },
     {
         "Generation":"Ranger 2021 - Present",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Ford",
-        "InteriorShot":"/KenyanAuto/public/Interior/Ford"
+        "ExteriorShot":"/Exterior/Ford/Ranger 2021 - Present.jpg",
+        "InteriorShot":"/Interior/Ford/Ranger 2021 - Present.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Ford",
-        "InteriorShot":"/KenyanAuto/public/Interior/Ford"
+        "Generation":"Focus 2011 - 2014",
+        "ExteriorShot":"/Exterior/Ford/Focus 2011 - 2014.jpg",
+        "InteriorShot":"/Interior/Ford/Focus 2011 - 2014.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Ford",
-        "InteriorShot":"/KenyanAuto/public/Interior/Ford"
+        "Generation":"Focus 2014 - 2018",
+        "ExteriorShot":"/Exterior/Ford/Focus 2014 - 2018.jpg",
+        "InteriorShot":"/Interior/Ford/Focus 2014 - 2018.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Ford",
-        "InteriorShot":"/KenyanAuto/public/Interior/Ford"
+        "Generation":"Focus 2018 - 2021",
+        "ExteriorShot":"/Exterior/Ford/Focus 2018 - 2021.jpg",
+        "InteriorShot":"/Interior/Ford/Focus 2018 - 2021.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Ford",
-        "InteriorShot":"/KenyanAuto/public/Interior/Ford"
+        "Generation":"Focus 2021 - Present",
+        "ExteriorShot":"/Exterior/Ford/Focus 2021 - Present.jpg",
+        "InteriorShot":"/Interior/Ford/Focus 2021 - Present.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Ford",
-        "InteriorShot":"/KenyanAuto/public/Interior/Ford"
+        "Generation":"ST  2012 - 2014",
+        "ExteriorShot":"/Exterior/Ford/ST  2012 - 2014.jpg",
+        "InteriorShot":"/Interior/Ford/ST  2012 - 2014.jpg"
+    },
+    {
+        "Generation":"ST  2014 - 2018",
+        "ExteriorShot":"/Exterior/Ford/ST  2014 - 2018.jpg",
+        "InteriorShot":"/Interior/Ford/ST  2014 - 2018.jpg"
+    },
+    {
+        "Generation":"ST  2019 - 2021",
+        "ExteriorShot":"/Exterior/Ford/ST  2019 - 2021.jpg",
+        "InteriorShot":"/Interior/Ford/ST  2019 - 2021.jpg"
+    },
+    {
+        "Generation":"ST 2021 - Present",
+        "ExteriorShot":"/Exterior/Ford/ST 2021 - Present.jpg",
+        "InteriorShot":"/Interior/Ford/ST 2021 - Present.jpg"
+    },
+    {
+        "Generation":"RS 2016 - Present",
+        "ExteriorShot":"/Exterior/Ford/RS 2016 - Present.jpg",
+        "InteriorShot":"/Interior/Ford/RS 2016 - Present.jpg"
+    },
+    {
+        "Generation":"Fiesta 2005 - 2008",
+        "ExteriorShot":"/Exterior/Ford/Fiesta 2005 - 2008.jpg",
+        "InteriorShot":"/Interior/Ford/Fiesta 2005 - 2008.jpg"
+    },
+    {
+        "Generation":"Fiesta 2008 - 2012",
+        "ExteriorShot":"/Exterior/Ford/Fiesta 2008 - 2012.jpg",
+        "InteriorShot":"/Interior/Ford/Fiesta 2008 - 2012.jpg"
+    },
+    {
+        "Generation":"Fiesta 2013 - 2017",
+        "ExteriorShot":"/Exterior/Ford/Fiesta 2013 - 2017.jpg",
+        "InteriorShot":"/Interior/Ford/Fiesta 2013 - 2017.jpg"
+    },
+    {
+        "Generation":"Fiesta 2017 - 2021",
+        "ExteriorShot":"/Exterior/Ford/Fiesta 2017 - 2021.jpg",
+        "InteriorShot":"/Interior/Ford/Fiesta 2017 - 2021.jpg"
+    },
+    {
+        "Generation":"ST 2018 - Present",
+        "ExteriorShot":"/Exterior/Ford/ST 2018 - Present.jpg",
+        "InteriorShot":"/Interior/Ford/ST 2018 - Present.jpg"
+    },
+    {
+        "Generation":"Active 2017 - 2021",
+        "ExteriorShot":"/Exterior/Ford/Active 2017 - 2021.jpg",
+        "InteriorShot":"/Interior/Ford/Active 2017 - 2021.jpg"
     },
     {
         "Generation":"",
