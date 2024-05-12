@@ -2535,8 +2535,88 @@
         "InteriorShot":"/Interior/Ford/Active 2017 - 2021.jpg"
     },
     {
+        "Generation":"RX 1998 - 2003",
+        "ExteriorShot":"/KenyanAuto/public/Exterior/Lexus",
+        "InteriorShot":"/KenyanAuto/public/Interior/Lexus"
+    },
+    {
+        "Generation":"RX 2004 - 2008",
+        "ExteriorShot":"/KenyanAuto/public/Exterior/Lexus",
+        "InteriorShot":"/KenyanAuto/public/Interior/Lexus"
+    },
+    {
+        "Generation":"RX 2008 - 2012",
+        "ExteriorShot":"/KenyanAuto/public/Exterior/Lexus",
+        "InteriorShot":"/KenyanAuto/public/Interior/Lexus"
+    },
+    {
+        "Generation":"RX 2012 - 2016",
+        "ExteriorShot":"/KenyanAuto/public/Exterior/Lexus",
+        "InteriorShot":"/KenyanAuto/public/Interior/Lexus"
+    },
+    {
+        "Generation":"RX 2016 - 2019",
+        "ExteriorShot":"/KenyanAuto/public/Exterior/Lexus",
+        "InteriorShot":"/KenyanAuto/public/Interior/Lexus"
+    },
+    {
+        "Generation":"RX 2019 - 2022",
+        "ExteriorShot":"/KenyanAuto/public/Exterior/Lexus",
+        "InteriorShot":"/KenyanAuto/public/Interior/Lexus"
+    },
+    {
+        "Generation":"RX 2022 - Present",
+        "ExteriorShot":"/KenyanAuto/public/Exterior/Lexus",
+        "InteriorShot":"/KenyanAuto/public/Interior/Lexus"
+    },
+    {
+        "Generation":"LX 1996 - 1997",
+        "ExteriorShot":"/KenyanAuto/public/Exterior/Lexus",
+        "InteriorShot":"/KenyanAuto/public/Interior/Lexus"
+    },
+    {
+        "Generation":"LX 1997 - 2007",
+        "ExteriorShot":"/KenyanAuto/public/Exterior/Lexus",
+        "InteriorShot":"/KenyanAuto/public/Interior/Lexus"
+    },
+    {
+        "Generation":"LX 2008 - 2012",
+        "ExteriorShot":"/KenyanAuto/public/Exterior/Lexus",
+        "InteriorShot":"/KenyanAuto/public/Interior/Lexus"
+    },
+    {
         "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Ford",
-        "InteriorShot":"/KenyanAuto/public/Interior/Ford"
+        "ExteriorShot":"/KenyanAuto/public/Exterior/Lexus",
+        "InteriorShot":"/KenyanAuto/public/Interior/Lexus"
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"/KenyanAuto/public/Exterior/Lexus",
+        "InteriorShot":"/KenyanAuto/public/Interior/Lexus"
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"/KenyanAuto/public/Exterior/Lexus",
+        "InteriorShot":"/KenyanAuto/public/Interior/Lexus"
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"/KenyanAuto/public/Exterior/Lexus",
+        "InteriorShot":"/KenyanAuto/public/Interior/Lexus"
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"/KenyanAuto/public/Exterior/Lexus",
+        "InteriorShot":"/KenyanAuto/public/Interior/Lexus"
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"/KenyanAuto/public/Exterior/Lexus",
+        "InteriorShot":"/KenyanAuto/public/Interior/Lexus"
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"/KenyanAuto/public/Exterior/Lexus",
+        "InteriorShot":"/KenyanAuto/public/Interior/Lexus"
     }
 ]
