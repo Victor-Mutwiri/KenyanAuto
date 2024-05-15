@@ -7,6 +7,7 @@ import Selectmakeandmodel from '../../components/make&model/Selectmakeandmodel';
 import ReviewList from '../../components/Reviewslist/Reviewslist';
 import Model from './Model';
 import { Loading } from '../../components/loading/loading';
+import { Analytics } from '@vercel/analytics/react';
 
 export const Review = () => {
   const [makes, setMakes] = useState([]);
@@ -107,6 +108,7 @@ export const Review = () => {
 
   return (
     <div className='review'>
+      <Analytics/>
       <section className='background'>
         <h1>Navigate your Car Journey <br /> with Confidence</h1>
         <Selectmakeandmodel
