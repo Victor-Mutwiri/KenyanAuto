@@ -346,123 +346,158 @@
     },
     {
         "Generation":"RAV4 2005-2008",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Toyota",
-        "InteriorShot":"/KenyanAuto/public/Interior/Toyota"
+        "ExteriorShot":"/Exterior/Toyota/RAV4 2005-2008.jpg",
+        "InteriorShot":"/Interior/Toyota/RAV4 2005-2008.jpg"
     },
     {
         "Generation":"RAV4 2008-2013",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Toyota",
-        "InteriorShot":"/KenyanAuto/public/Interior/Toyota"
+        "ExteriorShot":"/Exterior/Toyota/RAV4 2008-2013.jpg",
+        "InteriorShot":"/Interior/Toyota/RAV4 2008-2013.jpg"
     },
     {
         "Generation":"RAV4 2012-2015",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Toyota",
-        "InteriorShot":"/KenyanAuto/public/Interior/Toyota"
+        "ExteriorShot":"/Exterior/Toyota/RAV4 2012-2015.jpg",
+        "InteriorShot":"/Interior/Toyota/RAV4 2012-2015.jpg"
     },
     {
         "Generation":"RAV4 2015-2019",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Toyota",
-        "InteriorShot":"/KenyanAuto/public/Interior/Toyota"
+        "ExteriorShot":"/Exterior/Toyota/RAV4 2015-2019.jpg",
+        "InteriorShot":"/Interior/Toyota/RAV4 2015-2019.jpeg"
     },
     {
         "Generation":"RAV4 2018-Present",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Toyota",
-        "InteriorShot":"/KenyanAuto/public/Interior/Toyota"
+        "ExteriorShot":"/Exterior/Toyota/RAV4 2018-Present.jpg",
+        "InteriorShot":"/Interior/Toyota/RAV4 2018-Present.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Toyota",
-        "InteriorShot":"/KenyanAuto/public/Interior/Toyota"
+        "Generation":"Rush 2006-2016",
+        "ExteriorShot":"/Exterior/Toyota/Rush 2006-2016.jpg",
+        "InteriorShot":"/Interior/Toyota/Rush 2006-2016.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Toyota",
-        "InteriorShot":"/KenyanAuto/public/Interior/Toyota"
+        "Generation":"Rush 2017-Present",
+        "ExteriorShot":"/Exterior/Toyota/Rush 2017-Present.jpg",
+        "InteriorShot":"/Interior/Toyota/Rush 2017-Present.png"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Toyota",
-        "InteriorShot":"/KenyanAuto/public/Interior/Toyota"
+        "Generation":"Sienta 2003-2006",
+        "ExteriorShot":"/Exterior/Toyota/Sienta 2003-2006.jpg",
+        "InteriorShot":"/Interior/Toyota/Sienta 2003-2006.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Toyota",
-        "InteriorShot":"/KenyanAuto/public/Interior/Toyota"
+        "Generation":"Sienta 2006-2011",
+        "ExteriorShot":"/Exterior/Toyota/Sienta 2006-2011.jpg",
+        "InteriorShot":"/Interior/Toyota/Sienta 2006-2011.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Toyota",
-        "InteriorShot":"/KenyanAuto/public/Interior/Toyota"
+        "Generation":"Sienta 2011-2015",
+        "ExteriorShot":"/Exterior/Toyota/Sienta 2011-2015.jpg",
+        "InteriorShot":"/Interior/Toyota/Sienta 2011-2015.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Toyota",
-        "InteriorShot":"/KenyanAuto/public/Interior/Toyota"
+        "Generation":"Sienta 2015-2018",
+        "ExteriorShot":"/Exterior/Toyota/Sienta 2015-2018.jpg",
+        "InteriorShot":"/Interior/Toyota/Sienta 2015-2018.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Toyota",
-        "InteriorShot":"/KenyanAuto/public/Interior/Toyota"
+        "Generation":"Spade 2012-2020",
+        "ExteriorShot":"/Exterior/Toyota/Spade 2012-2020.jpg",
+        "InteriorShot":"/Interior/Toyota/Spade 2012-2020.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Toyota",
-        "InteriorShot":"/KenyanAuto/public/Interior/Toyota"
+        "Generation":"Succeed 2002-2014",
+        "ExteriorShot":"/Exterior/Toyota/Succeed 2002-2014.jpg",
+        "InteriorShot":"/Interior/Toyota/Succeed 2002-2014.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Toyota",
-        "InteriorShot":"/KenyanAuto/public/Interior/Toyota"
+        "Generation":"Succeed 2014-2020",
+        "ExteriorShot":"/Exterior/Toyota/Succeed 2014-2020.jpeg",
+        "InteriorShot":"/Interior/Toyota/Succeed 2014-2020.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Toyota",
-        "InteriorShot":"/KenyanAuto/public/Interior/Toyota"
+        "Generation":"TownAce 1996-2007",
+        "ExteriorShot":"/Exterior/Toyota/TownAce 1996-2007.jpg",
+        "InteriorShot":"/Interior/Toyota/TownAce 1996-2007.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Toyota",
-        "InteriorShot":"/KenyanAuto/public/Interior/Toyota"
+        "Generation":"TownAce 2008-2020",
+        "ExteriorShot":"/Exterior/Toyota/TownAce 2008-2020.jpeg",
+        "InteriorShot":"/Interior/Toyota/TownAce 2008-2020.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Toyota",
-        "InteriorShot":"/KenyanAuto/public/Interior/Toyota"
+        "Generation":"Vanguard 2007-2013",
+        "ExteriorShot":"/Exterior/Toyota/Vanguard 2007-2013.jpg",
+        "InteriorShot":"/Interior/Toyota/Vanguard 2007-2013.jpeg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Toyota",
-        "InteriorShot":"/KenyanAuto/public/Interior/Toyota"
+        "Generation":"Vellfire 2008-2015",
+        "ExteriorShot":"/Exterior/Toyota/Vellfire 2008-2015.jpg",
+        "InteriorShot":"/Interior/Toyota/Vellfire 2008-2015.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Toyota",
-        "InteriorShot":"/KenyanAuto/public/Interior/Toyota"
+        "Generation":"Vellfire 2015-2017",
+        "ExteriorShot":"/Exterior/Toyota/Vellfire 2015-2017.png",
+        "InteriorShot":"/Interior/Toyota/Vellfire 2015-2017.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Toyota",
-        "InteriorShot":"/KenyanAuto/public/Interior/Toyota"
+        "Generation":"Vitz 1999-2005",
+        "ExteriorShot":"/Exterior/Toyota/Vitz 1999-2005.jpg",
+        "InteriorShot":"/Interior/Toyota/Vitz 1999-2005.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Toyota",
-        "InteriorShot":"/KenyanAuto/public/Interior/Toyota"
+        "Generation":"Vitz 2005-2010",
+        "ExteriorShot":"/Exterior/Toyota/Vitz 2005-2010.jpg",
+        "InteriorShot":"/Interior/Toyota/Vitz 2005-2010.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Toyota",
-        "InteriorShot":"/KenyanAuto/public/Interior/Toyota"
+        "Generation":"Vitz 2010-2014",
+        "ExteriorShot":"/Exterior/Toyota/Vitz 2010-2014.jpg",
+        "InteriorShot":"/Interior/Toyota/Vitz 2010-2014.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Toyota",
-        "InteriorShot":"/KenyanAuto/public/Interior/Toyota"
+        "Generation":"Vitz 2014-2020",
+        "ExteriorShot":"/Exterior/Toyota/Vitz 2014-2020.jpg",
+        "InteriorShot":"/Interior/Toyota/Vitz 2014-2020.jpg"
     },
     {
-        "Generation":"",
-        "ExteriorShot":"/KenyanAuto/public/Exterior/Toyota",
-        "InteriorShot":"/KenyanAuto/public/Interior/Toyota"
+        "Generation":"Wish 2003-2005",
+        "ExteriorShot":"/Exterior/Toyota/Wish 2003-2005.jpg",
+        "InteriorShot":"/Interior/Toyota/Wish 2003-2005.jpg"
+    },
+    {
+        "Generation":"Wish 2005-2009",
+        "ExteriorShot":"/Exterior/Toyota/Wish 2005-2009.jpg",
+        "InteriorShot":"/Interior/Toyota/Wish 2005-2009.jpg"
+    },
+    {
+        "Generation":"Wish 2009-2012",
+        "ExteriorShot":"/Exterior/Toyota/Wish 2009-2012.jpg",
+        "InteriorShot":"/Interior/Toyota/Wish 2009-2012.jpg"
+    },
+    {
+        "Generation":"Wish 2012-2017",
+        "ExteriorShot":"/Exterior/Toyota/Wish 2012-2017.jpg",
+        "InteriorShot":"/Interior/Toyota/Wish 2012-2017.jpg"
+    },
+    {
+        "Generation":"Voxy 2001-2007",
+        "ExteriorShot":"/Exterior/Toyota/Voxy 2001-2007.jpg",
+        "InteriorShot":"/Interior/Toyota/Voxy 2001-2007.png"
+    },
+    {
+        "Generation":"Voxy 2007-2010",
+        "ExteriorShot":"/Exterior/Toyota/Voxy 2007-2010.jpg",
+        "InteriorShot":"/Interior/Toyota/Voxy 2007-2010.jpg"
+    },
+    {
+        "Generation":"Voxy 2010-2013",
+        "ExteriorShot":"/Exterior/Toyota/Voxy 2010-2013.jpeg",
+        "InteriorShot":"/Interior/Toyota/Voxy 2010-2013.jpg"
+    },
+    {
+        "Generation":"Voxy 2014-Present",
+        "ExteriorShot":"/Exterior/Toyota/Voxy 2014-Present.jpg",
+        "InteriorShot":"/Interior/Toyota/Voxy 2014-Present.jpg"
     },
     {
         "Generation":"",
