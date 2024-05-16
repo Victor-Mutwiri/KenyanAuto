@@ -2,6 +2,7 @@
 import PropTypes from 'prop-types';
 import './Model.css';
 import carData from '../../data/Generations.json'
+import CarData2 from '../../data/Generations2.json'
 
 const Model = ({ selectedReview, onClose }) => {
   if (!selectedReview) {
@@ -11,7 +12,17 @@ const Model = ({ selectedReview, onClose }) => {
   const { attributes } = selectedReview;
   const { Generation } = attributes;
 
-  const selectedCar = carData.find(car => car.Generation === Generation);
+  const selectedVehicleA = carData.find(car => car.Generation === Generation)
+  const selectedVehicleB = CarData2.find(car => car.Generation === Generation)
+
+  // Check if the selected generation is found in either dataset
+  const selectedCar = selectedVehicleA || selectedVehicleB;
+
+  if (!selectedCar) {
+    // Handle case where selected generation is not found in either dataset
+    return <div>Selected car data not found</div>;
+  }
+  /* const selectedCar = carData.find(car => car.Generation === Generation); */
 
   const { ExteriorShot, InteriorShot } = selectedCar;
 
