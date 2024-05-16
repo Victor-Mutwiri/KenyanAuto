@@ -1,5 +1,50 @@
 [
     {
+        "Generation":"Swift (2005 - 2010)",
+        "ExteriorShot":"/Exterior/Suzuki/Swift (2005 - 2010).jpeg",
+        "InteriorShot":"/Interior/Suzuki/Swift (2005 - 2010).jpg"
+    },
+    {
+        "Generation":"Swift (2010 - 2013)",
+        "ExteriorShot":"/Exterior/Suzuki/Swift (2010 - 2013).jpg",
+        "InteriorShot":"/Interior/Suzuki/Swift (2010 - 2013).jpg"
+    },
+    {
+        "Generation":"Swift (2014 - 2017)",
+        "ExteriorShot":"/Exterior/Suzuki/Swift (2014 - 2017).jpg",
+        "InteriorShot":"/Interior/Suzuki/Swift (2014 - 2017).jpg"
+    },
+    {
+        "Generation":"Swift (2017 - 2020)",
+        "ExteriorShot":"/Exterior/Suzuki/Swift (2017 - 2020).jpg",
+        "InteriorShot":"/Interior/Suzuki/Swift (2017 - 2020).jpg"
+    },
+    {
+        "Generation":"Swift (2020 - 2023)",
+        "ExteriorShot":"/Exterior/Suzuki/Swift (2020 - 2023).jpg",
+        "InteriorShot":"/Interior/Suzuki/Swift (2020 - 2023).jpg"
+    },
+    {
+        "Generation":"Alto (2014 - present)",
+        "ExteriorShot":"/Exterior/Suzuki/Alto (2014 - present).jpg",
+        "InteriorShot":"/Interior/Suzuki/Alto (2014 - present).jpg"
+    },
+    {
+        "Generation":"Vitara(1988 - 2005)",
+        "ExteriorShot":"/Exterior/Suzuki/Vitara(1988 - 2005).jpg",
+        "InteriorShot":"/Interior/Suzuki/Vitara(1988 - 2005).jpg"
+    },
+    {
+        "Generation":"Vitara (2014 - 2018)",
+        "ExteriorShot":"/Exterior/Suzuki/Vitara (2014 - 2018).jpg",
+        "InteriorShot":"/Interior/Suzuki/Vitara (2014 - 2018).jpg"
+    },
+    {
+        "Generation":"Vitara (2018 - Present)",
+        "ExteriorShot":"/Exterior/Suzuki/Vitara (2018 - Present).jpg",
+        "InteriorShot":"/Interior/Suzuki/Vitara (2018 - Present).jpg"
+    },
+    {
         "Generation":"XC90 (2002 - 2006)",
         "ExteriorShot":"/Exterior/Volvo/XC90 (2002 - 2006).jpg",
         "InteriorShot":"/Interior/Volvo/XC90 (2002 - 2006).jpg"
