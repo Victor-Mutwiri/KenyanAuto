@@ -19,7 +19,7 @@ import NotFound from './pages/404Page/NotFound';
 import Model from './pages/Review/Model';
 import Footer from './components/Footer/Footer';
 import About from './pages/About/About';
-import CarValuation from './pages/Valuation/CarValuation';
+/* import CarValuation from './pages/Valuation/CarValuation'; */
 
 function App() {
   const [selectedReview, setSelectedReview] = useState(null);
@@ -37,7 +37,7 @@ function App() {
         <Route path="/Maintenance" element={<Maintenance />} />
         <Route path="/Safety" element={<Safety />} />
         <Route path="/Selling" element={<Selling />} />
-        <Route path="/Valuation" element={<CarValuation />} />
+        {/* <Route path="/Valuation" element={<CarValuation />} /> */}
         <Route path="/buying-guide/:route" element={<BuyingContent />} />
         <Route path="/guides/:route" element={<GuideContent />} />
         <Route path="/selling-guide/:route" element={<SellingContent />} />
