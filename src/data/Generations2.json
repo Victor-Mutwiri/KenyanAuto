@@ -1765,6 +1765,16 @@
         "InteriorShot":"/Interior/Honda/Grace 2017 — Present.jpg"
     },
     {
+        "Generation":"Insight 2011-2014",
+        "ExteriorShot":"/Exterior/Honda/Insight 2011-2014.jpg",
+        "InteriorShot":"/Interior/Honda/Insight 2011-2014.jpg"
+    },
+    {
+        "Generation":"Insight 2018-Present",
+        "ExteriorShot":"/Exterior/Honda/Insight 2018-Present.jpg",
+        "InteriorShot":"/Interior/Honda/Insight 2018-Present.jpg"
+    },
+    {
         "Generation":"Duster 2010 - 2015",
         "ExteriorShot":"/Exterior/Renault/Duster 2010 - 2015.jpg",
         "InteriorShot":"/Interior/Renault/Duster 2010 - 2015.jpg"

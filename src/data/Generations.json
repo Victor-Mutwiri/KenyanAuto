@@ -1015,6 +1015,81 @@
         "InteriorShot":"/Interior/Mazda/BT-50 2018 - 2020.jpg"
     },
     {
+        "Generation":"Sylphy 2000-2005",
+        "ExteriorShot":"/Exterior/Nissan/Sylphy 2000-2005.jpg",
+        "InteriorShot":"/Interior/Nissan/Sylphy 2000-2005.jpg"
+    },
+    {
+        "Generation":"Sylphy 2005-2012",
+        "ExteriorShot":"/Exterior/Nissan/Sylphy 2005-2012.jpg",
+        "InteriorShot":"/Interior/Nissan/Sylphy 2005-2012.jpg"
+    },
+    {
+        "Generation":"Sylphy 2012-2019",
+        "ExteriorShot":"/Exterior/Nissan/Sylphy 2012-2019.jpg",
+        "InteriorShot":"/Interior/Nissan/Sylphy 2012-2019.jpg"
+    },
+    {
+        "Generation":"Dualis 2007-2014",
+        "ExteriorShot":"/Exterior/Nissan/Dualis 2007-2014.jpg",
+        "InteriorShot":"/Interior/Nissan/Dualis 2007-2014.jpg"
+    },
+    {
+        "Generation":"Dayz 2013-2015",
+        "ExteriorShot":"/Exterior/Nissan/Dayz 2013-2015.jpg",
+        "InteriorShot":"/Interior/Nissan/Dayz 2013-2015.jpg"
+    },
+    {
+        "Generation":"Dayz 2015-2019",
+        "ExteriorShot":"/Exterior/Nissan/Dayz 2015-2019.jpg",
+        "InteriorShot":"/Interior/Nissan/Dayz 2015-2019.jpg"
+    },
+    {
+        "Generation":"Roox 2014-2016",
+        "ExteriorShot":"/Exterior/Nissan/Roox 2014-2016.jpg",
+        "InteriorShot":"/Interior/Nissan/Roox 2014-2016.jpg"
+    },
+    {
+        "Generation":"Roox 2016-2020",
+        "ExteriorShot":"/Exterior/Nissan/Roox 2016-2020.jpg",
+        "InteriorShot":"/Interior/Nissan/Roox 2016-2020.jpg"
+    },
+    {
+        "Generation":"Elgrand 2002-2010",
+        "ExteriorShot":"/Exterior/Nissan/Elgrand 2002-2010.jpg",
+        "InteriorShot":"/Interior/Nissan/Elgrand 2002-2010.jpg"
+    },
+    {
+        "Generation":"Elgrand 2010-Present",
+        "ExteriorShot":"/Exterior/Nissan/Elgrand 2010-Present.jpg",
+        "InteriorShot":"/Interior/Nissan/Elgrand 2010-Present.jpg"
+    },
+    {
+        "Generation":"Fuga 2004-2009",
+        "ExteriorShot":"/Exterior/Nissan/Fuga 2004-2009.jpg",
+        "InteriorShot":"/Interior/Nissan/Fuga 2004-2009.jpg"
+    },
+    {
+        "Generation":"Fuga 2009-Present",
+        "ExteriorShot":"/Exterior/Nissan/Fuga 2009-Present.jpg",
+        "InteriorShot":"/Interior/Nissan/Fuga 2009-Present.jpg"
+    },
+    {
+        "Generation":"NV200 2009-2019",
+        "ExteriorShot":"/Exterior/Nissan/NV200 2009-2019.jpg",
+        "InteriorShot":"/Interior/Nissan/NV200 2009-2019.jpg"
+    },
+    {
+        "Generation":"Wingroad 2001-2005",
+        "ExteriorShot":"/Exterior/Nissan/Wingroad 2001-2005.jpg",
+        "InteriorShot":"/Interior/Nissan/Wingroad 2001-2005.jpg"
+    },
+    {
+        "Generation":"Wingroad 2005-2013",
+        "ExteriorShot":"/Exterior/Nissan/Wingroad 2005-2013.jpg",
+        "InteriorShot":"/Interior/Nissan/Wingroad 2005-2013.jpg"
+    },
+    {
         "Generation":"(T30) 2001 - 2007",
         "ExteriorShot":"/Exterior/Nissan/(T30) 2001 - 2007.jpg",
         "InteriorShot":"/Interior/Nissan/(T30) 2001 - 2007.jpg"
