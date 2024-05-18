@@ -1,5 +1,65 @@
 [
     {
+        "Generation":"Solio 2010-2013",
+        "ExteriorShot":"/Exterior/Suzuki/Solio 2010-2013.jpg",
+        "InteriorShot":"/Interior/Suzuki/Solio 2010-2013.jpg"
+    },
+    {
+        "Generation":"Solio 2013-2015",
+        "ExteriorShot":"/Exterior/Suzuki/Solio 2013-2015.jpg",
+        "InteriorShot":"/Interior/Suzuki/Solio 2013-2015.jpg"
+    },
+    {
+        "Generation":"Solio 2015-Present",
+        "ExteriorShot":"/Exterior/Suzuki/Solio 2015-Present.jpg",
+        "InteriorShot":"/Interior/Suzuki/Solio 2015-Present.jpg"
+    },
+    {
+        "Generation":"R 2008-2012",
+        "ExteriorShot":"/Exterior/Suzuki/R 2008-2012.jpg",
+        "InteriorShot":"/Interior/Suzuki/R 2008-2012.jpg"
+    },
+    {
+        "Generation":"R 2012-2014",
+        "ExteriorShot":"/Exterior/Suzuki/R 2012-2014.jpg",
+        "InteriorShot":"/Interior/Suzuki/R 2012-2014.jpg"
+    },
+    {
+        "Generation":"R 2014-2017",
+        "ExteriorShot":"/Exterior/Suzuki/R 2014-2017.jpg",
+        "InteriorShot":"/Interior/Suzuki/R 2014-2017.jpg"
+    },
+    {
+        "Generation":"R 2017-Present",
+        "ExteriorShot":"/Exterior/Suzuki/R 2017-Present.jpg",
+        "InteriorShot":"/Interior/Suzuki/R 2017-Present.jpg"
+    },
+    {
+        "Generation":"Spacia 2013-2017",
+        "ExteriorShot":"/Exterior/Suzuki/Spacia 2013-2017.jpg",
+        "InteriorShot":"/Interior/Suzuki/Spacia 2013-2017.jpg"
+    },
+    {
+        "Generation":"SX4 2006-2014",
+        "ExteriorShot":"/Exterior/Suzuki/SX4 2006-2014.jpg",
+        "InteriorShot":"/Interior/Suzuki/SX4 2006-2014.jpg"
+    },
+    {
+        "Generation":"SX4 2013-2016",
+        "ExteriorShot":"/Exterior/Suzuki/SX4 2013-2016.jpg",
+        "InteriorShot":"/Interior/Suzuki/SX4 2013-2016.jpg"
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"/KenyanAuto/public/Exterior/Suzuki",
+        "InteriorShot":"/KenyanAuto/public/Interior/Suzuki"
+    },
+    {
+        "Generation":"",
+        "ExteriorShot":"/KenyanAuto/public/Exterior/Suzuki",
+        "InteriorShot":"/KenyanAuto/public/Interior/Suzuki"
+    },
+    {
         "Generation":"Swift (2005 - 2010)",
         "ExteriorShot":"/Exterior/Suzuki/Swift (2005 - 2010).jpeg",
         "InteriorShot":"/Interior/Suzuki/Swift (2005 - 2010).jpg"

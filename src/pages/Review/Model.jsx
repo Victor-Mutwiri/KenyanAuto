@@ -32,16 +32,13 @@ const Model = ({ selectedReview, onClose }) => {
       <h2>{attributes.Vehicle} {attributes.Generation} Review</h2>
       <br />
       <div className='selected-review'>
-        {/* Exterior shot should go here */}
         {ExteriorShot && (
             <img src={ExteriorShot} alt="Exterior Shot" />
         )}
         <br />
         <br />
-        {/* {attributes.Overview && <h4>Overview</h4>} */}
         {attributes.Overview && <p>{attributes.Overview}</p>}
         <br />
-        {/* Interior shot goes here */}
         {InteriorShot && (
             <img src={InteriorShot} alt="Interior Shot" />
         )}
@@ -53,8 +50,6 @@ const Model = ({ selectedReview, onClose }) => {
         {attributes.Reliability && <p className='bg'>{attributes.Reliability}</p>}
         {attributes.Safety && <h4>Safety Features</h4>}
         {attributes.Safety && <p>{attributes.Safety}</p>}
-        {/* {attributes.Issues && <h4>Issues</h4>}
-        {attributes.Issues && <p>{attributes.Issues}</p>} */}
         {attributes.Technology !== null && <h4>Technology</h4>}
         {attributes.Technology !== null && <p className='bg'>{attributes.Technology}</p>}
         {attributes.Value !== null && <h4>Value</h4>}

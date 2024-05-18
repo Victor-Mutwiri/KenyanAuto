@@ -1,41 +1,41 @@
 [
     {
-        "Generation":"Generation: 2000 – 2006",
+        "Generation":"Fielder 2000–2006",
         "ExteriorShot":"/Exterior/Toyota/Corolla fielder 2000-2006.jpg",
         "InteriorShot":"/Interior/Toyota/Corolla fielder 2000-2006.jpg"
     },
     {
-        "Generation":"Generation: 2006 – 2012",
+        "Generation":"Fielder 2006-2012",
         "ExteriorShot":"/Exterior/Toyota/Corolla fielder 2006-2012.jpg",
         "InteriorShot":"/Interior/Toyota/Corolla fielder 2006-2012.jpg"
     },
     {
-        "Generation":"Generation:  2012-2018",
+        "Generation":"Fielder 2012-2018",
         "ExteriorShot":"/Exterior/Toyota/Corolla fielder  2012-2018.jpg",
         "InteriorShot":"/Interior/Toyota/Corolla fielder 2012-2018.jpg"
     },
     {
-        "Generation":"1997-2003",
+        "Generation":"Harrier 1997-2003",
         "ExteriorShot":"/Exterior/Toyota/1997 Harrier.jpg",
         "InteriorShot":"/Interior/Toyota/1997 Harrier.jpg"
     },
     {
-        "Generation":"2003-2013",
+        "Generation":"Harrier 2003-2013",
         "ExteriorShot":"/Exterior/Toyota/2003 Harrier.jpg",
         "InteriorShot":"/Interior/Toyota/2003 Harrier.jpg"
     },
     {
-        "Generation":"2013 - 2020",
+        "Generation":"Harrier 2013-2020",
         "ExteriorShot":"/Exterior/Toyota/2013 Harrier.jpg",
         "InteriorShot":"/Interior/Toyota/2013 Harrier.jpg"
     },
     {
-        "Generation":"2020 - Present",
+        "Generation":"Harrier 2020 - Present",
         "ExteriorShot":"/Exterior/Toyota/2020 Harrier.jpeg",
         "InteriorShot":"/Interior/Toyota/2020 Harrier.jpeg"
     },
     {
-        "Generation":"6th Gen(1997―2004)",
+        "Generation":"6th Gen(1996―2006)",
         "ExteriorShot":"/Exterior/Toyota/Hilux 1997-2004.jpg",
         "InteriorShot":"/Interior/Toyota/Hilux 1997-2004.jpg"
     },
@@ -70,7 +70,7 @@
         "InteriorShot":"/Interior/Toyota/(J150)2013-2017.jpeg"
     },
     {
-        "Generation":"LC 100 Series",
+        "Generation":"LC (2002-2007)",
         "ExteriorShot":"/Exterior/Toyota/LC 100 Series.jpg",
         "InteriorShot":"/Interior/Toyota/LC 100 Series.jpg"
     },
@@ -125,7 +125,7 @@
         "InteriorShot":"/Interior/Toyota/Fortuner(2015-2020).jpg"
     },
     {
-        "Generation":"Fortuner(2020-Present)",
+        "Generation":"Fortuner (2020-Present)",
         "ExteriorShot":"/Exterior/Toyota/Fortuner(2020-Present).png",
         "InteriorShot":"/Interior/Toyota/Fortuner(2020-Present).jpg"
     },
