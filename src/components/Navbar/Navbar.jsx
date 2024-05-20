@@ -1,4 +1,4 @@
-import { Menuicon } from '../menuicon/Menuicon';
+/* import { Menuicon } from '../menuicon/Menuicon'; */
 import { Link } from 'react-router-dom';
 import logo from '../../assets/kenyanauto-black-transparent-logo.png';
 import './Navbar.css'
@@ -18,20 +18,18 @@ export const Navbar = () => {
                     </li>
                     <li className="navbar-menu-item">
                         <Link to={'/Selling'} className="navbar-menu-link">Selling</Link>
-                        {/* <a href="/Selling" className="navbar-menu-link">Selling</a> */}
                     </li>
-                    <li className="navbar-menu-item">
+                    {/* <li className="navbar-menu-item">
                         <Link to={'/Maintenance'} className="navbar-menu-link">Maintenance</Link>
-                        {/* <a href="/Maintenance" className="navbar-menu-link">Maintenance</a> */}
-                    </li>
+                    </li> */}
                     {/* <li className="navbar-menu-item">
                         <Link to={'/Guide'} className="navbar-menu-link">Guides</Link>
                     </li> */}
                 </ul>
             </div>
-            <div className="menu-icon">
+            {/* <div className="menu-icon">
                 <Menuicon/>
-            </div>
+            </div> */}
             
     </nav>
   )

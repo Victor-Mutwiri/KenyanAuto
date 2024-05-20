@@ -130,7 +130,7 @@ export const Review = () => {
       <div ref={modelsRef}>
         {selectedReview && <Model selectedReview={selectedReview} onClose={() => setSelectedReview(null)} />}
       </div>
-      <div className='call2action'>
+      {/* <div className='call2action'>
         <p className="sparkle u-hover--sparkle">
           <i className='bx bxs-quote-alt-left'/>
           Looking to buy or sell a car locally <br />
@@ -138,7 +138,7 @@ export const Review = () => {
           <i className='bx bxs-quote-alt-right'/>
         </p>
         <label htmlFor="#" id='contact'>O746583509</label>
-      </div>
+      </div> */}
     </div>
   );
 };

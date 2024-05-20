@@ -11,7 +11,8 @@
   .car-review {
     display: flex;
     flex-direction: column;
-    width: 280px;
+    /* width: 280px; */
+    width: auto;
     background: rgba(255, 165, 0, 0.8);
     padding: 5px;
     border-radius: 5px;
