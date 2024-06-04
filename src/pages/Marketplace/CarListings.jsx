@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import './CarListings.css';
-import VehicleFilter from './CarFilter'; // Import the VehicleFilter component
+import VehicleFilter from './CarFilter';
 
 const CarListings = () => {
   const [listings, setListings] = useState([]);
@@ -10,10 +10,11 @@ const CarListings = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:1337/api/listings?populate=*');
+        /* const response = await fetch('http://localhost:1337/api/listings?populate=*'); */
+        const response = await fetch(`${import.meta.env.DEV ? import.meta.env.VITE_DEV_API_BASE_URL : import.meta.env.VITE_PROD_API_BASE_URL}/listings?populate=*`)
         const data = await response.json();
         setListings(data.data);
-        setFilteredListings(data.data); // Initialize filteredListings with the full list
+        setFilteredListings(data.data);
       } catch (error) {
         console.error('Error fetching data:', error);
       }
@@ -24,12 +25,11 @@ const CarListings = () => {
 
   return (
     <div className="listings-container">
-      <section>
-        <div className="Filters">
-          <VehicleFilter listings={listings} setFilteredListings={setFilteredListings} /> {/* Pass listings and setFilteredListings */}
-        </div>
+      <section className="filters">
+        <VehicleFilter listings={listings} setFilteredListings={setFilteredListings} />
       </section>
-      <section>
+      <section className="cards-container">
+        <p>{filteredListings.length} listing{filteredListings.length !== 1 ? 's' : ''}</p>
         {filteredListings.map(listing => (
           <CarCard key={listing.id} listing={listing} />
         ))}
@@ -39,25 +39,19 @@ const CarListings = () => {
 };
 
 const CarCard = ({ listing }) => {
-  const {
-    Year,
-    Price,
-    Gallery,
-    model,
-    fuel,
-    gearbox
-  } = listing.attributes;
-
+  const { Year, Price, Gallery, model, fuel, gearbox } = listing.attributes;
   const imageUrl = Gallery.data[0].attributes.formats.thumbnail.url;
 
   return (
     <a href={`/car-details/${listing.id}`} className="car-card">
       <img src={`http://localhost:1337${imageUrl}`} alt="Car" />
+      <img src={`http://localhost:1337${imageUrl}`} alt="Car" />
+      get(`${import.meta.env.DEV ? import.meta.env.VITE_DEV_API_BASE_URL : import.meta.env.VITE_PROD_API_BASE_URL}/makes?populate=*`)
       <div className="car-info">
         <p>{Year} {model.data.attributes.Model}</p>
-        <p>Price: {Price}</p>
-        <p>Fuel Type: {fuel.data.attributes.FuelType}</p>
-        <p>Gearbox: {gearbox.data.attributes.Transmission}</p>
+        <p>Price: <span>{Price}</span></p>
+        <p>Fuel Type: <span>{fuel.data.attributes.FuelType}</span></p>
+        <p>Gearbox: <span>{gearbox.data.attributes.Transmission}</span></p>
       </div>
     </a>
   );

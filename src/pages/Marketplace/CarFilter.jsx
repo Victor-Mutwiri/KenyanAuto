@@ -19,7 +19,8 @@ const VehicleFilter = ({ listings, setFilteredListings }) => {
   const [selectedFuelType, setSelectedFuelType] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:1337/api/makes?populate=*')
+    /* fetch('http://localhost:1337/api/makes?populate=*') */
+    fetch(`${import.meta.env.DEV ? import.meta.env.VITE_DEV_API_BASE_URL : import.meta.env.VITE_PROD_API_BASE_URL}/makes?populate=*`)
       .then(response => response.json())
       .then(data => {
         const sortedMakes = data.data.sort((a, b) => a.attributes.Make.localeCompare(b.attributes.Make));
@@ -27,12 +28,14 @@ const VehicleFilter = ({ listings, setFilteredListings }) => {
       })
       .catch(error => console.error('Error fetching makes:', error));
 
-    fetch('http://localhost:1337/api/gearboxes')
+    /* fetch('http://localhost:1337/api/gearboxes') */
+    fetch(`${import.meta.env.DEV ? import.meta.env.VITE_DEV_API_BASE_URL : import.meta.env.VITE_PROD_API_BASE_URL}/gearboxes`)
       .then(response => response.json())
       .then(data => setTransmissions(data.data))
       .catch(error => console.error('Error fetching transmissions:', error));
 
-    fetch('http://localhost:1337/api/conditions')
+    /* fetch('http://localhost:1337/api/conditions') */
+    fetch(`${import.meta.env.DEV ? import.meta.env.VITE_DEV_API_BASE_URL : import.meta.env.VITE_PROD_API_BASE_URL}/conditions`)
       .then(response => response.json())
       .then(data => {
         const sortedConditions = data.data.sort((a, b) => a.attributes.Condition.localeCompare(b.attributes.Condition));
@@ -40,7 +43,8 @@ const VehicleFilter = ({ listings, setFilteredListings }) => {
       })
       .catch(error => console.error('Error fetching conditions:', error));
 
-    fetch('http://localhost:1337/api/locations')
+    /* fetch('http://localhost:1337/api/locations') */
+    fetch(`${import.meta.env.DEV ? import.meta.env.VITE_DEV_API_BASE_URL : import.meta.env.VITE_PROD_API_BASE_URL}/locations`)
       .then(response => response.json())
       .then(data => {
         const sortedLocations = data.data.sort((a, b) => a.attributes.Location.localeCompare(b.attributes.Location));
@@ -48,7 +52,8 @@ const VehicleFilter = ({ listings, setFilteredListings }) => {
       })
       .catch(error => console.error('Error fetching locations:', error));
 
-    fetch('http://localhost:1337/api/fuels')
+    /* fetch('http://localhost:1337/api/fuels') */
+    fetch(`${import.meta.env.DEV ? import.meta.env.VITE_DEV_API_BASE_URL : import.meta.env.VITE_PROD_API_BASE_URL}/fuels`)
       .then(response => response.json())
       .then(data => {
         const sortedFuelTypes = data.data.sort((a, b) => a.attributes.FuelType.localeCompare(b.attributes.FuelType));
