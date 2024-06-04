@@ -1,24 +1,39 @@
 import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import './CarListings.css'
+import './CarListings.css';
+import VehicleFilter from './CarFilter'; // Import the VehicleFilter component
 
 const CarListings = () => {
   const [listings, setListings] = useState([]);
+  const [filteredListings, setFilteredListings] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:1337/api/listings?populate=*')
-      .then(response => response.json())
-      .then(data => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('http://localhost:1337/api/listings?populate=*');
+        const data = await response.json();
         setListings(data.data);
-      })
-      .catch(error => console.error('Error fetching data:', error));
+        setFilteredListings(data.data); // Initialize filteredListings with the full list
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchData();
   }, []);
 
   return (
     <div className="listings-container">
-      {listings.map(listing => (
-        <CarCard key={listing.id} listing={listing} />
-      ))}
+      <section>
+        <div className="Filters">
+          <VehicleFilter listings={listings} setFilteredListings={setFilteredListings} /> {/* Pass listings and setFilteredListings */}
+        </div>
+      </section>
+      <section>
+        {filteredListings.map(listing => (
+          <CarCard key={listing.id} listing={listing} />
+        ))}
+      </section>
     </div>
   );
 };
@@ -36,26 +51,15 @@ const CarCard = ({ listing }) => {
   const imageUrl = Gallery.data[0].attributes.formats.thumbnail.url;
 
   return (
-    <div>
-      <section>
-        <div className='Filters'></div>
-      </section>
-      <section>
-        <a href={`/car-details/${listing.id}`} className="car-card">
-          <img src={`http://localhost:1337${imageUrl}`} alt="Car" />
-          <div className="car-info">
-            <div>
-
-            </div>
-            {/* <p>{model.data.attributes.Model}</p> */}
-            <p> {Year} {model.data.attributes.Model}</p>
-            <p>Price: {Price}</p>
-            <p>Fuel Type: {fuel.data.attributes.FuelType}</p>
-            <p>Gearbox: {gearbox.data.attributes.Transmission}</p>
-          </div>
-        </a>
-      </section>
-    </div>
+    <a href={`/car-details/${listing.id}`} className="car-card">
+      <img src={`http://localhost:1337${imageUrl}`} alt="Car" />
+      <div className="car-info">
+        <p>{Year} {model.data.attributes.Model}</p>
+        <p>Price: {Price}</p>
+        <p>Fuel Type: {fuel.data.attributes.FuelType}</p>
+        <p>Gearbox: {gearbox.data.attributes.Transmission}</p>
+      </div>
+    </a>
   );
 };
 
