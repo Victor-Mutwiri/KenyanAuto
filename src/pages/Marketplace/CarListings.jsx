@@ -31,7 +31,7 @@ const CarListings = () => {
       <section className="cards-container">
         <p>Showing results for {filteredListings.length} listing{filteredListings.length !== 1 ? 's' : ''}</p>
         {filteredListings.map(listing => (
-          <CarCard key={listing.id} listing={listing} />
+          <CarCard key={listing.id} listing={listing}/>
         ))}
       </section>
     </div>
@@ -42,9 +42,14 @@ const CarCard = ({ listing }) => {
   const { Year, Price, Gallery, model, fuel, gearbox } = listing.attributes;
   const imageUrl = Gallery.data[0].attributes.formats.thumbnail.url;
 
+  const fullImageUrl = `${import.meta.env.DEV ? import.meta.env.VITE_DEV_API_IMAGE_URL : import.meta.env.VITE_PROD_API_IMAGE_URL}${imageUrl}`;
+
+  console.log('Image URL:', fullImageUrl); // Log the URL for debugging
+
   return (
     <Link to={`/car-details/${listing.id}`} className="car-card">
-      <img src={`${import.meta.env.DEV ? import.meta.env.VITE_DEV_API_IMAGE_URL : import.meta.env.VITE_PROD_API_IMAGE_URL}${imageUrl}`} alt="Car" />
+      {/* <img src={`${import.meta.env.DEV ? import.meta.env.VITE_DEV_API_IMAGE_URL : import.meta.env.VITE_PROD_API_IMAGE_URL}${imageUrl}`} alt="Car" /> */}
+      <img src={fullImageUrl} alt="Car" />
       <div className="car-info">
         <p>{Year} {model.data.attributes.Model}</p>
         <p>Price: <span>{Price}</span></p>

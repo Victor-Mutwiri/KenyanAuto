@@ -38,7 +38,10 @@ const VehicleDetails = () => {
   return (
     <div className="vehicle-details">
       <div className="image-gallery">
-        <ImageGallery items={images} />
+        <ImageGallery items={images} 
+            showPlayButton ={false}
+            lazyLoad = {true}
+        />
       </div>
       <div className="vehicle-info">
         <h1>{Year} {model.data.attributes.Model}</h1>
