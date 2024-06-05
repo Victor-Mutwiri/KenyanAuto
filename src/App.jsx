@@ -20,6 +20,7 @@ import Model from './pages/Review/Model';
 import Footer from './components/Footer/Footer';
 import About from './pages/About/About';
 import CarListings from './pages/Marketplace/CarListings';
+import VehicleDetails from './pages/Marketplace/VehicleDetails';
 /* import CarValuation from './pages/Valuation/CarValuation'; */
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
         <Route path="/" element={<Review />} />
         <Route path='/About' element={<About/>}/>
         <Route path='/Listings' element={<CarListings/>}/>
+        <Route path='/car-details/:id' element={<VehicleDetails/>}/>
         <Route path="/Buying" element={<Buying />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Guide" element={<Guide />} />

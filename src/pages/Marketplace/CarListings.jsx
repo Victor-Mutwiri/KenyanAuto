@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import './CarListings.css';
 import VehicleFilter from './CarFilter';
 
@@ -10,8 +11,7 @@ const CarListings = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        /* const response = await fetch('http://localhost:1337/api/listings?populate=*'); */
-        const response = await fetch(`${import.meta.env.DEV ? import.meta.env.VITE_DEV_API_BASE_URL : import.meta.env.VITE_PROD_API_BASE_URL}/listings?populate=*`)
+        const response = await fetch(`${import.meta.env.DEV ? import.meta.env.VITE_DEV_API_BASE_URL : import.meta.env.VITE_PROD_API_BASE_URL}/listings?populate=*`);
         const data = await response.json();
         setListings(data.data);
         setFilteredListings(data.data);
@@ -29,7 +29,7 @@ const CarListings = () => {
         <VehicleFilter listings={listings} setFilteredListings={setFilteredListings} />
       </section>
       <section className="cards-container">
-        <p>{filteredListings.length} listing{filteredListings.length !== 1 ? 's' : ''}</p>
+        <p>Showing results for {filteredListings.length} listing{filteredListings.length !== 1 ? 's' : ''}</p>
         {filteredListings.map(listing => (
           <CarCard key={listing.id} listing={listing} />
         ))}
@@ -43,17 +43,15 @@ const CarCard = ({ listing }) => {
   const imageUrl = Gallery.data[0].attributes.formats.thumbnail.url;
 
   return (
-    <a href={`/car-details/${listing.id}`} className="car-card">
-      <img src={`http://localhost:1337${imageUrl}`} alt="Car" />
-      <img src={`http://localhost:1337${imageUrl}`} alt="Car" />
-      get(`${import.meta.env.DEV ? import.meta.env.VITE_DEV_API_BASE_URL : import.meta.env.VITE_PROD_API_BASE_URL}/makes?populate=*`)
+    <Link to={`/car-details/${listing.id}`} className="car-card">
+      <img src={`${import.meta.env.DEV ? import.meta.env.VITE_DEV_API_IMAGE_URL : import.meta.env.VITE_PROD_API_IMAGE_URL}${imageUrl}`} alt="Car" />
       <div className="car-info">
         <p>{Year} {model.data.attributes.Model}</p>
         <p>Price: <span>{Price}</span></p>
         <p>Fuel Type: <span>{fuel.data.attributes.FuelType}</span></p>
         <p>Gearbox: <span>{gearbox.data.attributes.Transmission}</span></p>
       </div>
-    </a>
+    </Link>
   );
 };
 
