@@ -30,22 +30,23 @@ const VehicleDetails = () => {
   const { Year, Price, Contact, Description, Gallery, model, fuel, gearbox, seller, condition, location } = attributes;
 
   const constructImageUrl = (url) => {
-    // If the URL is already complete (starts with http or https), return it as is
     if (url.startsWith('http://') || url.startsWith('https://')) {
       return url;
     }
-    // Otherwise, prepend the base URL
     return `${import.meta.env.DEV ? import.meta.env.VITE_DEV_API_IMAGE_URL : import.meta.env.VITE_PROD_API_IMAGE_URL}${url}`;
   };
 
-  // Transform gallery data to match react-image-gallery format
   const images = (Gallery?.data || []).map((image) => {
     const largeUrl = image.attributes.formats.large?.url;
+    const mediumUrl = image.attributes.formats.medium?.url;
+    const smallUrl = image.attributes.formats.small?.url;
     const thumbnailUrl = image.attributes.formats.thumbnail?.url;
 
-    if (largeUrl && thumbnailUrl) {
+    const originalUrl = largeUrl || mediumUrl || smallUrl;
+
+    if (originalUrl && thumbnailUrl) {
       return {
-        original: constructImageUrl(largeUrl),
+        original: constructImageUrl(originalUrl),
         thumbnail: constructImageUrl(thumbnailUrl),
       };
     }
@@ -56,16 +57,14 @@ const VehicleDetails = () => {
     <div className="vehicle-details">
       <div className="vehicle-info">
         {images.length > 0 && (
-          <ImageGallery items={images} 
-            showPlayButton={false}
-            /* lazyLoad = {true} */
-          />
+          <ImageGallery items={images} showPlayButton={false} />
         )}
         <div className="description">
+        {Year && model && model.data && <h1>{Year} {model.data.attributes.Model}</h1>}
           <div className="info">
             {fuel && fuel.data && (
               <div className='detailed-info'>
-                <i className="bi bi-fuel-pump"/>
+                <i className="bi bi-fuel-pump" />
                 <p>{fuel.data.attributes.FuelType}</p>
               </div>
             )}
@@ -77,7 +76,7 @@ const VehicleDetails = () => {
             )}
             {condition && condition.data && (
               <div className='detailed-info'>
-                <i className="bi bi-pin-map-fill"/>
+                <i className="bi bi-pin-map-fill" />
                 <p>{condition.data.attributes.Condition}</p>
               </div>
             )}
@@ -91,7 +90,7 @@ const VehicleDetails = () => {
               </div>
               {location && location.data && (
                 <div className='location'>
-                  <i className="bi bi-geo-alt"/>
+                  <i className="bi bi-geo-alt" />
                   <p>{location.data.attributes.Location}</p>
                 </div>
               )}
@@ -100,7 +99,7 @@ const VehicleDetails = () => {
         </div>
       </div>
       <div>
-        {Year && model && model.data && <h1>{Year} {model.data.attributes.Model}</h1>}
+        {/* {Year && model && model.data && <h1>{Year} {model.data.attributes.Model}</h1>} */}
         {Description && <p>Description: {Description}</p>}
       </div>
     </div>
