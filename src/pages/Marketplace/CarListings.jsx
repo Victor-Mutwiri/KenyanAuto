@@ -41,16 +41,9 @@ const CarListings = () => {
 const CarCard = ({ listing }) => {
   const { Year, Price, Gallery, model, fuel, gearbox } = listing.attributes;
   const imageUrl = Gallery.data[0].attributes.formats.thumbnail.url;
-
-  /* const fullImageUrl = `${import.meta.env.DEV ? import.meta.env.VITE_DEV_API_IMAGE_URL : import.meta.env.VITE_PROD_API_IMAGE_URL}${imageUrl}`; */
-
-  /* console.log('Image URL:', fullImageUrl); */
-
   return (
     <Link to={`/car-details/${listing.id}`} className="car-card">
-      {/* <img src={`${import.meta.env.DEV ? import.meta.env.VITE_DEV_API_IMAGE_URL : import.meta.env.VITE_PROD_API_IMAGE_URL}${imageUrl}`} alt="Car" /> */}
       <img src={imageUrl} alt="Car" />
-      {/* <img src={fullImageUrl} alt="Car" /> */}
       <div className="car-info">
         <p>{Year} {model.data.attributes.Model}</p>
         <p>Price: <span>{Price}</span></p>
