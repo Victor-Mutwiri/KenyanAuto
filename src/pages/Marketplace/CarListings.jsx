@@ -28,27 +28,36 @@ const CarListings = () => {
       <section className="filters">
         <VehicleFilter listings={listings} setFilteredListings={setFilteredListings} />
       </section>
-      <section className="cards-container">
-        <p>Showing results for {filteredListings.length} listing{filteredListings.length !== 1 ? 's' : ''}</p>
-        {filteredListings.map(listing => (
-          <CarCard key={listing.id} listing={listing}/>
-        ))}
+      <section>
+        <p> <b>Showing results for {filteredListings.length} listing{filteredListings.length !== 1 ? 's' : ''} </b></p>
+        <div className="cards-container">
+          {filteredListings.map(listing => (
+            <CarCard key={listing.id} listing={listing}/>
+          ))}
+        </div>
       </section>
     </div>
   );
 };
 
 const CarCard = ({ listing }) => {
-  const { Year, Price, Gallery, model, fuel, gearbox } = listing.attributes;
-  const imageUrl = Gallery.data[0].attributes.formats.thumbnail.url;
+  const { attributes } = listing;
+
+  if (!attributes) {
+    return null; // or show some placeholder
+  }
+
+  const { Year, Price, Gallery, model, fuel, gearbox } = attributes;
+  const imageUrl = Gallery?.data?.[0]?.attributes?.formats?.thumbnail?.url;
+
   return (
     <Link to={`/car-details/${listing.id}`} className="car-card">
-      <img src={imageUrl} alt="Car" />
+      {imageUrl && <img src={imageUrl} alt="Car" />}
       <div className="car-info">
-        <p>{Year} {model.data.attributes.Model}</p>
-        <p>Price: <span>{Price}</span></p>
-        <p>Fuel Type: <span>{fuel.data.attributes.FuelType}</span></p>
-        <p>Gearbox: <span>{gearbox.data.attributes.Transmission}</span></p>
+        {Year && model && model.data && <p>{Year} {model.data.attributes.Model}</p>}
+        {Price && <p>Price: <span>{Price}</span></p>}
+        {fuel && fuel.data && <p>Fuel Type: <span>{fuel.data.attributes.FuelType}</span></p>}
+        {gearbox && gearbox.data && <p>Gearbox: <span>{gearbox.data.attributes.Transmission}</span></p>}
       </div>
     </Link>
   );
@@ -58,43 +67,43 @@ CarCard.propTypes = {
   listing: PropTypes.shape({
     id: PropTypes.number.isRequired,
     attributes: PropTypes.shape({
-      Year: PropTypes.string.isRequired,
-      Price: PropTypes.string.isRequired,
+      Year: PropTypes.string,
+      Price: PropTypes.string,
       Gallery: PropTypes.shape({
         data: PropTypes.arrayOf(
           PropTypes.shape({
             attributes: PropTypes.shape({
               formats: PropTypes.shape({
                 thumbnail: PropTypes.shape({
-                  url: PropTypes.string.isRequired,
-                }).isRequired,
-              }).isRequired,
-            }).isRequired,
-          }).isRequired
-        ).isRequired,
-      }).isRequired,
+                  url: PropTypes.string,
+                }),
+              }),
+            }),
+          })
+        ),
+      }),
       model: PropTypes.shape({
         data: PropTypes.shape({
           attributes: PropTypes.shape({
-            Model: PropTypes.string.isRequired,
-          }).isRequired,
-        }).isRequired,
-      }).isRequired,
+            Model: PropTypes.string,
+          }),
+        }),
+      }),
       fuel: PropTypes.shape({
         data: PropTypes.shape({
           attributes: PropTypes.shape({
-            FuelType: PropTypes.string.isRequired,
-          }).isRequired,
-        }).isRequired,
-      }).isRequired,
+            FuelType: PropTypes.string,
+          }),
+        }),
+      }),
       gearbox: PropTypes.shape({
         data: PropTypes.shape({
           attributes: PropTypes.shape({
-            Transmission: PropTypes.string.isRequired,
-          }).isRequired,
-        }).isRequired,
-      }).isRequired,
-    }).isRequired,
+            Transmission: PropTypes.string,
+          }),
+        }),
+      }),
+    }),
   }).isRequired,
 };
 

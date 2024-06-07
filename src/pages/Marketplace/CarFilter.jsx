@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import Select from 'react-select';
 import './CarFilter.css'; // Assuming you have a CSS file for styling
 
 const VehicleFilter = ({ listings, setFilteredListings }) => {
@@ -10,16 +11,15 @@ const VehicleFilter = ({ listings, setFilteredListings }) => {
   const [locations, setLocations] = useState([]);
   const [fuelTypes, setFuelTypes] = useState([]);
 
-  const [selectedMake, setSelectedMake] = useState('');
-  const [selectedModel, setSelectedModel] = useState('');
+  const [selectedMake, setSelectedMake] = useState(null);
+  const [selectedModel, setSelectedModel] = useState(null);
   const [selectedYear, setSelectedYear] = useState('');
-  const [selectedTransmission, setSelectedTransmission] = useState('');
-  const [selectedCondition, setSelectedCondition] = useState('');
-  const [selectedLocation, setSelectedLocation] = useState('');
-  const [selectedFuelType, setSelectedFuelType] = useState('');
+  const [selectedTransmissions, setSelectedTransmissions] = useState([]);
+  const [selectedConditions, setSelectedConditions] = useState([]);
+  const [selectedLocations, setSelectedLocations] = useState([]);
+  const [selectedFuelTypes, setSelectedFuelTypes] = useState([]);
 
   useEffect(() => {
-    /* fetch('http://localhost:1337/api/makes?populate=*') */
     fetch(`${import.meta.env.DEV ? import.meta.env.VITE_DEV_API_BASE_URL : import.meta.env.VITE_PROD_API_BASE_URL}/makes?populate=*`)
       .then(response => response.json())
       .then(data => {
@@ -28,13 +28,11 @@ const VehicleFilter = ({ listings, setFilteredListings }) => {
       })
       .catch(error => console.error('Error fetching makes:', error));
 
-    /* fetch('http://localhost:1337/api/gearboxes') */
     fetch(`${import.meta.env.DEV ? import.meta.env.VITE_DEV_API_BASE_URL : import.meta.env.VITE_PROD_API_BASE_URL}/gearboxes`)
       .then(response => response.json())
       .then(data => setTransmissions(data.data))
       .catch(error => console.error('Error fetching transmissions:', error));
 
-    /* fetch('http://localhost:1337/api/conditions') */
     fetch(`${import.meta.env.DEV ? import.meta.env.VITE_DEV_API_BASE_URL : import.meta.env.VITE_PROD_API_BASE_URL}/conditions`)
       .then(response => response.json())
       .then(data => {
@@ -43,7 +41,6 @@ const VehicleFilter = ({ listings, setFilteredListings }) => {
       })
       .catch(error => console.error('Error fetching conditions:', error));
 
-    /* fetch('http://localhost:1337/api/locations') */
     fetch(`${import.meta.env.DEV ? import.meta.env.VITE_DEV_API_BASE_URL : import.meta.env.VITE_PROD_API_BASE_URL}/locations`)
       .then(response => response.json())
       .then(data => {
@@ -52,7 +49,6 @@ const VehicleFilter = ({ listings, setFilteredListings }) => {
       })
       .catch(error => console.error('Error fetching locations:', error));
 
-    /* fetch('http://localhost:1337/api/fuels') */
     fetch(`${import.meta.env.DEV ? import.meta.env.VITE_DEV_API_BASE_URL : import.meta.env.VITE_PROD_API_BASE_URL}/fuels`)
       .then(response => response.json())
       .then(data => {
@@ -64,7 +60,7 @@ const VehicleFilter = ({ listings, setFilteredListings }) => {
 
   useEffect(() => {
     if (selectedMake) {
-      const selectedMakeModels = makes.find(make => make.attributes.Make === selectedMake)?.attributes.models.data || [];
+      const selectedMakeModels = makes.find(make => make.attributes.Make === selectedMake.value)?.attributes.models.data || [];
       const sortedModels = selectedMakeModels.sort((a, b) => a.attributes.Model.localeCompare(b.attributes.Model));
       setModels(sortedModels);
     } else {
@@ -76,77 +72,108 @@ const VehicleFilter = ({ listings, setFilteredListings }) => {
     let filtered = listings;
 
     if (selectedModel) {
-      filtered = filtered.filter(listing => listing.attributes.model.data.attributes.Model === selectedModel);
+      filtered = filtered.filter(listing => listing.attributes.model.data.attributes.Model === selectedModel.value);
     }
     if (selectedYear) {
       filtered = filtered.filter(listing => listing.attributes.Year === selectedYear);
     }
-    if (selectedTransmission) {
-      filtered = filtered.filter(listing => listing.attributes.gearbox.data.attributes.Transmission === selectedTransmission);
+    if (selectedTransmissions.length > 0) {
+      const selectedTransmissionValues = selectedTransmissions.map(t => t.value);
+      filtered = filtered.filter(listing => selectedTransmissionValues.includes(listing.attributes.gearbox.data.attributes.Transmission));
     }
-    if (selectedCondition) {
-      filtered = filtered.filter(listing => listing.attributes.condition.data.attributes.Condition === selectedCondition);
+    if (selectedConditions.length > 0) {
+      const selectedConditionValues = selectedConditions.map(c => c.value);
+      filtered = filtered.filter(listing => selectedConditionValues.includes(listing.attributes.condition.data.attributes.Condition));
     }
-    if (selectedLocation) {
-      filtered = filtered.filter(listing => listing.attributes.location.data.attributes.Location === selectedLocation);
+    if (selectedLocations.length > 0) {
+      const selectedLocationValues = selectedLocations.map(l => l.value);
+      filtered = filtered.filter(listing => selectedLocationValues.includes(listing.attributes.location.data.attributes.Location));
     }
-    if (selectedFuelType) {
-      filtered = filtered.filter(listing => listing.attributes.fuel.data.attributes.FuelType === selectedFuelType);
+    if (selectedFuelTypes.length > 0) {
+      const selectedFuelTypeValues = selectedFuelTypes.map(f => f.value);
+      filtered = filtered.filter(listing => selectedFuelTypeValues.includes(listing.attributes.fuel.data.attributes.FuelType));
     }
 
     setFilteredListings(filtered);
-  }, [selectedModel, selectedYear, selectedTransmission, selectedCondition, selectedLocation, selectedFuelType, listings, setFilteredListings]);
+  }, [selectedModel, selectedYear, selectedTransmissions, selectedConditions, selectedLocations, selectedFuelTypes, listings, setFilteredListings]);
+
+  const formatOptions = (data, labelKey) => data.map(item => ({
+    value: item.attributes[labelKey],
+    label: item.attributes[labelKey]
+  }));
 
   return (
     <div className="vehicle-filter-container">
-      <select className="filter-select" onChange={e => setSelectedMake(e.target.value)} value={selectedMake}>
-        <option value="">Select Make</option>
-        {makes.map(make => (
-          <option key={make.id} value={make.attributes.Make}>{make.attributes.Make}</option>
-        ))}
-      </select>
+      <Select
+        className="filter-select"
+        options={formatOptions(makes, 'Make')}
+        onChange={setSelectedMake}
+        value={selectedMake}
+        placeholder="Select Make"
+        isClearable
+      />
 
-      <select className="filter-select" onChange={e => setSelectedModel(e.target.value)} value={selectedModel} disabled={!selectedMake}>
-        <option value="">Select Model</option>
-        {models.map(model => (
-          <option key={model.id} value={model.attributes.Model}>{model.attributes.Model}</option>
-        ))}
-      </select>
+      <Select
+        className="filter-select"
+        options={formatOptions(models, 'Model')}
+        onChange={setSelectedModel}
+        value={selectedModel}
+        placeholder="Select Model"
+        isClearable
+        isDisabled={!selectedMake}
+      />
 
-      <select className="filter-select" onChange={e => setSelectedYear(e.target.value)} value={selectedYear}>
-        <option value="">Select Year</option>
-        {listings.map(listing => (
-          <option key={listing.id} value={listing.attributes.Year}>{listing.attributes.Year}</option>
-        ))}
-      </select>
+      <Select
+        className="filter-select"
+        options={listings.map(listing => ({
+          value: listing.attributes.Year,
+          label: listing.attributes.Year
+        }))}
+        onChange={option => setSelectedYear(option ? option.value : '')}
+        value={selectedYear ? { value: selectedYear, label: selectedYear } : null}
+        placeholder="Select Year"
+        isClearable
+      />
 
-      <select className="filter-select" onChange={e => setSelectedTransmission(e.target.value)} value={selectedTransmission}>
-        <option value="">Select Transmission</option>
-        {transmissions.map(transmission => (
-          <option key={transmission.id} value={transmission.attributes.Transmission}>{transmission.attributes.Transmission}</option>
-        ))}
-      </select>
+      <Select
+        className="filter-select"
+        options={formatOptions(transmissions, 'Transmission')}
+        onChange={setSelectedTransmissions}
+        value={selectedTransmissions}
+        placeholder="Select Transmission"
+        isMulti
+        isClearable
+      />
 
-      <select className="filter-select" onChange={e => setSelectedCondition(e.target.value)} value={selectedCondition}>
-        <option value="">Select Condition</option>
-        {conditions.map(condition => (
-          <option key={condition.id} value={condition.attributes.Condition}>{condition.attributes.Condition}</option>
-        ))}
-      </select>
+      <Select
+        className="filter-select"
+        options={formatOptions(conditions, 'Condition')}
+        onChange={setSelectedConditions}
+        value={selectedConditions}
+        placeholder="Select Condition"
+        isMulti
+        isClearable
+      />
 
-      <select className="filter-select" onChange={e => setSelectedLocation(e.target.value)} value={selectedLocation}>
-        <option value="">Select Location</option>
-        {locations.map(location => (
-          <option key={location.id} value={location.attributes.Location}>{location.attributes.Location}</option>
-        ))}
-      </select>
+      <Select
+        className="filter-select"
+        options={formatOptions(locations, 'Location')}
+        onChange={setSelectedLocations}
+        value={selectedLocations}
+        placeholder="Select Location"
+        isMulti
+        isClearable
+      />
 
-      <select className="filter-select" onChange={e => setSelectedFuelType(e.target.value)} value={selectedFuelType}>
-        <option value="">Select Fuel Type</option>
-        {fuelTypes.map(fuel => (
-          <option key={fuel.id} value={fuel.attributes.FuelType}>{fuel.attributes.FuelType}</option>
-        ))}
-      </select>
+      <Select
+        className="filter-select"
+        options={formatOptions(fuelTypes, 'FuelType')}
+        onChange={setSelectedFuelTypes}
+        value={selectedFuelTypes}
+        placeholder="Select Fuel Type"
+        isMulti
+        isClearable
+      />
     </div>
   );
 };

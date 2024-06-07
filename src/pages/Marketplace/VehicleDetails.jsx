@@ -39,35 +39,69 @@ const VehicleDetails = () => {
   };
 
   // Transform gallery data to match react-image-gallery format
-  const images = Gallery.data.map((image) => {
-    const originalUrl = constructImageUrl(image.attributes.formats.large.url);
-    const thumbnailUrl = constructImageUrl(image.attributes.formats.thumbnail.url);
-    console.log('Original URL:', originalUrl);
-    console.log('Thumbnail URL:', thumbnailUrl);
-    return {
-      original: originalUrl,
-      thumbnail: thumbnailUrl,
-    };
-  });
+  const images = (Gallery?.data || []).map((image) => {
+    const largeUrl = image.attributes.formats.large?.url;
+    const thumbnailUrl = image.attributes.formats.thumbnail?.url;
+
+    if (largeUrl && thumbnailUrl) {
+      return {
+        original: constructImageUrl(largeUrl),
+        thumbnail: constructImageUrl(thumbnailUrl),
+      };
+    }
+    return null;
+  }).filter(image => image !== null);
 
   return (
     <div className="vehicle-details">
-      <div className="image-gallery">
-        <ImageGallery items={images} 
+      <div className="vehicle-info">
+        {images.length > 0 && (
+          <ImageGallery items={images} 
             showPlayButton={false}
             /* lazyLoad = {true} */
-        />
+          />
+        )}
+        <div className="description">
+          <div className="info">
+            {fuel && fuel.data && (
+              <div className='detailed-info'>
+                <i className="bi bi-fuel-pump"/>
+                <p>{fuel.data.attributes.FuelType}</p>
+              </div>
+            )}
+            {gearbox && gearbox.data && (
+              <div className='detailed-info'>
+                <span className="material-symbols-outlined">auto_transmission</span>
+                <p>{gearbox.data.attributes.Transmission}</p>
+              </div>
+            )}
+            {condition && condition.data && (
+              <div className='detailed-info'>
+                <i className="bi bi-pin-map-fill"/>
+                <p>{condition.data.attributes.Condition}</p>
+              </div>
+            )}
+          </div>
+          {Price && <div className='price'>Listed Price: <b>Ksh {Price}</b></div>}
+          {seller && seller.data && (
+            <div className='seller-details'>
+              <div className="seller">
+                <p>{seller.data.attributes.Dealers}</p>
+                <p>{Contact}</p>
+              </div>
+              {location && location.data && (
+                <div className='location'>
+                  <i className="bi bi-geo-alt"/>
+                  <p>{location.data.attributes.Location}</p>
+                </div>
+              )}
+            </div>
+          )}
+        </div>
       </div>
-      <div className="vehicle-info">
-        <h1>{Year} {model.data.attributes.Model}</h1>
-        <p>Price: {Price}</p>
-        <p>Contact: {Contact}</p>
-        <p>Fuel Type: {fuel.data.attributes.FuelType}</p>
-        <p>Gearbox: {gearbox.data.attributes.Transmission}</p>
-        <p>Seller: {seller.data.attributes.Dealers}</p>
-        <p>Condition: {condition.data.attributes.Condition}</p>
-        <p>Location: {location.data.attributes.Location}</p>
-        <p>Description: {Description}</p>
+      <div>
+        {Year && model && model.data && <h1>{Year} {model.data.attributes.Model}</h1>}
+        {Description && <p>Description: {Description}</p>}
       </div>
     </div>
   );

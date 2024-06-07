@@ -2,35 +2,57 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    margin-top: 5rem;
+    padding: 1px;
+    background: #EBF2F7;
   }
   
-  .image-gallery {
+  .vehicle-info{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 4.0rem;
+    gap: 2.2rem;
+  }
+  .description{
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 20px;
+    flex-direction: column;
   }
-  
-  .image-gallery img {
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #ccc;
+  .description .info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
   }
-  
-  .vehicle-info {
-    width: 100%;
-    max-width: 800px;
+  .description .info p{
+    background: orange;
+    padding: 5px;
+    border-radius: 8px;
   }
-  
-  .vehicle-info h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
+  .description .info .detailed-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  
-  .vehicle-info p {
-    font-size: 1.2em;
-    margin-bottom: 5px;
+  .description .seller-details{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
   }
-  
+  .description .seller{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    font-size: 24px;
+    gap: 2rem;
+  }
+  .description .price{
+    display: flex;
+    background: orange;
+    padding: 10px;
+    font-size: 24px;
+    margin: 1.5rem 0;
+  }
