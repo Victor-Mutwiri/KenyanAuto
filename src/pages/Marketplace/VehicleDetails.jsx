@@ -40,9 +40,10 @@ const VehicleDetails = () => {
     const largeUrl = image.attributes.formats.large?.url;
     const mediumUrl = image.attributes.formats.medium?.url;
     const smallUrl = image.attributes.formats.small?.url;
+    const ThumbnailUrl = image.attributes.formats.thumbnail?.url;
     const thumbnailUrl = image.attributes.formats.thumbnail?.url;
 
-    const originalUrl = largeUrl || mediumUrl || smallUrl;
+    const originalUrl = largeUrl || mediumUrl || smallUrl || ThumbnailUrl;
 
     if (originalUrl && thumbnailUrl) {
       return {
@@ -57,7 +58,7 @@ const VehicleDetails = () => {
     <div className="vehicle-details">
       <div className="vehicle-info">
         {images.length > 0 && (
-          <ImageGallery items={images} showPlayButton={false} />
+          <ImageGallery items={images} showPlayButton={false} className="image-gallery"/>
         )}
         <div className="description">
         {Year && model && model.data && <h1>{Year} {model.data.attributes.Model}</h1>}
@@ -81,7 +82,7 @@ const VehicleDetails = () => {
               </div>
             )}
           </div>
-          {Price && <div className='price'>Listed Price: <b>Ksh {Price}</b></div>}
+          {Price && <div className='price'>Listed Price: <b>Ksh {Number(Price).toLocaleString()}</b></div>}
           {seller && seller.data && (
             <div className='seller-details'>
               <div className="seller">
@@ -98,9 +99,9 @@ const VehicleDetails = () => {
           )}
         </div>
       </div>
-      <div>
+      <div className='desc'>
         {/* {Year && model && model.data && <h1>{Year} {model.data.attributes.Model}</h1>} */}
-        {Description && <p>Description: {Description}</p>}
+        {Description && <p>{Description}</p>}
       </div>
     </div>
   );

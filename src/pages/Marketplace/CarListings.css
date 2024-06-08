@@ -71,14 +71,25 @@
   font-weight: normal;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .car-card {
     width: calc(50% - 20px);
   }
-}
+} */
 
 @media (max-width: 480px) {
   .car-card {
     width: 100%;
   }
 }
+
+/* Mobile phones Media Querries */
+
+
+@media (max-width: 320px) {}
+
+@media (min-width: 321px) and (max-width: 359px) {}
+
+@media (min-width: 360px) and (max-width: 374px) {}
+
+@media (min-width: 375px) and (max-width: 389px) {}
