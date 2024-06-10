@@ -1,49 +1,27 @@
-/* CarListings.css */
 .listings-container {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  /* align-items: center; */
-  margin-top: 5rem;
-  margin-bottom: 2rem;
+  padding: 20px;
+  margin-top: 4rem;
 }
 
 .filters {
-  width: 200px;
-  max-width: 300px;
-  margin-bottom: 2rem;
-  display: flex;
-  flex-direction: column;
-  /* gap: 10px; */
-}
-
-.filters select {
-  padding: 10px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  font-size: 1rem;
+  margin-bottom: 20px;
 }
 
 .cards-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
-  justify-content: center;
-  max-width: 1200px;
-  /* margin: 0 auto; */
 }
 
 .car-card {
-  border: 1px solid #ccc;
+  display: block;
+  border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
-  width: calc(33.33% - 20px);
-  height: 340px;
   text-decoration: none;
-  color: inherit;
-  transition: transform 0.2s;
-  display: flex;
-  flex-direction: column;
+  color: #333;
   background-color: #fff;
 }
 
@@ -54,42 +32,148 @@
 }
 
 .car-info {
-  padding: 16px;
+  padding: 10px;
 }
 
 .car-info p {
-  margin: 4px 0;
-  font-size: 1rem;
-  color: #333;
+  margin: 5px 0;
 }
 
-.car-info p:first-of-type {
+.car-info span {
   font-weight: bold;
 }
 
-.car-info p span {
-  font-weight: normal;
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-/* @media (max-width: 768px) {
-  .car-card {
-    width: calc(50% - 20px);
-  }
-} */
+.pagination button {
+  margin: 0 5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
 
-@media (max-width: 480px) {
-  .car-card {
-    width: 100%;
-  }
+.pagination button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.pagination button:hover:not(.active) {
+  background-color: #d0d0d0;
 }
 
 /* Mobile phones Media Querries */
 
 
-@media (max-width: 320px) {}
+@media (max-width: 320px) {
+  .listings-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 4rem;
+  }
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+}
 
-@media (min-width: 321px) and (max-width: 359px) {}
+@media (min-width: 321px) and (max-width: 359px) {
+  .listings-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 4rem;
+  }
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
-@media (min-width: 360px) and (max-width: 374px) {}
+@media (min-width: 360px) and (max-width: 374px) {
+  .listings-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 4rem;
+  }
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
-@media (min-width: 375px) and (max-width: 389px) {}
+@media (min-width: 375px) and (max-width: 389px) {
+  .listings-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 4rem;
+  }
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 390px) and (max-width: 392px) {
+  .listings-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 4rem;
+  }
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 393px) and (max-width: 411px) {
+  .listings-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 4rem;
+  }
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 412px) and (max-width: 413px) {
+  .listings-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 4rem;
+  }
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 414px) and (max-width: 427px) {
+  .listings-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 4rem;
+  }
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 428px) and (max-width: 429px) {
+  .listings-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 4rem;
+  }
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

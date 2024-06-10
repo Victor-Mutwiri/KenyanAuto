@@ -1,7 +1,10 @@
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import Select from 'react-select';
+import Slider from 'react-slick';
 import './CarFilter.css'; // Assuming you have a CSS file for styling
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const VehicleFilter = ({ listings, setFilteredListings }) => {
   const [makes, setMakes] = useState([]);
@@ -97,89 +100,168 @@ const VehicleFilter = ({ listings, setFilteredListings }) => {
     setFilteredListings(filtered);
   }, [selectedModel, selectedYear, selectedTransmissions, selectedConditions, selectedLocations, selectedFuelTypes, listings, setFilteredListings]);
 
-  const formatOptions = (data, labelKey) => data.map(item => ({
-    value: item.attributes[labelKey],
-    label: item.attributes[labelKey]
-  }));
+  const carouselSettings = {
+    dots: false,
+    infinite: false,
+    speed: 600,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    swipeToSlide: true,
+    /* responsive: [
+      {
+        breakpoint: 320,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      }
+    ] */
+  };
+
+  const makeOptions = makes.map(make => ({ value: make.attributes.Make, label: make.attributes.Make }));
+  const modelOptions = models.map(model => ({ value: model.attributes.Model, label: model.attributes.Model }));
+  const transmissionOptions = transmissions.map(transmission => ({ value: transmission.attributes.Transmission, label: transmission.attributes.Transmission }));
+  const conditionOptions = conditions.map(condition => ({ value: condition.attributes.Condition, label: condition.attributes.Condition }));
+  const locationOptions = locations.map(location => ({ value: location.attributes.Location, label: location.attributes.Location }));
+  const fuelTypeOptions = fuelTypes.map(fuelType => ({ value: fuelType.attributes.FuelType, label: fuelType.attributes.FuelType }));
 
   return (
-    <div className="vehicle-filter-container">
-      <Select
-        className="filter-select"
-        options={formatOptions(makes, 'Make')}
-        onChange={setSelectedMake}
-        value={selectedMake}
-        placeholder="Select Make"
-        isClearable
-      />
+    <>
+      <div className="filter-container column-filter">
+        <Select
+          placeholder="Select Make"
+          value={selectedMake}
+          onChange={setSelectedMake}
+          options={makeOptions}
+          isClearable
+        />
+        <Select
+          placeholder="Select Model"
+          value={selectedModel}
+          onChange={setSelectedModel}
+          options={modelOptions}
+          isClearable
+          isDisabled={!selectedMake}
+        />
+        <Select
+          placeholder="Select Year"
+          value={selectedYear}
+          onChange={setSelectedYear}
+          options={[...new Set(listings.map(listing => listing.attributes.Year))].map(year => ({ value: year, label: year }))}
+          isClearable
+        />
+        <Select
+          placeholder="Select Transmission"
+          value={selectedTransmissions}
+          onChange={setSelectedTransmissions}
+          options={transmissionOptions}
+          isMulti
+          isClearable
+        />
+        <Select
+          placeholder="Select Condition"
+          value={selectedConditions}
+          onChange={setSelectedConditions}
+          options={conditionOptions}
+          isMulti
+          isClearable
+        />
+        <Select
+          placeholder="Select Location"
+          value={selectedLocations}
+          onChange={setSelectedLocations}
+          options={locationOptions}
+          isMulti
+          isClearable
+        />
+        <Select
+          placeholder="Select Fuel Type"
+          value={selectedFuelTypes}
+          onChange={setSelectedFuelTypes}
+          options={fuelTypeOptions}
+          isMulti
+          isClearable
+        />
+      </div>
 
-      <Select
-        className="filter-select"
-        options={formatOptions(models, 'Model')}
-        onChange={setSelectedModel}
-        value={selectedModel}
-        placeholder="Select Model"
-        isClearable
-        isDisabled={!selectedMake}
-      />
-
-      <Select
-        className="filter-select"
-        options={listings.map(listing => ({
-          value: listing.attributes.Year,
-          label: listing.attributes.Year
-        }))}
-        onChange={option => setSelectedYear(option ? option.value : '')}
-        value={selectedYear ? { value: selectedYear, label: selectedYear } : null}
-        placeholder="Select Year"
-        isClearable
-      />
-
-      <Select
-        className="filter-select"
-        options={formatOptions(transmissions, 'Transmission')}
-        onChange={setSelectedTransmissions}
-        value={selectedTransmissions}
-        placeholder="Select Transmission"
-        isMulti
-        isClearable
-      />
-
-      <Select
-        className="filter-select"
-        options={formatOptions(conditions, 'Condition')}
-        onChange={setSelectedConditions}
-        value={selectedConditions}
-        placeholder="Select Condition"
-        isMulti
-        isClearable
-      />
-
-      <Select
-        className="filter-select"
-        options={formatOptions(locations, 'Location')}
-        onChange={setSelectedLocations}
-        value={selectedLocations}
-        placeholder="Select Location"
-        isMulti
-        isClearable
-      />
-
-      <Select
-        className="filter-select"
-        options={formatOptions(fuelTypes, 'FuelType')}
-        onChange={setSelectedFuelTypes}
-        value={selectedFuelTypes}
-        placeholder="Select Fuel Type"
-        isMulti
-        isClearable
-      />
-    </div>
+      <div className="filter-container carousel-filter">
+        <Slider {...carouselSettings}>
+          <div>
+            <Select
+              placeholder="Select Make"
+              value={selectedMake}
+              onChange={setSelectedMake}
+              options={makeOptions}
+              isClearable
+            />
+          </div>
+          <div>
+            <Select
+              placeholder="Select Model"
+              value={selectedModel}
+              onChange={setSelectedModel}
+              options={modelOptions}
+              isClearable
+              isDisabled={!selectedMake}
+            />
+          </div>
+          <div>
+            <Select
+              placeholder="Select Year"
+              value={selectedYear}
+              onChange={setSelectedYear}
+              options={[...new Set(listings.map(listing => listing.attributes.Year))].map(year => ({ value: year, label: year }))}
+              isClearable
+            />
+          </div>
+          <div>
+            <Select
+              placeholder="Select Transmission"
+              value={selectedTransmissions}
+              onChange={setSelectedTransmissions}
+              options={transmissionOptions}
+              isMulti
+              isClearable
+            />
+          </div>
+          <div>
+            <Select
+              placeholder="Select Condition"
+              value={selectedConditions}
+              onChange={setSelectedConditions}
+              options={conditionOptions}
+              isMulti
+              isClearable
+            />
+          </div>
+          <div>
+            <Select
+              placeholder="Select Location"
+              value={selectedLocations}
+              onChange={setSelectedLocations}
+              options={locationOptions}
+              isMulti
+              isClearable
+            />
+          </div>
+          <div>
+            <Select
+              placeholder="Select Fuel Type"
+              value={selectedFuelTypes}
+              onChange={setSelectedFuelTypes}
+              options={fuelTypeOptions}
+              isMulti
+              isClearable
+            />
+          </div>
+        </Slider>
+      </div>
+    </>
   );
 };
 
 VehicleFilter.propTypes = {
-  listings: PropTypes.array.isRequired,
+  listings: PropTypes.arrayOf(PropTypes.object).isRequired,
   setFilteredListings: PropTypes.func.isRequired,
 };
 

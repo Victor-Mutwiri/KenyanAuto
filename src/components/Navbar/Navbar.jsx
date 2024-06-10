@@ -13,6 +13,10 @@ export const Navbar = () => {
             <div className="navbar-menu">
                 <ul className="navbar-menu-list">
                     <li className="navbar-menu-item">
+                        <Link to={'/Marketplace'} className="navbar-menu-link">Marketplace</Link>
+                        {/* <a href="/Buying" className="navbar-menu-link">Buying</a> */}
+                    </li>
+                    <li className="navbar-menu-item">
                         <Link to={'/Buying'} className="navbar-menu-link">Buying</Link>
                         {/* <a href="/Buying" className="navbar-menu-link">Buying</a> */}
                     </li>

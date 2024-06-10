@@ -7,21 +7,29 @@ import VehicleFilter from './CarFilter';
 const CarListings = () => {
   const [listings, setListings] = useState([]);
   const [filteredListings, setFilteredListings] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(1);
+  const listingsPerPage = 20;
 
   useEffect(() => {
-    const fetchData = async () => {
+    const fetchData = async (page) => {
       try {
-        const response = await fetch(`${import.meta.env.DEV ? import.meta.env.VITE_DEV_API_BASE_URL : import.meta.env.VITE_PROD_API_BASE_URL}/listings?populate=*`);
+        const response = await fetch(`${import.meta.env.DEV ? import.meta.env.VITE_DEV_API_BASE_URL : import.meta.env.VITE_PROD_API_BASE_URL}/listings?populate=*&pagination[page]=${page}&pagination[pageSize]=${listingsPerPage}`);
         const data = await response.json();
         setListings(data.data);
         setFilteredListings(data.data);
+        setTotalPages(data.meta.pagination.pageCount);
       } catch (error) {
         console.error('Error fetching data:', error);
       }
     };
 
-    fetchData();
-  }, []);
+    fetchData(currentPage);
+  }, [currentPage]);
+
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
 
   return (
     <div className="listings-container">
@@ -29,12 +37,17 @@ const CarListings = () => {
         <VehicleFilter listings={listings} setFilteredListings={setFilteredListings} />
       </section>
       <section>
-        <p> <b>Showing results for {filteredListings.length} listing{filteredListings.length !== 1 ? 's' : ''} </b></p>
+        <p><b>Showing results for {filteredListings.length} listing{filteredListings.length !== 1 ? 's' : ''}</b></p>
         <div className="cards-container">
           {filteredListings.map(listing => (
-            <CarCard key={listing.id} listing={listing}/>
+            <CarCard key={listing.id} listing={listing} />
           ))}
         </div>
+        <Pagination 
+          currentPage={currentPage} 
+          totalPages={totalPages} 
+          onPageChange={handlePageChange} 
+        />
       </section>
     </div>
   );
@@ -55,7 +68,7 @@ const CarCard = ({ listing }) => {
       {imageUrl && <img src={imageUrl} alt="Car" />}
       <div className="car-info">
         {Year && model && model.data && <p>{Year} {model.data.attributes.Model}</p>}
-        {Price && <p>Price: <span>{Price}</span></p>}
+        {Price && <p>Price: <span>Ksh {Number(Price).toLocaleString()}</span></p>}
         {fuel && fuel.data && <p>Fuel Type: <span>{fuel.data.attributes.FuelType}</span></p>}
         {gearbox && gearbox.data && <p>Gearbox: <span>{gearbox.data.attributes.Transmission}</span></p>}
       </div>
@@ -105,6 +118,30 @@ CarCard.propTypes = {
       }),
     }),
   }).isRequired,
+};
+
+const Pagination = ({ currentPage, totalPages, onPageChange }) => {
+  const pages = Array.from({ length: totalPages }, (_, i) => i + 1);
+
+  return (
+    <div className="pagination">
+      {pages.map(page => (
+        <button 
+          key={page} 
+          onClick={() => onPageChange(page)} 
+          className={page === currentPage ? 'active' : ''}
+        >
+          {page}
+        </button>
+      ))}
+    </div>
+  );
+};
+
+Pagination.propTypes = {
+  currentPage: PropTypes.number.isRequired,
+  totalPages: PropTypes.number.isRequired,
+  onPageChange: PropTypes.func.isRequired,
 };
 
 export default CarListings;

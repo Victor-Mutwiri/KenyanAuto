@@ -87,7 +87,7 @@ const VehicleDetails = () => {
             <div className='seller-details'>
               <div className="seller">
                 <p>{seller.data.attributes.Dealers}</p>
-                <p>{Contact}</p>
+                <p><i className='bx bx-phone'> {Contact}</i></p>
               </div>
               {location && location.data && (
                 <div className='location'>
