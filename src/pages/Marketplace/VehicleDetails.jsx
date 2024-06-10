@@ -1,26 +1,36 @@
+// VehicleDetails.jsx
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import './VehicleDetails.css';
 import ImageGallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
+import SkeletonCard from '../../components/Skeleton/SkeletonCard';
 
 const VehicleDetails = () => {
   const { id } = useParams();
   const [vehicle, setVehicle] = useState(null);
+  const [loading, setLoading] = useState(true); // Add loading state
 
   useEffect(() => {
     const fetchVehicle = async () => {
       try {
+        setLoading(true); // Set loading to true before fetching data
         const response = await fetch(`${import.meta.env.DEV ? import.meta.env.VITE_DEV_API_BASE_URL : import.meta.env.VITE_PROD_API_BASE_URL}/listings/${id}?populate=*`);
         const data = await response.json();
         setVehicle(data.data);
       } catch (error) {
         console.error('Error fetching vehicle details:', error);
+      } finally {
+        setLoading(false); // Set loading to false after data is fetched
       }
     };
 
     fetchVehicle();
   }, [id]);
+
+  if (loading) {
+    return <SkeletonCard />; // Show SkeletonCard while loading
+  }
 
   if (!vehicle) {
     return <p>Loading...</p>;
@@ -61,7 +71,7 @@ const VehicleDetails = () => {
           <ImageGallery items={images} showPlayButton={false} className="image-gallery"/>
         )}
         <div className="description">
-        {Year && model && model.data && <h1>{Year} {model.data.attributes.Model}</h1>}
+          {Year && model && model.data && <h1>{Year} {model.data.attributes.Model}</h1>}
           <div className="info">
             {fuel && fuel.data && (
               <div className='detailed-info'>
@@ -100,7 +110,6 @@ const VehicleDetails = () => {
         </div>
       </div>
       <div className='desc'>
-        {/* {Year && model && model.data && <h1>{Year} {model.data.attributes.Model}</h1>} */}
         {Description && <p>{Description}</p>}
       </div>
     </div>

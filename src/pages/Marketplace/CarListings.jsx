@@ -1,8 +1,10 @@
+// CarListings.jsx
 import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import './CarListings.css';
 import VehicleFilter from './CarFilter';
+import SkeletonCard from '../../components/Skeleton/SkeletonCard';
 
 const CarListings = () => {
   const [listings, setListings] = useState([]);
@@ -10,10 +12,12 @@ const CarListings = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   const listingsPerPage = 20;
+  const [loading, setLoading] = useState(true); // Add loading state
 
   useEffect(() => {
     const fetchData = async (page) => {
       try {
+        setLoading(true); // Set loading to true before fetching data
         const response = await fetch(`${import.meta.env.DEV ? import.meta.env.VITE_DEV_API_BASE_URL : import.meta.env.VITE_PROD_API_BASE_URL}/listings?populate=*&pagination[page]=${page}&pagination[pageSize]=${listingsPerPage}`);
         const data = await response.json();
         setListings(data.data);
@@ -21,6 +25,8 @@ const CarListings = () => {
         setTotalPages(data.meta.pagination.pageCount);
       } catch (error) {
         console.error('Error fetching data:', error);
+      } finally {
+        setLoading(false); // Set loading to false after data is fetched
       }
     };
 
@@ -39,9 +45,14 @@ const CarListings = () => {
       <section>
         <p><b>Showing results for {filteredListings.length} listing{filteredListings.length !== 1 ? 's' : ''}</b></p>
         <div className="cards-container">
-          {filteredListings.map(listing => (
-            <CarCard key={listing.id} listing={listing} />
-          ))}
+          {loading ? (
+            // Show SkeletonCards while loading
+            Array.from({ length: listingsPerPage }, (_, index) => <SkeletonCard key={index} />)
+          ) : (
+            filteredListings.map(listing => (
+              <CarCard key={listing.id} listing={listing} />
+            ))
+          )}
         </div>
         <Pagination 
           currentPage={currentPage} 
