@@ -1,38 +1,41 @@
-import './About.css'
-import Me from '../../../src/assets/Victor.jpeg'
+import './About.css';
+import Me from '../../../src/assets/Victor.jpeg';
 
 const About = () => {
   return (
     <div className='aboutPage'>
+      <section className='hero'>
+        <h1>Welcome to KenyanAuto</h1>
+        <p>Your ultimate destination for comprehensive car reviews, buying tips, and a wide selection of vehicles from our marketplace.</p>
+      </section>
       <section className='about'>
-        <p>
-          <i className='bx bxs-quote-alt-left'/>
-          KenyanAuto offers comprehensive car reviews, buying guides, selling tips, <br /> 
-          and maintenance advice to help car enthusiasts and first-time buyers 
-          <br />
-          make informed decisions for their automotive needs.
-          <i className='bx bxs-quote-alt-right'/>
-        </p>
-        <img src={Me} alt="" width={250}/>
+        <div className='about-content'>
+          <img src={Me} alt="Victor" />
+          <div>
+            <h2>About Us</h2>
+            <p>
+              KenyanAuto offers comprehensive car reviews, buying tips, and a wide selection of vehicles in our car marketplace.
+              We provide vehicles both locally and foreign used, sourced from top dealers and individual sellers across the country.
+            </p>
+            <p>
+              We deliver customized vehicle sourcing, backed by over 6 years of successful automotive industry experience,
+              renowned for exceptional service. Whether you're considering a locally used vehicle or an import,
+              our team takes pride in finding the perfect match for your needs and budget.
+            </p>
+          </div>
+        </div>
       </section>
-      <section className='service'>
-        <p>
-          We deliver customized vehicle sourcing, Backed by 
-          <br />over 6 years of successful automotive industry experience, 
-           renowned for exceptional service.
-          <br />Whether locally used vehicle or considering importing,
-          <br /> our team takes pride in finding the perfect match 
-          <br />for your needs and budget.
-        </p>
-      </section>
-      <section className='offer'>
-        <div>In-depth Reviews</div>
-        <div>Comprehensive Guides</div>
-        <div>Expert Advice</div>
-        <div>Transparent</div>
+      <section className='services'>
+        <h2>What We Offer</h2>
+        <div className='offer-grid'>
+          <div className='offer-item'>In-depth Reviews</div>
+          <div className='offer-item'>Comprehensive Guides</div>
+          <div className='offer-item'>Expert Advice</div>
+          <div className='offer-item'>Transparency</div>
+        </div>
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

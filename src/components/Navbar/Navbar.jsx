@@ -20,9 +20,9 @@ export const Navbar = () => {
                         <Link to={'/Buying'} className="navbar-menu-link">Buying</Link>
                         {/* <a href="/Buying" className="navbar-menu-link">Buying</a> */}
                     </li>
-                    <li className="navbar-menu-item">
+                    {/* <li className="navbar-menu-item">
                         <Link to={'/Selling'} className="navbar-menu-link">Selling</Link>
-                    </li>
+                    </li> */}
                     {/* <li className="navbar-menu-item">
                         <Link to={'/Maintenance'} className="navbar-menu-link">Maintenance</Link>
                     </li> */}

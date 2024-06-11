@@ -67,7 +67,7 @@ const VehicleDetails = () => {
   const handleShareClick = async () => {
     try {
       await navigator.clipboard.writeText(window.location.href);
-      setCopySuccess('Link copied to clipboard!');
+      setCopySuccess('Link copied!Paste anywhere!');
     } catch (err) {
       setCopySuccess('Failed to copy the link');
     }
@@ -105,13 +105,17 @@ const VehicleDetails = () => {
               </div>
             )}
           </div>
+          <div className='desc'>
+            {Description && <p>{Description}</p>}
+          </div>
           {Price && <div className='price'>Listed Price: <b>Ksh {Number(Price).toLocaleString()}</b></div>}
           {seller && seller.data && (
             <div className='seller-details'>
               <div className="seller">
                 {/* <p>{seller.data.attributes.Dealers} <a href={`tel:${Contact}`} className='contact-button'><i className='bx bx-phone'/> {Contact}</a></p> */}
                 <p>{seller.data.attributes.Dealers}</p>
-                <a href={`tel:${Contact}`} className='contact-button'><i className='bx bx-phone'> {Contact}</i></a>
+                {/* <a href={`tel:${Contact}`} className='contact-button'><i className='bx bx-phone'> {Contact}</i></a> */}
+                <a href={`tel:${Contact}`} className='contact-button'> {Contact}</a>
                 {/* <p><i className='bx bx-phone'> {Contact}</i></p> */}
               </div>
               {location && location.data && (
@@ -126,9 +130,9 @@ const VehicleDetails = () => {
           )}
         </div>
       </div>
-      <div className='desc'>
+      {/* <div className='desc'>
         {Description && <p>{Description}</p>}
-      </div>
+      </div> */}
     </div>
   );
 };

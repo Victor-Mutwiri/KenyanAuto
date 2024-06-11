@@ -1,80 +1,143 @@
-.aboutPage{
+.aboutPage {
     display: flex;
     flex-direction: column;
-    margin-top: 4rem;
+    align-items: center;
+    animation: fadeIn 1s ease-in-out;
+    padding: 20px;
+    margin-top: 2.8rem;
+  }
+  
+  .hero {
+    text-align: center;
     margin-bottom: 2rem;
-    align-items: center;
-}
-.about{
+    padding: 2rem;
+    background-color: #0FD4FC;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    color: #002233;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    color: #000;
+  }
+  
+  .about {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 1.5rem;
-    text-align: center;
-    width: 90%;
-    height: 50vh;
-    background-image: url('../../assets/about.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: orange;
-    font-size: 20px;
-}
-.about img{
-    border-radius: 50%;
-}
-.offer{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.service{
-    display: flex;
     width: 100%;
-    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .about-content {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .about-content:hover {
+    transform: scale(1.02);
+  }
+  
+  .about-content img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .about-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #002233;
+  }
+  
+  .about-content p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .services {
     text-align: center;
-}
-
-.offer{
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: #ffee10;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .services h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #002233;
+  }
+  
+  .offer-grid {
     display: flex;
-    flex-direction: row;
-}
-.offer div{
-    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    /* background: #fff; */
-    background: orange;
-    padding: 7px;
+    gap: 1rem;
+  }
+  
+  .offer-item {
+    background: #002233;
+    padding: 1rem 2rem;
     border-radius: 18px;
-}
-
-
-@media (max-width:450px){
-    .aboutPage{
-        display: flex;
-        flex-direction: column;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background 0.3s;
+  }
+  
+  .offer-item:hover {
+    transform: scale(1.05);
+    background: #0FD4FC;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
     }
-    .about{
-        display: flex;
-        flex-direction: column;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 30vh;
-        width: 90%;
+    to {
+      opacity: 1;
     }
-    .about img{
-        display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      text-align: center;
     }
-    .service{
-        display: flex;
-        flex-direction: column;
+  
+    .about-content img {
+      width: 100px;
+      height: 100px;
     }
-    .offer{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
+  }
+  
+  @media (max-width: 450px) {
+    .hero h1 {
+      font-size: 2rem;
     }
-}
+  
+    .hero p,
+    .about-content p {
+      font-size: 1rem;
+    }
+  
+    .offer-item {
+      padding: 0.5rem 1rem;
+    }
+  }
+  
