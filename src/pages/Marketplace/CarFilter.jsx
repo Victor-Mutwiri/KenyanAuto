@@ -104,18 +104,9 @@ const VehicleFilter = ({ listings, setFilteredListings }) => {
     dots: false,
     infinite: false,
     speed: 600,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
-    swipeToSlide: true,
-    /* responsive: [
-      {
-        breakpoint: 320,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      }
-    ] */
+    swipeToSlide: true
   };
 
   const makeOptions = makes.map(make => ({ value: make.attributes.Make, label: make.attributes.Make }));
@@ -188,7 +179,7 @@ const VehicleFilter = ({ listings, setFilteredListings }) => {
         <Slider {...carouselSettings}>
           <div>
             <Select
-              placeholder="Select Make"
+              placeholder="Make"
               value={selectedMake}
               onChange={setSelectedMake}
               options={makeOptions}
@@ -197,7 +188,7 @@ const VehicleFilter = ({ listings, setFilteredListings }) => {
           </div>
           <div>
             <Select
-              placeholder="Select Model"
+              placeholder="Model"
               value={selectedModel}
               onChange={setSelectedModel}
               options={modelOptions}
@@ -207,7 +198,7 @@ const VehicleFilter = ({ listings, setFilteredListings }) => {
           </div>
           <div>
             <Select
-              placeholder="Select Year"
+              placeholder="Year"
               value={selectedYear}
               onChange={setSelectedYear}
               options={[...new Set(listings.map(listing => listing.attributes.Year))].map(year => ({ value: year, label: year }))}
@@ -216,7 +207,7 @@ const VehicleFilter = ({ listings, setFilteredListings }) => {
           </div>
           <div>
             <Select
-              placeholder="Select Transmission"
+              placeholder="Transmission"
               value={selectedTransmissions}
               onChange={setSelectedTransmissions}
               options={transmissionOptions}
@@ -226,7 +217,7 @@ const VehicleFilter = ({ listings, setFilteredListings }) => {
           </div>
           <div>
             <Select
-              placeholder="Select Condition"
+              placeholder="Condition"
               value={selectedConditions}
               onChange={setSelectedConditions}
               options={conditionOptions}
@@ -236,7 +227,7 @@ const VehicleFilter = ({ listings, setFilteredListings }) => {
           </div>
           <div>
             <Select
-              placeholder="Select Location"
+              placeholder="Location"
               value={selectedLocations}
               onChange={setSelectedLocations}
               options={locationOptions}
@@ -246,7 +237,7 @@ const VehicleFilter = ({ listings, setFilteredListings }) => {
           </div>
           <div>
             <Select
-              placeholder="Select Fuel Type"
+              placeholder="Fuel Type"
               value={selectedFuelTypes}
               onChange={setSelectedFuelTypes}
               options={fuelTypeOptions}

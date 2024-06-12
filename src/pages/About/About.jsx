@@ -1,5 +1,5 @@
 import './About.css';
-import Me from '../../../src/assets/Victor.jpeg';
+import Laptop from '../../../src/assets/Laptop.jpg'
 
 const About = () => {
   return (
@@ -10,7 +10,7 @@ const About = () => {
       </section>
       <section className='about'>
         <div className='about-content'>
-          <img src={Me} alt="Victor" />
+          <img src={Laptop} alt="Victor" />
           <div>
             <h2>About Us</h2>
             <p>

@@ -37,7 +37,7 @@ const VehicleDetails = () => {
   }
 
   const { attributes } = vehicle;
-  const { Year, Price, Contact, Description, Gallery, model, fuel, gearbox, seller, condition, location } = attributes;
+  const { Year, Price, Contact, Description, Gallery, model, fuel, gearbox, seller, condition, location, Name } = attributes;
 
   const constructImageUrl = (url) => {
     if (url.startsWith('http://') || url.startsWith('https://')) {
@@ -47,18 +47,20 @@ const VehicleDetails = () => {
   };
 
   const images = (Gallery?.data || []).map((image) => {
-    const largeUrl = image.attributes.formats.large?.url;
-    const mediumUrl = image.attributes.formats.medium?.url;
-    const smallUrl = image.attributes.formats.small?.url;
-    const ThumbnailUrl = image.attributes.formats.thumbnail?.url;
-    const thumbnailUrl = image.attributes.formats.thumbnail?.url;
+    const mainUrl = image?.attributes?.url
+    const largeUrl = image?.attributes?.formats?.large?.url;
+    const mediumUrl = image?.attributes?.formats?.medium?.url;
+    const smallUrl = image?.attributes?.formats?.small?.url;
+    const ThumbnailUrl = image?.attributes?.formats?.thumbnail?.url;
+    const thumbnailUrl = image?.attributes?.formats?.thumbnail?.url;
 
-    const originalUrl = largeUrl || mediumUrl || smallUrl || ThumbnailUrl;
+    const originalUrl = mainUrl || largeUrl || mediumUrl || smallUrl || ThumbnailUrl;
 
-    if (originalUrl && thumbnailUrl) {
+    if (originalUrl && thumbnailUrl && mainUrl) {
       return {
         original: constructImageUrl(originalUrl),
         thumbnail: constructImageUrl(thumbnailUrl),
+        main: constructImageUrl(mainUrl)
       };
     }
     return null;
@@ -84,7 +86,8 @@ const VehicleDetails = () => {
           <ImageGallery items={images} showPlayButton={false} className="image-gallery"/>
         )}
         <div className="description">
-          {Year && model && model.data && <h1>{Year} {model.data.attributes.Model}</h1>}
+          { Year && Name && <h2>{Name} {Year}</h2>}
+          {/* {Year && model && model.data && <h1>{Year} {model.data.attributes.Model}</h1>} */}
           <div className="info">
             {fuel && fuel.data && (
               <div className='detailed-info'>

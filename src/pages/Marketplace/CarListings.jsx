@@ -72,11 +72,11 @@ const CarCard = ({ listing }) => {
   }
 
   const { Year, Price, Gallery, model, fuel, gearbox } = attributes;
-  const imageUrl = Gallery?.data?.[0]?.attributes?.formats?.thumbnail?.url;
+  const imageUrl = Gallery?.data?.[0]?.attributes?.formats?.thumbnail?.url|| Gallery?.data?.[0]?.attributes?.url;
 
   return (
     <Link to={`/car-details/${listing.id}`} className="car-card">
-      {imageUrl && <img src={imageUrl} alt="Car" />}
+      {imageUrl && <img src={imageUrl} alt="Car"/>}
       <div className="car-info">
         {Year && model && model.data && <p>{Year} {model.data.attributes.Model}</p>}
         {Price && <p>Price: <span>Ksh {Number(Price).toLocaleString()}</span></p>}
@@ -96,12 +96,14 @@ CarCard.propTypes = {
       Gallery: PropTypes.shape({
         data: PropTypes.arrayOf(
           PropTypes.shape({
+            id: PropTypes.number.isRequired,
             attributes: PropTypes.shape({
               formats: PropTypes.shape({
                 thumbnail: PropTypes.shape({
                   url: PropTypes.string,
                 }),
               }),
+              url: PropTypes.string,
             }),
           })
         ),
