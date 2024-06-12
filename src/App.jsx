@@ -1,6 +1,7 @@
 // App.js
 import { useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { CarListingsProvider } from './components/CarListingContext/CarListingsContext';
 import './App.css';
 import { Navbar } from './components/Navbar/Navbar';
 import { Review } from './pages/Review/Review';
@@ -29,28 +30,30 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Navbar/>
-      <Routes>
-        <Route path="/" element={<Review />} />
-        <Route path='/About' element={<About/>}/>
-        <Route path='/Marketplace' element={<CarListings/>}/>
-        <Route path='/car-details/:id' element={<VehicleDetails/>}/>
-        <Route path="/Buying" element={<Buying />} />
-        {/* <Route path="/Contact" element={<Contact />} /> */}
-        {/* <Route path="/Guide" element={<Guide />} /> */}
-        {/* <Route path="/Maintenance" element={<Maintenance />} /> */}
-        {/* <Route path="/Safety" element={<Safety />} /> */}
-        {/* <Route path="/Selling" element={<Selling />} /> */}
-        {/* <Route path="/Valuation" element={<CarValuation />} /> */}
-        <Route path="/buying-guide/:route" element={<BuyingContent />} />
-        <Route path="/guides/:route" element={<GuideContent />} />
-        {/* <Route path="/selling-guide/:route" element={<SellingContent />} /> */}
-        {/* <Route path="/maintenance-guide/:route" element={<MaintenanceContent />} /> */}
-        {/* <Route path="/make-maintenance" element={<MakeMaintenance />} /> */}
-        <Route path="/model/:id" element={<Model selectedReview={selectedReview} onClose={() => setSelectedReview(null)}/>} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-      <Footer/>
+      <CarListingsProvider>
+        <Navbar/>
+        <Routes>
+          <Route path="/" element={<Review />} />
+          <Route path='/About' element={<About/>}/>
+          <Route path='/Marketplace' element={<CarListings/>}/>
+          <Route path='/car-details/:id' element={<VehicleDetails/>}/>
+          <Route path="/Buying" element={<Buying />} />
+          {/* <Route path="/Contact" element={<Contact />} /> */}
+          {/* <Route path="/Guide" element={<Guide />} /> */}
+          {/* <Route path="/Maintenance" element={<Maintenance />} /> */}
+          {/* <Route path="/Safety" element={<Safety />} /> */}
+          {/* <Route path="/Selling" element={<Selling />} /> */}
+          {/* <Route path="/Valuation" element={<CarValuation />} /> */}
+          <Route path="/buying-guide/:route" element={<BuyingContent />} />
+          <Route path="/guides/:route" element={<GuideContent />} />
+          {/* <Route path="/selling-guide/:route" element={<SellingContent />} /> */}
+          {/* <Route path="/maintenance-guide/:route" element={<MaintenanceContent />} /> */}
+          {/* <Route path="/make-maintenance" element={<MakeMaintenance />} /> */}
+          <Route path="/model/:id" element={<Model selectedReview={selectedReview} onClose={() => setSelectedReview(null)}/>} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+        <Footer/>
+      </CarListingsProvider>
     </BrowserRouter>
   );
 }

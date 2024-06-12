@@ -1,23 +1,30 @@
-// CarListings.jsx
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import './CarListings.css';
 import VehicleFilter from './CarFilter';
 import SkeletonCard from '../../components/Skeleton/SkeletonCard';
+import { useCarListings } from '../../components/CarListingContext/useCarListings';
 
 const CarListings = () => {
-  const [listings, setListings] = useState([]);
-  const [filteredListings, setFilteredListings] = useState([]);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [totalPages, setTotalPages] = useState(1);
+  const {
+    listings,
+    setListings,
+    filteredListings,
+    setFilteredListings,
+    currentPage,
+    setCurrentPage,
+    totalPages,
+    setTotalPages,
+    loading,
+    setLoading,
+  } = useCarListings();
   const listingsPerPage = 20;
-  const [loading, setLoading] = useState(true); // Add loading state
 
   useEffect(() => {
     const fetchData = async (page) => {
       try {
-        setLoading(true); // Set loading to true before fetching data
+        setLoading(true);
         const response = await fetch(`${import.meta.env.DEV ? import.meta.env.VITE_DEV_API_BASE_URL : import.meta.env.VITE_PROD_API_BASE_URL}/listings?populate=*&pagination[page]=${page}&pagination[pageSize]=${listingsPerPage}`);
         const data = await response.json();
         setListings(data.data);
@@ -26,12 +33,12 @@ const CarListings = () => {
       } catch (error) {
         console.error('Error fetching data:', error);
       } finally {
-        setLoading(false); // Set loading to false after data is fetched
+        setLoading(false);
       }
     };
 
     fetchData(currentPage);
-  }, [currentPage]);
+  }, [currentPage, setFilteredListings, setListings, setLoading, setTotalPages]);
 
   const handlePageChange = (page) => {
     setCurrentPage(page);
@@ -46,7 +53,6 @@ const CarListings = () => {
         <p><b>Showing results for {filteredListings.length} listing{filteredListings.length !== 1 ? 's' : ''}</b></p>
         <div className="cards-container">
           {loading ? (
-            // Show SkeletonCards while loading
             Array.from({ length: listingsPerPage }, (_, index) => <SkeletonCard key={index} />)
           ) : (
             filteredListings.map(listing => (
@@ -54,10 +60,10 @@ const CarListings = () => {
             ))
           )}
         </div>
-        <Pagination 
-          currentPage={currentPage} 
-          totalPages={totalPages} 
-          onPageChange={handlePageChange} 
+        <Pagination
+          currentPage={currentPage}
+          totalPages={totalPages}
+          onPageChange={handlePageChange}
         />
       </section>
     </div>
@@ -68,15 +74,15 @@ const CarCard = ({ listing }) => {
   const { attributes } = listing;
 
   if (!attributes) {
-    return null; // or show some placeholder
+    return null;
   }
 
   const { Year, Price, Gallery, model, fuel, gearbox } = attributes;
-  const imageUrl = Gallery?.data?.[0]?.attributes?.formats?.thumbnail?.url|| Gallery?.data?.[0]?.attributes?.url;
+  const imageUrl = Gallery?.data?.[0]?.attributes?.formats?.thumbnail?.url || Gallery?.data?.[0]?.attributes?.url;
 
   return (
     <Link to={`/car-details/${listing.id}`} className="car-card">
-      {imageUrl && <img src={imageUrl} alt="Car"/>}
+      {imageUrl && <img src={imageUrl} alt="Car" />}
       <div className="car-info">
         {Year && model && model.data && <p>{Year} {model.data.attributes.Model}</p>}
         {Price && <p>Price: <span>Ksh {Number(Price).toLocaleString()}</span></p>}
@@ -139,9 +145,9 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
   return (
     <div className="pagination">
       {pages.map(page => (
-        <button 
-          key={page} 
-          onClick={() => onPageChange(page)} 
+        <button
+          key={page}
+          onClick={() => onPageChange(page)}
           className={page === currentPage ? 'active' : ''}
         >
           {page}
