@@ -71,23 +71,30 @@ const CarListings = () => {
 };
 
 const CarCard = ({ listing }) => {
-  const { attributes } = listing;
+const { attributes } = listing;
 
   if (!attributes) {
     return null;
   }
 
-  const { Year, Price, Gallery, model, fuel, gearbox } = attributes;
+  const { Year, Price, Gallery, model, fuel, gearbox, Name } = attributes;
   const imageUrl = Gallery?.data?.[0]?.attributes?.formats?.thumbnail?.url || Gallery?.data?.[0]?.attributes?.url;
+  const nameSlug = Name.toLowerCase().replace(/ /g, '-');
 
   return (
-    <Link to={`/car-details/${listing.id}`} className="car-card">
-      {imageUrl && <img src={imageUrl} alt="Car" />}
+    <Link to={`/car-details/${listing.id}/${nameSlug}`} className="car-card">
+    {/* <Link to={`/car-details/${listing.id}`} className="car-card"> */}
+      {imageUrl && <img src={imageUrl} alt={Name} />}
       <div className="car-info">
-        {Year && model && model.data && <p>{Year} {model.data.attributes.Model}</p>}
-        {Price && <p>Price: <span>Ksh {Number(Price).toLocaleString()}</span></p>}
-        {fuel && fuel.data && <p>Fuel Type: <span>{fuel.data.attributes.FuelType}</span></p>}
-        {gearbox && gearbox.data && <p>Gearbox: <span>{gearbox.data.attributes.Transmission}</span></p>}
+        <div className="heading">
+              {/* {Year && model && model.data && <p>{Year} {model.data.attributes.Model}</p>} */}
+              {Name && <p>{Name}</p>}
+        </div>
+        {Price && <p><span>Ksh {Number(Price).toLocaleString()}</span></p>}
+        <div className="engine">
+          {fuel && fuel.data && <span><i className="bi bi-fuel-pump">  {fuel.data.attributes.FuelType}</i></span>}
+          {gearbox && gearbox.data && <span><i className="bi bi-gear">  {gearbox.data.attributes.Transmission}</i></span>}
+        </div>
       </div>
     </Link>
   );
@@ -135,6 +142,7 @@ CarCard.propTypes = {
           }),
         }),
       }),
+      Name: PropTypes.string.isRequired,
     }),
   }).isRequired,
 };

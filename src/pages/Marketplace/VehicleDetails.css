@@ -140,7 +140,22 @@
 
   @media (min-width: 321px) and (max-width: 359px) {}
 
-  @media (min-width: 360px) and (max-width: 374px) {}
+  @media (min-width: 360px) and (max-width: 374px) {
+    .vehicle-details {
+      padding: 0.5rem 1rem;
+      width: 100%;
+    }
+    .vehicle-info{
+      display: flex;
+      flex-direction: column;
+      margin-top: 4rem;
+      gap: 0.7rem;
+    }
+    .vehicle-info .image-gallery{
+      width: 100%;
+      height: auto;
+    }
+  }
 
   @media (min-width: 375px) and (max-width: 389px) {
     .vehicle-details {

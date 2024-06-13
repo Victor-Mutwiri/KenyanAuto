@@ -22,7 +22,6 @@
   .carousel-filter {
     display: block;
     gap: 2px;
-    z-index: 1;
   }
 }
 

@@ -9,7 +9,7 @@ const VehicleDetails = () => {
   const { id } = useParams();
   const [vehicle, setVehicle] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [copySuccess, setCopySuccess] = useState(''); // State for copy success message
+  const [copySuccess, setCopySuccess] = useState('');
 
   useEffect(() => {
     const fetchVehicle = async () => {
@@ -46,15 +46,14 @@ const VehicleDetails = () => {
     return `${import.meta.env.DEV ? import.meta.env.VITE_DEV_API_IMAGE_URL : import.meta.env.VITE_PROD_API_IMAGE_URL}${url}`;
   };
 
-  const images = (Gallery?.data || []).map((image) => {
-    const mainUrl = image?.attributes?.url
+    const images = (Gallery?.data || []).map((image) => {
+    const mainUrl = image?.attributes?.url;
     const largeUrl = image?.attributes?.formats?.large?.url;
     const mediumUrl = image?.attributes?.formats?.medium?.url;
     const smallUrl = image?.attributes?.formats?.small?.url;
-    const ThumbnailUrl = image?.attributes?.formats?.thumbnail?.url;
     const thumbnailUrl = image?.attributes?.formats?.thumbnail?.url;
 
-    const originalUrl = mainUrl || largeUrl || mediumUrl || smallUrl || ThumbnailUrl;
+    const originalUrl = mainUrl || largeUrl || mediumUrl || smallUrl;
 
     if (originalUrl && thumbnailUrl && mainUrl) {
       return {
@@ -69,25 +68,24 @@ const VehicleDetails = () => {
   const handleShareClick = async () => {
     try {
       await navigator.clipboard.writeText(window.location.href);
-      setCopySuccess('Link copied!Paste anywhere!');
+      setCopySuccess('Link copied! Paste anywhere!');
     } catch (err) {
       setCopySuccess('Failed to copy the link');
     }
 
     setTimeout(() => {
       setCopySuccess('');
-    }, 2000); // Hide the message after 2 seconds
+    }, 2000);
   };
 
   return (
     <div className="vehicle-details">
       <div className="vehicle-info">
         {images.length > 0 && (
-          <ImageGallery items={images} showPlayButton={false} className="image-gallery"/>
+          <ImageGallery items={images} showPlayButton={false} className="image-gallery" />
         )}
         <div className="description">
-          { Year && Name && <h2>{Name} {Year}</h2>}
-          {/* {Year && model && model.data && <h1>{Year} {model.data.attributes.Model}</h1>} */}
+          {Year && Name && <h2>{Name}</h2>}
           <div className="info">
             {fuel && fuel.data && (
               <div className='detailed-info'>
@@ -115,11 +113,8 @@ const VehicleDetails = () => {
           {seller && seller.data && (
             <div className='seller-details'>
               <div className="seller">
-                {/* <p>{seller.data.attributes.Dealers} <a href={`tel:${Contact}`} className='contact-button'><i className='bx bx-phone'/> {Contact}</a></p> */}
                 <p>{seller.data.attributes.Dealers}</p>
-                {/* <a href={`tel:${Contact}`} className='contact-button'><i className='bx bx-phone'> {Contact}</i></a> */}
                 <a href={`tel:${Contact}`} className='contact-button'> {Contact}</a>
-                {/* <p><i className='bx bx-phone'> {Contact}</i></p> */}
               </div>
               {location && location.data && (
                 <div className='location'>
@@ -133,9 +128,6 @@ const VehicleDetails = () => {
           )}
         </div>
       </div>
-      {/* <div className='desc'>
-        {Description && <p>{Description}</p>}
-      </div> */}
     </div>
   );
 };
