@@ -4,20 +4,21 @@ import './VehicleDetails.css';
 import ImageGallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
 import SkeletonCard from '../../components/Skeleton/SkeletonCard';
+import { useCarListings } from '../../components/CarListingContext/useCarListings';
 
 const VehicleDetails = () => {
   const { id } = useParams();
+  const { fetchVehicleDetails } = useCarListings();
   const [vehicle, setVehicle] = useState(null);
   const [loading, setLoading] = useState(true);
   const [copySuccess, setCopySuccess] = useState('');
 
   useEffect(() => {
-    const fetchVehicle = async () => {
+    const getVehicleDetails = async () => {
       try {
         setLoading(true);
-        const response = await fetch(`${import.meta.env.DEV ? import.meta.env.VITE_DEV_API_BASE_URL : import.meta.env.VITE_PROD_API_BASE_URL}/listings/${id}?populate=*`);
-        const data = await response.json();
-        setVehicle(data.data);
+        const vehicleData = await fetchVehicleDetails(id);
+        setVehicle(vehicleData);
       } catch (error) {
         console.error('Error fetching vehicle details:', error);
       } finally {
@@ -25,8 +26,8 @@ const VehicleDetails = () => {
       }
     };
 
-    fetchVehicle();
-  }, [id]);
+    getVehicleDetails();
+  }, [id, fetchVehicleDetails]);
 
   if (loading) {
     return <SkeletonCard />;
@@ -46,7 +47,7 @@ const VehicleDetails = () => {
     return `${import.meta.env.DEV ? import.meta.env.VITE_DEV_API_IMAGE_URL : import.meta.env.VITE_PROD_API_IMAGE_URL}${url}`;
   };
 
-    const images = (Gallery?.data || []).map((image) => {
+  const images = (Gallery?.data || []).map((image) => {
     const mainUrl = image?.attributes?.url;
     const largeUrl = image?.attributes?.formats?.large?.url;
     const mediumUrl = image?.attributes?.formats?.medium?.url;

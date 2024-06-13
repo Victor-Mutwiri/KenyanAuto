@@ -22,23 +22,25 @@ const CarListings = () => {
   const listingsPerPage = 20;
 
   useEffect(() => {
-    const fetchData = async (page) => {
-      try {
-        setLoading(true);
-        const response = await fetch(`${import.meta.env.DEV ? import.meta.env.VITE_DEV_API_BASE_URL : import.meta.env.VITE_PROD_API_BASE_URL}/listings?populate=*&pagination[page]=${page}&pagination[pageSize]=${listingsPerPage}`);
-        const data = await response.json();
-        setListings(data.data);
-        setFilteredListings(data.data);
-        setTotalPages(data.meta.pagination.pageCount);
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      } finally {
-        setLoading(false);
-      }
-    };
+    if (listings.length === 0) {
+      const fetchData = async (page) => {
+        try {
+          setLoading(true);
+          const response = await fetch(`${import.meta.env.DEV ? import.meta.env.VITE_DEV_API_BASE_URL : import.meta.env.VITE_PROD_API_BASE_URL}/listings?populate=*&pagination[page]=${page}&pagination[pageSize]=${listingsPerPage}`);
+          const data = await response.json();
+          setListings(data.data);
+          setFilteredListings(data.data);
+          setTotalPages(data.meta.pagination.pageCount);
+        } catch (error) {
+          console.error('Error fetching data:', error);
+        } finally {
+          setLoading(false);
+        }
+      };
 
-    fetchData(currentPage);
-  }, [currentPage, setFilteredListings, setListings, setLoading, setTotalPages]);
+      fetchData(currentPage);
+    }
+  }, [currentPage, listings, setFilteredListings, setListings, setLoading, setTotalPages]);
 
   const handlePageChange = (page) => {
     setCurrentPage(page);
@@ -71,7 +73,7 @@ const CarListings = () => {
 };
 
 const CarCard = ({ listing }) => {
-const { attributes } = listing;
+  const { attributes } = listing;
 
   if (!attributes) {
     return null;
@@ -83,17 +85,15 @@ const { attributes } = listing;
 
   return (
     <Link to={`/car-details/${listing.id}/${nameSlug}`} className="car-card">
-    {/* <Link to={`/car-details/${listing.id}`} className="car-card"> */}
       {imageUrl && <img src={imageUrl} alt={Name} />}
       <div className="car-info">
         <div className="heading">
-              {/* {Year && model && model.data && <p>{Year} {model.data.attributes.Model}</p>} */}
-              {Name && <p>{Name}</p>}
+          {Name && <p>{Name}</p>}
         </div>
         {Price && <p><span>Ksh {Number(Price).toLocaleString()}</span></p>}
         <div className="engine">
-          {fuel && fuel.data && <span><i className="bi bi-fuel-pump">  {fuel.data.attributes.FuelType}</i></span>}
-          {gearbox && gearbox.data && <span><i className="bi bi-gear">  {gearbox.data.attributes.Transmission}</i></span>}
+          {fuel && fuel.data && <span><i className="bi bi-fuel-pump"> {fuel.data.attributes.FuelType}</i></span>}
+          {gearbox && gearbox.data && <span><i className="bi bi-gear"> {gearbox.data.attributes.Transmission}</i></span>}
         </div>
       </div>
     </Link>
