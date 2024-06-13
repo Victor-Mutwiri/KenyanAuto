@@ -41,8 +41,8 @@ export const MenuPage = ({ isOpen, onClose }) => { // Remove isOpen from props
                 <Link to={'/About'} onClick={handleButtonClick}>About</Link>
             </div>
             <div className="socials">
-                <a href="#"><i className='bx bxl-facebook'/></a>
-                <a href="#"><i className='bx bxl-twitter'/></a>
+                <a href="https://www.facebook.com/kenyanauto/"><i className='bx bxl-facebook'/></a>
+                <a href="https://x.com/KenyanAuto_"><i className='bx bxl-twitter'/></a>
             </div>
         </div>
     );

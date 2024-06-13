@@ -38,7 +38,7 @@ const Footer = () => {
         </section>
         <p>Copyright <span>&copy;</span> 2024</p>
         <div className='mediaIcons'>
-            <a href="#"><i className='bx bxl-facebook'/></a>
+            <a href="https://www.facebook.com/kenyanauto/"><i className='bx bxl-facebook'/></a>
             <a href="https://x.com/KenyanAuto_"><i className='bx bxl-twitter'/></a>
         </div>
     </footer>
