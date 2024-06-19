@@ -1,15 +1,9 @@
-import 'ldrs/waveform'
-console.log('Loading component rendered');
+import './loading.css'
+
 export const Loading = () => {
   return (
-    <div>
-        <l-waveform
-        size="60"
-        stroke="3.5"
-        speed="1"
-        color="orange"
-        onerror={(e) => console.error('Error loading waveform:', e)} 
-      ></l-waveform>
+    <div className="loader-container">
+        <div className="spinner"></div>
     </div>
   )
 }
