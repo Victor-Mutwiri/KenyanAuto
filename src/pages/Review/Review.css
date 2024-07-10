@@ -215,6 +215,14 @@
   }
 }
 
+.carousel-reviews{
+    display: none;
+}
+.model-container {
+    padding: 10px;
+    gap: 20px;
+  }
+
 /* For devices up to 320px width */
 @media (max-width: 320px) {
     .review{
@@ -345,6 +353,9 @@
     .call2action p{
         font-size: 20px;
         margin-bottom: 0.7rem;
+    }
+    .model-reviews{
+        display: flex;
     }
 }
 

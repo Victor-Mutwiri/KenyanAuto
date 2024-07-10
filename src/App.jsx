@@ -22,6 +22,7 @@ import Footer from './components/Footer/Footer';
 import About from './pages/About/About';
 import CarListings from './pages/Marketplace/CarListings';
 import VehicleDetails from './pages/Marketplace/VehicleDetails';
+import Profile from './pages/Profile/profile';
 /* import CarValuation from './pages/Valuation/CarValuation'; */
 
 function App() {
@@ -34,7 +35,8 @@ function App() {
         <Navbar/>
         <Routes>
           <Route path="/" element={<Review />} />
-          <Route path='/About' element={<About/>}/>
+          {/* <Route path='/About' element={<About/>}/> */}
+          <Route path='/About' element={<Profile/>}/>
           <Route path='/Marketplace' element={<CarListings/>}/>
           {/* <Route path='/car-details/:id:name' element={<VehicleDetails/>}/> */}
           <Route path='/car-details/:id/:nameSlug' element={<VehicleDetails/>}/>
