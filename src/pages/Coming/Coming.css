@@ -1,0 +1,10 @@
+.soon{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin-top: 5rem;
+    height: 60vh;
+}
