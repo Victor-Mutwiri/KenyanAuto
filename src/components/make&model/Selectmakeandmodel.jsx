@@ -11,22 +11,28 @@ const Selectmakeandmodel = ({ makes, models, selectedMake, selectedModel, onMake
             <h4>Make</h4>
             <select name='make' value={selectedMake} onChange={onMakeChange}>
               <option value=''>Select Make</option>
-              {makes.map((make) => (
-                <option key={make.id} value={make.attributes.Make}>
-                  {make.attributes.Make}
-                </option>
-              ))}
+              {makes
+                .slice()
+                .sort((a, b) => a.attributes.Make.localeCompare(b.attributes.Make))
+                .map((make) => (
+                  <option key={make.id} value={make.attributes.Make}>
+                    {make.attributes.Make}
+                  </option>
+                ))}
             </select>
           </div>
           <div className='model'>
             <h4>Model</h4>
             <select name='model' value={selectedModel} onChange={onModelChange} disabled={!selectedMake}>
               <option value=''>Select Model</option>
-              {models.map((model) => (
-                <option key={model.id} value={model.attributes.Model}>
-                  {model.attributes.Model}
-                </option>
-              ))}
+              {models
+                .slice()
+                .sort((a, b) => a.attributes.Model.localeCompare(b.attributes.Model))
+                .map((model) => (
+                  <option key={model.id} value={model.attributes.Model}>
+                    {model.attributes.Model}
+                  </option>
+                ))}
             </select>
           </div>
         </div>
