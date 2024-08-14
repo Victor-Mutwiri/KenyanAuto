@@ -36,8 +36,8 @@ function App() {
         <Navbar/>
         <Routes>
           <Route path="/" element={<Review />} />
-          {/* <Route path='/About' element={<About/>}/> */}
-          <Route path='/About' element={<Profile/>}/>
+          <Route path='/About' element={<About/>}/>
+          {/* <Route path='/About' element={<Profile/>}/> */}
           <Route path='/Marketplace' element={<CarListings/>}/> 
 
           {/* <Route path='/Marketplace' element={<Coming/>}/> */}
