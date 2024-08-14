@@ -38,8 +38,10 @@ function App() {
           <Route path="/" element={<Review />} />
           {/* <Route path='/About' element={<About/>}/> */}
           <Route path='/About' element={<Profile/>}/>
-          {/* <Route path='/Marketplace' element={<CarListings/>}/> */}
-          <Route path='/Marketplace' element={<Coming/>}/>
+          <Route path='/Marketplace' element={<CarListings/>}/> 
+
+          {/* <Route path='/Marketplace' element={<Coming/>}/> */}
+
           {/* <Route path='/car-details/:id:name' element={<VehicleDetails/>}/> */}
           <Route path='/car-details/:id/:nameSlug' element={<VehicleDetails/>}/>
           <Route path="/Buying" element={<Buying />} />

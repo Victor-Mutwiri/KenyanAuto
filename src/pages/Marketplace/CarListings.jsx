@@ -80,7 +80,8 @@ const CarCard = ({ listing }) => {
   }
 
   const { Year, Price, Gallery, model, fuel, gearbox, Name } = attributes;
-  const imageUrl = Gallery?.data?.[0]?.attributes?.formats?.thumbnail?.url || Gallery?.data?.[0]?.attributes?.url;
+  /* const imageUrl = Gallery?.data?.[0]?.attributes?.formats?.thumbnail?.url || Gallery?.data?.[0]?.attributes?.formats?.thumbnail?.url || Gallery?.data?.[0]?.attributes?.url; */
+  const imageUrl = Gallery?.data?.[0]?.attributes?.formats?.large?.url || Gallery?.data?.[1]?.attributes?.formats?.large?.url || Gallery?.data?.[0]?.attributes?.url;
   const nameSlug = Name.toLowerCase().replace(/ /g, '-');
 
   return (
