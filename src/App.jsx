@@ -36,22 +36,22 @@ function App() {
         <Navbar/>
         <Routes>
           <Route path="/" element={<Review />} />
-          <Route path='/About' element={<About/>}/>
-          {/* <Route path='/About' element={<Profile/>}/> */}
-          <Route path='/Marketplace' element={<CarListings/>}/> 
+          {/* <Route path='/About' element={<About/>}/> */}
+          <Route path='/About' element={<Profile/>}/>
+          {/* <Route path='/Marketplace' element={<CarListings/>}/>  */}
 
           {/* <Route path='/Marketplace' element={<Coming/>}/> */}
 
           {/* <Route path='/car-details/:id:name' element={<VehicleDetails/>}/> */}
           <Route path='/car-details/:id/:nameSlug' element={<VehicleDetails/>}/>
-          <Route path="/Buying" element={<Buying />} />
+          {/* <Route path="/Buying" element={<Buying />} /> */}
           {/* <Route path="/Contact" element={<Contact />} /> */}
           {/* <Route path="/Guide" element={<Guide />} /> */}
           {/* <Route path="/Maintenance" element={<Maintenance />} /> */}
           {/* <Route path="/Safety" element={<Safety />} /> */}
           {/* <Route path="/Selling" element={<Selling />} /> */}
           {/* <Route path="/Valuation" element={<CarValuation />} /> */}
-          <Route path="/buying-guide/:route" element={<BuyingContent />} />
+          {/* <Route path="/buying-guide/:route" element={<BuyingContent />} /> */}
           <Route path="/guides/:route" element={<GuideContent />} />
           {/* <Route path="/selling-guide/:route" element={<SellingContent />} /> */}
           {/* <Route path="/maintenance-guide/:route" element={<MaintenanceContent />} /> */}
