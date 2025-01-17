@@ -25,6 +25,20 @@ import VehicleDetails from './pages/Marketplace/VehicleDetails';
 import Profile from './pages/Profile/profile';
 import Coming from './pages/Coming/Coming';
 /* import CarValuation from './pages/Valuation/CarValuation'; */
+import VehicleMakes from './pages/Makes/VehicleMakes';
+import Toyota from './pages/Toyota/Toyota';
+import PradoGenerations from './pages/Toyota/Prado/PradoGenerations';
+import PradoFirstGen from './pages/Toyota/Prado/firstGen';
+import PradoSecondGen from './pages/Toyota/Prado/secondGen';
+import Pradothirdgen from './pages/Toyota/Prado/thirdGen';
+import PradoFourthGen from './pages/Toyota/Prado/fourthGen';
+import PradoFifthGen from './pages/Toyota/Prado/fifthGen';
+import Rav4Generations from './pages/Toyota/Rav4/Rav4Generations';
+import Rav4FirstGen from './pages/Toyota/Rav4/Rav4FirstGen';
+import Rav4SecondGen from './pages/Toyota/Rav4/Rav4SecondGen';
+import Rav4ThirdGen from './pages/Toyota/Rav4/Rav4ThirdGen';
+import Rav4FourthGen from './pages/Toyota/Rav4/Rav4FourthGen';
+import Rav4FifthGen from './pages/Toyota/Rav4/Rav4FifthGen';
 
 function App() {
   const [selectedReview, setSelectedReview] = useState(null);
@@ -38,13 +52,27 @@ function App() {
           <Route path="/" element={<Review />} />
           {/* <Route path='/About' element={<About/>}/> */}
           <Route path='/About' element={<Profile/>}/>
+          <Route path='/Makes' element={<VehicleMakes/>}/>
+          <Route path='/Toyota' element={<Toyota/>}/>
+          <Route path='/Toyota/prado' element={<PradoGenerations/>}/>
+          <Route path='/Toyota/prado-1st-gen' element={<PradoFirstGen/>}/>
+          <Route path='/Toyota/prado-2nd-gen' element={<PradoSecondGen/>}/>
+          <Route path='/Toyota/prado-third-gen' element={<Pradothirdgen/>}/>
+          <Route path='/Toyota/prado-fourth-gen' element={<PradoFourthGen/>}/>
+          <Route path='/Toyota/prado-fifth-gen' element={<PradoFifthGen/>}/>
+          <Route path='/Toyota/rav4' element={<Rav4Generations/>}/>
+          <Route path='/Toyota/rav4-1st-gen' element={<Rav4FirstGen/>}/>
+          <Route path='/Toyota/rav4-2nd-gen' element={<Rav4SecondGen/>}/>
+          <Route path='/Toyota/rav4-3rd-gen' element={<Rav4ThirdGen/>}/>
+          <Route path='/Toyota/rav4-4th-gen' element={<Rav4FourthGen/>}/>
+          <Route path='/Toyota/rav4-5th-gen' element={<Rav4FifthGen/>}/>
           {/* <Route path='/Marketplace' element={<CarListings/>}/>  */}
 
           {/* <Route path='/Marketplace' element={<Coming/>}/> */}
 
           {/* <Route path='/car-details/:id:name' element={<VehicleDetails/>}/> */}
           <Route path='/car-details/:id/:nameSlug' element={<VehicleDetails/>}/>
-          {/* <Route path="/Buying" element={<Buying />} /> */}
+          <Route path="/Buying" element={<Buying />} />
           {/* <Route path="/Contact" element={<Contact />} /> */}
           {/* <Route path="/Guide" element={<Guide />} /> */}
           {/* <Route path="/Maintenance" element={<Maintenance />} /> */}

@@ -1,0 +1,98 @@
+.toyota-article {
+    max-width: 900px;
+    margin: 5rem auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .toyota-article h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .toyota-article p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+  }
+  
+  .toyota-article h2 {
+    font-size: 1.8rem;
+    color: #34495e;
+    margin-top: 2rem;
+    border-bottom: 2px solid #2ecc71;
+    padding-bottom: 0.3rem;
+  }
+  
+  .toyota-article h3 {
+    font-size: 1.5rem;
+    color: #16a085;
+    margin-top: 1.5rem;
+  }
+  
+  .toyota-article ul {
+    list-style-type: disc;
+    margin: 1rem 0;
+    padding-left: 20px;
+  }
+  
+  .toyota-article ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .toyota-article a {
+    color: #2980b9;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .toyota-article a:hover {
+    color: #1abc9c;
+  }
+  
+  .toyota-article img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .toyota-article section {
+    margin-bottom: 2rem;
+  }
+  
+  .toyota-article footer {
+    text-align: center;
+    padding: 1rem;
+    /* background: #f9f9f9; */
+    border-top: 1px solid #ddd;
+    border-radius: 0 0 8px 8px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .toyota-article article {
+      padding: 15px;
+    }
+  
+    .toyota-article h1 {
+      font-size: 2rem;
+    }
+  
+    .toyota-article h2 {
+      font-size: 1.5rem;
+    }
+  
+    .toyota-article h3 {
+      font-size: 1.2rem;
+    }
+  }
+  

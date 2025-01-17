@@ -16,6 +16,9 @@ export const Navbar = () => {
                         <Link to={'/Marketplace'} className="navbar-menu-link">Marketplace</Link>
                         <a href="/Buying" className="navbar-menu-link">Buying</a>
                     </li> */}
+                    <li className="navbar-menu-item">
+                        <Link to={'/Makes'} className="navbar-menu-link">Makes</Link>
+                    </li>
                     <li className="navbar-menu-item buying">
                         {/* <Link to={'/Buying'} className="navbar-menu-link">Buying</Link> */}
                         <Link to={'/About'} className="navbar-menu-link">About</Link>
