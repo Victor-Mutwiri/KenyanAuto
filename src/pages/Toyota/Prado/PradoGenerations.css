@@ -12,7 +12,7 @@
   }
   
   .prado-header h1 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     color: #0056b3;
   }
   
@@ -81,5 +81,51 @@
   
   .learn-more-link:hover {
     background: #003f7f;
+  }
+
+
+  /* Media Queries for Mobile Displays */
+  @media screen and (max-width: 768px) {
+    .prado-container {
+      margin: 5rem auto;
+      padding: 0 10px; /* Adjusted padding for smaller screens */
+    }
+  
+    .prado-header h1 {
+      font-size: 1.6rem;
+    }
+  
+    .prado-header p {
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+  
+    .generations-title {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+  
+    .generation-card {
+      width: 100%; /* Full width for smaller screens */
+      margin: 0 auto; /* Center the cards */
+    }
+  
+    .generation-image {
+      height: 150px;
+      object-fit: cover;
+    }
+  
+    .generation-info h3 {
+      font-size: 1.2rem;
+    }
+  
+    .generation-info p {
+      font-size: 0.9rem;
+    }
+  
+    .learn-more-link {
+      font-size: 0.9rem;
+      padding: 8px 12px;
+    }
   }
   

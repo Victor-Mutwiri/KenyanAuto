@@ -32,3 +32,18 @@
   height: auto;
   border-radius: 8px;
 }
+
+@media screen and (max-width: 768px) {
+  .prado{
+    margin: 3.5rem auto;
+    padding: 15px;
+  }
+  .image-group{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .image-group img{
+    max-width: 100%;
+  }
+}
