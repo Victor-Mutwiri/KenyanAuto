@@ -6,8 +6,8 @@ const Rav4FifthGen = () => {
       <header>
         <h1>Toyota RAV4 5th Generation: A Comprehensive Guide to the Modern SUV</h1>
         <figure className='image-group'>
-          <img src="https://example.com/rav4-5th-gen-image1.jpg" alt="Toyota RAV4 5th Generation Front View" />
-          <img src="https://example.com/rav4-5th-gen-image2.jpg" alt="Toyota RAV4 5th Generation Side View" />
+          <img src="https://images.autoboom.co.il/MRDJqghxA0MWQxUTt7gMTTAQydspvNWjG9oAasIc_S8/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMTIvMTI3NTMuanBn.webp" alt="Toyota RAV4 5th Generation Front View" />
+          <img src="https://images.autoboom.co.il/KfKcBGpP4E4TkfiNvb4HH2QbViw8QbcXxuWOqiL5IxM/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMTIvMTI3NTAuanBn.webp" alt="Toyota RAV4 5th Generation Side View" />
           <figcaption>Images of the Toyota RAV4 5th Generation.</figcaption>
         </figure>
         <p>
@@ -18,7 +18,7 @@ const Rav4FifthGen = () => {
       <section>
         <h2>Overview of the 5th Generation RAV4</h2>
         <figure>
-          <img src="https://example.com/rav4-overview-5th-gen.jpg" alt="Overview of the RAV4 5th Generation" />
+          <img src="https://images.autoboom.co.il/JNWgayMcB0nYODuRoRKhdqac6HtTce0VpgNdven2nhE/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMTIvMTI3NTIuanBn.webp" alt="Overview of the RAV4 5th Generation" />
           <figcaption>The RAV4's 5th generation showcases a sleek and modern design.</figcaption>
         </figure>
         <p>
@@ -40,7 +40,7 @@ const Rav4FifthGen = () => {
       <section>
         <h2>Engine and Performance</h2>
         <figure>
-          <img src="https://example.com/rav4-engine-5th-gen.jpg" alt="Engine of the RAV4 5th Generation" />
+          <img src="https://images.autoboom.co.il/YR7do5CCf8croP9-NRbU4ARViBPVaPcO3NEQSC6Q-O8/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8xOTEvMTkxOTEwLmpwZw.webp" alt="Engine of the RAV4 5th Generation" />
           <figcaption>The RAV4 5th generation offers diverse powertrain options.</figcaption>
         </figure>
         <p>
@@ -67,22 +67,11 @@ const Rav4FifthGen = () => {
       <section>
         <h2>Trim Levels and Features</h2>
         <figure>
-          <img src="https://example.com/rav4-trim-5th-gen.jpg" alt="Trim Levels of the RAV4 5th Generation" />
+          <img src="https://images.autoboom.co.il/FZe0RreK6GuX7jojTWmqMa82_1wZigQbVuvk-CBrJjg/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8yODQvMjg0NzQ2LmpwZw.webp" alt="Trim Levels of the RAV4 5th Generation" />
           <figcaption>The 5th generation RAV4 offers a variety of trims to suit different needs.</figcaption>
         </figure>
         <p>
           The 5th generation RAV4 includes a wide range of trim levels, catering to various preferences and budgets. These trims are equipped with advanced safety features, modern infotainment systems, and luxury options, making it a standout in its segment.
-        </p>
-      </section>
-
-      <section>
-        <h2>Market Presence and Pricing</h2>
-        <figure className='image-group'>
-          <img src="https://example.com/rav4-market-5th-gen.jpg" alt="Market Presence of the RAV4 5th Generation" />
-          <figcaption>The RAV4 5th generation enjoys strong demand worldwide.</figcaption>
-        </figure>
-        <p>
-          The 5th generation RAV4 has solidified its reputation as a best-seller in the SUV market. Its blend of reliability, performance, and efficiency has ensured its enduring appeal across different regions.
         </p>
       </section>
 
