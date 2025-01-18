@@ -7,7 +7,7 @@ const Subaru = () => {
         <h1>Subaru: Engineering Excellence and All-Wheel Drive Mastery</h1>
         <figure>
           <img
-            src="https://www.subaru.com/content/dam/subaru/global/vehicles/legacy/header_img.jpg"
+            src="https://img.sm360.ca/images/article/marino-auto-group/74443//subaru-vehicle-line-up1586206953360.jpg"
             alt="Subaru Cars"
           />
           <figcaption>Subaru: Unmatched performance and safety.</figcaption>
@@ -40,7 +40,7 @@ const Subaru = () => {
         <h2>Why Subaru is a Preferred Brand in Kenya</h2>
         <figure>
           <img
-            src="https://www.subaru.com/content/dam/subaru/global/vehicles/crosstrek/2024/crosstrek-hero.jpg"
+            src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2021/10/Subaru-Impreza-22B-STi.jpg"
             alt="Subaru in Kenya"
           />
           <figcaption>Subaru: Built for Kenya's diverse driving conditions.</figcaption>

@@ -7,7 +7,7 @@ const Nissan = () => {
         <h1>Nissan: Innovation that Excites</h1>
         <figure>
           <img
-            src="https://www.nissan-global.com/EN/IMAGES/INTRO_MAIN/hero_image.jpg"
+            src="https://di-sitebuilder-assets.s3.amazonaws.com/Nissan/Homepage/cpo-section-2.jpg"
             alt="Nissan Cars"
           />
           <figcaption>Nissan: Delivering dynamic driving experiences globally.</figcaption>
@@ -61,7 +61,7 @@ const Nissan = () => {
         <h2>Why Nissan is Popular in Kenya</h2>
         <figure>
           <img
-            src="https://cdn.motor1.com/images/mgl/2eNR3/s1/nissan-lineup.jpg"
+            src="https://www.nissan.ca/ngst-static/config/seo/NGST_NIS_SocialShareDefault.jpg"
             alt="Nissan cars in Kenya"
           />
           <figcaption>Nissan: A trusted choice for Kenyan roads.</figcaption>

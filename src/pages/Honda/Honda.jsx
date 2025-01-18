@@ -7,7 +7,7 @@ const Honda = () => {
         <h1>Honda: Innovation, Performance, and Efficiency</h1>
         <figure>
           <img
-            src="https://www.honda.co.ke/assets/images/honda-vehicles.jpg"
+            src="https://www.slashgear.com/img/gallery/where-are-honda-cars-made-today/hondas-other-manufacturing-locations-in-the-u-s-1709584551.jpg"
             alt="Honda Cars"
           />
           <figcaption>Honda: Shaping the future of automobiles with efficiency and style.</figcaption>
@@ -49,7 +49,7 @@ const Honda = () => {
         <h2>Why Honda is a Top Choice in Kenya</h2>
         <figure>
           <img
-            src="https://www.honda.co.ke/assets/images/honda-suv.jpg"
+            src="https://www.shutterstock.com/image-photo/vista-ca-usa-april-29-600nw-1966159933.jpg"
             alt="Honda cars in Kenya"
           />
           <figcaption>Honda: A symbol of efficiency and reliability on Kenyan roads.</figcaption>

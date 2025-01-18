@@ -7,7 +7,7 @@ const Suzuki = () => {
         <h1>Suzuki: A Symbol of Innovation, Reliability, and Versatility</h1>
         <figure>
           <img
-            src="https://www.suzuki.co.uk/sites/default/files/styles/car_image_1200x675/public/suzuki-cars.jpg?itok=XjWi9GyO"
+            src="https://imgcdnblog.carmudi.com.ph/carmudi-ph/wp-content/uploads/2019/01/22040504/Suzuki-Philippines-sustains-2018-sales-growth-wins-successive-awards-min.jpg"
             alt="Suzuki Cars"
           />
           <figcaption>Suzuki: Revolutionizing the way we drive with style and efficiency.</figcaption>
@@ -52,7 +52,7 @@ const Suzuki = () => {
         <h2>Why Suzuki is a Popular Choice in Kenya</h2>
         <figure>
           <img
-            src="https://www.suzuki.co.uk/sites/default/files/styles/car_image_1536x768/public/suzuki-vitara-cars.jpg?itok=OVz2AoeD"
+            src="https://d2m3nfprmhqjvd.cloudfront.net/blog/20220901180208/Maruti-Suzuki-Brezza-2-1160x653.jpg"
             alt="Suzuki cars in Kenya"
           />
           <figcaption>Suzuki: A trusted name for Kenyan drivers looking for value and performance.</figcaption>

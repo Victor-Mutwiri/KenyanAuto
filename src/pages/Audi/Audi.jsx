@@ -7,7 +7,7 @@ const Audi = () => {
         <h1>Audi: A Benchmark for Luxury and Performance</h1>
         <figure>
           <img
-            src="https://www.audi.com/content/dam/nemo/experience/audi-brand/heritage/audi-legend/hero/Audi_Legends_hero_1920x1080_1.jpg"
+            src="https://www.bestcarsforsaleinkenya.com/wp-content/uploads/2024/02/A189587_large-1-1-1024x672-1.webp"
             alt="Audi Cars"
           />
           <figcaption>Audi: Uniting innovation and luxury in every drive.</figcaption>
@@ -58,7 +58,7 @@ const Audi = () => {
         <h2>Why Audi is a Preferred Brand</h2>
         <figure>
           <img
-            src="https://www.audi.com/content/dam/nemo/experience/audi-brand/technology/hero/audi-intel-hero.jpg"
+            src="https://nar.media.audi.com/is/image/audinar/nemo/us/shopping-tools/certified-pre-owned/883x496_33_CPO_Pack_Shot_Used_Car_Range_srgb.jpg"
             alt="Audi cars on the road"
           />
           <figcaption>Audi: Redefining luxury and performance in every drive.</figcaption>

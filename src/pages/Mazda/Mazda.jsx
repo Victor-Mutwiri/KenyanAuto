@@ -7,7 +7,7 @@ const Mazda = () => {
         <h1>Mazda: Driving Passion and Performance</h1>
         <figure>
           <img
-            src="https://example.com/mazda-cars.jpg"
+            src="https://www.seacoastmazda.com/static/dealer-20146/Mazda-service-cars.jpg"
             alt="Mazda Cars"
           />
           <figcaption>Mazda: Inspiring journeys with style and innovation.</figcaption>
@@ -59,7 +59,7 @@ const Mazda = () => {
         <h2>Why Mazda is a Preferred Brand in Kenya</h2>
         <figure>
           <img
-            src="https://example.com/mazda-kenya.jpg"
+            src="https://www.passportcollisioncenter.com/blogs/849/wp-content/uploads/2018/07/summerevent_hero.jpg"
             alt="Mazda cars in Kenya"
           />
           <figcaption>Mazda: Delivering excellence on Kenyan roads.</figcaption>
