@@ -1,0 +1,130 @@
+.HiAce-container {
+    font-family: Arial, sans-serif;
+    max-width: 1100px;
+    margin: 5rem auto;
+    color: #333;
+  }
+  
+  .HiAce-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .HiAce-header h1 {
+    font-size: 2.3rem;
+    color: #0056b3;
+  }
+  
+  .HiAce-header p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  .HiAce-generations {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .generations-title {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .generation-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(100% / 2 - 20px);
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .generation-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .generation-info {
+    padding: 15px;
+  }
+  
+  .generation-info h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #0056b3;
+  }
+  
+  .generation-info p {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 15px;
+  }
+  
+  .learn-more-link {
+    text-decoration: none;
+    color: #fff;
+    background: #0056b3;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .learn-more-link:hover {
+    background: #003f7f;
+  }
+
+
+  /* Media Queries for Mobile Displays */
+  @media screen and (max-width: 768px) {
+    .HiAce-container {
+      margin: 5rem auto;
+      padding: 0 10px; /* Adjusted padding for smaller screens */
+    }
+  
+    .HiAce-header h1 {
+      font-size: 1.6rem;
+    }
+  
+    .HiAce-header p {
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+  
+    .generations-title {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+  
+    .generation-card {
+      width: 100%; /* Full width for smaller screens */
+      margin: 0 auto; /* Center the cards */
+    }
+  
+    .generation-image {
+      height: 150px;
+      object-fit: cover;
+    }
+  
+    .generation-info h3 {
+      font-size: 1.2rem;
+    }
+  
+    .generation-info p {
+      font-size: 0.9rem;
+    }
+  
+    .learn-more-link {
+      font-size: 0.9rem;
+      padding: 8px 12px;
+    }
+  }
+  

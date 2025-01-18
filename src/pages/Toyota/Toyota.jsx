@@ -43,21 +43,21 @@ const Toyota = () => {
           <li>
             <a href="/Toyota/harrier">Toyota Harrier</a>: A premium SUV with a sleek design and advanced features.
           </li>
-          <li>
+          {/* <li>
             <a href="/Toyota/axio">Toyota Axio</a>: A fuel-efficient sedan ideal for daily commuting.
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <a href="/Toyota/highlander">Toyota Highlander</a>: A spacious SUV designed for families.
-          </li>
+          </li> */}
           <li>
             <a href="/Toyota/hilux">Toyota Hilux</a>: A robust pickup truck renowned for its durability and performance.
           </li>
           <li>
             <a href="/Toyota/vitz">Toyota Vitz</a>: A compact hatchback loved for its fuel efficiency and affordability.
           </li>
-          <li>
+          {/* <li>
             <a href="/Toyota/corolla">Toyota Corolla</a>: A globally popular sedan with a reputation for reliability.
-          </li>
+          </li> */}
           <li>
             <a href="/Toyota/chr">Toyota C-HR</a>: A stylish crossover that blends design and performance.
           </li>
@@ -71,7 +71,7 @@ const Toyota = () => {
             <a href="/Toyota/fielder">Toyota Fielder</a>: A practical wagon offering ample space and versatility.
           </li>
           <li>
-            <a href="/Toyota/hiace">Toyota Hiace</a>: A reliable van, perfect for business and transport needs.
+            <a href="/Toyota/HiAce">Toyota HiAce</a>: A reliable van, perfect for business and transport needs.
           </li>
           <li>
             <a href="/Toyota/fortuner">Toyota Fortuner</a>: A rugged SUV tailored for adventure seekers.

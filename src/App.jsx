@@ -39,6 +39,21 @@ import Rav4SecondGen from './pages/Toyota/Rav4/Rav4SecondGen';
 import Rav4ThirdGen from './pages/Toyota/Rav4/Rav4ThirdGen';
 import Rav4FourthGen from './pages/Toyota/Rav4/Rav4FourthGen';
 import Rav4FifthGen from './pages/Toyota/Rav4/Rav4FifthGen';
+import HarrierGenerations from './pages/Toyota/Harrier/HarrierGenerations';
+import HiluxGenerations from './pages/Toyota/Hilux/HiluxGenerations';
+import VitzGenerations from './pages/Toyota/Vitz/VitzGenerations';
+import PremioGenerations from './pages/Toyota/Premio/PremioGenerations';
+import LandCruiserGenerations from './pages/Toyota/LC/LandCruiserGenerations';
+import FielderGenerations from './pages/Toyota/Fielder/FielderGenerations';
+import CHRGenerations from './pages/Toyota/CHR/CHRGenerations';
+import FortunerGenerations from './pages/Toyota/Fortuner/FortunerGenerations';
+import HiAceGenerations from './pages/Toyota/Hiace/HiAceGenerations';
+import Mazda from './pages/Mazda/Mazda';
+import Nissan from './pages/Nissan/Nissan';
+import Honda from './pages/Honda/Honda';
+import Audi from './pages/Audi/Audi';
+import Subaru from './pages/Subaru/Subaru';
+import Suzuki from './pages/Suzuki/Suzuki';
 
 function App() {
   const [selectedReview, setSelectedReview] = useState(null);
@@ -66,6 +81,22 @@ function App() {
           <Route path='/Toyota/rav4-3rd-gen' element={<Rav4ThirdGen/>}/>
           <Route path='/Toyota/rav4-4th-gen' element={<Rav4FourthGen/>}/>
           <Route path='/Toyota/rav4-5th-gen' element={<Rav4FifthGen/>}/>
+          <Route path='/Toyota/harrier' element={<HarrierGenerations/>}/>
+          <Route path='/Toyota/hilux' element={<HiluxGenerations/>}/>
+          <Route path='/Toyota/vitz' element={<VitzGenerations/>}/>
+          <Route path='/Toyota/premio' element={<PremioGenerations/>}/>
+          <Route path='/Toyota/land-cruiser' element={<LandCruiserGenerations/>}/>
+          <Route path='/Toyota/fielder' element={<FielderGenerations/>}/>
+          <Route path='/Toyota/chr' element={<CHRGenerations/>}/>
+          <Route path='/Toyota/fortuner' element={<FortunerGenerations/>}/>
+          <Route path='/Toyota/HiAce' element={<HiAceGenerations/>}/>
+
+          <Route path='/Mazda' element={<Mazda/>}/>
+          <Route path='/Nissan' element={<Nissan/>}/>
+          <Route path='/Honda' element={<Honda/>}/>
+          <Route path='/Audi' element={<Audi/>}/>
+          <Route path='/Subaru' element={<Subaru/>}/>
+          <Route path='/Suzuki' element={<Suzuki/>}/>
           {/* <Route path='/Marketplace' element={<CarListings/>}/>  */}
 
           {/* <Route path='/Marketplace' element={<Coming/>}/> */}
