@@ -1,8 +1,17 @@
 import './Rav4Generations.css';
+import { Helmet } from 'react-helmet-async';
 
 const Rav4Generations = () => {
   return (
     <div className="rav4-container">
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>Explore RAV4 Generations in Kenya | KenyanAuto</title>
+          <meta
+              name="description"
+              content="Explore RAV4 Generations in Kenya" />
+          <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Toyota/rav4" />
+      </Helmet>
       <header className="rav4-header">
         <h1>Toyota RAV4: A Journey Through Generations of Innovation</h1>
         <p>
@@ -15,7 +24,7 @@ const Rav4Generations = () => {
 
         {/* 1st Generation */}
         <div className="generation-card">
-          <img src="https://images.autoboom.co.il/3K6rKINZ4jVNYJEVjXZlaMkKSHaVdLGbqMVHXQvhPCY/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzgvMzg4MDcuanBn.webp" alt="Toyota RAV4 1st Generation" className="generation-image" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/RAV4/1st%20Gen/1st%20Gen.webp?updatedAt=1746436427861" alt="Toyota RAV4 1st Generation" className="generation-image" />
           <div className="generation-info">
             <h3>1st Generation (1994-2000)</h3>
             <p>
@@ -27,7 +36,7 @@ const Rav4Generations = () => {
 
         {/* 2nd Generation */}
         <div className="generation-card">
-          <img src="https://images.autoboom.co.il/P29UTC8atXJDNJFbrU-bi0cXd-4rpKtnuSd262Ww8A4/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzgvMzg4NTUuanBn.webp" alt="Toyota RAV4 2nd Generation" className="generation-image" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/RAV4/2nd%20Gen/2nd%20Gen.webp?updatedAt=1746436625920" alt="Toyota RAV4 2nd Generation" className="generation-image" />
           <div className="generation-info">
             <h3>2nd Generation (2000-2005)</h3>
             <p>
@@ -39,7 +48,7 @@ const Rav4Generations = () => {
 
         {/* 3rd Generation */}
         <div className="generation-card">
-          <img src="https://images.autoboom.co.il/8NM75LWiHWuEqdgeSXyuYX1dbs7suSebOYJeU1zkKX0/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzgvMzg5NDYuanBn.webp" alt="Toyota RAV4 3rd Generation" className="generation-image" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/RAV4/3rd%20Gen/Cover.webp?updatedAt=1746437057393" alt="Toyota RAV4 3rd Generation" className="generation-image" />
           <div className="generation-info">
             <h3>3rd Generation (2005-2012)</h3>
             <p>
@@ -51,7 +60,7 @@ const Rav4Generations = () => {
 
         {/* 4th Generation */}
         <div className="generation-card">
-          <img src="https://images.autoboom.co.il/GIihB9c1Nk1TDamgZ-b5GnWYLhzDL9pcr_F5SCd-Ioc/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzkvMzkwMjEuanBn.webp" alt="Toyota RAV4 4th Generation" className="generation-image" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/RAV4/4th%20Gen/Cover.webp?updatedAt=1746437085240" alt="Toyota RAV4 4th Generation" className="generation-image" />
           <div className="generation-info">
             <h3>4th Generation (2012-2019)</h3>
             <p>
@@ -63,7 +72,7 @@ const Rav4Generations = () => {
 
         {/* 5th Generation */}
         <div className="generation-card">
-          <img src="https://images.autoboom.co.il/wXMSFO5JGQi8_bt4GrwDCFTLRrR29Uj3ME6tfYgPmPw/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMTIvMTI3NjYuanBn.webp" alt="Toyota RAV4 5th Generation" className="generation-image" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/RAV4/5th%20Gen/Cover.webp?updatedAt=1746437109207" alt="Toyota RAV4 5th Generation" className="generation-image" />
           <div className="generation-info">
             <h3>5th Generation (2018-Present)</h3>
             <p>

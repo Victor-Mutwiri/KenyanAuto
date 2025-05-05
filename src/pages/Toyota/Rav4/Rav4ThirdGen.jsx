@@ -1,13 +1,22 @@
 import './rav4.css';
+import { Helmet } from 'react-helmet-async';
 
 const Rav4ThirdGen = () => {
   return (
     <article className='rav4'>
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>Toyota RAV4 3rd Generation 2005-2013 | KenyanAuto</title>
+          <meta
+              name="description"
+              content="Toyota RAV4 3rd Generation 2005-2013" />
+          <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Toyota/rav4-3rd-gen" />
+      </Helmet>
       <header>
         <h1>Toyota RAV4 3rd Generation: A Comprehensive Look at the Compact SUV</h1>
         <figure className='image-group'>
-          <img src="https://images.autoboom.co.il/SeS76dvystJ3_cSkhZ6rVcDfaBgU-bA8SBHbyvrvKh4/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzgvMzg5NjEuanBn.webp" alt="Toyota RAV4 3rd Generation Front View" />
-          <img src="https://images.autoboom.co.il/8wyD0tkM92O-JKv-3BsjN7Frqv5C9iFyOPBlaJhJIw4/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzgvMzg5MzguanBn.webp" alt="Toyota RAV4 3rd Generation Side View" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/RAV4/3rd%20Gen/top%20left.webp?updatedAt=1746437056561" alt="Toyota RAV4 3rd Generation Front View" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/RAV4/3rd%20Gen/top%20right.webp?updatedAt=1746437057391" alt="Toyota RAV4 3rd Generation Side View" />
           <figcaption>Images of the Toyota RAV4 3rd Generation.</figcaption>
         </figure>
         <p>
@@ -18,7 +27,7 @@ const Rav4ThirdGen = () => {
       <section>
         <h2>Overview of the 3rd Generation RAV4</h2>
         <figure>
-          <img src="https://images.autoboom.co.il/VdFbmVk-gJWaiZL1pRIKLlZldgNnwo5stxKCMgw4JgI/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzgvMzg5ODcuanBn.webp" alt="Overview of the RAV4 3rd Generation" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/RAV4/3rd%20Gen/top%20front.webp?updatedAt=1746437056745" alt="Overview of the RAV4 3rd Generation" />
           <figcaption>The RAV4's third generation offered a more refined and spacious design.</figcaption>
         </figure>
         <p>
@@ -40,7 +49,7 @@ const Rav4ThirdGen = () => {
       <section>
         <h2>Engine and Performance</h2>
         <figure>
-          <img src="https://images.autoboom.co.il/5j53YyetztyPMKoalAobsfjgrf9Nqi7nDDgtk5nBZBM/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzgvMzg5OTEuanBn.webp" alt="Engine of the RAV4 3rd Generation" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/RAV4/3rd%20Gen/engine.webp?updatedAt=1746437056667" alt="Engine of the RAV4 3rd Generation" />
           <figcaption>The RAV4 3rd generation featured a diverse range of engines.</figcaption>
         </figure>
         <p>
@@ -67,7 +76,7 @@ const Rav4ThirdGen = () => {
       <section>
         <h2>Trim Levels and Features</h2>
         <figure>
-          <img src="https://images.autoboom.co.il/Ehh-ctQd9GtVei1mgJdGAXu4-CMITWCnghijJbXr4Vw/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzgvMzg5OTcuanBn.webp" alt="Trim Levels of the RAV4 3rd Generation" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/RAV4/3rd%20Gen/interior.webp?updatedAt=1746437056526" alt="Trim Levels of the RAV4 3rd Generation" />
           <figcaption>The 3rd generation RAV4 came in diverse trim levels for various markets.</figcaption>
         </figure>
         <p>
@@ -77,10 +86,10 @@ const Rav4ThirdGen = () => {
 
       <section>
         <h2>Market Presence and Pricing</h2>
-        <figure className='image-group'>
+        {/* <figure className='image-group'>
           <img src="https://example.com/rav4-market-3rd-gen.jpg" alt="Market Presence of the RAV4 3rd Generation" />
           <figcaption>The RAV4 remains a sought-after model in the used car market.</figcaption>
-        </figure>
+        </figure> */}
         <p>
           The 3rd generation RAV4 remains popular in the used car market due to its balanced performance and reliability. Pricing varies by region and condition, reflecting its widespread appeal.
         </p>

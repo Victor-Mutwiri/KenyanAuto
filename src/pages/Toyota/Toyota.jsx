@@ -1,8 +1,17 @@
+import { Helmet } from 'react-helmet-async';
 import "./Toyota.css";
 
 const Toyota = () => {
   return (
     <article className="toyota-article">
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>Popular Toyota Models in Kenya | KenyanAuto</title>
+          <meta
+              name="description"
+              content="Popular Toyota Models in Kenya" />
+          <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Toyota" />
+      </Helmet>
       <header>
         <h1>Toyota: A Legacy of Reliability and Innovation</h1>
         <figure>
@@ -83,8 +92,7 @@ const Toyota = () => {
         <h2>Why Toyota is a Preferred Brand in Kenya</h2>
         <figure>
           <img
-            src="https://cdn.whichcar.com.au/assets/w_1536/157e1203/2024-toyota-hybrid-lineup-01.jpg"
-            alt="Toyota cars in Kenya"
+            src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Toyota.webp?updatedAt=1746438951097"
           />
           <figcaption>Toyota: The trusted choice for Kenyan drivers.</figcaption>
         </figure>

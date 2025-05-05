@@ -1,14 +1,23 @@
 import './prado.css';
+import { Helmet } from 'react-helmet-async';
 
 const PradoFourthGen = () => {
   return (
     <article className='prado'>
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>Toyota Land Cruiser Prado (J150 series) 2009-2024 | KenyanAuto</title>
+          <meta
+              name="description"
+              content="Toyota Land Cruiser Prado (J150 series) 2009-2024" />
+          <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Toyota/prado-fourth-gen" />
+      </Helmet>
       <header>
         <h1>Toyota Land Cruiser Prado (J150 Series) 4th Generation: An In-Depth Look at a Modern Classic</h1>
         <figure className='image-group'>
-          <img src="https://images.autoboom.co.il/z3CCzz2bssZap9iz6Mv6TSf7K3k5Pw1m-nmq1S1-f8s/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzgvMzgyMTMuanBn.webp" alt="Toyota Land Cruiser Prado 4th Generation" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Prado/4th%20gen/top%20left.webp?updatedAt=1746439448154" alt="Toyota Land Cruiser Prado 4th Generation" />
           <img
-            src="https://images.autoboom.co.il/Su34SMv7BDbZ3GOhbpQ1GdvHvRYGmXrXEZx8XvtsIYY/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzgvMzgyNjYuanBn.webp"
+            src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Prado/4th%20gen/top%20right.webp?updatedAt=1746439448219"
             alt="Toyota Land Cruiser Prado 4th Generation Side"
           />
           <figcaption>Image of the Toyota Land Cruiser Prado (J150 series) 4th Generation.</figcaption>
@@ -21,7 +30,7 @@ const PradoFourthGen = () => {
       <section>
         <h2>Overview of the 4th Generation Land Cruiser Prado</h2>
         <figure>
-          <img src="https://images.autoboom.co.il/Su34SMv7BDbZ3GOhbpQ1GdvHvRYGmXrXEZx8XvtsIYY/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzgvMzgyNjYuanBn.webp" alt="Overview of the Prado 4th Generation" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Prado/4th%20gen/main.webp?updatedAt=1746439449290" alt="Overview of the Prado 4th Generation" />
           <figcaption>The Prado's 4th generation brought modern design and features.</figcaption>
         </figure>
         <p>
@@ -36,10 +45,10 @@ const PradoFourthGen = () => {
 
       <section>
         <h2>Engine and Performance</h2>
-        <figure>
+        {/* <figure>
           <img src="placeholder-for-image-3" alt="Engine of the Prado 4th Generation" />
           <figcaption>The Prado 4th generation offers versatile engine options.</figcaption>
-        </figure>
+        </figure> */}
         <p>
           The 4th generation Land Cruiser Prado offered a variety of engine options, catering to different markets. These included both petrol and diesel variants, with a range of power outputs and transmission types.
         </p>
@@ -57,7 +66,7 @@ const PradoFourthGen = () => {
       <section>
         <h2>Trim Levels and Features</h2>
         <figure>
-          <img src="https://images.autoboom.co.il/vixrSJ3XHqij3Da87XVtpvUcGv9NTzHcClAmurofCmk/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzgvMzgyNjguanBn.webp" alt="Prado 4th Generation Trim Levels" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Prado/4th%20gen/trim.webp?updatedAt=1746439450696" alt="Prado 4th Generation Trim Levels" />
           <figcaption>The 4th generation Prado caters to various preferences and needs.</figcaption>
         </figure>
         <p>

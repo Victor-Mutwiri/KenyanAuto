@@ -1,13 +1,22 @@
 import './prado.css';
+import { Helmet } from 'react-helmet-async';
 
 const Pradothirdgen = () => {
   return (
     <article className='prado'>
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>Toyota Land Cruiser Prado (J120 series) 2002-2009 | KenyanAuto</title>
+          <meta
+              name="description"
+              content="Toyota Land Cruiser Prado (J120 series) 2002-2009" />
+          <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Toyota/prado-third-gen" />
+      </Helmet>
       <header>
         <h1>Toyota Land Cruiser Prado (J120 Series) 3rd Generation: A Deep Dive into a Legendary SUV</h1>
         <figure className='image-group'>
-          <img src="https://images.autoboom.co.il/JdHwy0x0Z9CSQTY-VGL1eFfpX-frEkzCQLIS5q8Qc10/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzgvMzgxMTUuanBn.webp" alt="Toyota Land Cruiser Prado 3rd Generation" />
-          <img src="https://images.autoboom.co.il/smCWSGs73ArdPZt6XGBUebaQQGpLLVDDa7xpgXtDz9c/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzgvMzgxNTguanBn.webp" alt="Toyota Land Cruiser Prado 3rd Generation" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Prado/3rd%20gen/top%20left.webp?updatedAt=1746439450979" alt="Toyota Land Cruiser Prado 3rd Generation" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Prado/3rd%20gen/top%20right.webp?updatedAt=1746439452206" alt="Toyota Land Cruiser Prado 3rd Generation" />
           <figcaption>Image of the Toyota Land Cruiser Prado (J120) 3rd Generation.</figcaption>
         </figure>
         <p>
@@ -18,7 +27,7 @@ const Pradothirdgen = () => {
       <section>
         <h2>Overview of the 3rd Generation Land Cruiser Prado</h2>
         <figure>
-          <img src="https://images.autoboom.co.il/VswgxMde8bw_L9-u5V5CTaeihjGsqNB2qpYEQ58gkao/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzgvMzgxMjQuanBn.webp" alt="Overview of the Prado" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Prado/3rd%20gen/main.webp?updatedAt=1746439450925" alt="Overview of the Prado" />
           <figcaption>The Prado's 3rd generation design was groundbreaking for its time.</figcaption>
         </figure>
         <p>
@@ -33,10 +42,10 @@ const Pradothirdgen = () => {
 
       <section>
         <h2>Engine and Performance</h2>
-        <figure>
+        {/* <figure>
           <img src="https://example.com/prado-engine.jpg" alt="Engine of the Prado" />
           <figcaption>The Prado offers various engine options for global markets.</figcaption>
-        </figure>
+        </figure> */}
         <p>
           The 3rd generation Land Cruiser Prado offered a wide range of engine options, catering to different markets and preferences. These included both petrol and diesel variants, with varying power outputs.
         </p>
@@ -54,7 +63,7 @@ const Pradothirdgen = () => {
       <section>
         <h2>Trim Levels and Features</h2>
         <figure>
-          <img src="https://images.autoboom.co.il/x3UKIyPscpE5PzyYGw85n_h7vfnyebosI8rjY8qjPdA/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzgvMzgxMTguanBn.webp" alt="Prado Trim Levels" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Prado/3rd%20gen/trim.webp?updatedAt=1746439451549" alt="Prado Trim Levels" />
           <figcaption>Various trim levels of the Prado catered to diverse needs.</figcaption>
         </figure>
         <p>
@@ -68,10 +77,10 @@ const Pradothirdgen = () => {
 
       <section>
         <h2>Competitors and Similar Cars</h2>
-        <figure className='image-group'>
+        {/* <figure className='image-group'>
           <img src="https://example.com/prado-competitors.jpg" alt="Competitor SUVs" />
           <figcaption>Competitors like the Audi Q7 and Jeep Wrangler rivaled the Prado.</figcaption>
-        </figure>
+        </figure> */}
         <p>The Prado faced strong competition in the SUV market, including:</p>
         <ul>
           <li>Audi Q7, BMW X7, and Mercedes G-Class</li>

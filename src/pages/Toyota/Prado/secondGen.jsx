@@ -1,14 +1,23 @@
 import './prado.css';
+import { Helmet } from 'react-helmet-async';
 
 const PradoSecondGen = () => {
   return (
     <article className='prado'>
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>Toyota Land Cruiser Prado (J90 series) 1996-2002 | KenyanAuto</title>
+          <meta
+              name="description"
+              content="Toyota Land Cruiser Prado (J90 series) 1996-2002" />
+          <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Toyota/prado-2nd-gen" />
+      </Helmet>
       <header>
         <h1>Toyota Land Cruiser Prado (J90 series) 2nd Generation: A Deep Dive into a Classic SUV</h1>
         <figure className='image-group'>
-          <img src="https://images.autoboom.co.il/xu9exisSc9pCt3EH8eTVFut7A0f22Vy6jmtwExmhSxk/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzgvMzgwNTkuanBn.webp" alt="Toyota Land Cruiser Prado 2nd Generation Front" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Prado/2nd%20gen/top%20left.webp?updatedAt=1746439452138" alt="Toyota Land Cruiser Prado 2nd Generation Front" />
           <img
-            src="https://images.autoboom.co.il/zNn9DLS5fnOM-zWYAvDrAVEtuGfNY5spwrwhZtqiutU/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzgvMzgwNzguanBn.webp"
+            src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Prado/2nd%20gen/top%20right.webp?updatedAt=1746439452618"
             alt="Toyota Land Cruiser Prado 2nd Generation Side"
           />
           <figcaption>Images of the Toyota Land Cruiser Prado (J90 series) 2nd Generation.</figcaption>
@@ -21,7 +30,7 @@ const PradoSecondGen = () => {
       <section>
         <h2>Overview of the 2nd Generation Land Cruiser Prado</h2>
         <figure>
-          <img src="https://images.autoboom.co.il/UXcHtvFJDD3bBV5I8PlWuET7tdbhllC5TWZVhkcm7tk/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzgvMzgwNzQuanBn.webp" alt="Overview of the Prado 2nd Generation" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Prado/2nd%20gen/main.webp?updatedAt=1746439452893" alt="Overview of the Prado 2nd Generation" />
           <figcaption>The 2nd generation Prado offered versatility and robust design.</figcaption>
         </figure>
         <p>
@@ -70,10 +79,10 @@ const PradoSecondGen = () => {
 
       <section>
         <h2>Competitors and Similar Cars</h2>
-        <figure className='image-group'>
+        {/* <figure className='image-group'>
           <img src="https://example.com/prado-2nd-gen-competitors.jpg" alt="Competitor SUVs" />
           <figcaption>Competitors included the Mitsubishi Pajero and Nissan Patrol.</figcaption>
-        </figure>
+        </figure> */}
         <p>
           The Toyota Land Cruiser Prado 2nd generation competed with various SUVs in the market. Notable competitors included:
         </p>

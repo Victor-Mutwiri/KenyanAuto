@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+Disallow: /car-details/*/*    # Disallow dynamic car detail pages with params
+Disallow: /model/*            # Disallow dynamic model pages with params
+Disallow: /guides/*           # Disallow dynamic guide pages with params
+
+# Allow specific types of model and guide pages that should be indexed
+Allow: /Toyota/
+Allow: /Mazda/
+Allow: /Nissan/
+Allow: /Honda/
+Allow: /Audi/
+Allow: /Subaru/
+Allow: /Suzuki/
+
+# Add your sitemap location
+Sitemap: https://kenyanauto.vimtec.co.ke/sitemap.xml

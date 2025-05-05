@@ -1,8 +1,17 @@
 import './HiAceGenerations.css';
+import { Helmet } from 'react-helmet-async';
 
 const HiAceGenerations = () => {
   return (
     <div className="HiAce-container">
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>Explore Toyota HiAce Generations in Kenya | KenyanAuto</title>
+          <meta
+              name="description"
+              content="Explore Toyota HiAce Generations in Kenya" />
+          <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Toyota/HiAce" />
+      </Helmet>
       <header className="HiAce-header">
         <h1>Toyota HiAce: Generations and Evolution of a Versatile Van</h1>
         <p>
@@ -15,7 +24,7 @@ const HiAceGenerations = () => {
 
         {/* 1st Generation */}
         <div className="generation-card">
-          <img src="https://images.autoboom.co.il/gohA0tyKEKlQtvkEY4izmNE-LxuCu-zwT7Goh7KZsR4/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8xMTYvMTE2OTc4LmpwZw.webp" alt="Toyota HiAce 1st Generation" className="generation-image" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/HiAce/1st%20gen/Cover.webp?updatedAt=1746441836673" alt="Toyota HiAce 1st Generation" className="generation-image" />
           <div className="generation-info">
             <h3>1st Generation (1982-1989)</h3>
             <p>
@@ -27,7 +36,7 @@ const HiAceGenerations = () => {
 
         {/* 2nd Generation */}
         <div className="generation-card">
-          <img src="https://images.autoboom.co.il/i5L0p_u87ymlWnlm23ORMe6HY5iIoiBMsFe5hMc8L7Q/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8xMTYvMTE2OTgxLmpwZw.webp" alt="Toyota HiAce 2nd Generation" className="generation-image" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/HiAce/2nd%20gen/Cover.webp?updatedAt=1746441836751" alt="Toyota HiAce 2nd Generation" className="generation-image" />
           <div className="generation-info">
             <h3>2nd Generation (1989-2004)</h3>
             <p>
@@ -39,7 +48,7 @@ const HiAceGenerations = () => {
 
         {/* 3rd Generation */}
         <div className="generation-card">
-          <img src="https://images.autoboom.co.il/GZyIsQtdwb8tcTpoZIUbZBpb8y93O2vLQsEr4XK5t_I/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8xMTYvMTE2OTg4LmpwZw.webp" alt="Toyota HiAce 3rd Generation" className="generation-image" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/HiAce/3rd%20gen/Cover.webp?updatedAt=1746441837323" alt="Toyota HiAce 3rd Generation" className="generation-image" />
           <div className="generation-info">
             <h3>3rd Generation (2004-2018)</h3>
             <p>
@@ -51,7 +60,7 @@ const HiAceGenerations = () => {
 
         {/* 4th Generation */}
         <div className="generation-card">
-          <img src="https://images.autoboom.co.il/0JYa9CTEEh23okji8QwByMEGeQ29Dq5I1i1vtZqmC4A/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8xMTcvMTE3MDA0LmpwZw.webp" alt="Toyota HiAce 4th Generation" className="generation-image" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/HiAce/4th%20gen/Cover.webp?updatedAt=1746441837320" alt="Toyota HiAce 4th Generation" className="generation-image" />
           <div className="generation-info">
             <h3>4th Generation (2019-Present)</h3>
             <p>

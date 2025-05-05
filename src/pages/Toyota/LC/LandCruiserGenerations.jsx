@@ -1,8 +1,17 @@
 import './LandCruiserGenerations.css';
+import { Helmet } from 'react-helmet-async';
 
 const LandCruiserGenerations = () => {
   return (
     <div className="lc-container">
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>Explore Toyota Land Cruiser Generations in Kenya | KenyanAuto</title>
+          <meta
+              name="description"
+              content="Explore Toyota Land Cruiser Generations in Kenya" />
+          <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Toyota/land-cruiser" />
+      </Helmet>
       <header className="lc-header">
         <h1>Toyota Land Cruiser: Generational Overview</h1>
         <p>
@@ -15,7 +24,7 @@ const LandCruiserGenerations = () => {
 
         {/* 9th Generation */}
         <div className="generation-card">
-          <img src="https://images.autoboom.co.il/6T-1FEaPH1Nb9eOMIVxVFZSzfgoMjMe4HGhLKMS3yDA/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8xMTkvMTE5MDM3LmpwZw.webp" alt="Toyota Land Cruiser 9th Generation" className="generation-image" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Land%20Cruiser/9th%20gen/Cover.webp?updatedAt=1746441889200" alt="Toyota Land Cruiser 9th Generation" className="generation-image" />
           <div className="generation-info">
             <h3>9th Generation (1989-1997)</h3>
             <p>
@@ -27,7 +36,7 @@ const LandCruiserGenerations = () => {
 
         {/* 10th Generation */}
         <div className="generation-card">
-          <img src="https://images.autoboom.co.il/RoTbyZ-9AQDUdhx-iTtAtKyELYp_1bdA7h13FS10Lro/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8xMTkvMTE5MDc1LmpwZw.webp" alt="Toyota Land Cruiser 10th Generation" className="generation-image" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Land%20Cruiser/10th%20gen/Cover.webp?updatedAt=1746441888898" alt="Toyota Land Cruiser 10th Generation" className="generation-image" />
           <div className="generation-info">
             <h3>10th Generation (1998-2007)</h3>
             <p>
@@ -39,7 +48,7 @@ const LandCruiserGenerations = () => {
 
         {/* 11th Generation */}
         <div className="generation-card">
-          <img src="https://images.autoboom.co.il/lPAkAyhtOYbKVALl-obocrzBzqkyC4lKoMimFu3OTiQ/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8xMTkvMTE5MTMwLmpwZw.webp" alt="Toyota Land Cruiser 11th Generation" className="generation-image" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Land%20Cruiser/11th%20gen/Cover.webp?updatedAt=1746441889640" alt="Toyota Land Cruiser 11th Generation" className="generation-image" />
           <div className="generation-info">
             <h3>11th Generation (2007-2024)</h3>
             <p>
@@ -51,7 +60,7 @@ const LandCruiserGenerations = () => {
 
         {/* 12th Generation */}
         <div className="generation-card">
-          <img src="https://images.autoboom.co.il/Soqm1f630wZfAPR29dQSpEltVtiK07FwGuLFiqeodTc/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wNzQvNzQwNzEuanBn.webp" alt="Toyota Land Cruiser 12th Generation" className="generation-image" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Land%20Cruiser/12th%20gen/Cover.webp?updatedAt=1746441888879" alt="Toyota Land Cruiser 12th Generation" className="generation-image" />
           <div className="generation-info">
             <h3>12th Generation (2021-Present)</h3>
             <p>

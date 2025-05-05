@@ -1,8 +1,17 @@
 import "./Honda.css";
+import { Helmet } from 'react-helmet-async';
 
 const Honda = () => {
   return (
     <article className="honda-article">
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>Popular Honda Models in Kenya | KenyanAuto</title>
+          <meta
+              name="description"
+              content="Popular Honda Models in Kenya" />
+          <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Honda" />
+      </Helmet>
       <header>
         <h1>Honda: Innovation, Performance, and Efficiency</h1>
         <figure>

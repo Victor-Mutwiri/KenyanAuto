@@ -1,8 +1,17 @@
 import './VitzGenerations.css';
+import { Helmet } from 'react-helmet-async';
 
 const VitzGenerations = () => {
   return (
     <div className="vitz-container">
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>Explore Toyota Vitz Generations in Kenya | KenyanAuto</title>
+          <meta
+              name="description"
+              content="Explore Toyota Vitz Generations in Kenya" />
+          <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Toyota/vitz" />
+      </Helmet>
       <header className="vitz-header">
         <h1>Toyota Vitz: A Generational Overview</h1>
         <p>
@@ -15,7 +24,7 @@ const VitzGenerations = () => {
 
         {/* 1st Generation */}
         <div className="generation-card">
-          <img src="https://images.autoboom.co.il/xrZLMNO6IcikUEJVN9Xz4Cg4uVv6aREmdFsLvkbj7xk/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8xNjUvMTY1NTM2LmpwZw.webp" alt="Toyota Vitz 1st Generation" className="generation-image" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Vitz/1st%20gen/Cover.webp?updatedAt=1746441958812" alt="Toyota Vitz 1st Generation" className="generation-image" />
           <div className="generation-info">
             <h3>1st Generation (1999-2005)</h3>
             <p>
@@ -27,7 +36,7 @@ const VitzGenerations = () => {
 
         {/* 2nd Generation */}
         <div className="generation-card">
-          <img src="https://images.autoboom.co.il/vfRKTVBAY1pk791UocAru0Dvh9114hFdauJ5IgN-mQw/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8xNjUvMTY1NTYwLmpwZw.webp" alt="Toyota Vitz 2nd Generation" className="generation-image" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Vitz/2nd%20gen/Cover.webp?updatedAt=1746441958550" alt="Toyota Vitz 2nd Generation" className="generation-image" />
           <div className="generation-info">
             <h3>2nd Generation (2005-2010)</h3>
             <p>
@@ -39,7 +48,7 @@ const VitzGenerations = () => {
 
         {/* 3rd Generation */}
         <div className="generation-card">
-          <img src="https://images.autoboom.co.il/nbmsot1waBuKQ-jQqL3cLIHMXoaxADWVC6z-LymZ2yA/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8xNjUvMTY1NTY3LmpwZw.webp" alt="Toyota Vitz 3rd Generation" className="generation-image" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Vitz/3rd%20gen/Cover.webp?updatedAt=1746441958943" alt="Toyota Vitz 3rd Generation" className="generation-image" />
           <div className="generation-info">
             <h3>3rd Generation (2010-2014)</h3>
             <p>
@@ -51,7 +60,7 @@ const VitzGenerations = () => {
 
         {/* 3rd Generation Restyling */}
         <div className="generation-card">
-          <img src="https://images.autoboom.co.il/IkojMdacbvbphio1lX7E_1O7meN34tYU1MzS_cYUscI/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8xNjUvMTY1NTgyLmpwZw.webp" alt="Toyota Vitz 3rd Generation Restyling" className="generation-image" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Vitz/3rd%20gen%20restyling/Cover.webp?updatedAt=1746441959710" alt="Toyota Vitz 3rd Generation Restyling" className="generation-image" />
           <div className="generation-info">
             <h3>3rd Generation Restyling (2014-2020)</h3>
             <p>

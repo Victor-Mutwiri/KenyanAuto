@@ -1,8 +1,17 @@
 import './FortunerGenerations.css';
+import { Helmet } from 'react-helmet-async';
 
 const FortunerGenerations = () => {
   return (
     <div className="fortuner-container">
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>Explore Toyota Fortuner Generations in Kenya | KenyanAuto</title>
+          <meta
+              name="description"
+              content="Explore Toyota Fortuner Generations in Kenya" />
+          <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Toyota/fortuner" />
+      </Helmet>
       <header className="fortuner-header">
         <h1>Toyota Fortuner: A Generational Overview</h1>
         <p>
@@ -15,7 +24,7 @@ const FortunerGenerations = () => {
 
         {/* 1st Generation */}
         <div className="generation-card">
-          <img src="https://images.autoboom.co.il/VdFHOkY_NAnHlXdORRpFu0ZOYC6HUYgkJYGAI5aS7nU/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8xMTYvMTE2ODE0LmpwZw.webp" alt="Toyota Fortuner 1st Generation" className="generation-image" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Fortuner/1st%20gen/Cover.webp?updatedAt=1746441764370" alt="Toyota Fortuner 1st Generation" className="generation-image" />
           <div className="generation-info">
             <h3>1st Generation (2004-2015)</h3>
             <p>
@@ -27,7 +36,7 @@ const FortunerGenerations = () => {
 
         {/* 2nd Generation */}
         <div className="generation-card">
-          <img src="https://images.autoboom.co.il/Kxy9SXmSncF7CGexvCW0xbGnnsnHcGEEM7Oh2UuS74w/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8xMTYvMTE2ODI1LmpwZw.webp" alt="Toyota Fortuner 2nd Generation" className="generation-image" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Fortuner/2nd%20gen/Cover.webp?updatedAt=1746441764937" alt="Toyota Fortuner 2nd Generation" className="generation-image" />
           <div className="generation-info">
             <h3>2nd Generation (2015-Present)</h3>
             <p>
@@ -39,13 +48,13 @@ const FortunerGenerations = () => {
 
         {/* General Overview */}
         <div className="generation-card">
-          <img src="https://example.com/fortuner-overview.jpg" alt="Toyota Fortuner Overview" className="generation-image" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Fortuner/General/Cover.jpg?updatedAt=1746441764681" alt="Toyota Fortuner Overview" className="generation-image" />
           <div className="generation-info">
             <h3>General Overview</h3>
             <p>
               Designed for developing countries, the Fortuner combines off-road capability with affordability. Built to accommodate up to seven passengers, it remains a reliable choice for diverse driving conditions.
             </p>
-            <a href="/Toyota/fortuner-overview" className="learn-more-link">Read More</a>
+            {/* <a href="/Toyota/fortuner-overview" className="learn-more-link">Read More</a> */}
           </div>
         </div>
       </section>

@@ -1,14 +1,23 @@
 import './prado.css';
+import { Helmet } from 'react-helmet-async';
 
 const PradoFifthGen = () => {
   return (
     <article className='prado'>
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>Toyota Land Cruiser Prado - New Model (5th Generation) 2024-Present | KenyanAuto</title>
+          <meta
+              name="description"
+              content="Toyota Land Cruiser Prado - New Model (5th Generation) 2024-Present" />
+          <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Toyota/prado-fifth-gen" />
+      </Helmet>
       <header>
         <h1>Toyota Land Cruiser Prado 5th Generation: Embracing the Future of the Iconic SUV</h1>
         <figure className='image-group'>
-          <img src="https://images.autoboom.co.il/VP3gIkQLNHfwTkpdOPATIAdLXjiuUQO-4p_ncym1i50/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8yNzEvMjcxNDMzLmpwZw.webp" alt="Toyota Land Cruiser Prado 5th Generation" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Prado/5th%20gen/top%20left.webp?updatedAt=1746439447227" alt="Toyota Land Cruiser Prado 5th Generation" />
           <img
-            src="https://images.autoboom.co.il/UTzaoF_Rh7gKeEEqTWRaQfyJMWTjUZ-GePqbe_EsuvM/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC80OTIvNDkyMjMwLmpwZw.webp"
+            src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Prado/5th%20gen/top%20right.webp?updatedAt=1746439447668"
             alt="Toyota Land Cruiser Prado 5th Generation Side"
           />
           <figcaption>Images of the Toyota Land Cruiser Prado 5th Generation.</figcaption>
@@ -21,7 +30,7 @@ const PradoFifthGen = () => {
       <section>
         <h2>Overview of the 5th Generation Land Cruiser Prado</h2>
         <figure>
-          <img src="https://images.autoboom.co.il/mpx2i00k4MK4_tnH-P2cmJPv4exdzrVs6lKWyVi3A-k/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC80OTIvNDkyMjI3LmpwZw.webp" alt="Overview of the Prado 5th Generation" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Prado/5th%20gen/main.webp?updatedAt=1746439447295" alt="Overview of the Prado 5th Generation" />
           <figcaption>The 5th generation Prado blends advanced design with legendary durability.</figcaption>
         </figure>
         <p>
@@ -37,7 +46,7 @@ const PradoFifthGen = () => {
       <section>
         <h2>Engine and Performance</h2>
         <figure>
-          <img src="https://images.autoboom.co.il/vT0v7yf9Ltdd543G7b85I39cCmVGyFEPvtZ_DpmL14E/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC80OTIvNDkyMjA3LmpwZw.webp" alt="Engine of the Prado 5th Generation" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Prado/5th%20gen/engine.webp?updatedAt=1746439447624" alt="Engine of the Prado 5th Generation" />
           <figcaption>The 5th generation Prado offers hybrid and traditional engine options.</figcaption>
         </figure>
         <p>
@@ -58,7 +67,7 @@ const PradoFifthGen = () => {
       <section>
         <h2>Trim Levels and Features</h2>
         <figure>
-          <img src="https://images.autoboom.co.il/Vqo9qbumZyAmbcifCwS4PK9JniHlBaWYwp6tM3BTKDg/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC80OTIvNDkyMTk2LmpwZw.webp" alt="Prado 5th Generation Trim Levels" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Prado/5th%20gen/trim.webp?updatedAt=1746439448475" alt="Prado 5th Generation Trim Levels" />
           <figcaption>The 5th generation Prado offers various trims for diverse preferences.</figcaption>
         </figure>
         <p>
@@ -72,10 +81,10 @@ const PradoFifthGen = () => {
 
       <section>
         <h2>Competitors and Similar Cars</h2>
-        <figure className='image-group'>
+        {/* <figure className='image-group'>
           <img src="https://example.com/prado-5th-gen-competitors.jpg" alt="Competitor SUVs" />
           <figcaption>Notable competitors include the Audi Q7 and Jeep Wrangler.</figcaption>
-        </figure>
+        </figure> */}
         <p>
           The Toyota Land Cruiser Prado 5th generation competes with various SUVs in the market. Notable competitors include:
         </p>

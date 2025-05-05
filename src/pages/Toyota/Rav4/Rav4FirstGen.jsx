@@ -1,13 +1,22 @@
 import './rav4.css';
+import { Helmet } from 'react-helmet-async';
 
 const Rav4FirstGen = () => {
   return (
     <article className='rav4'>
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>Toyota RAV4 1st Generation 1994-2000 | KenyanAuto</title>
+          <meta
+              name="description"
+              content="Toyota RAV4 1st Generation 1994-2000" />
+          <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Toyota/rav4-1st-gen" />
+      </Helmet>
       <header>
         <h1>Toyota RAV4 1st Generation: A Pioneer of the Compact SUV</h1>
         <figure className='image-group'>
-          <img src="https://images.autoboom.co.il/RxJwml0wlvySyK22C78kPlhPWGBzt_xQ9Ur4RzbsJhQ/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzgvMzg4MDUuanBn.webp" alt="Toyota RAV4 1st Generation Front View" />
-          <img src="https://images.autoboom.co.il/zw6kmchTAnCwoz4BO7Rtc7yDbY3yK2VrW0ltwbTMte8/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzgvMzg4MTAuanBn.webp" alt="Toyota RAV4 1st Generation Side View" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/RAV4/1st%20Gen/1st%20Gen%20Blue.webp?updatedAt=1746436425390" alt="Toyota RAV4 1st Generation Front View" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/RAV4/1st%20Gen/1st%20Gen%20Purple.webp?updatedAt=1746436423252" alt="Toyota RAV4 1st Generation Side View" />
           <figcaption>Images of the Toyota RAV4 1st Generation.</figcaption>
         </figure>
         <p>
@@ -18,7 +27,7 @@ const Rav4FirstGen = () => {
       <section>
         <h2>Overview of the 1st Generation RAV4</h2>
         <figure>
-          <img src="https://images.autoboom.co.il/Ek-3VTfKIUbhqm2Ka4lHWKq7hvNPBtREwYKZFoc5qMY/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzgvMzg4MTkuanBn.webp" alt="Overview of the RAV4 1st Generation" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/RAV4/1st%20Gen/1st%20Gen%20Silver.webp?updatedAt=1746436419426" alt="Overview of the RAV4 1st Generation" />
           <figcaption>The RAV4's first generation introduced a compact and versatile design.</figcaption>
         </figure>
         <p>
@@ -65,7 +74,7 @@ const Rav4FirstGen = () => {
       <section>
         <h2>Trim Levels and Features</h2>
         <figure>
-          <img src="https://images.autoboom.co.il/E_8J0i72LMiJ0KhZwX2Tch6mu_F-b0yLPzeJQAm2z60/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzgvMzg4MTEuanBn.webp" alt="Trim Levels of the RAV4 1st Generation" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/RAV4/1st%20Gen/1st%20Gen%20Interior.webp?updatedAt=1746436421372" alt="Trim Levels of the RAV4 1st Generation" />
           <figcaption>The 1st generation RAV4 came in diverse trim levels for various markets.</figcaption>
         </figure>
         <p>
@@ -75,10 +84,10 @@ const Rav4FirstGen = () => {
 
       <section>
         <h2>Market Presence and Pricing</h2>
-        <figure className='image-group'>
+        {/* <figure className='image-group'>
           <img src="https://example.com/rav4-market.jpg" alt="Market Presence of the RAV4 1st Generation" />
           <figcaption>The RAV4 remains popular in the used car market.</figcaption>
-        </figure>
+        </figure> */}
         <p>
           The 1st generation RAV4 has a strong presence in the used car market, with its reputation for reliability and versatility. Pricing varies by region, reflecting its enduring appeal.
         </p>

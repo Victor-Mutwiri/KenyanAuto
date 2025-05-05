@@ -1,13 +1,22 @@
 import './rav4.css';
+import { Helmet } from 'react-helmet-async';
 
 const Rav4FourthGen = () => {
   return (
     <article className='rav4'>
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>Toyota RAV4 4th Generation 2012-2019 | KenyanAuto</title>
+          <meta
+              name="description"
+              content="Toyota RAV4 4th Generation 2012-2019" />
+          <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Toyota/rav4-4th-gen" />
+      </Helmet>
       <header>
         <h1>Toyota RAV4 4th Generation: A Modern Compact SUV</h1>
         <figure className='image-group'>
-          <img src="https://images.autoboom.co.il/Xp1AjR9R95WIN4Bj04CUqkvZW9qOq7USnAlyuNTfxfk/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzkvMzkwMTMuanBn.webp" alt="Toyota RAV4 4th Generation Front View" />
-          <img src="https://images.autoboom.co.il/mjw2Ui1wUsm1c_4HGXX1dgiAmqWE0JO19_Xw_tjs69k/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzkvMzkwMDguanBn.webp" alt="Toyota RAV4 4th Generation Side View" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/RAV4/4th%20Gen/top%20left.webp?updatedAt=1746437085595" alt="Toyota RAV4 4th Generation Front View" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/RAV4/4th%20Gen/top%20right.webp?updatedAt=1746437086500" alt="Toyota RAV4 4th Generation Side View" />
           <figcaption>Images of the Toyota RAV4 4th Generation.</figcaption>
         </figure>
         <p>
@@ -18,7 +27,7 @@ const Rav4FourthGen = () => {
       <section>
         <h2>Overview of the 4th Generation RAV4</h2>
         <figure>
-          <img src="https://images.autoboom.co.il/OrqzaXPAAkRUjNmWPefMVn8fem0-4jfMVSuJiqyHTZ4/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzkvMzkwNDguanBn.webp" alt="Overview of the RAV4 4th Generation" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/RAV4/4th%20Gen/main.webp?updatedAt=1746437085620" alt="Overview of the RAV4 4th Generation" />
           <figcaption>The 4th generation RAV4 features a sleek and modern design.</figcaption>
         </figure>
         <p>
@@ -40,7 +49,7 @@ const Rav4FourthGen = () => {
       <section>
         <h2>Engine and Performance</h2>
         <figure>
-          <img src="https://images.autoboom.co.il/WOdvTqLfnvaMT2s5vJncc0rdz-K-DqG6gAY4W-T-nwE/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzkvMzkwNzEuanBn.webp" alt="Engine of the RAV4 4th Generation" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/RAV4/4th%20Gen/engine.webp?updatedAt=1746437086517" alt="Engine of the RAV4 4th Generation" />
           <figcaption>The RAV4 4th generation featured advanced engine options.</figcaption>
         </figure>
         <p>
@@ -66,7 +75,7 @@ const Rav4FourthGen = () => {
       <section>
         <h2>Trim Levels and Features</h2>
         <figure>
-          <img src="https://images.autoboom.co.il/TazUCTXwWled3SjGsCSUy-pPSzk1Y-SDWADyHErZAfQ/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzkvMzkwMzguanBn.webp" alt="Trim Levels of the RAV4 4th Generation" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/RAV4/4th%20Gen/interior.webp?updatedAt=1746437085207" alt="Trim Levels of the RAV4 4th Generation" />
           <figcaption>The 4th generation RAV4 offered a variety of trim levels.</figcaption>
         </figure>
         <p>

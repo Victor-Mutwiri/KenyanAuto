@@ -1,14 +1,23 @@
 import './prado.css';
+import { Helmet } from 'react-helmet-async';
 
 const PradoFirstGen = () => {
   return (
     <article className='prado'>
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>Toyota Land Cruiser Prado (J70 series) 1987 - 1996 | KenyanAuto</title>
+          <meta
+              name="description"
+              content="Toyota Land Cruiser Prado (J70 series) 1987 - 1996" />
+          <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Toyota/prado-1st-gen" />
+      </Helmet>
       <header>
         <h1>Toyota Land Cruiser Prado (J70 series) 1st Generation: Exploring the Origins of a Legendary SUV</h1>
         <figure className='image-group'>
-          <img src="https://images.autoboom.co.il/g_9YMxxgw-hiUTlBvQDXRGIojc5597fypuL7sTo4Etg/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzgvMzgwNDUuanBn.webp" alt="Toyota Land Cruiser Prado 1st Generation" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Prado/1st%20gen/top%20left.webp?updatedAt=1746439454086" alt="Toyota Land Cruiser Prado 1st Generation" />
           <img
-            src="https://images.autoboom.co.il/b-no9fn9_yEsiNWa2HWOM1FbqLcyiwyXtAEYFmtkfnU/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzgvMzgwMTkuanBn.webp"
+            src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Prado/1st%20gen/top%20right.webp?updatedAt=1746439455517"
             alt="Toyota Land Cruiser Prado 1st Generation Side"
           />
           <figcaption>Images of the Toyota Land Cruiser Prado 1st Generation.</figcaption>
@@ -21,7 +30,7 @@ const PradoFirstGen = () => {
       <section>
         <h2>Overview of the 1st Generation Land Cruiser Prado</h2>
         <figure>
-          <img src="https://images.autoboom.co.il/LFp2V3NoOs_2keOSlCNAOPyiHt5AkvKDiL6M2jgGjfo/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzgvMzgwMzcuanBn.webp" alt="Overview of the Prado 1st Generation" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Prado/1st%20gen/main.webp?updatedAt=1746439453690" alt="Overview of the Prado 1st Generation" />
           <figcaption>The Prado's 1st generation established its reputation as a rugged SUV.</figcaption>
         </figure>
         <p>
@@ -67,7 +76,7 @@ const PradoFirstGen = () => {
       <section>
         <h2>Trim Levels and Features</h2>
         <figure>
-          <img src="https://images.autoboom.co.il/85A6bWeP4OSu69HETU3ozmO_pueE2UnexdIrxKaKgco/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzgvMzgwMTcuanBn.webp" alt="Prado 1st Generation Trim Levels" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Prado/1st%20gen/trim.webp?updatedAt=1746439454849" alt="Prado 1st Generation Trim Levels" />
           <figcaption>The 1st generation Prado catered to various off-road needs.</figcaption>
         </figure>
         <p>
@@ -77,10 +86,10 @@ const PradoFirstGen = () => {
 
       <section>
         <h2>Competitors and Similar Cars</h2>
-        <figure className='image-group'>
+        {/* <figure className='image-group'>
           <img src="https://via.placeholder.com/1200" alt="Competitor SUVs" />
           <figcaption>Notable competitors include Mitsubishi Pajero and Nissan Patrol.</figcaption>
-        </figure>
+        </figure> */}
         <p>The Prado 1st generation faced competition from SUVs such as:</p>
         <ul>
           <li>Mitsubishi Pajero and Nissan Patrol</li>

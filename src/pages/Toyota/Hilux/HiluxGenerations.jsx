@@ -1,8 +1,17 @@
 import './HiluxGenerations.css';
+import { Helmet } from 'react-helmet-async';
 
 const HiluxGenerations = () => {
   return (
     <div className="hilux-container">
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>Explore Toyota Hilux Generations in Kenya | KenyanAuto</title>
+          <meta
+              name="description"
+              content="Explore Toyota Hilux Generations in Kenya" />
+          <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Toyota/hilux" />
+      </Helmet>
       <header className="hilux-header">
         <h1>Toyota Hilux: A Legacy of Durability Across Generations</h1>
         <p>
@@ -15,7 +24,7 @@ const HiluxGenerations = () => {
 
         {/* 1st Generation */}
         <div className="generation-card">
-          <img src="https://images.autoboom.co.il/e_CSPq11FaXeoNlTRu3dT4d8kGP8hkOVUjgJD1x--yM/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzcvMzc4MDEuanBn.webp" alt="Toyota Hilux 1st Generation" className="generation-image" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Hilux/1st%20gen/Cover.webp?updatedAt=1746441864598" alt="Toyota Hilux 1st Generation" className="generation-image" />
           <div className="generation-info">
             <h3>1st Generation (1968-1972)</h3>
             <p>
@@ -27,7 +36,7 @@ const HiluxGenerations = () => {
 
         {/* 2nd Generation */}
         <div className="generation-card">
-          <img src="https://images.autoboom.co.il/kMsjnB5crXuDXy5raiQbgRCnddxn-H_dfslWIWwGd_c/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzcvMzc4MTEuanBn.webp" alt="Toyota Hilux 2nd Generation" className="generation-image" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Hilux/2nd%20gen/Cover.webp?updatedAt=1746441864535" alt="Toyota Hilux 2nd Generation" className="generation-image" />
           <div className="generation-info">
             <h3>2nd Generation (1972-1978)</h3>
             <p>
@@ -39,7 +48,7 @@ const HiluxGenerations = () => {
 
         {/* 3rd Generation */}
         <div className="generation-card">
-          <img src="https://images.autoboom.co.il/94kzehe2moCGGNf3yxpoE9BkT4UkIbjUKExabMKAkg0/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzcvMzc4MTYuanBn.webp" alt="Toyota Hilux 3rd Generation" className="generation-image" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Hilux/3rd%20gen/Cover.webp?updatedAt=1746441864509" alt="Toyota Hilux 3rd Generation" className="generation-image" />
           <div className="generation-info">
             <h3>3rd Generation (1978-1983)</h3>
             <p>
@@ -51,7 +60,7 @@ const HiluxGenerations = () => {
 
         {/* 4th Generation */}
         <div className="generation-card">
-          <img src="https://images.autoboom.co.il/IBLCMGL2ZuE0taDdheN90R7rNBKPyZG8sWzcQvRM6Dc/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzcvMzc4MjMuanBn.webp" alt="Toyota Hilux 4th Generation" className="generation-image" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Hilux/4th%20gen/Cover.webp?updatedAt=1746441865919" alt="Toyota Hilux 4th Generation" className="generation-image" />
           <div className="generation-info">
             <h3>4th Generation (1983-1988)</h3>
             <p>
@@ -63,7 +72,7 @@ const HiluxGenerations = () => {
 
         {/* 5th Generation */}
         <div className="generation-card">
-          <img src="https://images.autoboom.co.il/ELwlp7qj6zH7FP_jFA_1-gWPOd8pUBA_MdZf0c0iIpA/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzcvMzc4MzYuanBn.webp" alt="Toyota Hilux 5th Generation" className="generation-image" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Hilux/5th%20gen/Cover.webp?updatedAt=1746441864577" alt="Toyota Hilux 5th Generation" className="generation-image" />
           <div className="generation-info">
             <h3>5th Generation (1988-1997)</h3>
             <p>
@@ -75,7 +84,7 @@ const HiluxGenerations = () => {
 
         {/* 6th Generation */}
         <div className="generation-card">
-          <img src="https://images.autoboom.co.il/ZLZay38ZQLX21JxYnqX_NBpi0FB60dmB-bkgeXUDJps/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzcvMzc4NzUuanBn.webp" alt="Toyota Hilux 6th Generation" className="generation-image" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Hilux/6th%20gen/Cover.webp?updatedAt=1746441865917" alt="Toyota Hilux 6th Generation" className="generation-image" />
           <div className="generation-info">
             <h3>6th Generation (1997-2006)</h3>
             <p>
@@ -87,7 +96,7 @@ const HiluxGenerations = () => {
 
         {/* 7th Generation */}
         <div className="generation-card">
-          <img src="https://images.autoboom.co.il/tZPPlHaqkGxwz-2HBhcI9-FQsVc2BRbmXPC3vTD8oP8/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzcvMzc5MTQuanBn.webp" alt="Toyota Hilux 7th Generation" className="generation-image" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Hilux/7th%20gen/Cover.webp?updatedAt=1746441864766" alt="Toyota Hilux 7th Generation" className="generation-image" />
           <div className="generation-info">
             <h3>7th Generation (2004-2015)</h3>
             <p>
@@ -99,7 +108,7 @@ const HiluxGenerations = () => {
 
         {/* 8th Generation */}
         <div className="generation-card">
-          <img src="https://images.autoboom.co.il/uDIJukioZdufkoixHguL5J5gYihUfXcG8-1eq08NdCs/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzcvMzc5NTguanBn.webp" alt="Toyota Hilux 8th Generation" className="generation-image" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Hilux/8th%20gen/Cover.webp?updatedAt=1746441864639" alt="Toyota Hilux 8th Generation" className="generation-image" />
           <div className="generation-info">
             <h3>8th Generation (2015-Present)</h3>
             <p>

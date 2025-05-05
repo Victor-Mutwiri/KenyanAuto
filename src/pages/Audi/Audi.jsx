@@ -1,8 +1,17 @@
 import "./Audi.css";
+import { Helmet } from 'react-helmet-async';
 
 const Audi = () => {
   return (
     <article className="audi-article">
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>Popular Audi Models in Kenya | KenyanAuto</title>
+          <meta
+              name="description"
+              content="Popular Audi Models in Kenya" />
+          <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Audi" />
+      </Helmet>
       <header>
         <h1>Audi: A Benchmark for Luxury and Performance</h1>
         <figure>

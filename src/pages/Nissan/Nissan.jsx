@@ -1,8 +1,17 @@
 import "./Nissan.css";
+import { Helmet } from 'react-helmet-async';
 
 const Nissan = () => {
   return (
     <article className="nissan-article">
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>Popular Nissan Models in Kenya | KenyanAuto</title>
+          <meta
+              name="description"
+              content="Popular Nissan Models in Kenya" />
+          <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Nissan" />
+      </Helmet>
       <header>
         <h1>Nissan: Innovation that Excites</h1>
         <figure>

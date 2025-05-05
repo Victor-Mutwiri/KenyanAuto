@@ -1,13 +1,22 @@
 import './rav4.css';
+import { Helmet } from 'react-helmet-async';
 
 const Rav4FifthGen = () => {
   return (
     <article className='rav4'>
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>Toyota RAV4 5th Generation 2018-Present | KenyanAuto</title>
+          <meta
+              name="description"
+              content="oyota RAV4 5th Generation 2018-Present" />
+          <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Toyota/rav4-5th-gen" />
+      </Helmet>
       <header>
         <h1>Toyota RAV4 5th Generation: A Comprehensive Guide to the Modern SUV</h1>
         <figure className='image-group'>
-          <img src="https://images.autoboom.co.il/MRDJqghxA0MWQxUTt7gMTTAQydspvNWjG9oAasIc_S8/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMTIvMTI3NTMuanBn.webp" alt="Toyota RAV4 5th Generation Front View" />
-          <img src="https://images.autoboom.co.il/KfKcBGpP4E4TkfiNvb4HH2QbViw8QbcXxuWOqiL5IxM/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMTIvMTI3NTAuanBn.webp" alt="Toyota RAV4 5th Generation Side View" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/RAV4/5th%20Gen/top%20left.webp?updatedAt=1746437109051" alt="Toyota RAV4 5th Generation Front View" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/RAV4/5th%20Gen/top%20right.webp?updatedAt=1746437109027" alt="Toyota RAV4 5th Generation Side View" />
           <figcaption>Images of the Toyota RAV4 5th Generation.</figcaption>
         </figure>
         <p>
@@ -18,7 +27,7 @@ const Rav4FifthGen = () => {
       <section>
         <h2>Overview of the 5th Generation RAV4</h2>
         <figure>
-          <img src="https://images.autoboom.co.il/JNWgayMcB0nYODuRoRKhdqac6HtTce0VpgNdven2nhE/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMTIvMTI3NTIuanBn.webp" alt="Overview of the RAV4 5th Generation" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/RAV4/5th%20Gen/main.webp?updatedAt=1746437110078" alt="Overview of the RAV4 5th Generation" />
           <figcaption>The RAV4's 5th generation showcases a sleek and modern design.</figcaption>
         </figure>
         <p>
@@ -40,7 +49,7 @@ const Rav4FifthGen = () => {
       <section>
         <h2>Engine and Performance</h2>
         <figure>
-          <img src="https://images.autoboom.co.il/YR7do5CCf8croP9-NRbU4ARViBPVaPcO3NEQSC6Q-O8/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8xOTEvMTkxOTEwLmpwZw.webp" alt="Engine of the RAV4 5th Generation" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/RAV4/5th%20Gen/engine.webp?updatedAt=1746437109080" alt="Engine of the RAV4 5th Generation" />
           <figcaption>The RAV4 5th generation offers diverse powertrain options.</figcaption>
         </figure>
         <p>
@@ -67,7 +76,7 @@ const Rav4FifthGen = () => {
       <section>
         <h2>Trim Levels and Features</h2>
         <figure>
-          <img src="https://images.autoboom.co.il/FZe0RreK6GuX7jojTWmqMa82_1wZigQbVuvk-CBrJjg/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8yODQvMjg0NzQ2LmpwZw.webp" alt="Trim Levels of the RAV4 5th Generation" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/RAV4/5th%20Gen/interior.webp?updatedAt=1746437109125" alt="Trim Levels of the RAV4 5th Generation" />
           <figcaption>The 5th generation RAV4 offers a variety of trims to suit different needs.</figcaption>
         </figure>
         <p>

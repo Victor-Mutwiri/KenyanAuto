@@ -1,8 +1,17 @@
 import './PradoGenerations.css';
+import { Helmet } from 'react-helmet-async';
 
 const PradoGenerations = () => {
   return (
     <div className="prado-container">
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>Explore Prado Generations in Kenya | KenyanAuto</title>
+          <meta
+              name="description"
+              content="Popular Toyota Models in Kenya" />
+          <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Toyota/prado" />
+      </Helmet>
       <header className="prado-header">
         <h1>Toyota Land Cruiser Prado: A Generational Overview</h1>
         <p>
@@ -15,7 +24,7 @@ const PradoGenerations = () => {
 
         {/* 1st Generation */}
         <div className="generation-card">
-          <img src="https://images.autoboom.co.il/LFp2V3NoOs_2keOSlCNAOPyiHt5AkvKDiL6M2jgGjfo/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzgvMzgwMzcuanBn.webp" alt="Toyota Land Cruiser Prado 1st Generation" className="generation-image" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Prado/1st%20gen/Cover.webp?updatedAt=1746439454243" alt="Toyota Land Cruiser Prado 1st Generation" className="generation-image" />
           <div className="generation-info">
             <h3>1st Generation (1987-1996)</h3>
             <p>
@@ -27,7 +36,7 @@ const PradoGenerations = () => {
 
         {/* 2nd Generation */}
         <div className="generation-card">
-          <img src="https://images.autoboom.co.il/UXcHtvFJDD3bBV5I8PlWuET7tdbhllC5TWZVhkcm7tk/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzgvMzgwNzQuanBn.webp" alt="Toyota Land Cruiser Prado 2nd Generation" className="generation-image" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Prado/2nd%20gen/Cover.webp?updatedAt=1746439451552" alt="Toyota Land Cruiser Prado 2nd Generation" className="generation-image" />
           <div className="generation-info">
             <h3>2nd Generation (1996-2002)</h3>
             <p>
@@ -39,7 +48,7 @@ const PradoGenerations = () => {
 
         {/* 3rd Generation */}
         <div className="generation-card">
-          <img src="https://images.autoboom.co.il/niXC7dgZsrIrSNZ_zXwQQ3913ck-9ewQQkYbYivz7Cc/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMDMvMzE5NS5qcGc.webp" alt="Toyota Land Cruiser Prado 3rd Generation" className="generation-image" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Prado/3rd%20gen/Cover.webp?updatedAt=1746439451387" alt="Toyota Land Cruiser Prado 3rd Generation" className="generation-image" />
           <div className="generation-info">
             <h3>3rd Generation (2002-2009)</h3>
             <p>
@@ -51,7 +60,7 @@ const PradoGenerations = () => {
 
         {/* 4th Generation */}
         <div className="generation-card">
-          <img src="https://images.autoboom.co.il/tKkyF1qG3MaiWQVPEEWKPYpy-_N15HQ_4llOxWuI2dQ/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzgvMzgyMTQuanBn.webp" alt="Toyota Land Cruiser Prado 4th Generation" className="generation-image" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Prado/4th%20gen/Cover.webp?updatedAt=1746439448030" alt="Toyota Land Cruiser Prado 4th Generation" className="generation-image" />
           <div className="generation-info">
             <h3>4th Generation (2009-2024)</h3>
             <p>
@@ -63,7 +72,7 @@ const PradoGenerations = () => {
 
         {/* 5th Generation */}
         <div className="generation-card">
-          <img src="https://images.autoboom.co.il/vYkmEEiOlSrOpXjbpLSDCBx25Ge59gWLrkuBehr6-78/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC80OTIvNDkyMTkzLmpwZw.webp" alt="Toyota Land Cruiser Prado 5th Generation" className="generation-image" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Prado/5th%20gen/Cover.webp?updatedAt=1746439447758" alt="Toyota Land Cruiser Prado 5th Generation" className="generation-image" />
           <div className="generation-info">
             <h3>5th Generation (2024-Present)</h3>
             <p>

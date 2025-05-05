@@ -1,8 +1,17 @@
 import "./Mazda.css";
+import { Helmet } from 'react-helmet-async';
 
 const Mazda = () => {
   return (
     <article className="mazda-article">
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>Popular Mazda Models in Kenya | KenyanAuto</title>
+          <meta
+              name="description"
+              content="Popular Mazda Models in Kenya" />
+          <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Mazda" />
+      </Helmet>
       <header>
         <h1>Mazda: Driving Passion and Performance</h1>
         <figure>

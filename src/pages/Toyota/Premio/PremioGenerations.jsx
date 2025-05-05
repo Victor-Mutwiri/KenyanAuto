@@ -1,8 +1,17 @@
 import './PremioGenerations.css';
+import { Helmet } from 'react-helmet-async';
 
 const PremioGenerations = () => {
   return (
     <div className="premio-container">
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>Explore Toyota Premio Generations in Kenya | KenyanAuto</title>
+          <meta
+              name="description"
+              content="Explore Toyota Premio Generations in Kenya" />
+          <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Toyota/premio" />
+      </Helmet>
       <header className="premio-header">
         <h1>Toyota Premio: Generations and Evolution of a Family Sedan</h1>
         <p>
@@ -15,7 +24,7 @@ const PremioGenerations = () => {
 
         {/* 1st Generation */}
         <div className="generation-card">
-          <img src="https://images.autoboom.co.il/MbpwWr_aANQEgLfVAazn77RTj1CffjniBZ8n79gEcQI/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8xMTcvMTE3Mjc2LmpwZw.webp" alt="Toyota Premio 1st Generation" className="generation-image" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Premio/1st%20gen/Cover.webp?updatedAt=1746441935163" alt="Toyota Premio 1st Generation" className="generation-image" />
           <div className="generation-info">
             <h3>1st Generation (2001-2007)</h3>
             <p>
@@ -27,7 +36,7 @@ const PremioGenerations = () => {
 
         {/* 2nd Generation */}
         <div className="generation-card">
-          <img src="https://images.autoboom.co.il/1j0j_VABTWDpmt69n3srbaH3SrWKzpczF_olm_51os0/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8xMTcvMTE3MzA0LmpwZw.webp" alt="Toyota Premio 2nd Generation" className="generation-image" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Premio/2nd%20gen/Cover.webp?updatedAt=1746441935084" alt="Toyota Premio 2nd Generation" className="generation-image" />
           <div className="generation-info">
             <h3>2nd Generation (2007-2021)</h3>
             <p>

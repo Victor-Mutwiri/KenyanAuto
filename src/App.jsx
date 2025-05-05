@@ -1,5 +1,6 @@
 // App.js
 import { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { CarListingsProvider } from './components/CarListingContext/CarListingsContext';
 import './App.css';
@@ -61,12 +62,18 @@ function App() {
 
   return (
     <BrowserRouter>
+      <Helmet>
+        {/* Default fallback SEO tags */}
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+      </Helmet>
       <CarListingsProvider>
         <Navbar/>
         <Routes>
           <Route path="/" element={<Review />} />
-          {/* <Route path='/About' element={<About/>}/> */}
-          <Route path='/About' element={<Profile/>}/>
+          <Route path='/About' element={<About/>}/>
+          {/* <Route path='/About' element={<Profile/>}/> */}
           <Route path='/Makes' element={<VehicleMakes/>}/>
           <Route path='/Toyota' element={<Toyota/>}/>
           <Route path='/Toyota/prado' element={<PradoGenerations/>}/>
@@ -90,7 +97,6 @@ function App() {
           <Route path='/Toyota/chr' element={<CHRGenerations/>}/>
           <Route path='/Toyota/fortuner' element={<FortunerGenerations/>}/>
           <Route path='/Toyota/HiAce' element={<HiAceGenerations/>}/>
-
           <Route path='/Mazda' element={<Mazda/>}/>
           <Route path='/Nissan' element={<Nissan/>}/>
           <Route path='/Honda' element={<Honda/>}/>
@@ -98,9 +104,7 @@ function App() {
           <Route path='/Subaru' element={<Subaru/>}/>
           <Route path='/Suzuki' element={<Suzuki/>}/>
           {/* <Route path='/Marketplace' element={<CarListings/>}/>  */}
-
           {/* <Route path='/Marketplace' element={<Coming/>}/> */}
-
           {/* <Route path='/car-details/:id:name' element={<VehicleDetails/>}/> */}
           <Route path='/car-details/:id/:nameSlug' element={<VehicleDetails/>}/>
           <Route path="/Buying" element={<Buying />} />

@@ -1,8 +1,17 @@
 import './HarrierGenerations.css';
+import { Helmet } from 'react-helmet-async';
 
 const HarrierGenerations = () => {
   return (
     <div className="harrier-container">
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>Explore Toyota Harrier Generations in Kenya | KenyanAuto</title>
+          <meta
+              name="description"
+              content="Explore Toyota Harrier Generations in Kenya" />
+          <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Toyota/harrier" />
+      </Helmet>
       <header className="harrier-header">
         <h1>Toyota Harrier: Generations and Evolution of a Luxury SUV</h1>
         <p>
@@ -15,7 +24,7 @@ const HarrierGenerations = () => {
 
         {/* 1st Generation */}
         <div className="generation-card">
-          <img src="https://images.autoboom.co.il/4kZ5pLdDvFu6OcrHaNrJ_IP2VZaDcW09EZrFI9qMx8E/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8xMTYvMTE2OTE1LmpwZw.webp" alt="Toyota Harrier 1st Generation" className="generation-image" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Harrier/1st%20gen/Cover.webp?updatedAt=1746441807562" alt="Toyota Harrier 1st Generation" className="generation-image" />
           <div className="generation-info">
             <h3>1st Generation (1997-2003)</h3>
             <p>
@@ -27,7 +36,7 @@ const HarrierGenerations = () => {
 
         {/* 2nd Generation */}
         <div className="generation-card">
-          <img src="https://images.autoboom.co.il/SO6O7X7wUbqYblILXsbM6cg5DFjj_IYsuxe6iNW0A5I/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8xMTYvMTE2OTQwLmpwZw.webp" alt="Toyota Harrier 2nd Generation" className="generation-image" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Harrier/2nd%20gen/Cover.webp?updatedAt=1746441807550" alt="Toyota Harrier 2nd Generation" className="generation-image" />
           <div className="generation-info">
             <h3>2nd Generation (2003-2013)</h3>
             <p>
@@ -39,7 +48,7 @@ const HarrierGenerations = () => {
 
         {/* 3rd Generation */}
         <div className="generation-card">
-          <img src="https://images.autoboom.co.il/28nnO04Wixw526rX7V_C7h7LmxmNMF0lNH-UK2tHaE0/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8xMTYvMTE2OTUwLmpwZw.webp" alt="Toyota Harrier 3rd Generation" className="generation-image" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Harrier/3rd%20gen/Cover.webp?updatedAt=1746441807512" alt="Toyota Harrier 3rd Generation" className="generation-image" />
           <div className="generation-info">
             <h3>3rd Generation (2013-2020)</h3>
             <p>

@@ -1,13 +1,22 @@
 import './rav4.css';
+import { Helmet } from 'react-helmet-async';
 
 const Rav4SecondGen = () => {
   return (
     <article className='rav4'>
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>Toyota RAV4 2nd Generation 2000-2006 | KenyanAuto</title>
+          <meta
+              name="description"
+              content="Toyota RAV4 2nd Generation 2000-2006" />
+          <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Toyota/rav4-2nd-gen" />
+      </Helmet>
       <header>
         <h1>Toyota RAV4 2nd Generation: The Evolution of the Compact SUV</h1>
         <figure className='image-group'>
-          <img src="https://images.autoboom.co.il/6R4-00bR6nD55jhcgDZTB5g8NhnPovzD4CVQFuwaUYI/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzgvMzg5MDEuanBn.webp" alt="Toyota RAV4 2nd Generation Front View" />
-          <img src="https://images.autoboom.co.il/YQy6Vf7LF3ebpX_T3xdIUh7MAOpvASx8UMDmGSybHHo/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzgvMzg4NDguanBn.webp" alt="Toyota RAV4 2nd Generation Side View" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/RAV4/2nd%20Gen/2nd%20Gen%20right.webp?updatedAt=1746436624855" alt="Toyota RAV4 2nd Generation Front View" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/RAV4/2nd%20Gen/2nd%20Gen%20rear.webp?updatedAt=1746436625026" alt="Toyota RAV4 2nd Generation Side View" />
           <figcaption>Images of the Toyota RAV4 2nd Generation.</figcaption>
         </figure>
         <p>
@@ -18,7 +27,7 @@ const Rav4SecondGen = () => {
       <section>
         <h2>Overview of the 2nd Generation RAV4</h2>
         <figure>
-          <img src="https://images.autoboom.co.il/vF-l3fDguZvNLr1fETSruBEvhUo74M_M6q5-AVCbpkM/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzgvMzg5MTQuanBn.webp" alt="Overview of the RAV4 2nd Generation" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/RAV4/2nd%20Gen/2nd%20Gen%20front.webp?updatedAt=1746436624977" alt="Overview of the RAV4 2nd Generation" />
           <figcaption>The RAV4's second generation refined its design and expanded engine options.</figcaption>
         </figure>
         <p>
@@ -40,7 +49,7 @@ const Rav4SecondGen = () => {
       <section>
         <h2>Engine and Performance</h2>
         <figure>
-          <img src="https://images.autoboom.co.il/CY4ZGDczIzDMlCCAOki8ndhdwPA89eg8zRwVXf-vko0/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzgvMzg4NjAuanBn.webp" alt="Engine of the RAV4 2nd Generation" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/RAV4/2nd%20Gen/2nd%20Gen%20engine.webp?updatedAt=1746436624939" alt="Engine of the RAV4 2nd Generation" />
           <figcaption>The RAV4 2nd generation introduced a range of engine options.</figcaption>
         </figure>
         <p>
@@ -70,7 +79,7 @@ const Rav4SecondGen = () => {
       <section>
         <h2>Trim Levels and Features</h2>
         <figure>
-          <img src="https://images.autoboom.co.il/GpvrwlGR6HosBUIy9jHH1aIaSu8J4EGF73FEcNX_X8E/fit/1200/1200/sm/0/Z3M6Ly9hdXRvYm9vbS1pbWFnZXMvMDAwLzAwMC8wMzgvMzg5MTUuanBn.webp" alt="Trim Levels of the RAV4 2nd Generation" />
+          <img src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/RAV4/2nd%20Gen/2nd%20Gen%20interior.webp?updatedAt=1746436625928" alt="Trim Levels of the RAV4 2nd Generation" />
           <figcaption>The 2nd generation RAV4 came in various trim levels tailored to different markets.</figcaption>
         </figure>
         <p>
