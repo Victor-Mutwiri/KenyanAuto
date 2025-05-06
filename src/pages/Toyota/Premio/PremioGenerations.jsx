@@ -1,17 +1,14 @@
 import './PremioGenerations.css';
-import { Helmet } from 'react-helmet-async';
 
 const PremioGenerations = () => {
   return (
     <div className="premio-container">
-      <Helmet>
           <meta charSet="utf-8" />
           <title>Explore Toyota Premio Generations in Kenya | KenyanAuto</title>
           <meta
               name="description"
               content="Explore Toyota Premio Generations in Kenya" />
           <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Toyota/premio" />
-      </Helmet>
       <header className="premio-header">
         <h1>Toyota Premio: Generations and Evolution of a Family Sedan</h1>
         <p>

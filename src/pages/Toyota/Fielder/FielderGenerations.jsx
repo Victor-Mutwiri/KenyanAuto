@@ -1,17 +1,14 @@
 import './FielderGenerations.css';
-import { Helmet } from 'react-helmet-async';
 
 const FielderGenerations = () => {
   return (
     <div className="fielder-container">
-      <Helmet>
           <meta charSet="utf-8" />
           <title>Explore Toyota Fielder Generations in Kenya | KenyanAuto</title>
           <meta
               name="description"
               content="Explore Toyota Fielder Generations in Kenya" />
           <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Toyota/fielder" />
-      </Helmet>
       <header className="fielder-header">
         <h1>Toyota Corolla Fielder: Generations and Evolution</h1>
         <p>

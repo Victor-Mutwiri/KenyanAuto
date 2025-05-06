@@ -1,17 +1,16 @@
 import './Rav4Generations.css';
-import { Helmet } from 'react-helmet-async';
 
 const Rav4Generations = () => {
   return (
     <div className="rav4-container">
-      <Helmet>
+      
           <meta charSet="utf-8" />
           <title>Explore RAV4 Generations in Kenya | KenyanAuto</title>
           <meta
               name="description"
               content="Explore RAV4 Generations in Kenya" />
           <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Toyota/rav4" />
-      </Helmet>
+      
       <header className="rav4-header">
         <h1>Toyota RAV4: A Journey Through Generations of Innovation</h1>
         <p>

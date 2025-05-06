@@ -1,17 +1,14 @@
 import './HarrierGenerations.css';
-import { Helmet } from 'react-helmet-async';
 
 const HarrierGenerations = () => {
   return (
     <div className="harrier-container">
-      <Helmet>
           <meta charSet="utf-8" />
           <title>Explore Toyota Harrier Generations in Kenya | KenyanAuto</title>
           <meta
               name="description"
               content="Explore Toyota Harrier Generations in Kenya" />
           <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Toyota/harrier" />
-      </Helmet>
       <header className="harrier-header">
         <h1>Toyota Harrier: Generations and Evolution of a Luxury SUV</h1>
         <p>

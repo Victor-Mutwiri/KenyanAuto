@@ -2,7 +2,7 @@
   {
     "id": 1,
     "route":"local-new",
-    "img": "/Car-dealership.jpg",
+    "img": "https://ik.imagekit.io/janjez/KenyanAuto/Public/Car-dealership.jpg?updatedAt=1746470251915",
     "title": "Locally New",
     "content": {
       "researching":[
@@ -58,7 +58,7 @@
   {
     "id": 2,
     "route":"import-new",
-    "img": "/auction.jpg",
+    "img": "https://ik.imagekit.io/janjez/KenyanAuto/Public/auction.jpg?updatedAt=1746470247369",
     "title": "Import New",
     "content": {
       "overview":[
@@ -96,7 +96,7 @@
   {
     "id": 3,
     "route":"used",
-    "img": "/Car-bazaar.jpg",
+    "img": "https://ik.imagekit.io/janjez/KenyanAuto/Public/Car-bazaar.jpg?updatedAt=1746470248769",
     "title": "Locally Used",
     "content": {
       "redflags":[
@@ -122,7 +122,7 @@
   {
     "id": 4,
     "route":"financing",
-    "img": "/Car-financing.jpg",
+    "img": "https://ik.imagekit.io/janjez/KenyanAuto/Public/Car-financing.jpg?updatedAt=1746470253236",
     "title": "Financing",
     "content": {
       "Overview":"",
@@ -134,7 +134,7 @@
   {
     "id": 5,
     "route":"dealers",
-    "img": "/Checklist.png",
+    "img": "https://ik.imagekit.io/janjez/KenyanAuto/Public/Checklist.png?updatedAt=1746470247535",
     "title": "Key Pointers",
     "content": {
       "pointers":[
@@ -147,7 +147,7 @@
   {
     "id": 6,
     "route":"pre-purchase",
-    "img": "/Car-buying-guide.jpg",
+    "img": "https://ik.imagekit.io/janjez/KenyanAuto/Public/Car-buying-guide.jpg?updatedAt=1746470246874",
     "title": "General Buying Guide",
     "content": {
       "Advice":[

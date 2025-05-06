@@ -1,17 +1,14 @@
 import './prado.css';
-import { Helmet } from 'react-helmet-async';
 
 const Pradothirdgen = () => {
   return (
     <article className='prado'>
-      <Helmet>
           <meta charSet="utf-8" />
           <title>Toyota Land Cruiser Prado (J120 series) 2002-2009 | KenyanAuto</title>
           <meta
               name="description"
               content="Toyota Land Cruiser Prado (J120 series) 2002-2009" />
           <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Toyota/prado-third-gen" />
-      </Helmet>
       <header>
         <h1>Toyota Land Cruiser Prado (J120 Series) 3rd Generation: A Deep Dive into a Legendary SUV</h1>
         <figure className='image-group'>

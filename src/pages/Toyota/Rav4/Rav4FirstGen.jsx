@@ -1,17 +1,15 @@
 import './rav4.css';
-import { Helmet } from 'react-helmet-async';
 
 const Rav4FirstGen = () => {
   return (
     <article className='rav4'>
-      <Helmet>
           <meta charSet="utf-8" />
           <title>Toyota RAV4 1st Generation 1994-2000 | KenyanAuto</title>
           <meta
               name="description"
               content="Toyota RAV4 1st Generation 1994-2000" />
           <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Toyota/rav4-1st-gen" />
-      </Helmet>
+      
       <header>
         <h1>Toyota RAV4 1st Generation: A Pioneer of the Compact SUV</h1>
         <figure className='image-group'>

@@ -1,17 +1,14 @@
 import './FortunerGenerations.css';
-import { Helmet } from 'react-helmet-async';
 
 const FortunerGenerations = () => {
   return (
     <div className="fortuner-container">
-      <Helmet>
           <meta charSet="utf-8" />
           <title>Explore Toyota Fortuner Generations in Kenya | KenyanAuto</title>
           <meta
               name="description"
               content="Explore Toyota Fortuner Generations in Kenya" />
           <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Toyota/fortuner" />
-      </Helmet>
       <header className="fortuner-header">
         <h1>Toyota Fortuner: A Generational Overview</h1>
         <p>

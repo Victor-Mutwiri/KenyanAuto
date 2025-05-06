@@ -2,7 +2,6 @@
 import { useState, useEffect } from 'react';
 import { useRef } from 'react';
 import axios from 'axios';
-import { Helmet } from 'react-helmet-async';
 import './Review.css';
 import Selectmakeandmodel from '../../components/make&model/Selectmakeandmodel';
 import ReviewList from '../../components/Reviewslist/Reviewslist';
@@ -110,14 +109,12 @@ export const Review = () => {
   return (
     <div className='review'>
       {/* <Analytics/> */}
-      <Helmet>
-          <meta charSet="utf-8" />
-          <title>Navigate your Car Journey with Confidence | KenyanAuto</title>
-          <meta
-              name="description"
-              content="Guiding your choice" />
-          <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/" />
-      </Helmet>
+      <meta charSet="utf-8" />
+      <title>Navigate your Car Journey with Confidence | KenyanAuto</title>
+      <meta
+          name="description"
+          content="Guiding your choice" />
+      <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/" />
       <section className='background'>
         <h1>Navigate your Car Journey <br /> with Confidence</h1>
         <Selectmakeandmodel

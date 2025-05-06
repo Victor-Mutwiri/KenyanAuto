@@ -1,17 +1,14 @@
 import "./Suzuki.css";
-import { Helmet } from 'react-helmet-async';
 
 const Suzuki = () => {
   return (
     <article className="suzuki-article">
-      <Helmet>
-          <meta charSet="utf-8" />
-          <title>Popular Suzuki Models in Kenya | KenyanAuto</title>
-          <meta
-              name="description"
-              content="Popular Suzuki Models in Kenya" />
-          <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Suzuki" />
-      </Helmet>
+      <meta charSet="utf-8" />
+      <title>Popular Suzuki Models in Kenya | KenyanAuto</title>
+      <meta
+          name="description"
+          content="Popular Suzuki Models in Kenya" />
+      <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Suzuki" />
       <header>
         <h1>Suzuki: A Symbol of Innovation, Reliability, and Versatility</h1>
         <figure>

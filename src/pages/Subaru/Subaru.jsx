@@ -1,17 +1,14 @@
 import "./Subaru.css";
-import { Helmet } from 'react-helmet-async';
 
 const Subaru = () => {
   return (
     <article className="subaru-article">
-      <Helmet>
-          <meta charSet="utf-8" />
-          <title>Popular Subaru Models in Kenya | KenyanAuto</title>
-          <meta
-              name="description"
-              content="Popular Subaru Models in Kenya" />
-          <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Subaru" />
-      </Helmet>
+      <meta charSet="utf-8" />
+      <title>Popular Subaru Models in Kenya | KenyanAuto</title>
+      <meta
+          name="description"
+          content="Popular Subaru Models in Kenya" />
+      <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Subaru" />
       <header>
         <h1>Subaru: Engineering Excellence and All-Wheel Drive Mastery</h1>
         <figure>

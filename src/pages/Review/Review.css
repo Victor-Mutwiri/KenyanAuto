@@ -4,8 +4,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background: #E8F1EA */;
-    /* background-color: red; */
     background: #F3F2F4;
     width: 100%;
     padding-bottom: 2rem;
@@ -18,7 +16,8 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
-    background-image: url('/dealership.jpg');
+    background-image: url('https://ik.imagekit.io/janjez/KenyanAuto/Public/dealership.jpg?updatedAt=1746470255137');
+    /* background-image: url('/dealership.jpg'); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -232,7 +231,8 @@
     .background{
         height: 65vh;
         width: 100%;
-        background-image: url('/coverimage.jpg');
+        background-image: url('https://ik.imagekit.io/janjez/KenyanAuto/Public/coverimage.jpg?updatedAt=1746470255572');
+        /* background-image: url('/coverimage.jpg'); */
     }
     .background h1{
         display: none;

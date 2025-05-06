@@ -1,18 +1,16 @@
-import { Helmet } from 'react-helmet-async';
+
 import './About.css';
 import Laptop from '../../../src/assets/Laptop.jpg'
 
 const About = () => {
   return (
     <div className='aboutPage'>
-      <Helmet>
-          <meta charSet="utf-8" />
-          <title>About Us | KenyanAuto</title>
-          <meta
-              name="description"
-              content="About Us" />
-          <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/About" />
-      </Helmet>
+      <meta charSet="utf-8" />
+      <title>About Us | KenyanAuto</title>
+      <meta
+          name="description"
+          content="About Us" />
+      <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/About" />
       <section className='hero'>
         <h1>Welcome to KenyanAuto</h1>
         <p>Your ultimate destination for comprehensive car reviews, buying tips, and a wide selection of vehicles from our marketplace.</p>

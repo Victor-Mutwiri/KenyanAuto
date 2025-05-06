@@ -1,17 +1,14 @@
 import './VitzGenerations.css';
-import { Helmet } from 'react-helmet-async';
 
 const VitzGenerations = () => {
   return (
     <div className="vitz-container">
-      <Helmet>
-          <meta charSet="utf-8" />
-          <title>Explore Toyota Vitz Generations in Kenya | KenyanAuto</title>
-          <meta
-              name="description"
-              content="Explore Toyota Vitz Generations in Kenya" />
-          <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Toyota/vitz" />
-      </Helmet>
+      <meta charSet="utf-8" />
+      <title>Explore Toyota Vitz Generations in Kenya | KenyanAuto</title>
+      <meta
+          name="description"
+          content="Explore Toyota Vitz Generations in Kenya" />
+      <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Toyota/vitz" />
       <header className="vitz-header">
         <h1>Toyota Vitz: A Generational Overview</h1>
         <p>

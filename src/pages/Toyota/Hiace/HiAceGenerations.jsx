@@ -1,17 +1,14 @@
 import './HiAceGenerations.css';
-import { Helmet } from 'react-helmet-async';
 
 const HiAceGenerations = () => {
   return (
     <div className="HiAce-container">
-      <Helmet>
           <meta charSet="utf-8" />
           <title>Explore Toyota HiAce Generations in Kenya | KenyanAuto</title>
           <meta
               name="description"
               content="Explore Toyota HiAce Generations in Kenya" />
           <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Toyota/HiAce" />
-      </Helmet>
       <header className="HiAce-header">
         <h1>Toyota HiAce: Generations and Evolution of a Versatile Van</h1>
         <p>

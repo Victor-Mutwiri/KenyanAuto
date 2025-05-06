@@ -1,17 +1,14 @@
 import './HiluxGenerations.css';
-import { Helmet } from 'react-helmet-async';
 
 const HiluxGenerations = () => {
   return (
     <div className="hilux-container">
-      <Helmet>
           <meta charSet="utf-8" />
           <title>Explore Toyota Hilux Generations in Kenya | KenyanAuto</title>
           <meta
               name="description"
               content="Explore Toyota Hilux Generations in Kenya" />
           <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Toyota/hilux" />
-      </Helmet>
       <header className="hilux-header">
         <h1>Toyota Hilux: A Legacy of Durability Across Generations</h1>
         <p>

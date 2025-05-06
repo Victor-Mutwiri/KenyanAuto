@@ -1,17 +1,14 @@
 import './prado.css';
-import { Helmet } from 'react-helmet-async';
 
 const PradoSecondGen = () => {
   return (
     <article className='prado'>
-      <Helmet>
           <meta charSet="utf-8" />
           <title>Toyota Land Cruiser Prado (J90 series) 1996-2002 | KenyanAuto</title>
           <meta
               name="description"
               content="Toyota Land Cruiser Prado (J90 series) 1996-2002" />
           <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Toyota/prado-2nd-gen" />
-      </Helmet>
       <header>
         <h1>Toyota Land Cruiser Prado (J90 series) 2nd Generation: A Deep Dive into a Classic SUV</h1>
         <figure className='image-group'>

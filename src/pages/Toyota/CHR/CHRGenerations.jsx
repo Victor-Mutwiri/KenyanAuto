@@ -1,17 +1,14 @@
 import './CHRGenerations.css';
-import { Helmet } from 'react-helmet-async';
 
 const CHRGenerations = () => {
   return (
     <div className="chr-container">
-      <Helmet>
           <meta charSet="utf-8" />
           <title>Explore Toyota C-HR Generations in Kenya | KenyanAuto</title>
           <meta
               name="description"
               content="Explore Toyota C-HR Generations in Kenya" />
           <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Toyota/chr" />
-      </Helmet>
       <header className="chr-header">
         <h1>Toyota C-HR: A Generational Overview</h1>
         <p>

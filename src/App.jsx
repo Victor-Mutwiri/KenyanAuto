@@ -1,6 +1,5 @@
 // App.js
 import { useState } from 'react';
-import { Helmet } from 'react-helmet-async';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { CarListingsProvider } from './components/CarListingContext/CarListingsContext';
 import './App.css';
@@ -62,12 +61,10 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Helmet>
         {/* Default fallback SEO tags */}
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
-      </Helmet>
       <CarListingsProvider>
         <Navbar/>
         <Routes>

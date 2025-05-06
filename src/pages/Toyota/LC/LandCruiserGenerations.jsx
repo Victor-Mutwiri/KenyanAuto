@@ -1,17 +1,14 @@
 import './LandCruiserGenerations.css';
-import { Helmet } from 'react-helmet-async';
 
 const LandCruiserGenerations = () => {
   return (
     <div className="lc-container">
-      <Helmet>
           <meta charSet="utf-8" />
           <title>Explore Toyota Land Cruiser Generations in Kenya | KenyanAuto</title>
           <meta
               name="description"
               content="Explore Toyota Land Cruiser Generations in Kenya" />
           <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Toyota/land-cruiser" />
-      </Helmet>
       <header className="lc-header">
         <h1>Toyota Land Cruiser: Generational Overview</h1>
         <p>

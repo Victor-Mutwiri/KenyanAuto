@@ -1,3 +1,4 @@
+# Global rules
 User-agent: *
 Allow: /
 Disallow: /car-details/*/*    # Disallow dynamic car detail pages with params
@@ -12,6 +13,37 @@ Allow: /Honda/
 Allow: /Audi/
 Allow: /Subaru/
 Allow: /Suzuki/
+
+# Google-specific directives
+User-agent: Googlebot
+Crawl-delay: 1
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+# Google Image-specific directives
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /assets/
+
+# Google Mobile-specific directives  
+User-agent: Googlebot-Mobile
+Allow: /
+
+# Bing-specific directives
+User-agent: Bingbot
+Crawl-delay: 5
+Allow: /
+
+# Yandex-specific directives
+User-agent: Yandex
+Crawl-delay: 5
+Clean-param: utm_source&utm_medium&utm_campaign
+
+# Baidu-specific directives  
+User-agent: Baiduspider
+Crawl-delay: 5
+Allow: /
 
 # Add your sitemap location
 Sitemap: https://kenyanauto.vimtec.co.ke/sitemap.xml

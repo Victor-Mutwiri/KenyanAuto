@@ -1,17 +1,14 @@
 import './prado.css';
-import { Helmet } from 'react-helmet-async';
 
 const PradoFifthGen = () => {
   return (
     <article className='prado'>
-      <Helmet>
           <meta charSet="utf-8" />
           <title>Toyota Land Cruiser Prado - New Model (5th Generation) 2024-Present | KenyanAuto</title>
           <meta
               name="description"
               content="Toyota Land Cruiser Prado - New Model (5th Generation) 2024-Present" />
           <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Toyota/prado-fifth-gen" />
-      </Helmet>
       <header>
         <h1>Toyota Land Cruiser Prado 5th Generation: Embracing the Future of the Iconic SUV</h1>
         <figure className='image-group'>

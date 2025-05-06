@@ -1,17 +1,15 @@
 import './rav4.css';
-import { Helmet } from 'react-helmet-async';
 
 const Rav4ThirdGen = () => {
   return (
     <article className='rav4'>
-      <Helmet>
           <meta charSet="utf-8" />
           <title>Toyota RAV4 3rd Generation 2005-2013 | KenyanAuto</title>
           <meta
               name="description"
               content="Toyota RAV4 3rd Generation 2005-2013" />
           <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Toyota/rav4-3rd-gen" />
-      </Helmet>
+      
       <header>
         <h1>Toyota RAV4 3rd Generation: A Comprehensive Look at the Compact SUV</h1>
         <figure className='image-group'>

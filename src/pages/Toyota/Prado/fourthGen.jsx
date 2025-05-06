@@ -1,17 +1,14 @@
 import './prado.css';
-import { Helmet } from 'react-helmet-async';
 
 const PradoFourthGen = () => {
   return (
     <article className='prado'>
-      <Helmet>
           <meta charSet="utf-8" />
           <title>Toyota Land Cruiser Prado (J150 series) 2009-2024 | KenyanAuto</title>
           <meta
               name="description"
               content="Toyota Land Cruiser Prado (J150 series) 2009-2024" />
           <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Toyota/prado-fourth-gen" />
-      </Helmet>
       <header>
         <h1>Toyota Land Cruiser Prado (J150 Series) 4th Generation: An In-Depth Look at a Modern Classic</h1>
         <figure className='image-group'>

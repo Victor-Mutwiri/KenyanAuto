@@ -40,6 +40,24 @@
     <script type="module" src="/src/main.jsx"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+    <!-- <script>
+      (function() {
+        document.addEventListener('click', function(event) {
+          const target = event.target.closest('a');
+          if (!target) return;
+          
+          const href = target.getAttribute('href');
+          const isInternal = href && href.startsWith('/') && !href.startsWith('//');
+          
+          if (isInternal && !event.ctrlKey && !event.metaKey) {
+            event.preventDefault();
+            window.history.pushState({}, '', href);
+            window.dispatchEvent(new PopStateEvent('popstate'));
+          }
+        });
+      })();
+    </script> -->
+    
     <script type="text/javascript">
       (function () {
           var options = {

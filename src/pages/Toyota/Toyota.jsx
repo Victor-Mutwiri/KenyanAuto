@@ -1,23 +1,28 @@
-import { Helmet } from 'react-helmet-async';
+import { IKImage } from 'imagekitio-react';
 import "./Toyota.css";
+
+const urlEndpoint = 'https://ik.imagekit.io/janjez';
 
 const Toyota = () => {
   return (
     <article className="toyota-article">
-      <Helmet>
-          <meta charSet="utf-8" />
-          <title>Popular Toyota Models in Kenya | KenyanAuto</title>
-          <meta
-              name="description"
-              content="Popular Toyota Models in Kenya" />
-          <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Toyota" />
-      </Helmet>
+      <meta charSet="utf-8" />
+      <title>Popular Toyota Models in Kenya | KenyanAuto</title>
+      <meta
+          name="description"
+          content="Popular Toyota Models in Kenya" />
+      <link rel="canonical" href="https://kenyanauto.vimtec.co.ke/Toyota" />
       <header>
         <h1>Toyota: A Legacy of Reliability and Innovation</h1>
         <figure>
-          <img
+          {/* <img
             src="https://nextgen-images.cdn.dealersolutions.com.au/modular.multisite.dealer.solutions/wp-content/uploads/sites/1576/2023/01/05124932/64321_hr-1200x675.jpg?format=webp&width=1200"
             alt="Toyota Cars"
+            loading="lazy"
+          /> */}
+          <IKImage
+            urlEndpoint={urlEndpoint}
+            src="https://nextgen-images.cdn.dealersolutions.com.au/modular.multisite.dealer.solutions/wp-content/uploads/sites/1576/2023/01/05124932/64321_hr-1200x675.jpg?format=webp&width=1200"
           />
           <figcaption>Toyota: Leading the way in automotive innovation.</figcaption>
         </figure>
@@ -91,7 +96,11 @@ const Toyota = () => {
       <section>
         <h2>Why Toyota is a Preferred Brand in Kenya</h2>
         <figure>
-          <img
+          {/* <img
+            src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Toyota.webp?updatedAt=1746438951097" loading="lazy"
+          /> */}
+          <IKImage
+            urlEndpoint={urlEndpoint}
             src="https://ik.imagekit.io/janjez/KenyanAuto/Toyota/Toyota.webp?updatedAt=1746438951097"
           />
           <figcaption>Toyota: The trusted choice for Kenyan drivers.</figcaption>
